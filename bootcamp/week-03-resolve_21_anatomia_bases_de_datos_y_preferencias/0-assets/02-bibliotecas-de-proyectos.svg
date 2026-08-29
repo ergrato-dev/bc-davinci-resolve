@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img"
+     aria-label="Tres columnas comparando los tipos de biblioteca de proyectos de Resolve: local en el disco propio para una persona, en red sobre un servidor PostgreSQL para varias a la vez, y en la nube de Blackmagic por suscripcion. Debajo, la regla para elegir.">
+  <title>Los tres tipos de biblioteca de proyectos</title>
+  <style>
+    .bg   { fill: #101418; }
+    .surf { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .surf2{ fill: #232b34; stroke: #2f3a45; stroke-width: 1; }
+    .t    { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h    { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .lbl  { font-size: 13px; font-weight: 600; fill: #e8eef4; }
+    .s    { font-size: 12px; fill: #93a1b0; }
+  </style>
+
+  <rect class="bg" width="880" height="400"/>
+  <text class="t h" x="40" y="38">Donde pueden vivir tus proyectos</text>
+  <text class="t s" x="40" y="58">Las 36 semanas del bootcamp se hacen con la primera columna</text>
+
+  <rect class="surf" x="40" y="82" width="256" height="216" rx="6"/>
+  <rect x="40" y="82" width="5" height="216" fill="#3fb950"/>
+  <text class="t lbl" x="62" y="108">Local  ·  en tu disco</text>
+  <text class="t s"   x="62" y="132">Una carpeta por proyecto, con</text>
+  <text class="t s"   x="62" y="150">su Project.db dentro.</text>
+  <rect class="surf2" x="62" y="164" width="212" height="26" rx="4"/>
+  <text class="t s" x="74" y="182">Quien: una persona, una maquina</text>
+  <rect class="surf2" x="62" y="196" width="212" height="26" rx="4"/>
+  <text class="t s" x="74" y="214">Coste: nada</text>
+  <rect class="surf2" x="62" y="228" width="212" height="26" rx="4"/>
+  <text class="t s" x="74" y="246">Limite: un Resolve a la vez</text>
+  <text class="t s" x="62" y="278">Se pueden tener varias y saltar.</text>
+
+  <rect class="surf" x="312" y="82" width="256" height="216" rx="6"/>
+  <rect x="312" y="82" width="5" height="216" fill="#4a9eff"/>
+  <text class="t lbl" x="334" y="108">En red  ·  PostgreSQL</text>
+  <text class="t s"   x="334" y="132">Un servidor de base de datos</text>
+  <text class="t s"   x="334" y="150">atiende a varios a la vez.</text>
+  <rect class="surf2" x="334" y="164" width="212" height="26" rx="4"/>
+  <text class="t s" x="346" y="182">Quien: varias personas</text>
+  <rect class="surf2" x="334" y="196" width="212" height="26" rx="4"/>
+  <text class="t s" x="346" y="214">Coste: montar y mantener</text>
+  <rect class="surf2" x="334" y="228" width="212" height="26" rx="4"/>
+  <rect x="334" y="228" width="4" height="26" fill="#f5a524"/>
+  <text class="t s" x="346" y="246">Colaborar a la vez: Studio</text>
+  <text class="t s" x="334" y="278">Si cae el servidor, nadie edita.</text>
+
+  <rect class="surf" x="584" y="82" width="256" height="216" rx="6"/>
+  <rect x="584" y="82" width="5" height="216" fill="#a371f7"/>
+  <text class="t lbl" x="606" y="108">En la nube  ·  Blackmagic Cloud</text>
+  <text class="t s"   x="606" y="132">Blackmagic hospeda la</text>
+  <text class="t s"   x="606" y="150">biblioteca; te conectas con cuenta.</text>
+  <rect class="surf2" x="606" y="164" width="212" height="26" rx="4"/>
+  <text class="t s" x="618" y="182">Quien: equipos repartidos</text>
+  <rect class="surf2" x="606" y="196" width="212" height="26" rx="4"/>
+  <text class="t s" x="618" y="214">Coste: suscripcion</text>
+  <rect class="surf2" x="606" y="228" width="212" height="26" rx="4"/>
+  <text class="t s" x="618" y="246">No se usa en el bootcamp</text>
+
+  <rect class="surf2" x="40" y="316" width="800" height="52" rx="6"/>
+  <rect x="40" y="316" width="5" height="52" fill="#4a9eff"/>
+  <text class="t lbl" x="62" y="340">La regla</text>
+  <text class="t s"   x="140" y="340">Una biblioteca en red solo se justifica cuando dos personas necesitan el mismo</text>
+  <text class="t s"   x="140" y="358">proyecto abierto al mismo tiempo. Para todo lo demas: local, y un .drp bien guardado.</text>
+</svg>

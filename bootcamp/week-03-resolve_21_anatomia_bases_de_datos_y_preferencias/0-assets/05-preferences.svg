@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img"
+     aria-label="La ventana de Preferences con sus dos pestanas: System, que agrupa memoria y GPU, Media Storage, opciones de decodificacion y entrada y salida de video; y User, que agrupa ajustes de interfaz, guardado y carga del proyecto y edicion. A la derecha, la regla para distinguir Preferences de Project Settings.">
+  <title>Preferences: las pestanas System y User</title>
+  <style>
+    .bg   { fill: #101418; }
+    .surf { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .surf2{ fill: #232b34; stroke: #2f3a45; stroke-width: 1; }
+    .t    { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h    { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .lbl  { font-size: 13px; font-weight: 600; fill: #e8eef4; }
+    .s    { font-size: 12px; fill: #93a1b0; }
+  </style>
+
+  <rect class="bg" width="880" height="400"/>
+  <text class="t h" x="40" y="38">Preferences describe tu ordenador, no tu video</text>
+  <text class="t s" x="40" y="58">Ctrl+, (Win) / Cmd+, (Mac). No viaja con el proyecto</text>
+
+  <rect class="surf" x="40" y="82" width="256" height="240" rx="6"/>
+  <rect x="40" y="82" width="5" height="240" fill="#4a9eff"/>
+  <text class="t lbl" x="62" y="108">Pestana System</text>
+  <text class="t s"   x="62" y="128">El hardware y los discos</text>
+  <rect class="surf2" x="62" y="142" width="212" height="38" rx="4"/>
+  <text class="t lbl" x="74" y="160">Memory and GPU</text>
+  <text class="t s"   x="74" y="176">RAM asignada y tarjeta</text>
+  <rect class="surf2" x="62" y="188" width="212" height="38" rx="4"/>
+  <rect x="62" y="188" width="4" height="38" fill="#f5a524"/>
+  <text class="t lbl" x="74" y="206">Media Storage</text>
+  <text class="t s"   x="74" y="222">Manda la primera entrada</text>
+  <rect class="surf2" x="62" y="234" width="212" height="38" rx="4"/>
+  <text class="t lbl" x="74" y="252">Decode Options</text>
+  <text class="t s"   x="74" y="268">Aceleracion por hardware</text>
+  <rect class="surf2" x="62" y="280" width="212" height="26" rx="4"/>
+  <text class="t s" x="74" y="298">Video and Audio I/O</text>
+
+  <rect class="surf" x="312" y="82" width="256" height="240" rx="6"/>
+  <rect x="312" y="82" width="5" height="240" fill="#3fb950"/>
+  <text class="t lbl" x="334" y="108">Pestana User</text>
+  <text class="t s"   x="334" y="128">Como se comporta el programa</text>
+  <rect class="surf2" x="334" y="142" width="212" height="38" rx="4"/>
+  <text class="t lbl" x="346" y="160">UI Settings</text>
+  <text class="t s"   x="346" y="176">Idioma y apariencia</text>
+  <rect class="surf2" x="334" y="188" width="212" height="38" rx="4"/>
+  <rect x="334" y="188" width="4" height="38" fill="#f5a524"/>
+  <text class="t lbl" x="346" y="206">Project Save and Load</text>
+  <text class="t s"   x="346" y="222">Live Save y los respaldos</text>
+  <rect class="surf2" x="334" y="234" width="212" height="38" rx="4"/>
+  <text class="t lbl" x="346" y="252">Editing</text>
+  <text class="t s"   x="346" y="268">Duraciones por defecto</text>
+
+  <rect class="surf" x="584" y="82" width="256" height="240" rx="6"/>
+  <rect x="584" y="82" width="5" height="240" fill="#a371f7"/>
+  <text class="t lbl" x="606" y="108">La regla</text>
+  <text class="t s"   x="606" y="132">Si describe tu ordenador,</text>
+  <text class="t s"   x="606" y="150">es Preferences.</text>
+  <text class="t s"   x="606" y="174">Si describe tu video,</text>
+  <text class="t s"   x="606" y="192">es Project Settings.</text>
+  <rect class="surf2" x="606" y="208" width="212" height="26" rx="4"/>
+  <text class="t s" x="618" y="226">GPU  ·  Preferences</text>
+  <rect class="surf2" x="606" y="240" width="212" height="26" rx="4"/>
+  <text class="t s" x="618" y="258">Frame rate  ·  Project Settings</text>
+  <rect class="surf2" x="606" y="272" width="212" height="34" rx="4"/>
+  <rect x="606" y="272" width="4" height="34" fill="#f85149"/>
+  <text class="t s" x="618" y="290">Working Folders del proyecto:</text>
+  <text class="t s" x="618" y="303">la excepcion. Van en Project Settings</text>
+
+  <text class="t s" x="40" y="358">Piden reiniciar Resolve: la GPU, la memoria asignada, la decodificacion por hardware y los cambios en Media Storage.</text>
+  <text class="t s" x="40" y="378">Se guardan en la carpeta Preferences de tu usuario: config.dat, config.user.xml y keyboard.preset.xml.</text>
+</svg>

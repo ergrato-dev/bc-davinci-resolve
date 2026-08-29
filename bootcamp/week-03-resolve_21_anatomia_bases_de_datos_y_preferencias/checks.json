@@ -1,0 +1,62 @@
+{
+  "semana": "03",
+  "titulo": "Resolve 21: anatomia, bases de datos y preferencias",
+  "checks": [
+    {
+      "id": "proyecto-abierto",
+      "descripcion": "BC-Bootcamp-Resolve es el proyecto abierto ahora mismo",
+      "op": "ping",
+      "args": {},
+      "expr": "r.get('project') == 'BC-Bootcamp-Resolve'",
+      "pista": "Abrelo desde el Project Manager. Si acabas de trastear en BC-Pruebas-semana03, vuelve al proyecto del bootcamp: los checks leen el proyecto abierto, no el que exista."
+    },
+    {
+      "id": "resolve-es-21",
+      "descripcion": "La version de DaVinci Resolve que responde es una 21",
+      "op": "ping",
+      "args": {},
+      "expr": "r['resolve_version'].startswith('21.')",
+      "pista": "Comprueba tu version en Help > About DaVinci Resolve. Todo el material esta escrito contra Resolve 21; con una version anterior habra menus y ajustes que no encuentres."
+    },
+    {
+      "id": "bootcamp-en-la-biblioteca",
+      "descripcion": "BC-Bootcamp-Resolve aparece en la carpeta que muestra el Project Manager",
+      "op": "project_list",
+      "args": {},
+      "expr": "'BC-Bootcamp-Resolve' in r['projects']",
+      "pista": "Este check lee los proyectos de la carpeta que estes viendo en el Project Manager, dentro de la biblioteca activa. Vuelve a la raiz de tu biblioteca original: si te quedaste en BC-Pruebas-DB, ahi no esta."
+    },
+    {
+      "id": "proyecto-de-pruebas",
+      "descripcion": "BC-Pruebas-semana03 existe en la misma carpeta de la biblioteca",
+      "op": "project_list",
+      "args": {},
+      "expr": "'BC-Pruebas-semana03' in r['projects']",
+      "pista": "Practica 02, paso 3: Project Manager > New Project, nombre exacto BC-Pruebas-semana03, y creado en la raiz de la biblioteca, no dentro de una carpeta. Se compara caracter a caracter."
+    },
+    {
+      "id": "frame-rate-de-proyecto",
+      "descripcion": "El timeline frame rate de BC-Bootcamp-Resolve sigue siendo 24 fps",
+      "op": "project_settings",
+      "args": {},
+      "expr": "float(r['settings']['timelineFrameRate']) == 24.0",
+      "pista": "Los Project Settings son de cada proyecto: poner el de pruebas a 25 no toca este. Si te sale 25, es que tienes abierto BC-Pruebas-semana03 en vez del proyecto del bootcamp."
+    },
+    {
+      "id": "playback-frame-rate",
+      "descripcion": "El playback frame rate del proyecto es 24 fps",
+      "op": "project_settings",
+      "args": {},
+      "expr": "float(r['settings']['timelinePlaybackFrameRate']) == 24.0",
+      "pista": "File > Project Settings > Master Settings, bloque Timeline Format, campo Playback frame rate. No es el mismo ajuste que Timeline frame rate: este dice a cuantos fps se reproduce en tu pantalla, y en un proyecto a 24 fps se queda en 24."
+    },
+    {
+      "id": "timeline-intacta",
+      "descripcion": "La timeline BC-Montaje-v1 sigue existiendo en el proyecto",
+      "op": "timeline_list",
+      "args": {},
+      "expr": "'BC-Montaje-v1' in r['timelines']",
+      "pista": "Es la timeline que creaste en la Semana 01. Si no aparece, comprueba que el proyecto abierto es BC-Bootcamp-Resolve y no el de pruebas, que esta vacio."
+    }
+  ]
+}

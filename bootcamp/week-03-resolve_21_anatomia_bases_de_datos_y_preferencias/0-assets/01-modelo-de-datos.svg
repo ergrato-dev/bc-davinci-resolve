@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 430" width="880" height="430" role="img"
+     aria-label="Tres capas apiladas: la biblioteca de proyectos contiene los proyectos; cada proyecto contiene timelines, grados y una lista de referencias; los medios viven aparte en el disco. Una flecha de referencia va del proyecto a los medios, y una nota avisa de que mover los medios rompe la referencia pero no el proyecto.">
+  <title>Biblioteca, proyecto y medios: tres cosas separadas</title>
+  <style>
+    .bg   { fill: #101418; }
+    .surf { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .surf2{ fill: #232b34; stroke: #2f3a45; stroke-width: 1; }
+    .t    { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h    { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .lbl  { font-size: 13px; font-weight: 600; fill: #e8eef4; }
+    .s    { font-size: 12px; fill: #93a1b0; }
+    .arw  { stroke: #4a9eff; stroke-width: 2; fill: none; }
+  </style>
+
+  <rect class="bg" width="880" height="430"/>
+  <text class="t h" x="40" y="38">Tu trabajo vive en tres capas y solo una guarda video</text>
+  <text class="t s" x="40" y="58">El proyecto anota donde esta cada archivo. No lo copia dentro</text>
+
+  <rect class="surf" x="40" y="82" width="470" height="120" rx="6"/>
+  <rect x="40" y="82" width="5" height="120" fill="#a371f7"/>
+  <text class="t lbl" x="62" y="108">1 · Biblioteca de proyectos  ·  Project Library</text>
+  <text class="t s"   x="62" y="129">Contiene todos tus proyectos y sus carpetas.</text>
+  <text class="t s"   x="62" y="147">Local en tu disco, en red sobre PostgreSQL, o en la nube.</text>
+  <rect class="surf2" x="62" y="160" width="200" height="28" rx="4"/>
+  <text class="t s" x="76" y="179">BC-Bootcamp-Resolve</text>
+  <rect class="surf2" x="274" y="160" width="200" height="28" rx="4"/>
+  <text class="t s" x="288" y="179">BC-Pruebas-semana03</text>
+
+  <rect class="surf" x="40" y="216" width="470" height="164" rx="6"/>
+  <rect x="40" y="216" width="5" height="164" fill="#4a9eff"/>
+  <text class="t lbl" x="62" y="242">2 · Proyecto  ·  Project.db</text>
+  <text class="t s"   x="62" y="263">Unos pocos megabytes. Solo decisiones.</text>
+  <rect class="surf2" x="62" y="278" width="200" height="28" rx="4"/>
+  <text class="t s" x="76" y="297">Timelines y cortes</text>
+  <rect class="surf2" x="274" y="278" width="200" height="28" rx="4"/>
+  <text class="t s" x="288" y="297">Grados de color</text>
+  <rect class="surf2" x="62" y="314" width="200" height="28" rx="4"/>
+  <text class="t s" x="76" y="333">Mezcla y comps</text>
+  <rect class="surf2" x="274" y="314" width="200" height="28" rx="4"/>
+  <rect x="274" y="314" width="4" height="28" fill="#f5a524"/>
+  <text class="t s" x="288" y="333">Lista de referencias</text>
+  <text class="t s" x="62" y="366">Las referencias son rutas, no copias.</text>
+
+  <rect class="surf" x="570" y="216" width="270" height="164" rx="6"/>
+  <rect x="570" y="216" width="5" height="164" fill="#3fb950"/>
+  <text class="t lbl" x="592" y="242">3 · Medios en tu disco</text>
+  <text class="t s"   x="592" y="263">Los archivos de verdad. Pesan lo que pesan.</text>
+  <rect class="surf2" x="592" y="278" width="226" height="28" rx="4"/>
+  <text class="t s" x="606" y="297">BC-formato-h264.mp4</text>
+  <rect class="surf2" x="592" y="314" width="226" height="28" rx="4"/>
+  <text class="t s" x="606" y="333">BC-formato-audio.wav</text>
+  <text class="t s" x="592" y="366">Resolve los lee. Nunca los mete dentro.</text>
+
+  <path class="arw" d="M478 328 H 560"/>
+  <path class="arw" d="M552 322 l 10 6 -10 6"/>
+  <text class="t s" x="486" y="316">referencia</text>
+
+  <rect class="surf2" x="570" y="82" width="270" height="120" rx="6"/>
+  <rect x="570" y="82" width="5" height="120" fill="#f85149"/>
+  <text class="t lbl" x="592" y="108">Si mueves los medios</text>
+  <text class="t s"   x="592" y="130">La referencia se rompe: los clips salen</text>
+  <text class="t s"   x="592" y="148">en rojo, Media Offline.</text>
+  <text class="t s"   x="592" y="172">La timeline, los cortes y los grados</text>
+  <text class="t s"   x="592" y="190">siguen intactos. No es trabajo perdido.</text>
+</svg>

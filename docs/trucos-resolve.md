@@ -39,7 +39,23 @@ terceros.
 
 ---
 
-_Las semanas 03 a 36 añadirán aquí sus trucos según se publiquen._
+## Semana 03 — Resolve 21: anatomía, bases de datos y preferencias
+
+| Truco | Cómo |
+| ----- | ---- |
+| Volver al Project Manager sin cerrar el proyecto | El icono de casa de la esquina inferior derecha, o `File > Project Manager` |
+| Copiar una timeline o un nodo de un proyecto a otro | `File > Dynamic Project Switching`, copia en uno, salta y pega en el otro. Apágalo al terminar |
+| No volver a pulsar `Ctrl+S` nunca más | `Preferences > User > Project Save and Load`, activa Live Save |
+| Darte una semana de historia en vez de dos días | En ese mismo panel, sube el número de copias diarias de respaldo a 7 o más |
+| Comprobar que un respaldo sirve de verdad | Crea una biblioteca de disco aparte, importa ahí el `.drp` y ábrelo. Un respaldo sin probar es una suposición |
+| Recuperar decenas de GB en diez segundos | `Playback > Delete Render Cache > All`. La caché es regenerable por definición |
+| Reconocer un disco donde ha trabajado Resolve | Busca las carpetas `CacheClip` y `.gallery` |
+| Volver a las preferencias de fábrica sin perder nada | Con Resolve **cerrado**, renombra la carpeta `Preferences`. Si no era eso, deshaz el renombrado |
+| Que los proyectos nuevos nazcan bien configurados | `Project Settings > Presets`: guarda el tuyo y ponlo por defecto |
+
+---
+
+_Las semanas 04 a 36 añadirán aquí sus trucos según se publiquen._
 
 ---
 

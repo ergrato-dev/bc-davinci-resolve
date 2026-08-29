@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" width="880" height="420" role="img"
+     aria-label="La ventana de Project Settings con su barra lateral de categorias a la izquierda y el detalle de los bloques de Master Settings a la derecha: Timeline Format, Video Monitoring, Optimized Media and Render Cache, Working Folders y Frame Interpolation. El campo Timeline frame rate aparece marcado como irreversible una vez hay clips en el media pool.">
+  <title>Project Settings y los bloques de Master Settings</title>
+  <style>
+    .bg   { fill: #101418; }
+    .surf { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .surf2{ fill: #232b34; stroke: #2f3a45; stroke-width: 1; }
+    .t    { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h    { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .lbl  { font-size: 13px; font-weight: 600; fill: #e8eef4; }
+    .s    { font-size: 12px; fill: #93a1b0; }
+  </style>
+
+  <rect class="bg" width="880" height="420"/>
+  <text class="t h" x="40" y="38">Project Settings describe tu video y viaja con el proyecto</text>
+  <text class="t s" x="40" y="58">File &gt; Project Settings, atajo Shift+9</text>
+
+  <rect class="surf" x="40" y="82" width="230" height="286" rx="6"/>
+  <text class="t lbl" x="62" y="108">Categorias</text>
+  <rect x="58" y="120" width="194" height="26" rx="3" fill="#232b34" stroke="#4a9eff"/>
+  <text class="t s" x="70" y="138">Master Settings</text>
+  <rect class="surf2" x="58" y="150" width="194" height="24" rx="3"/>
+  <text class="t s" x="70" y="167">Image Scaling</text>
+  <rect class="surf2" x="58" y="178" width="194" height="24" rx="3"/>
+  <text class="t s" x="70" y="195">Color Management</text>
+  <rect class="surf2" x="58" y="206" width="194" height="24" rx="3"/>
+  <text class="t s" x="70" y="223">General Options</text>
+  <rect class="surf2" x="58" y="234" width="194" height="24" rx="3"/>
+  <text class="t s" x="70" y="251">Camera RAW</text>
+  <rect class="surf2" x="58" y="262" width="194" height="24" rx="3"/>
+  <text class="t s" x="70" y="279">Capture and Playback</text>
+  <rect class="surf2" x="58" y="290" width="194" height="24" rx="3"/>
+  <text class="t s" x="70" y="307">Subtitles  ·  Fairlight</text>
+  <rect class="surf2" x="58" y="318" width="194" height="26" rx="3"/>
+  <rect x="58" y="318" width="4" height="26" fill="#3fb950"/>
+  <text class="t s" x="70" y="336">Presets</text>
+
+  <rect class="surf" x="300" y="82" width="540" height="286" rx="6"/>
+  <text class="t lbl" x="322" y="108">Master Settings, bloque a bloque</text>
+
+  <rect class="surf2" x="322" y="122" width="496" height="72" rx="4"/>
+  <rect x="322" y="122" width="4" height="72" fill="#f85149"/>
+  <text class="t lbl" x="338" y="142">Timeline Format</text>
+  <text class="t s"   x="338" y="161">Timeline resolution 1920 x 1080  ·  Pixel aspect ratio Square</text>
+  <text class="t s"   x="338" y="178">Timeline frame rate 24  ·  se congela con el primer clip en el media pool</text>
+
+  <rect class="surf2" x="322" y="202" width="242" height="52" rx="4"/>
+  <text class="t lbl" x="338" y="222">Video Monitoring</text>
+  <text class="t s"   x="338" y="240">Que senal sale por SDI o HDMI</text>
+
+  <rect class="surf2" x="576" y="202" width="242" height="52" rx="4"/>
+  <text class="t lbl" x="592" y="222">Optimized Media, Cache</text>
+  <text class="t s"   x="592" y="240">Formato y resolucion. Semana 05</text>
+
+  <rect class="surf2" x="322" y="262" width="242" height="52" rx="4"/>
+  <rect x="322" y="262" width="4" height="52" fill="#f5a524"/>
+  <text class="t lbl" x="338" y="282">Working Folders</text>
+  <text class="t s"   x="338" y="300">Cache, galeria y proxies</text>
+
+  <rect class="surf2" x="576" y="262" width="242" height="52" rx="4"/>
+  <text class="t lbl" x="592" y="282">Frame Interpolation</text>
+  <text class="t s"   x="592" y="300">Cambios de velocidad. Semana 10</text>
+
+  <text class="t s" x="322" y="342">Playback frame rate vive junto a Timeline frame rate y no es lo mismo: define a cuantos fps se reproduce.</text>
+
+  <text class="t s" x="40" y="396">El remedio contra el frame rate mal puesto no es acordarse: es guardar un preset y ponerlo por defecto.</text>
+</svg>

@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" width="880" height="420" role="img"
+     aria-label="Esquema del Project Manager dividido en cuatro zonas: barra lateral de bibliotecas a la izquierda, lista de carpetas arriba, rejilla de proyectos en el centro y barra inferior de acciones. A la derecha, las tres formas de sacar un proyecto: exportar drp, archivar dra y los respaldos automaticos.">
+  <title>Las cuatro zonas del Project Manager</title>
+  <style>
+    .bg   { fill: #101418; }
+    .surf { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .surf2{ fill: #232b34; stroke: #2f3a45; stroke-width: 1; }
+    .t    { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h    { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .lbl  { font-size: 13px; font-weight: 600; fill: #e8eef4; }
+    .s    { font-size: 12px; fill: #93a1b0; }
+    .n    { font-size: 12px; font-weight: 600; fill: #101418; }
+  </style>
+
+  <rect class="bg" width="880" height="420"/>
+  <text class="t h" x="40" y="38">El Project Manager, zona por zona</text>
+  <text class="t s" x="40" y="58">Se vuelve aqui con el icono de casa o con File &gt; Project Manager, sin cerrar el proyecto</text>
+
+  <rect class="surf" x="40" y="82" width="500" height="286" rx="6"/>
+
+  <rect class="surf2" x="56" y="98" width="132" height="212" rx="4"/>
+  <circle cx="70" cy="114" r="9" fill="#a371f7"/>
+  <text class="t n" x="67" y="118">1</text>
+  <text class="t lbl" x="86" y="118">Bibliotecas</text>
+  <rect x="68" y="134" width="108" height="24" rx="3" fill="#232b34" stroke="#4a9eff"/>
+  <text class="t s" x="78" y="150">Local  (activa)</text>
+  <rect x="68" y="164" width="108" height="24" rx="3" fill="#191f26" stroke="#2f3a45"/>
+  <text class="t s" x="78" y="180">BC-Pruebas-DB</text>
+  <text class="t s" x="68" y="208">Se muestra y se</text>
+  <text class="t s" x="68" y="226">oculta con el boton</text>
+  <text class="t s" x="68" y="244">de su esquina.</text>
+
+  <circle cx="214" cy="114" r="9" fill="#4a9eff"/>
+  <text class="t n" x="211" y="118">2</text>
+  <text class="t lbl" x="230" y="118">Carpetas de la biblioteca</text>
+  <rect class="surf2" x="204" y="128" width="320" height="26" rx="4"/>
+  <text class="t s" x="216" y="146">raiz  /  BC-Archivo  /  2026</text>
+
+  <circle cx="214" cy="180" r="9" fill="#3fb950"/>
+  <text class="t n" x="211" y="184">3</text>
+  <text class="t lbl" x="230" y="184">Rejilla de proyectos</text>
+  <rect class="surf2" x="204" y="194" width="154" height="52" rx="4"/>
+  <text class="t s" x="216" y="216">BC-Bootcamp-Resolve</text>
+  <text class="t s" x="216" y="234">modificado hoy</text>
+  <rect class="surf2" x="370" y="194" width="154" height="52" rx="4"/>
+  <text class="t s" x="382" y="216">BC-Pruebas-semana03</text>
+  <text class="t s" x="382" y="234">25 fps</text>
+  <text class="t s" x="204" y="268">Buscador y orden por nombre o por fecha, arriba de la rejilla.</text>
+
+  <circle cx="70" cy="330" r="9" fill="#f5a524"/>
+  <text class="t n" x="67" y="334">4</text>
+  <rect class="surf2" x="86" y="318" width="130" height="26" rx="4"/>
+  <text class="t s" x="98" y="336">New Project</text>
+  <rect class="surf2" x="226" y="318" width="130" height="26" rx="4"/>
+  <text class="t s" x="238" y="336">Nueva carpeta</text>
+
+  <rect class="surf" x="570" y="82" width="270" height="286" rx="6"/>
+  <text class="t lbl" x="592" y="108">Sacar un proyecto de aqui</text>
+
+  <rect class="surf2" x="592" y="124" width="226" height="66" rx="4"/>
+  <rect x="592" y="124" width="4" height="66" fill="#4a9eff"/>
+  <text class="t lbl" x="608" y="144">Export Project  ·  .drp</text>
+  <text class="t s"   x="608" y="163">Unos pocos MB. Sin medios.</text>
+  <text class="t s"   x="608" y="181">El respaldo semanal.</text>
+
+  <rect class="surf2" x="592" y="200" width="226" height="66" rx="4"/>
+  <rect x="592" y="200" width="4" height="66" fill="#3fb950"/>
+  <text class="t lbl" x="608" y="220">Project Archive  ·  .dra</text>
+  <text class="t s"   x="608" y="239">Proyecto y copia de los medios.</text>
+  <text class="t s"   x="608" y="257">Para entregar o mudarse.</text>
+
+  <rect class="surf2" x="592" y="276" width="226" height="66" rx="4"/>
+  <rect x="592" y="276" width="4" height="66" fill="#f5a524"/>
+  <text class="t lbl" x="608" y="296">Project Backups</text>
+  <text class="t s"   x="608" y="315">Copias con fecha, automaticas.</text>
+  <text class="t s"   x="608" y="333">Para volver atras en el tiempo.</text>
+
+  <text class="t s" x="40" y="396">Borrar un proyecto no tiene papelera ni deshacer. Exporta antes: un .drp pesa unos pocos megabytes.</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img"
+     aria-label="Un disco con las seis cosas que Resolve escribe, separadas en dos columnas. No regenerable: el proyecto Project.db, los respaldos automaticos y los stills de galeria. Regenerable: la cache de render, los medios optimizados y los proxies, que son los que ocupan decenas de gigabytes. Debajo, el orden para recuperar espacio.">
+  <title>Que escribe Resolve en tu disco y que se puede borrar</title>
+  <style>
+    .bg   { fill: #101418; }
+    .surf { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .surf2{ fill: #232b34; stroke: #2f3a45; stroke-width: 1; }
+    .t    { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h    { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .lbl  { font-size: 13px; font-weight: 600; fill: #e8eef4; }
+    .s    { font-size: 12px; fill: #93a1b0; }
+  </style>
+
+  <rect class="bg" width="880" height="400"/>
+  <text class="t h" x="40" y="38">Seis cosas escriben en tu disco; solo tres se pueden borrar</text>
+  <text class="t s" x="40" y="58">Regenerable significa que Resolve lo vuelve a calcular. Cuesta tiempo de procesado, no trabajo</text>
+
+  <rect class="surf" x="40" y="82" width="390" height="212" rx="6"/>
+  <rect x="40" y="82" width="5" height="212" fill="#f85149"/>
+  <text class="t lbl" x="62" y="108">No regenerable  ·  no se borra nunca</text>
+  <rect class="surf2" x="62" y="122" width="346" height="46" rx="4"/>
+  <text class="t lbl" x="76" y="142">Project.db  ·  el proyecto</text>
+  <text class="t s"   x="76" y="160">Unos pocos MB. Todas tus decisiones</text>
+  <rect class="surf2" x="62" y="176" width="346" height="46" rx="4"/>
+  <text class="t lbl" x="76" y="196">Respaldos automaticos</text>
+  <text class="t s"   x="76" y="214">Cientos de MB. Tu red de seguridad</text>
+  <rect class="surf2" x="62" y="230" width="346" height="46" rx="4"/>
+  <text class="t lbl" x="76" y="250">.gallery  ·  stills de galeria</text>
+  <text class="t s"   x="76" y="268">Fotogramas con su grado. Son trabajo tuyo</text>
+
+  <rect class="surf" x="450" y="82" width="390" height="212" rx="6"/>
+  <rect x="450" y="82" width="5" height="212" fill="#3fb950"/>
+  <text class="t lbl" x="472" y="108">Regenerable  ·  aqui estan los gigabytes</text>
+  <rect class="surf2" x="472" y="122" width="346" height="46" rx="4"/>
+  <text class="t lbl" x="486" y="142">CacheClip  ·  cache de render</text>
+  <text class="t s"   x="486" y="160">Decenas de GB. Se regenera sola</text>
+  <rect class="surf2" x="472" y="176" width="346" height="46" rx="4"/>
+  <text class="t lbl" x="486" y="196">Optimized media</text>
+  <text class="t s"   x="486" y="214">Decenas de GB. Semana 05</text>
+  <rect class="surf2" x="472" y="230" width="346" height="46" rx="4"/>
+  <text class="t lbl" x="486" y="250">Proxy media</text>
+  <text class="t s"   x="486" y="268">Varios GB. Semana 05</text>
+
+  <rect class="surf2" x="40" y="310" width="800" height="66" rx="6"/>
+  <rect x="40" y="310" width="5" height="66" fill="#4a9eff"/>
+  <text class="t lbl" x="62" y="332">Orden para recuperar espacio, de menos a mas doloroso</text>
+  <text class="t s"   x="62" y="352">1 · Playback &gt; Delete Render Cache &gt; All      2 · Borrar optimized media y proxies</text>
+  <text class="t s"   x="62" y="370">3 · Bajar el numero de respaldos conservados, desde Preferences      4 · Archivar proyectos terminados</text>
+</svg>

@@ -13,6 +13,9 @@ de toda la documentación del mundo.
 
 ## A
 
+- **Archivo de proyecto** (*Project Archive*, `.dra`) — Una carpeta que contiene el
+  proyecto **y** una copia de todos sus medios. Es la caja de mudanza; no confundir con
+  el `.drp`, que no lleva medios.
 - **Aspect ratio** (*aspect ratio*) — La proporción entre el ancho y el alto de la
   imagen. 16:9 es el estándar de televisión y web; 9:16 el vertical de móvil; 2.39:1 el
   panorámico de cine.
@@ -22,6 +25,9 @@ de toda la documentación del mundo.
 ## B
 
 - **Barrido, obturador** — Ver *obturador*.
+- **Biblioteca de proyectos** (*Project Library*) — El contenedor donde viven todos tus
+  proyectos. Puede ser local, en red sobre PostgreSQL o en la nube. Hasta Resolve 17 se
+  llamaba *base de datos*.
 - **Bin** (*bin*) — Una carpeta dentro del media pool de Resolve. Organiza clips dentro
   del proyecto; no mueve nada en tu disco.
 - **Bit depth** (*bit depth*) — Ver *profundidad de bits*.
@@ -34,6 +40,8 @@ de toda la documentación del mundo.
 
 - **Caché de render** (*render cache*) — Copias precalculadas que Resolve guarda en
   disco para que la reproducción no se atasque.
+- **CacheClip** (*CacheClip*) — La carpeta que Resolve crea con ese nombre literal para
+  guardar la caché de render. Se puede borrar entera: es regenerable.
 - **Chroma subsampling** (*chroma subsampling*) — Guardar menos información de color
   que de luminosidad, porque el ojo nota menos la pérdida. Se escribe 4:4:4, 4:2:2 o
   4:2:0.
@@ -51,6 +59,10 @@ de toda la documentación del mundo.
 - **dBFS** (*dBFS*) — Decibelios respecto a la escala completa digital. 0 dBFS es el
   máximo absoluto: por encima, el sonido se corta.
 - **Deliver** (*Deliver*) — La página de Resolve donde se configura y se lanza el render.
+- **DRP** (*`.drp`*) — El archivo que produce `Export Project`. Contiene el proyecto
+  entero y ningún medio; pesa unos pocos megabytes.
+- **Dynamic Project Switching** (*Dynamic Project Switching*) — Modo que permite tener
+  varios proyectos abiertos a la vez y saltar entre ellos al instante. Consume memoria.
 
 ## E
 
@@ -68,6 +80,8 @@ de toda la documentación del mundo.
 
 ## G
 
+- **Galería** (*Gallery*) — El almacén de stills de la página Color. Cada still guarda un
+  fotograma con su grado. No es caché: no se regenera.
 - **Gamma** (*gamma*) — La curva que relaciona el valor numérico de un píxel con el
   brillo que finalmente se ve. Sin ella, las imágenes se verían mal repartidas.
 - **Grado** (*grade*) — El conjunto de ajustes de color aplicados a un clip.
@@ -88,6 +102,10 @@ de toda la documentación del mundo.
 
 ## L
 
+- **Layout preset** (*Layout Preset*) — Una disposición de paneles guardada con un nombre,
+  en `Workspace > Layout Presets`. Es de la máquina, no del proyecto.
+- **Live Save** (*Live Save*) — Preferencia que guarda el proyecto continuamente mientras
+  trabajas. Evita perder trabajo por un cierre inesperado; no permite volver atrás.
 - **Log** (*log*) — Una curva de grabación que reparte la información para conservar
   más rango dinámico. El material log se ve gris y plano hasta que se etalona.
 - **Long-GOP** (*long-GOP*) — Codecs que comprimen grupos de frames juntos guardando
@@ -101,6 +119,8 @@ de toda la documentación del mundo.
 
 - **Media pool** (*Media Pool*) — El almacén de clips del proyecto. Lo que ves ahí son
   referencias a archivos de tu disco, no copias.
+- **Media Storage** (*Media Storage*) — La lista ordenada de carpetas de las que Resolve
+  lee, en `Preferences > System`. La primera entrada es su ubicación por defecto.
 - **Multicámara** (*multicam*) — Editar una escena rodada con varias cámaras a la vez,
   sincronizadas.
 
@@ -120,10 +140,22 @@ de toda la documentación del mundo.
 
 ## P
 
+- **Playback frame rate** (*Playback frame rate*) — A cuántos frames por segundo se
+  reproduce la timeline en pantalla. No es el `Timeline frame rate`, que define la pieza.
+- **PostgreSQL** (*PostgreSQL*) — Gestor de bases de datos que atiende a varios clientes a
+  la vez. Es lo que hay debajo de una biblioteca de proyectos en red.
 - **Power window** (*Power Window*) — Una forma dibujada sobre la imagen para que una
   corrección de color afecte solo a esa zona.
+- **Preferences** (*Preferences*) — Los ajustes que describen tu ordenador: GPU, memoria,
+  discos, idioma, respaldos. No viajan con el proyecto.
 - **Profundidad de bits** (*bit depth*) — Cuántos valores distintos puede tomar cada
   canal de color. 8 bits dan 256 niveles; 10 bits, 1024.
+- **Project Manager** (*Project Manager*) — La pantalla donde se crean, organizan,
+  exportan, archivan y borran proyectos.
+- **Project Settings** (*Project Settings*) — Los ajustes que describen tu vídeo: frame
+  rate, resolución, ciencia de color, carpetas de trabajo. Viajan con el proyecto.
+- **Project.db** (*Project.db*) — El archivo SQLite donde vive un proyecto entero dentro de
+  una biblioteca local. No se toca a mano nunca.
 - **Proxy** (*proxy media*) — Copias en baja resolución que sustituyen a los originales
   mientras editas, y que se cambian por los buenos al renderizar.
 
@@ -138,7 +170,14 @@ de toda la documentación del mundo.
   exposición y el balance de blancos, con mucho margen.
 - **Rec.709** (*Rec.709*) — El espacio de color estándar de la televisión de alta
   definición y de casi todo el vídeo web. El destino por defecto del bootcamp.
+- **Referencia** (*reference*) — Una anotación de dónde está un archivo, no una copia de
+  él. Es lo que guarda el media pool, y explica los clips *offline*.
+- **Regenerable** — Lo que Resolve puede volver a calcular a partir del proyecto y de los
+  medios: caché, medios optimizados y proxies. Borrarlo cuesta procesado, no trabajo.
+- **Relink** (*relink*) — Volver a enlazar un clip *offline* con su archivo.
 - **Render** (*render*) — Calcular y escribir el archivo final de vídeo.
+- **Respaldos de proyecto** (*Project Backups*) — Las copias con fecha que Resolve hace
+  solo, en tres escalones: minutos, horas y días. Permiten volver atrás en el tiempo.
 - **Ripple** (*ripple*) — Editar desplazando todo lo que viene después, en lugar de
   dejar un hueco.
 
@@ -148,6 +187,8 @@ de toda la documentación del mundo.
   de la imagen: waveform, parade, vectorscope, histograma.
 - **Slip / Slide** (*slip / slide*) — Dos formas de recortar: *slip* cambia qué parte
   del clip se ve sin mover su posición; *slide* mueve el clip sin cambiar qué se ve.
+- **SQLite** (*SQLite*) — El formato de base de datos en un solo archivo con el que
+  Resolve guarda cada proyecto. Copiarlo a mano mientras se escribe lo corrompe.
 - **SRT** (*SubRip*) — El formato de archivo de subtítulos más extendido.
 
 ## T
@@ -156,6 +197,8 @@ de toda la documentación del mundo.
   `horas:minutos:segundos:frames`.
 - **Timeline** (*timeline*) — La secuencia de montaje: las pistas con los clips
   colocados en el tiempo.
+- **Timeline frame rate** (*Timeline frame rate*) — Cuántos frames por segundo tiene tu
+  pieza. El único ajuste irreversible: se congela con el primer clip del media pool.
 - **Trimming** (*trimming*) — Ajustar con precisión dónde empieza y dónde acaba cada
   clip en la timeline.
 
@@ -170,6 +213,10 @@ de toda la documentación del mundo.
 
 - **Waveform** (*waveform*) — El scope que muestra el brillo de la imagen a lo largo del
   ancho del cuadro.
+- **Working Folders** (*Working Folders*) — El bloque de `Master Settings` que decide dónde
+  escribe este proyecto su caché, sus stills y sus proxies.
+- **Workspace** (*Workspace*) — El menú desde el que se muestran y ocultan paneles, se
+  gestionan los layouts y se lanzan los scripts.
 
 ---
 
