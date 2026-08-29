@@ -15,12 +15,17 @@ de toda la documentación del mundo.
 
 - **Alfa, canal** (*alpha channel*) — Un canal extra, además de rojo, verde y azul, que
   guarda la transparencia de cada píxel. Un PNG puede tenerlo; un JPG no.
+- **Ángulo** (*angle*) — Cada una de las cámaras que contiene un clip multicámara. Su
+  orden se fija al crearlo y es el orden en el que se seleccionan al montar.
 - **Archivo de proyecto** (*Project Archive*, `.dra`) — Una carpeta que contiene el
   proyecto **y** una copia de todos sus medios. Es la caja de mudanza; no confundir con
   el `.drp`, que no lleva medios.
 - **Aspect ratio** (*aspect ratio*) — La proporción entre el ancho y el alto de la
   imagen. 16:9 es el estándar de televisión y web; 9:16 el vertical de móvil; 2.39:1 el
   panorámico de cine.
+- **`Auto Sync Audio`** (*Auto Sync Audio*) — La operación del menú contextual del media
+  pool que sincroniza un clip de vídeo con uno de audio, por timecode o por forma de
+  onda, sustituyendo el audio de cámara o añadiéndolo como pista extra.
 
 ## B
 
@@ -56,11 +61,17 @@ de toda la documentación del mundo.
   trabajo.
 - **Codec** (*codec*) — El método para comprimir y descomprimir vídeo o audio. H.264,
   ProRes y DNxHR son codecs.
+- **Colas** (*handles*) — Los fotogramas que quedan fuera de los puntos de entrada y
+  salida de un subclip y que siguen existiendo en el archivo. Sin colas no hay
+  transiciones ni ajustes de corte posibles: se dejan uno o dos segundos a cada lado.
 - **Contenedor** (*container*) — El archivo que envuelve al vídeo, al audio y a los
   metadatos. `.mp4`, `.mov` y `.mkv` son contenedores, no codecs.
 - **Corrupción silenciosa** (*silent corruption*) — Un daño en un archivo que no produce
   ningún error: tamaño y fecha correctos, se abre, se reproduce, y tiene un trozo
   destrozado. Solo la detecta una huella.
+- **Cuello de botella** (*bottleneck*) — El eslabón más lento de la cadena que va del
+  disco al visor. Hay tres —descompresión, disco y cálculo de efectos— y cada uno se
+  arregla con una herramienta distinta.
 
 ## D
 
@@ -69,8 +80,14 @@ de toda la documentación del mundo.
 - **dBFS** (*dBFS*) — Decibelios respecto a la escala completa digital. 0 dBFS es el
   máximo absoluto: por encima, el sonido se corta.
 - **Deliver** (*Deliver*) — La página de Resolve donde se configura y se lanza el render.
+- **Deriva** (*drift*) — El desfase de sincronía que crece a lo largo de un clip:
+  cuadra al principio y no al final. Sale de frecuencias de muestreo distintas o de frame
+  rates casi iguales (23,976 frente a 24 fps).
 - **`Description`** (*Description*) — El campo de metadata donde va prosa, para
   acordarte de lo que se ve. No confundir con `Keywords`, que son etiquetas y sí filtran.
+- **Doble sistema** (*dual system sound*) — Grabar la imagen en un aparato y el sonido en
+  otro. Es lo normal en cuanto el micrófono bueno no está en la cámara, y es lo que
+  obliga a sincronizar.
 - **DRP** (*`.drp`*) — El archivo que produce `Export Project`. Contiene el proyecto
   entero y ningún medio; pesa unos pocos megabytes.
 - **Dynamic Project Switching** (*Dynamic Project Switching*) — Modo que permite tener
@@ -87,6 +104,9 @@ de toda la documentación del mundo.
 - **Flag** (*Flags*) — Una marca de color sobre un clip que señala algo pendiente. Es
   temporal: se pone, se cumple y se quita. No confundir con un marcador, que se pega a
   un punto concreto dentro del clip.
+- **Forma de onda, sincronización por** (*waveform sync*) — Alinear dos grabaciones del
+  mismo momento comparando el dibujo de su sonido. No necesita preparación previa y sí
+  necesita que los dos archivos tengan audio parecido.
 - **Frame** (*frame*) — Una imagen fija de la secuencia. El vídeo es una sucesión de
   frames.
 - **Frame rate** (*frame rate*) — Cuántos frames se muestran por segundo. Se mide en
@@ -101,6 +121,9 @@ de toda la documentación del mundo.
   brillo que finalmente se ve. Sin ella, las imágenes se verían mal repartidas.
 - **`Good Take`** (*Good Take*) — El campo de metadata que marca la toma buena de una
   serie. Sirve como regla de smart bin.
+- **GOP** (*Group of Pictures*) — El bloque de fotogramas que va de un fotograma
+  completo al siguiente en un codec long-GOP. Dentro hay fotogramas **I** (completos),
+  **P** (reconstruidos desde el anterior) y **B** (reconstruidos mirando a los dos lados).
 - **Grado** (*grade*) — El conjunto de ajustes de color aplicados a un clip.
 
 ## H
@@ -133,6 +156,9 @@ de toda la documentación del mundo.
 
 - **Layout preset** (*Layout Preset*) — Una disposición de paneles guardada con un nombre,
   en `Workspace > Layout Presets`. Es de la máquina, no del proyecto.
+- **`Link Proxy Media`** (*Link Proxy Media*) — La opción que vincula a un clip del
+  media pool un archivo de proxy generado fuera de Resolve. Su inversa es
+  `Unlink Proxy Media`, que rompe el vínculo sin borrar nada.
 - **Live Save** (*Live Save*) — Preferencia que guarda el proyecto continuamente mientras
   trabajas. Evita perder trabajo por un cierre inesperado; no permite volver atrás.
 - **Log** (*log*) — Una curva de grabación que reparte la información para conservar
@@ -150,6 +176,9 @@ de toda la documentación del mundo.
   referencias a archivos de tu disco, no copias.
 - **Media Storage** (*Media Storage*) — La lista ordenada de carpetas de las que Resolve
   lee, en `Preferences > System`. La primera entrada es su ubicación por defecto.
+- **Medio optimizado** (*optimized media*) — Una copia del clip en un codec fácil de
+  leer que Resolve genera y guarda en su carpeta de caché, y que sustituye al original
+  mientras montas. A diferencia de un proxy, no viaja a otro equipo.
 - **Metadata** (*metadata*) — La información que describe un clip. La que trae el
   archivo (codec, resolución, fecha, cámara) se lee; la que escribes tú (`Description`,
   `Keywords`, `Scene`, `Shot`, `Take`) se guarda en el proyecto, no dentro del `.mp4`, y
@@ -194,6 +223,9 @@ de toda la documentación del mundo.
   una biblioteca local. No se toca a mano nunca.
 - **Proxy** (*proxy media*) — Copias en baja resolución que sustituyen a los originales
   mientras editas, y que se cambian por los buenos al renderizar.
+- **`Proxy Handling`** (*Playback > Proxy Handling*) — El interruptor de reproducción
+  que decide si Resolve prefiere los proxies, prefiere el material original o los ignora.
+  Es la forma de comprobar que los proxies están funcionando.
 
 ## Q
 
@@ -249,6 +281,9 @@ de toda la documentación del mundo.
   colocados en el tiempo.
 - **Timeline frame rate** (*Timeline frame rate*) — Cuántos frames por segundo tiene tu
   pieza. El único ajuste irreversible: se congela con el primer clip del media pool.
+- **`Timeline Proxy Mode`** (*Timeline Proxy Mode*) — El ajuste que reduce al vuelo la
+  resolución de cálculo de la timeline, sin generar ningún archivo. Es la solución
+  instantánea y la de peor imagen; no sustituye a proxies ni a optimizados.
 - **Trimming** (*trimming*) — Ajustar con precisión dónde empieza y dónde acaba cada
   clip en la timeline.
 

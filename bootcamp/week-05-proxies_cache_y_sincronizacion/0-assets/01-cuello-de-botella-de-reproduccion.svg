@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" width="880" height="420" role="img"
+     aria-label="Diagrama de los tres cuellos de botella de la reproduccion: descomprimir el codec, leer del disco y calcular los efectos. Cada uno tiene su sintoma y su solucion: medios optimizados, proxies y cache de render.">
+  <title>Los tres cuellos de botella de la reproducción</title>
+  <style>
+    .bg   { fill: #101418; }
+    .surf { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .surf2{ fill: #232b34; stroke: #2f3a45; stroke-width: 1; }
+    .t    { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h    { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .lbl  { font-size: 13px; font-weight: 600; fill: #e8eef4; }
+    .s    { font-size: 12px; fill: #93a1b0; }
+    .ok   { font-size: 12px; font-weight: 600; fill: #3fb950; }
+  </style>
+
+  <rect class="bg" width="880" height="420"/>
+  <text class="t h" x="40" y="38">Enseñar un fotograma cuesta tres cosas, y cada una se atasca por su lado</text>
+
+  <rect class="surf" x="40" y="60" width="800" height="96" rx="6"/>
+  <text class="t lbl" x="60" y="86">La cadena, de izquierda a derecha</text>
+
+  <rect class="surf2" x="60" y="100" width="170" height="40" rx="4"/>
+  <text class="t s" x="76" y="125">Leer del disco</text>
+  <path d="M238 120 L266 120" stroke="#4a9eff" stroke-width="2"/>
+  <path d="M260 114 L268 120 L260 126 Z" fill="#4a9eff"/>
+
+  <rect class="surf2" x="276" y="100" width="190" height="40" rx="4"/>
+  <text class="t s" x="292" y="125">Descomprimir el codec</text>
+  <path d="M474 120 L502 120" stroke="#4a9eff" stroke-width="2"/>
+  <path d="M496 114 L504 120 L496 126 Z" fill="#4a9eff"/>
+
+  <rect class="surf2" x="512" y="100" width="170" height="40" rx="4"/>
+  <text class="t s" x="528" y="125">Calcular los efectos</text>
+  <path d="M690 120 L718 120" stroke="#4a9eff" stroke-width="2"/>
+  <path d="M712 114 L720 120 L712 126 Z" fill="#4a9eff"/>
+
+  <rect class="surf2" x="728" y="100" width="92" height="40" rx="4"/>
+  <text class="t s" x="744" y="125">Al visor</text>
+
+  <rect class="surf" x="40" y="176" width="256" height="152" rx="6"/>
+  <rect x="40" y="176" width="4" height="152" fill="#f5a524"/>
+  <text class="t lbl" x="62" y="204">1 · Descompresión</text>
+  <text class="t s"   x="62" y="226">Síntoma: va mal desde</text>
+  <text class="t s"   x="62" y="244">el primer día, sin efectos</text>
+  <text class="t s"   x="62" y="268">Causa: long-GOP, H.264</text>
+  <text class="t s"   x="62" y="286">o H.265 de cámara</text>
+  <text class="t ok"  x="62" y="312">Medios optimizados o proxies</text>
+
+  <rect class="surf" x="312" y="176" width="256" height="152" rx="6"/>
+  <rect x="312" y="176" width="4" height="152" fill="#f5a524"/>
+  <text class="t lbl" x="334" y="204">2 · Disco</text>
+  <text class="t s"   x="334" y="226">Síntoma: un clip va bien,</text>
+  <text class="t s"   x="334" y="244">cuatro pistas van mal</text>
+  <text class="t s"   x="334" y="268">Causa: el disco no da</text>
+  <text class="t s"   x="334" y="286">para tantos flujos a la vez</text>
+  <text class="t ok"  x="334" y="312">Proxies, que además pesan menos</text>
+
+  <rect class="surf" x="584" y="176" width="256" height="152" rx="6"/>
+  <rect x="584" y="176" width="4" height="152" fill="#f5a524"/>
+  <text class="t lbl" x="606" y="204">3 · Efectos</text>
+  <text class="t s"   x="606" y="226">Síntoma: iba bien hasta</text>
+  <text class="t s"   x="606" y="244">que añadiste una corrección</text>
+  <text class="t s"   x="606" y="268">Causa: hay que calcular</text>
+  <text class="t s"   x="606" y="286">algo 24 veces por segundo</text>
+  <text class="t ok"  x="606" y="312">Caché de render</text>
+
+  <rect class="surf" x="40" y="348" width="800" height="48" rx="6"/>
+  <text class="t s" x="60" y="378">Diagnostica antes de generar: cada solución arregla un cuello y no toca los otros dos.</text>
+</svg>

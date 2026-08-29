@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img"
+     aria-label="Diagrama de un clip multicamara: tres angulos de la misma escena empiezan en momentos distintos, la sincronizacion calcula un desplazamiento por angulo y el resultado es un unico elemento del media pool con los tres alineados y una fuente de audio fija.">
+  <title>Cómo se construye un clip multicámara</title>
+  <style>
+    .bg   { fill: #101418; }
+    .surf { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .surf2{ fill: #232b34; stroke: #2f3a45; stroke-width: 1; }
+    .t    { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h    { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .lbl  { font-size: 13px; font-weight: 600; fill: #e8eef4; }
+    .s    { font-size: 12px; fill: #93a1b0; }
+    .ok   { font-size: 12px; font-weight: 600; fill: #3fb950; }
+  </style>
+
+  <rect class="bg" width="880" height="400"/>
+  <text class="t h" x="40" y="38">Tres archivos que empiezan cuando les da la gana, y un clip que los alinea</text>
+
+  <rect class="surf" x="40" y="62" width="800" height="140" rx="6"/>
+  <text class="t lbl" x="60" y="88">Antes · tres grabaciones independientes</text>
+
+  <text class="t s" x="60" y="118">Ángulo 1</text>
+  <rect class="surf2" x="140" y="104" width="440" height="20" rx="3"/>
+  <text class="t s" x="60" y="150">Ángulo 2</text>
+  <rect class="surf2" x="196" y="136" width="470" height="20" rx="3"/>
+  <text class="t s" x="60" y="182">Ángulo 3</text>
+  <rect class="surf2" x="120" y="168" width="510" height="20" rx="3"/>
+
+  <rect class="surf" x="40" y="222" width="800" height="76" rx="6"/>
+  <text class="t lbl" x="60" y="248">Sincronización · por timecode, por sonido, por puntos de entrada o por marcadores</text>
+  <text class="t s"   x="60" y="272">Calcula un desplazamiento por ángulo. Con material de aficionado, el método por sonido es el que funciona.</text>
+  <text class="t s"   x="60" y="290">Todos los ángulos tienen que haber grabado audio, aunque sea con un micrófono malo: es la referencia.</text>
+
+  <rect class="surf" x="40" y="318" width="800" height="60" rx="6"/>
+  <rect x="40" y="318" width="4" height="60" fill="#3fb950"/>
+  <text class="t lbl" x="62" y="342">Después · un solo elemento del media pool, con los tres ángulos alineados</text>
+  <text class="t ok"  x="62" y="366">La fuente de audio se fija en el micrófono bueno: no sigue al ángulo activo.</text>
+</svg>

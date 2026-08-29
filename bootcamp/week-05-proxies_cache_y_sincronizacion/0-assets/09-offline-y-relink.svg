@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img"
+     aria-label="Diagrama del estado offline: el proyecto guarda una ruta al archivo; si la carpeta se mueve la ruta deja de ser valida y el clip queda offline, aunque los cortes, grados y metadata siguen en el proyecto. El relink busca por nombre de archivo en la carpeta que le indiques y restablece el enlace.">
+  <title>Por qué un clip queda offline y qué hace el relink</title>
+  <style>
+    .bg   { fill: #101418; }
+    .surf { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .surf2{ fill: #232b34; stroke: #2f3a45; stroke-width: 1; }
+    .t    { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h    { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .lbl  { font-size: 13px; font-weight: 600; fill: #e8eef4; }
+    .s    { font-size: 12px; fill: #93a1b0; }
+    .ok   { font-size: 12px; font-weight: 600; fill: #3fb950; }
+    .ko   { font-size: 12px; font-weight: 600; fill: #f85149; }
+  </style>
+
+  <rect class="bg" width="880" height="400"/>
+  <text class="t h" x="40" y="38">Offline es un enlace roto, no un archivo perdido</text>
+
+  <rect class="surf" x="40" y="62" width="800" height="92" rx="6"/>
+  <rect x="40" y="62" width="4" height="92" fill="#3fb950"/>
+  <text class="t lbl" x="62" y="88">Online</text>
+  <rect class="surf2" x="62" y="100" width="300" height="38" rx="4"/>
+  <text class="t s" x="78" y="124">Proyecto · ruta + cortes + grados</text>
+  <path d="M370 119 L446 119" stroke="#3fb950" stroke-width="2"/>
+  <path d="M440 113 L448 119 L440 125 Z" fill="#3fb950"/>
+  <rect class="surf2" x="456" y="100" width="362" height="38" rx="4"/>
+  <text class="t s" x="472" y="124">BC-Resolve/01-material/plano-07.mp4</text>
+
+  <rect class="surf" x="40" y="174" width="800" height="92" rx="6"/>
+  <rect x="40" y="174" width="4" height="92" fill="#f85149"/>
+  <text class="t lbl" x="62" y="200">Offline · moviste la carpeta, renombraste, o el disco no está conectado</text>
+  <rect class="surf2" x="62" y="212" width="300" height="38" rx="4"/>
+  <text class="t s" x="78" y="236">Proyecto · cortes y grados intactos</text>
+  <path d="M370 231 L410 231" stroke="#f85149" stroke-width="2"/>
+  <path d="M420 223 L436 239 M436 223 L420 239" stroke="#f85149" stroke-width="2"/>
+  <path d="M446 231 L446 231" stroke="#f85149" stroke-width="2"/>
+  <rect class="surf2" x="456" y="212" width="362" height="38" rx="4"/>
+  <text class="t ko" x="472" y="236">la ruta ya no existe</text>
+
+  <rect class="surf" x="40" y="286" width="800" height="88" rx="6"/>
+  <rect x="40" y="286" width="4" height="88" fill="#4a9eff"/>
+  <text class="t lbl" x="62" y="312">Relink · le señalas la carpeta nueva</text>
+  <text class="t s"   x="62" y="334">Resolve busca dentro por NOMBRE DE ARCHIVO y reenlaza todo lo que encuentre, de una sola pasada.</text>
+  <text class="t ok"  x="62" y="358">Por eso mover una carpeta se arregla en un minuto y renombrar archivos no se arregla nunca del todo.</text>
+</svg>

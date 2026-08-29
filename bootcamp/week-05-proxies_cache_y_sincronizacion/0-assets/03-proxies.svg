@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img"
+     aria-label="Diagrama comparativo entre proxy y medio optimizado: el proxy es un archivo en una carpeta elegida por el usuario que puede copiarse a otro equipo, mientras el optimizado vive escondido en la carpeta de cache de Resolve y no viaja.">
+  <title>Proxy frente a medio optimizado</title>
+  <style>
+    .bg   { fill: #101418; }
+    .surf { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .surf2{ fill: #232b34; stroke: #2f3a45; stroke-width: 1; }
+    .t    { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h    { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .lbl  { font-size: 13px; font-weight: 600; fill: #e8eef4; }
+    .s    { font-size: 12px; fill: #93a1b0; }
+    .ok   { font-size: 12px; font-weight: 600; fill: #3fb950; }
+    .ko   { font-size: 12px; font-weight: 600; fill: #f85149; }
+  </style>
+
+  <rect class="bg" width="880" height="400"/>
+  <text class="t h" x="40" y="38">La diferencia no es el codec: es de quién es el archivo</text>
+
+  <rect class="surf" x="40" y="62" width="392" height="196" rx="6"/>
+  <rect x="40" y="62" width="4" height="196" fill="#3fb950"/>
+  <text class="t lbl" x="62" y="88">Proxy</text>
+  <rect class="surf2" x="62" y="104" width="348" height="60" rx="4"/>
+  <text class="t s" x="78" y="126">tu-disco/proyecto/proxies/</text>
+  <text class="t s" x="78" y="146">entrevista_proxy.mov · media resolución</text>
+  <text class="t s"  x="62" y="188">Carpeta que eliges tú. Se puede generar fuera</text>
+  <text class="t s"  x="62" y="206">de Resolve y vincular con Link Proxy Media.</text>
+  <text class="t ok" x="62" y="232">Se copia a otro equipo y sigue funcionando.</text>
+
+  <rect class="surf" x="448" y="62" width="392" height="196" rx="6"/>
+  <rect x="448" y="62" width="4" height="196" fill="#f5a524"/>
+  <text class="t lbl" x="470" y="88">Medio optimizado</text>
+  <rect class="surf2" x="470" y="104" width="348" height="60" rx="4"/>
+  <text class="t s" x="486" y="126">carpeta de caché de Resolve</text>
+  <text class="t s" x="486" y="146">nombres internos · los gestiona el programa</text>
+  <text class="t s"  x="470" y="188">No se genera fuera y no se vincula a mano.</text>
+  <text class="t s"  x="470" y="206">Cero gestión mientras trabajes en un equipo.</text>
+  <text class="t ko" x="470" y="232">No viaja: en otro equipo se genera de nuevo.</text>
+
+  <rect class="surf" x="40" y="278" width="800" height="94" rx="6"/>
+  <text class="t lbl" x="62" y="304">Regla del proxy hecho por tu cuenta</text>
+  <text class="t s"   x="62" y="326">Misma duración, mismo frame rate y mismo timecode de inicio que el original. Solo cambia resolución y codec.</text>
+  <text class="t ko"  x="62" y="348">Un fotograma de más al principio desplaza todo el montaje al volver al material de cámara.</text>
+</svg>

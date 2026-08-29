@@ -1,0 +1,62 @@
+{
+  "semana": "05",
+  "titulo": "Proxies, cache y sincronizacion",
+  "checks": [
+    {
+      "id": "proyecto-abierto",
+      "descripcion": "BC-Bootcamp-Resolve es el proyecto abierto ahora mismo",
+      "op": "ping",
+      "args": {},
+      "expr": "r.get('project') == 'BC-Bootcamp-Resolve'",
+      "pista": "Abrelo desde el Project Manager, en la raiz de tu biblioteca original. Si te quedaste en BC-Pruebas-semana05 despues del simulacro de relink de la practica 04, vuelve: los checks leen el proyecto abierto, no el que exista."
+    },
+    {
+      "id": "frame-rate-bloqueado",
+      "descripcion": "El timeline frame rate de BC-Bootcamp-Resolve sigue siendo 24 fps",
+      "op": "project_settings",
+      "args": {},
+      "expr": "float(r['settings']['timelineFrameRate']) == 24.0",
+      "pista": "File > Project Settings > Master Settings > Timeline frame rate. Con clips en el media pool el campo aparece atenuado y no se puede cambiar, asi que si te sale otro valor el proyecto abierto no es el del bootcamp."
+    },
+    {
+      "id": "bin-multicamara",
+      "descripcion": "El bin 03-Multicamara tiene tres clips o mas",
+      "op": "media_list",
+      "args": { "bin": ["03-Multicamara"] },
+      "expr": "len([c for c in r['clips'] if c['path']]) >= 3",
+      "pista": "Practica 03, paso 1. El nombre es exacto: 03-Multicamara, sin tilde y con la M mayuscula. Selecciona el bin ANTES de arrastrar los archivos desde Media Storage. Si no tienes material de tres angulos, el paso 0 de esa practica explica como grabarlo con un movil en quince minutos."
+    },
+    {
+      "id": "timeline-sync-existe",
+      "descripcion": "Existe la timeline BC-Sync-v1",
+      "op": "timeline_list",
+      "args": {},
+      "expr": "'BC-Sync-v1' in r['timelines']",
+      "pista": "Practica 03, paso 4. El nombre es exacto: BC-Sync-v1, con guiones y la uve minuscula. Se crea a partir del clip ya sincronizado, no del clip de camara suelto."
+    },
+    {
+      "id": "timeline-sync-audio",
+      "descripcion": "La timeline BC-Sync-v1 esta abierta y tiene dos pistas de audio o mas",
+      "op": "timeline_probe",
+      "args": {},
+      "expr": "r['name'] == 'BC-Sync-v1' and r['audio_tracks'] >= 2",
+      "pista": "Practica 03, pasos 2 y 4. timeline_probe lee la timeline ACTIVA: abre BC-Sync-v1 con doble clic en el media pool antes de verificar. Las dos pistas salen de haber elegido la opcion que anade el audio bueno en lugar de sustituir el de camara."
+    },
+    {
+      "id": "bin-subclips",
+      "descripcion": "El bin 11-Subclips tiene cinco subclips o mas",
+      "op": "media_list",
+      "args": { "bin": ["11-Subclips"] },
+      "expr": "len([c for c in r['clips'] if c['path']]) >= 5",
+      "pista": "Practica 04, pasos 1 a 4. El bin se llama 11-Subclips y cuelga de Master. Selecciona ese bin como activo antes de crear cada subclip: caen en el bin activo. Un bin que no existe devuelve lo mismo que uno vacio, asi que comprueba las dos cosas."
+    },
+    {
+      "id": "master-limpio",
+      "descripcion": "El bin Master no tiene ningun clip suelto: solo bins y timelines",
+      "op": "media_list",
+      "args": { "bin": ["Master"] },
+      "expr": "len([c for c in r['clips'] if c['path']]) == 0",
+      "pista": "Practica 04, paso 11. Lo que suele colarse esta semana es el clip sincronizado de la practica 03 o algun subclip: muevelos a 03-Multicamara y a 11-Subclips. Las timelines no cuentan, porque no tienen ruta de archivo."
+    }
+  ]
+}

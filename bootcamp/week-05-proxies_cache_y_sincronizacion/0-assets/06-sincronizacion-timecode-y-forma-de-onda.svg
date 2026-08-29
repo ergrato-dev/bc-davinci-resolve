@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" width="880" height="420" role="img"
+     aria-label="Diagrama de los dos metodos de sincronizacion: por timecode, alineando dos relojes que marcan la misma hora, y por forma de onda, buscando el desplazamiento en el que las dos siluetas del audio coinciden.">
+  <title>Sincronizar por timecode o por forma de onda</title>
+  <style>
+    .bg   { fill: #101418; }
+    .surf { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .surf2{ fill: #232b34; stroke: #2f3a45; stroke-width: 1; }
+    .t    { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h    { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .lbl  { font-size: 13px; font-weight: 600; fill: #e8eef4; }
+    .s    { font-size: 12px; fill: #93a1b0; }
+    .m    { font-size: 12px; fill: #e8eef4; }
+  </style>
+
+  <rect class="bg" width="880" height="420"/>
+  <text class="t h" x="40" y="38">Dos maneras de juntar la imagen de un aparato con el sonido de otro</text>
+
+  <rect class="surf" x="40" y="62" width="800" height="150" rx="6"/>
+  <rect x="40" y="62" width="4" height="150" fill="#4a9eff"/>
+  <text class="t lbl" x="62" y="88">Por timecode · si los relojes se igualaron antes de grabar</text>
+
+  <rect class="surf2" x="62" y="104" width="756" height="34" rx="4"/>
+  <text class="t s" x="78" y="126">Cámara</text>
+  <text class="t m" x="180" y="126">10:04:12:00</text>
+  <text class="t m" x="330" y="126">10:04:13:00</text>
+  <text class="t m" x="480" y="126">10:04:14:00</text>
+  <text class="t m" x="630" y="126">10:04:15:00</text>
+
+  <rect class="surf2" x="62" y="146" width="756" height="34" rx="4"/>
+  <text class="t s" x="78" y="168">Grabadora</text>
+  <text class="t m" x="180" y="168">10:04:12:00</text>
+  <text class="t m" x="330" y="168">10:04:13:00</text>
+  <text class="t m" x="480" y="168">10:04:14:00</text>
+  <text class="t m" x="630" y="168">10:04:15:00</text>
+
+  <text class="t s" x="62" y="200">Se alinean los fotogramas con la misma marca. Instantáneo, exacto, y funciona aunque no haya sonido.</text>
+
+  <rect class="surf" x="40" y="232" width="800" height="150" rx="6"/>
+  <rect x="40" y="232" width="4" height="150" fill="#3fb950"/>
+  <text class="t lbl" x="62" y="258">Por forma de onda · si no hubo relojes igualados</text>
+
+  <text class="t s" x="62" y="292">Cámara</text>
+  <polyline points="150,292 180,278 200,300 226,268 250,300 274,284 300,296 330,272 360,300 390,288 420,296"
+            fill="none" stroke="#93a1b0" stroke-width="2"/>
+
+  <text class="t s" x="62" y="336">Grabadora</text>
+  <polyline points="186,336 216,322 236,344 262,312 286,344 310,328 336,340 366,316 396,344 426,332 456,340"
+            fill="none" stroke="#3fb950" stroke-width="2"/>
+
+  <path d="M150 356 L186 356" stroke="#f5a524" stroke-width="2"/>
+  <text class="t s" x="196" y="360">desplazamiento que encaja las dos siluetas</text>
+  <text class="t s" x="520" y="292">Necesita que los dos archivos tengan audio</text>
+  <text class="t s" x="520" y="312">y que ese audio se parezca. El de la cámara</text>
+  <text class="t s" x="520" y="332">no se usa en el montaje: es la referencia</text>
+  <text class="t s" x="520" y="352">que permite encontrar el desplazamiento.</text>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img"
+     aria-label="Diagrama de la carpeta de trabajo de Resolve con sus tres inquilinos: cache de render, medios optimizados y proxies generados. Ninguno contiene trabajo irreemplazable. Al lado, las carpetas de material y de biblioteca de proyectos, que si contienen trabajo y no deben borrarse.">
+  <title>Qué hay en la carpeta de trabajo y qué no</title>
+  <style>
+    .bg   { fill: #101418; }
+    .surf { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .surf2{ fill: #232b34; stroke: #2f3a45; stroke-width: 1; }
+    .t    { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h    { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .lbl  { font-size: 13px; font-weight: 600; fill: #e8eef4; }
+    .s    { font-size: 12px; fill: #93a1b0; }
+    .ok   { font-size: 12px; font-weight: 600; fill: #3fb950; }
+    .ko   { font-size: 12px; font-weight: 600; fill: #f85149; }
+  </style>
+
+  <rect class="bg" width="880" height="400"/>
+  <text class="t h" x="40" y="38">Dos carpetas que se parecen y no se parecen en nada</text>
+
+  <rect class="surf" x="40" y="62" width="392" height="240" rx="6"/>
+  <rect x="40" y="62" width="4" height="240" fill="#3fb950"/>
+  <text class="t lbl" x="62" y="88">Working Folder · lo generado</text>
+
+  <rect class="surf2" x="62" y="104" width="348" height="40" rx="4"/>
+  <text class="t s" x="78" y="129">Caché de render · tramos ya calculados</text>
+  <rect class="surf2" x="62" y="152" width="348" height="40" rx="4"/>
+  <text class="t s" x="78" y="177">Medios optimizados · copias de clips</text>
+  <rect class="surf2" x="62" y="200" width="348" height="40" rx="4"/>
+  <text class="t s" x="78" y="225">Proxies generados por Resolve</text>
+
+  <text class="t ok" x="62" y="268">Se puede borrar entera con Resolve cerrado.</text>
+  <text class="t s"  x="62" y="288">Se pierde tiempo de generación, nunca trabajo.</text>
+
+  <rect class="surf" x="448" y="62" width="392" height="240" rx="6"/>
+  <rect x="448" y="62" width="4" height="240" fill="#f85149"/>
+  <text class="t lbl" x="470" y="88">Material y biblioteca · lo tuyo</text>
+
+  <rect class="surf2" x="470" y="104" width="348" height="40" rx="4"/>
+  <text class="t s" x="486" y="129">BC-Resolve/01-material/ · los archivos</text>
+  <rect class="surf2" x="470" y="152" width="348" height="40" rx="4"/>
+  <text class="t s" x="486" y="177">Biblioteca de proyectos · cortes y grados</text>
+  <rect class="surf2" x="470" y="200" width="348" height="40" rx="4"/>
+  <text class="t s" x="486" y="225">04-respaldos/ · los .drp exportados</text>
+
+  <text class="t ko" x="470" y="268">Aquí sí se pierde trabajo, y no se recupera.</text>
+  <text class="t s"  x="470" y="288">Comprueba la ruta antes de borrar nada.</text>
+
+  <rect class="surf" x="40" y="322" width="800" height="50" rx="6"/>
+  <text class="t s" x="62" y="352">Regla de espacio para el bootcamp: reserva para lo generado el doble de lo que pesa tu material.</text>
+</svg>

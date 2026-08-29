@@ -74,7 +74,34 @@ terceros.
 
 ---
 
-_Las semanas 05 a 36 añadirán aquí sus trucos según se publiquen._
+## Semana 05 — Proxies, caché y sincronización
+
+| Truco | Cómo |
+| ----- | ---- |
+| Saber en tres minutos cuál de los tres cuellos de botella tienes | Clip solo, cuatro pistas, y clip con un cambio de `Zoom`. Mira el contador de fps en cada prueba |
+| Comprobar que los medios optimizados se usan de verdad | Activa y desactiva `Playback > Use Optimized Media if Available` mientras reproduces |
+| Comprobar que los proxies se usan | Cambia de opción en `Playback > Proxy Handling` mientras reproduces |
+| Estimar el espacio antes de una tanda grande | Genera un clip, mira lo que ocupa y multiplica por el número de clips |
+| Salir del paso sin generar ningún archivo | `Playback > Timeline Proxy Mode` a media o a un cuarto de resolución |
+| Ver si la caché está trabajando | La franja fina bajo la regla de tiempo de la timeline |
+| Cachear solo lo pesado | `Playback > Render Cache > User` y marca los tramos que quieras |
+| Hacer sitio sin perder lo que estás usando | `Playback > Delete Render Cache`, con la opción de borrar solo lo no usado |
+| Que la caché no compita con tu material | La carpeta de trabajo, en un disco distinto del material |
+| Sincronía a prueba de todo, y gratis | Da una palmada delante de las cámaras al empezar cada toma |
+| Comprobar la sincronía al fotograma | Busca una "p" o una "t": el pico de la onda y el cierre de labios, en el mismo fotograma |
+| Diagnosticar una deriva en diez segundos | Comprueba el principio y el final del mismo clip |
+| Conservar el audio de referencia sin que moleste | Añade el audio bueno como pista extra y silencia la pista de cámara |
+| Sincronizar cuando no hubo relojes igualados | Método por sonido o por forma de onda: es el que funciona con material de aficionado |
+| Marcar entrada y salida sin ratón | `I` y `O` en el visor de origen. Funciona en todas las páginas |
+| Comprobar que un subclip no duplica nada | Vista de lista, columna `File Path`: comparte la ruta de su clip padre |
+| Encontrar un subclip dentro de un mes | Nómbralo con la frase que dice, no con el número que le pone Resolve |
+| Reenlazar cien clips de una vez | Relink sobre toda la selección y señala la carpeta raíz: busca dentro por nombre de archivo |
+| Practicar el relink sin riesgo | En un proyecto de pruebas, desenlazando clips a propósito |
+| Saber si el problema son los proxies y no el equipo | Si el material está online y aun así va a saltos, mira el vínculo de los proxies |
+
+---
+
+_Las semanas 06 a 36 añadirán aquí sus trucos según se publiquen._
 
 ---
 

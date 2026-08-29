@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img"
+     aria-label="Diagrama de la cache de render: la cadena de calculo de un fotograma con clip, efectos, color y composicion se ejecuta una sola vez y su resultado se guarda en disco, de modo que la reproduccion posterior lee el resultado ya calculado. Tocar cualquier eslabon invalida lo cacheado.">
+  <title>Qué guarda la caché de render</title>
+  <style>
+    .bg   { fill: #101418; }
+    .surf { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .surf2{ fill: #232b34; stroke: #2f3a45; stroke-width: 1; }
+    .t    { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h    { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .lbl  { font-size: 13px; font-weight: 600; fill: #e8eef4; }
+    .s    { font-size: 12px; fill: #93a1b0; }
+    .ok   { font-size: 12px; font-weight: 600; fill: #3fb950; }
+    .am   { font-size: 12px; font-weight: 600; fill: #f5a524; }
+  </style>
+
+  <rect class="bg" width="880" height="400"/>
+  <text class="t h" x="40" y="38">La caché no guarda el clip: guarda el resultado de calcularlo todo</text>
+
+  <rect class="surf" x="40" y="62" width="800" height="112" rx="6"/>
+  <text class="t lbl" x="60" y="88">Sin caché · esta cadena se ejecuta 24 veces por segundo, cada vez que pasas</text>
+
+  <rect class="surf2" x="60" y="104" width="150" height="44" rx="4"/>
+  <text class="t s" x="76" y="131">Clip</text>
+  <path d="M218 126 L246 126" stroke="#4a9eff" stroke-width="2"/>
+  <path d="M240 120 L248 126 L240 132 Z" fill="#4a9eff"/>
+  <rect class="surf2" x="256" y="104" width="150" height="44" rx="4"/>
+  <text class="t s" x="272" y="131">Efectos</text>
+  <path d="M414 126 L442 126" stroke="#4a9eff" stroke-width="2"/>
+  <path d="M436 120 L444 126 L436 132 Z" fill="#4a9eff"/>
+  <rect class="surf2" x="452" y="104" width="150" height="44" rx="4"/>
+  <text class="t s" x="468" y="131">Color</text>
+  <path d="M610 126 L638 126" stroke="#4a9eff" stroke-width="2"/>
+  <path d="M632 120 L640 126 L632 132 Z" fill="#4a9eff"/>
+  <rect class="surf2" x="648" y="104" width="172" height="44" rx="4"/>
+  <text class="t s" x="664" y="131">Composición de pistas</text>
+
+  <rect class="surf" x="40" y="194" width="800" height="112" rx="6"/>
+  <text class="t lbl" x="60" y="220">Con caché · la cadena se ejecuta una vez y el resultado queda en disco</text>
+  <rect class="surf2" x="60" y="236" width="500" height="44" rx="4"/>
+  <rect x="60" y="236" width="4" height="44" fill="#3fb950"/>
+  <text class="t s" x="80" y="263">Tramo ya calculado, escrito en la carpeta de caché</text>
+  <path d="M568 258 L596 258" stroke="#3fb950" stroke-width="2"/>
+  <path d="M590 252 L598 258 L590 264 Z" fill="#3fb950"/>
+  <rect class="surf2" x="606" y="236" width="214" height="44" rx="4"/>
+  <text class="t ok" x="622" y="263">Se reproduce como un archivo</text>
+
+  <rect class="surf" x="40" y="326" width="800" height="48" rx="6"/>
+  <text class="t am" x="60" y="356">Tocar cualquier eslabón invalida lo cacheado: se cachea lo que ya está decidido, no lo que aún estás probando.</text>
+</svg>
