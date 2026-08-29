@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" width="880" height="420" role="img"
+     aria-label="A la izquierda, tres discos de obturador con sectores abiertos de 45, 180 y 360 grados. A la derecha, para cada uno, el tiempo de exposición a 24 fotogramas por segundo y la cantidad de desenfoque de movimiento resultante, representada como una estela más o menos larga. El de 180 grados está marcado como estándar.">
+  <title>Ángulo de obturador, tiempo de exposición y desenfoque de movimiento</title>
+  <style>
+    .bg    { fill: #101418; }
+    .surf  { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .t     { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h     { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .s     { font-size: 12px; fill: #93a1b0; }
+    .lbl   { font-size: 14px; font-weight: 600; fill: #e8eef4; }
+    .mono  { font-size: 13px; font-weight: 600; fill: #4a9eff; }
+    .disc  { fill: #232b34; stroke: #2f3a45; stroke-width: 1.5; }
+    .open  { fill: #4a9eff; }
+  </style>
+
+  <rect class="bg" width="880" height="420"/>
+
+  <text class="t h" x="40" y="38">El ángulo abierto del obturador decide cuánto desenfoque tiene cada frame</text>
+  <text class="t s" x="40" y="58">Ejemplos calculados a 24 fps · exposición = 1 / (fps × 360 / ángulo)</text>
+
+  <!-- Cabecera de columnas -->
+  <text class="t s" x="120" y="94" text-anchor="middle">obturador</text>
+  <text class="t s" x="290" y="94" text-anchor="middle">ángulo</text>
+  <text class="t s" x="440" y="94" text-anchor="middle">exposición a 24 fps</text>
+  <text class="t s" x="690" y="94" text-anchor="middle">desenfoque resultante</text>
+
+  <!-- Fila 45 grados -->
+  <g>
+    <circle class="disc" cx="120" cy="150" r="34"/>
+    <path class="open" d="M120,150 L154,150 A34,34 0 0,0 144,126 z"/>
+    <text class="t lbl"  x="290" y="145" text-anchor="middle">45°</text>
+    <text class="t s"    x="290" y="163" text-anchor="middle">nítido, entrecortado</text>
+    <text class="t mono" x="440" y="145" text-anchor="middle">1/192 s</text>
+    <text class="t s"    x="440" y="163" text-anchor="middle">1/8 del frame</text>
+    <rect class="surf" x="586" y="132" width="208" height="34" rx="4"/>
+    <circle cx="700" cy="149" r="7" fill="#4a9eff"/>
+    <rect x="690" y="146" width="10" height="6" fill="#4a9eff" opacity="0.35"/>
+  </g>
+
+  <!-- Fila 180 grados -->
+  <g>
+    <rect x="40" y="200" width="800" height="90" rx="6" fill="#191f26" stroke="#4a9eff" stroke-width="1.5"/>
+    <circle class="disc" cx="120" cy="245" r="34"/>
+    <path class="open" d="M120,245 L154,245 A34,34 0 0,0 86,245 z"/>
+    <text class="t lbl"  x="290" y="238" text-anchor="middle">180° — estándar</text>
+    <text class="t s"    x="290" y="256" text-anchor="middle">el aspecto al que el ojo está acostumbrado</text>
+    <text class="t mono" x="440" y="238" text-anchor="middle">1/48 s</text>
+    <text class="t s"    x="440" y="256" text-anchor="middle">medio frame</text>
+    <rect class="surf" x="586" y="228" width="208" height="34" rx="4"/>
+    <circle cx="710" cy="245" r="7" fill="#4a9eff"/>
+    <rect x="662" y="242" width="48" height="6" fill="#4a9eff" opacity="0.45"/>
+  </g>
+
+  <!-- Fila 360 grados -->
+  <g>
+    <circle class="disc" cx="120" cy="340" r="34"/>
+    <circle class="open" cx="120" cy="340" r="34"/>
+    <text class="t lbl"  x="290" y="335" text-anchor="middle">360°</text>
+    <text class="t s"    x="290" y="353" text-anchor="middle">borroso, onírico</text>
+    <text class="t mono" x="440" y="335" text-anchor="middle">1/24 s</text>
+    <text class="t s"    x="440" y="353" text-anchor="middle">el frame entero</text>
+    <rect class="surf" x="586" y="322" width="208" height="34" rx="4"/>
+    <circle cx="770" cy="339" r="7" fill="#4a9eff"/>
+    <rect x="606" y="336" width="164" height="6" fill="#4a9eff" opacity="0.5"/>
+  </g>
+
+  <text class="t s" x="40" y="398" fill="#f5a524">Si hay demasiada luz, la solución es un filtro ND — no subir el obturador y perder el desenfoque.</text>
+</svg>

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img"
+     aria-label="Dos secuencias de timecode comparadas al cruzar el minuto uno. Arriba, non drop frame: tras 00:00:59:29 viene 00:01:00:00. Abajo, drop frame: tras 00:00:59:29 se saltan los números 00 y 01 y viene directamente 00:01:00:02. Debajo, la cuenta de por qué son 108 números saltados por hora y la aclaración de que no se borra ninguna imagen.">
+  <title>Drop frame: qué números se saltan y por qué</title>
+  <style>
+    .bg    { fill: #101418; }
+    .surf  { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .t     { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h     { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .s     { font-size: 12px; fill: #93a1b0; }
+    .lbl   { font-size: 13px; font-weight: 600; fill: #e8eef4; }
+    .tc    { font-size: 14px; font-weight: 600; fill: #e8eef4; }
+    .cut   { font-size: 14px; font-weight: 600; fill: #f85149; }
+  </style>
+
+  <rect class="bg" width="880" height="400"/>
+
+  <text class="t h" x="40" y="38">Qué pasa al cruzar el minuto, a 29.97 fps</text>
+  <text class="t s" x="40" y="58">El drop frame salta números de etiqueta para que el timecode cuadre con el reloj de pared</text>
+
+  <!-- Non drop frame -->
+  <text class="t lbl" x="40" y="98">Non-drop frame (NDF)</text>
+  <text class="t s"   x="40" y="115">se cuenta todo · el timecode se adelanta al reloj</text>
+  <rect class="surf" x="300" y="80" width="540" height="46" rx="4"/>
+  <text class="t tc" x="330" y="109">00:00:59:29</text>
+  <text class="t s"  x="440" y="109">→</text>
+  <text class="t tc" x="470" y="109" fill="#3fb950">00:01:00:00</text>
+  <text class="t s"  x="580" y="109">→</text>
+  <text class="t tc" x="610" y="109" fill="#3fb950">00:01:00:01</text>
+  <text class="t s"  x="720" y="109">→</text>
+  <text class="t tc" x="750" y="109">00:01:00:02</text>
+
+  <!-- Drop frame -->
+  <text class="t lbl" x="40" y="178">Drop frame (DF)</text>
+  <text class="t s"   x="40" y="195">se salta el ;00 y el ;01 · el timecode cuadra con el reloj</text>
+  <rect class="surf" x="300" y="160" width="540" height="46" rx="4"/>
+  <text class="t tc"  x="330" y="189">00;00;59;29</text>
+  <text class="t s"   x="440" y="189">→</text>
+  <text class="t cut" x="470" y="189">00;01;00;00</text>
+  <text class="t s"   x="580" y="189">→</text>
+  <text class="t cut" x="610" y="189">00;01;00;01</text>
+  <text class="t s"   x="720" y="189">→</text>
+  <text class="t tc"  x="750" y="189">00;01;00;02</text>
+
+  <line x1="465" y1="196" x2="700" y2="176" stroke="#f85149" stroke-width="2"/>
+  <text class="t s" x="582" y="222" text-anchor="middle" fill="#f85149">estos dos números no se usan</text>
+
+  <!-- La cuenta -->
+  <rect class="surf" x="40" y="250" width="800" height="96" rx="6"/>
+  <text class="t lbl" x="70" y="278">Por qué cuadra la cuenta</text>
+  <text class="t s"   x="70" y="300">Se saltan 2 números al empezar cada minuto, salvo en los minutos 0, 10, 20, 30, 40 y 50.</text>
+  <text class="t s"   x="70" y="320">2 × (60 − 6) = 108 números por hora — exactamente el desfase entre contar a 30 y reproducir a 29.97.</text>
+  <text class="t s"   x="70" y="340" fill="#f5a524">No se borra ninguna imagen: todos los frames siguen ahí. Solo cambia cómo se numeran.</text>
+
+  <text class="t s" x="40" y="382">Solo afecta a material a 29.97 y 59.94 fps. A 24, 25 o 30 exactos, el drop frame no existe.</text>
+</svg>

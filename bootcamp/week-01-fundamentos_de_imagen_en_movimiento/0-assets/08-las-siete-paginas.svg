@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" width="880" height="420" role="img"
+     aria-label="Las siete páginas de DaVinci Resolve en fila, en el orden de sus botones: Media, Cut, Edit, Fusion, Color, Fairlight y Deliver. Cada una lleva su atajo de teclado de Shift más 2 a Shift más 8, lo que hace y las semanas del bootcamp que la cubren. Debajo, una flecha indica el flujo clásico de post-producción de izquierda a derecha, y una nota señala que el bootcamp las enseña en otro orden.">
+  <title>Las siete páginas de DaVinci Resolve</title>
+  <style>
+    .bg    { fill: #101418; }
+    .surf  { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .t     { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h     { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .s     { font-size: 12px; fill: #93a1b0; }
+    .name  { font-size: 14px; font-weight: 700; fill: #e8eef4; }
+    .key   { font-size: 11px; font-weight: 600; fill: #4a9eff; }
+    .wk    { font-size: 11px; fill: #93a1b0; }
+    .edge  { stroke: #2f3a45; stroke-width: 2; fill: none; }
+  </style>
+  <defs>
+    <marker id="a" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+      <path d="M0,0 L9,4.5 L0,9 z" fill="#2f3a45"/>
+    </marker>
+  </defs>
+
+  <rect class="bg" width="880" height="420"/>
+
+  <text class="t h" x="40" y="38">Una página por etapa de la post-producción</text>
+  <text class="t s" x="40" y="58">Los botones están abajo en la interfaz, en este mismo orden. Los atajos van con ellos</text>
+
+  <!-- Siete tarjetas -->
+  <g>
+    <rect class="surf" x="40"  y="86" width="106" height="152" rx="6"/>
+    <text class="t name" x="93"  y="112" text-anchor="middle">Media</text>
+    <text class="t key"  x="93"  y="130" text-anchor="middle">Shift+2</text>
+    <text class="t s"    x="93"  y="156" text-anchor="middle">ingesta y</text>
+    <text class="t s"    x="93"  y="172" text-anchor="middle">organización</text>
+    <text class="t wk"   x="93"  y="214" text-anchor="middle">Semanas 04-05</text>
+  </g>
+  <g>
+    <rect class="surf" x="156" y="86" width="106" height="152" rx="6"/>
+    <text class="t name" x="209" y="112" text-anchor="middle">Cut</text>
+    <text class="t key"  x="209" y="130" text-anchor="middle">Shift+3</text>
+    <text class="t s"    x="209" y="156" text-anchor="middle">montaje</text>
+    <text class="t s"    x="209" y="172" text-anchor="middle">rápido</text>
+    <text class="t wk"   x="209" y="214" text-anchor="middle">Semanas 06-07</text>
+  </g>
+  <g>
+    <rect class="surf" x="272" y="86" width="106" height="152" rx="6"/>
+    <text class="t name" x="325" y="112" text-anchor="middle">Edit</text>
+    <text class="t key"  x="325" y="130" text-anchor="middle">Shift+4</text>
+    <text class="t s"    x="325" y="156" text-anchor="middle">montaje de</text>
+    <text class="t s"    x="325" y="172" text-anchor="middle">precisión</text>
+    <text class="t wk"   x="325" y="214" text-anchor="middle">Semanas 08-12</text>
+  </g>
+  <g>
+    <rect class="surf" x="388" y="86" width="106" height="152" rx="6"/>
+    <text class="t name" x="441" y="112" text-anchor="middle" fill="#a371f7">Fusion</text>
+    <text class="t key"  x="441" y="130" text-anchor="middle">Shift+5</text>
+    <text class="t s"    x="441" y="156" text-anchor="middle">composición</text>
+    <text class="t s"    x="441" y="172" text-anchor="middle">y VFX</text>
+    <text class="t wk"   x="441" y="214" text-anchor="middle">Semanas 23-27</text>
+  </g>
+  <g>
+    <rect class="surf" x="504" y="86" width="106" height="152" rx="6"/>
+    <text class="t name" x="557" y="112" text-anchor="middle" fill="#f5a524">Color</text>
+    <text class="t key"  x="557" y="130" text-anchor="middle">Shift+6</text>
+    <text class="t s"    x="557" y="156" text-anchor="middle">etalonaje</text>
+    <text class="t wk"   x="557" y="214" text-anchor="middle">Semanas 16-22</text>
+  </g>
+  <g>
+    <rect class="surf" x="620" y="86" width="106" height="152" rx="6"/>
+    <text class="t name" x="673" y="112" text-anchor="middle" fill="#3fb950">Fairlight</text>
+    <text class="t key"  x="673" y="130" text-anchor="middle">Shift+7</text>
+    <text class="t s"    x="673" y="156" text-anchor="middle">audio y</text>
+    <text class="t s"    x="673" y="172" text-anchor="middle">mezcla</text>
+    <text class="t wk"   x="673" y="214" text-anchor="middle">Semanas 13-15</text>
+  </g>
+  <g>
+    <rect class="surf" x="736" y="86" width="106" height="152" rx="6"/>
+    <text class="t name" x="789" y="112" text-anchor="middle" fill="#4a9eff">Deliver</text>
+    <text class="t key"  x="789" y="130" text-anchor="middle">Shift+8</text>
+    <text class="t s"    x="789" y="156" text-anchor="middle">render y</text>
+    <text class="t s"    x="789" y="172" text-anchor="middle">entrega</text>
+    <text class="t wk"   x="789" y="214" text-anchor="middle">Semanas 28-29</text>
+  </g>
+
+  <!-- Flujo -->
+  <line class="edge" x1="40" y1="272" x2="842" y2="272" marker-end="url(#a)"/>
+  <text class="t s" x="40" y="296">El flujo clásico va de izquierda a derecha: no se etalona lo que no está montado, ni se mezcla lo que no está cerrado de imagen.</text>
+
+  <!-- Nota de orden del bootcamp -->
+  <rect class="surf" x="40" y="318" width="802" height="76" rx="6"/>
+  <text class="t h" x="70" y="344">El bootcamp las enseña en otro orden, a propósito</text>
+  <text class="t s" x="70" y="366">Fairlight antes que Color, porque el sonido pesa más en la percepción de calidad y su teoría es más corta.</text>
+  <text class="t s" x="70" y="384">Color antes que Fusion, porque llegar a Fusion con el grafo de nodos ya interiorizado lo hace mucho más fácil.</text>
+</svg>

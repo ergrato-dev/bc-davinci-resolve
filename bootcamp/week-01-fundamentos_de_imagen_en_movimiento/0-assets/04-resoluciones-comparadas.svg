@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 460" width="880" height="460" role="img"
+     aria-label="Rectángulos anidados a escala comparando SD 720 por 576, HD 1280 por 720, Full HD 1920 por 1080, UHD 3840 por 2160 y 4K DCI 4096 por 2160. El 4K DCI sobresale 256 píxeles por la derecha respecto a UHD, y esa diferencia está resaltada.">
+  <title>Resoluciones estándar comparadas a escala</title>
+  <style>
+    .bg    { fill: #101418; }
+    .t     { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h     { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .s     { font-size: 12px; fill: #93a1b0; }
+    .lbl   { font-size: 13px; font-weight: 600; fill: #e8eef4; }
+    .box   { fill: none; stroke-width: 2; }
+  </style>
+
+  <rect class="bg" width="880" height="460"/>
+
+  <text class="t h" x="40" y="38">Las resoluciones, a escala real entre ellas</text>
+  <text class="t s" x="40" y="58">Todas comparten esquina inferior izquierda. Escala: 1 píxel del diagrama = 5,3 píxeles reales</text>
+
+  <!-- Base y=420, origen x=40 -->
+  <!-- 4K DCI 4096x2160 -> 773 x 408 -->
+  <rect class="box" x="40" y="12" width="773" height="408" stroke="#f5a524"/>
+  <!-- UHD 3840x2160 -> 725 x 408 -->
+  <rect class="box" x="40" y="12" width="725" height="408" stroke="#4a9eff"/>
+  <!-- Full HD 1920x1080 -> 362 x 204 -->
+  <rect class="box" x="40" y="216" width="362" height="204" stroke="#3fb950"/>
+  <!-- HD 1280x720 -> 242 x 136 -->
+  <rect class="box" x="40" y="284" width="242" height="136" stroke="#a371f7"/>
+  <!-- SD 720x576 -> 136 x 109 -->
+  <rect class="box" x="40" y="311" width="136" height="109" stroke="#93a1b0"/>
+
+  <!-- Franja de diferencia UHD vs DCI -->
+  <rect x="765" y="12" width="48" height="408" fill="#f5a524" opacity="0.18"/>
+
+  <!-- Etiquetas -->
+  <text class="t lbl" x="52" y="330"  fill="#93a1b0">SD</text>
+  <text class="t s"   x="52" y="346"  fill="#93a1b0">720 × 576</text>
+
+  <text class="t lbl" x="190" y="303" fill="#a371f7">HD 720</text>
+  <text class="t s"   x="190" y="319" fill="#a371f7">1280 × 720</text>
+
+  <text class="t lbl" x="292" y="235" fill="#3fb950">Full HD 1080</text>
+  <text class="t s"   x="292" y="251" fill="#3fb950">1920 × 1080</text>
+
+  <text class="t lbl" x="590" y="36"  fill="#4a9eff">UHD — lo que casi todos llaman “4K”</text>
+  <text class="t s"   x="590" y="52"  fill="#4a9eff">3840 × 2160 · 16:9</text>
+
+  <text class="t lbl" x="590" y="392" fill="#f5a524">4K DCI — el 4K de cine</text>
+  <text class="t s"   x="590" y="408" fill="#f5a524">4096 × 2160 · 1.90:1</text>
+
+  <text class="t s" x="789" y="440" text-anchor="middle" fill="#f5a524">256 px</text>
+
+  <text class="t s" x="40" y="440">HD y UHD se nombran por la altura; 2K y 4K, por la anchura. No hay lógica: hay que saberlo.</text>
+</svg>

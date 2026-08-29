@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 260" width="880" height="260" role="img"
+     aria-label="Cabecera del Bootcamp DaVinci Resolve 21: las siete páginas del programa alineadas como una cadena de post-producción, de Media a Deliver">
+  <title>Bootcamp DaVinci Resolve 21 — Zero to Master</title>
+  <style>
+    .bg    { fill: #101418; }
+    .surf  { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .t     { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .title { font-size: 30px; font-weight: 700; fill: #e8eef4; }
+    .sub   { font-size: 14px; fill: #93a1b0; }
+    .page  { font-size: 12px; font-weight: 600; fill: #e8eef4; }
+    .num   { font-size: 10px; fill: #93a1b0; }
+    .edge  { stroke: #2f3a45; stroke-width: 2; fill: none; }
+  </style>
+
+  <rect class="bg" width="880" height="260"/>
+
+  <!-- Marca: tres barras RGB, sólidas, sin degradados -->
+  <rect x="48" y="46" width="10" height="46" rx="2" fill="#ff5f56"/>
+  <rect x="64" y="46" width="10" height="46" rx="2" fill="#4ade80"/>
+  <rect x="80" y="46" width="10" height="46" rx="2" fill="#5b9cff"/>
+
+  <text class="t title" x="112" y="70">Bootcamp DaVinci Resolve 21</text>
+  <text class="t sub"   x="112" y="92">36 semanas · 360 horas · de cero absoluto a postproductor autónomo</text>
+
+  <!-- Cadena de post-producción: las siete páginas -->
+  <line class="edge" x1="48" y1="168" x2="832" y2="168"/>
+
+  <g>
+    <rect class="surf" x="48"  y="144" width="98" height="48" rx="6"/>
+    <text class="t page" x="97"  y="167" text-anchor="middle">Media</text>
+    <text class="t num"  x="97"  y="183" text-anchor="middle">S04-05</text>
+  </g>
+  <g>
+    <rect class="surf" x="160" y="144" width="98" height="48" rx="6"/>
+    <text class="t page" x="209" y="167" text-anchor="middle">Cut</text>
+    <text class="t num"  x="209" y="183" text-anchor="middle">S06-07</text>
+  </g>
+  <g>
+    <rect class="surf" x="272" y="144" width="98" height="48" rx="6"/>
+    <text class="t page" x="321" y="167" text-anchor="middle">Edit</text>
+    <text class="t num"  x="321" y="183" text-anchor="middle">S08-12</text>
+  </g>
+  <g>
+    <rect class="surf" x="384" y="144" width="98" height="48" rx="6"/>
+    <text class="t page" x="433" y="167" text-anchor="middle" fill="#a371f7">Fusion</text>
+    <text class="t num"  x="433" y="183" text-anchor="middle">S23-27</text>
+  </g>
+  <g>
+    <rect class="surf" x="496" y="144" width="98" height="48" rx="6"/>
+    <text class="t page" x="545" y="167" text-anchor="middle" fill="#f5a524">Color</text>
+    <text class="t num"  x="545" y="183" text-anchor="middle">S16-22</text>
+  </g>
+  <g>
+    <rect class="surf" x="608" y="144" width="98" height="48" rx="6"/>
+    <text class="t page" x="657" y="167" text-anchor="middle" fill="#3fb950">Fairlight</text>
+    <text class="t num"  x="657" y="183" text-anchor="middle">S13-15</text>
+  </g>
+  <g>
+    <rect class="surf" x="720" y="144" width="112" height="48" rx="6"/>
+    <text class="t page" x="776" y="167" text-anchor="middle" fill="#4a9eff">Deliver</text>
+    <text class="t num"  x="776" y="183" text-anchor="middle">S28-29</text>
+  </g>
+
+  <text class="t sub" x="48"  y="228">Fundamentos S01-03</text>
+  <text class="t sub" x="440" y="228" text-anchor="middle">Gestión S30</text>
+  <text class="t sub" x="832" y="228" text-anchor="end">Scripting S31-34 · Proyecto final S35-36</text>
+</svg>

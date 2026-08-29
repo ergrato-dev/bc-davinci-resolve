@@ -1,0 +1,70 @@
+{
+  "semana": "01",
+  "titulo": "Fundamentos de imagen en movimiento",
+  "checks": [
+    {
+      "id": "proyecto-existe",
+      "descripcion": "Existe el proyecto BC-Bootcamp-Resolve",
+      "op": "project_list",
+      "args": {},
+      "expr": "'BC-Bootcamp-Resolve' in r['projects']",
+      "pista": "En el Project Manager, New Project, y nombralo exactamente BC-Bootcamp-Resolve (mayusculas y guiones incluidos)."
+    },
+    {
+      "id": "proyecto-abierto",
+      "descripcion": "BC-Bootcamp-Resolve es el proyecto abierto ahora mismo",
+      "op": "ping",
+      "args": {},
+      "expr": "r.get('project') == 'BC-Bootcamp-Resolve'",
+      "pista": "Abrelo desde el Project Manager. Los checks leen el proyecto que este abierto, no el que exista."
+    },
+    {
+      "id": "frame-rate",
+      "descripcion": "El timeline frame rate del proyecto es 24 fps",
+      "op": "project_settings",
+      "args": {},
+      "expr": "float(r['settings']['timelineFrameRate']) == 24.0",
+      "pista": "File > Project Settings > Master Settings > Timeline frame rate = 24. Ojo: se bloquea en cuanto hay clips en el media pool."
+    },
+    {
+      "id": "resolucion",
+      "descripcion": "La resolucion de timeline es 1920x1080",
+      "op": "project_settings",
+      "args": {},
+      "expr": "int(r['settings']['timelineResolutionWidth']) == 1920 and int(r['settings']['timelineResolutionHeight']) == 1080",
+      "pista": "File > Project Settings > Master Settings > Timeline resolution = 1920 x 1080 HD."
+    },
+    {
+      "id": "ciencia-de-color",
+      "descripcion": "La ciencia de color del proyecto es DaVinci YRGB",
+      "op": "project_settings",
+      "args": {},
+      "expr": "r['settings']['colorScienceMode'] == 'davinciYRGB'",
+      "pista": "File > Project Settings > Color Management > Color science = DaVinci YRGB. No el Color Managed: el que pone solo DaVinci YRGB."
+    },
+    {
+      "id": "timeline-existe",
+      "descripcion": "Existe la timeline BC-Montaje-v1",
+      "op": "timeline_list",
+      "args": {},
+      "expr": "'BC-Montaje-v1' in r['timelines']",
+      "pista": "En la pagina Edit, File > New Timeline (Ctrl+N / Cmd+N), nombre BC-Montaje-v1, con Use Project Settings activado."
+    },
+    {
+      "id": "timeline-activa",
+      "descripcion": "BC-Montaje-v1 es la timeline abierta ahora mismo",
+      "op": "timeline_probe",
+      "args": {},
+      "expr": "r.get('name') == 'BC-Montaje-v1'",
+      "pista": "Doble clic sobre BC-Montaje-v1 en el media pool para activarla."
+    },
+    {
+      "id": "timeline-frame-rate",
+      "descripcion": "BC-Montaje-v1 va a 24 fps",
+      "op": "timeline_probe",
+      "args": {},
+      "expr": "float(r.get('fps', 0)) == 24.0",
+      "pista": "La timeline heredo otra cadencia. Borrala y creala de nuevo con Use Project Settings activado."
+    }
+  ]
+}

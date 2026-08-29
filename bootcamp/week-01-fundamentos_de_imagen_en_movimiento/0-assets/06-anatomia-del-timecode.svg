@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 360" width="880" height="360" role="img"
+     aria-label="El timecode 01 dos puntos 23 dos puntos 45 dos puntos 12 descompuesto en cuatro campos: horas de 00 a 23, minutos de 00 a 59, segundos de 00 a 59 y frames de 00 hasta el frame rate menos uno. Se destaca que el campo de frames no llega a 60, con una tabla del rango a 24, 25 y 30 fotogramas por segundo.">
+  <title>Anatomía del timecode</title>
+  <style>
+    .bg    { fill: #101418; }
+    .surf  { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .t     { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h     { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .s     { font-size: 12px; fill: #93a1b0; }
+    .lbl   { font-size: 13px; font-weight: 600; fill: #e8eef4; }
+    .big   { font-size: 46px; font-weight: 700; fill: #e8eef4; }
+    .sep   { font-size: 46px; font-weight: 700; fill: #93a1b0; }
+    .edge  { stroke: #2f3a45; stroke-width: 1.5; fill: none; }
+  </style>
+
+  <rect class="bg" width="880" height="360"/>
+
+  <text class="t h" x="40" y="38">La dirección exacta de un frame</text>
+
+  <!-- Timecode grande -->
+  <rect class="surf" x="140" y="62" width="600" height="86" rx="6"/>
+  <text class="t big" x="200" y="122" text-anchor="middle">01</text>
+  <text class="t sep" x="256" y="122" text-anchor="middle">:</text>
+  <text class="t big" x="330" y="122" text-anchor="middle">23</text>
+  <text class="t sep" x="386" y="122" text-anchor="middle">:</text>
+  <text class="t big" x="460" y="122" text-anchor="middle">45</text>
+  <text class="t sep" x="516" y="122" text-anchor="middle">:</text>
+  <text class="t big" x="596" y="122" text-anchor="middle" fill="#4a9eff">12</text>
+
+  <!-- Guías -->
+  <path class="edge" d="M200,158 L200,182"/>
+  <path class="edge" d="M330,158 L330,182"/>
+  <path class="edge" d="M460,158 L460,182"/>
+  <path class="edge" d="M596,158 L596,182" stroke="#4a9eff"/>
+
+  <text class="t lbl" x="200" y="202" text-anchor="middle">horas</text>
+  <text class="t s"   x="200" y="220" text-anchor="middle">00 – 23</text>
+
+  <text class="t lbl" x="330" y="202" text-anchor="middle">minutos</text>
+  <text class="t s"   x="330" y="220" text-anchor="middle">00 – 59</text>
+
+  <text class="t lbl" x="460" y="202" text-anchor="middle">segundos</text>
+  <text class="t s"   x="460" y="220" text-anchor="middle">00 – 59</text>
+
+  <text class="t lbl" x="596" y="202" text-anchor="middle" fill="#4a9eff">frames</text>
+  <text class="t s"   x="596" y="220" text-anchor="middle" fill="#4a9eff">00 – (fps − 1)</text>
+
+  <!-- Tabla de rangos -->
+  <rect class="surf" x="140" y="248" width="600" height="80" rx="6"/>
+  <text class="t s" x="170" y="272">El campo de frames NO llega a 60. Depende del frame rate:</text>
+
+  <text class="t lbl" x="190" y="304">24 fps → 00–23</text>
+  <text class="t lbl" x="380" y="304">25 fps → 00–24</text>
+  <text class="t lbl" x="570" y="304">30 fps → 00–29</text>
+
+  <text class="t s" x="40" y="352" fill="#f5a524">Un timecode sin su frame rate es información incompleta: apunta a otro instante en cada cadencia.</text>
+</svg>

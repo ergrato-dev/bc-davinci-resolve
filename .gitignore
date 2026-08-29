@@ -1,0 +1,74 @@
+# --- Medios ------------------------------------------------------------------
+# El material de práctica NUNCA entra al repositorio: se descarga siguiendo
+# docs/pack-de-medios.md. Un repo de bootcamp no es un almacén de vídeo.
+*.mp4
+*.mov
+*.mkv
+*.mxf
+*.avi
+*.braw
+*.r3d
+*.dng
+*.wav
+*.aif
+*.aiff
+*.flac
+*.mp3
+*.m4a
+00-medios-bootcamp/
+01-material-propio/
+03-entregas/
+MANIFIESTO.sha256
+
+# --- Proyectos y caché de DaVinci Resolve ------------------------------------
+*.drp
+*.dra
+*.drt
+CacheClip/
+ProxyMedia/
+.gallery/
+DaVinci Resolve Backups/
+
+# --- Excepciones: los assets del bootcamp sí van al repo ---------------------
+!**/0-assets/*.svg
+!**/0-assets/*.png
+!assets/*.svg
+
+# --- Entorno y secretos ------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+bridge_token
+
+# --- Python (módulo de scripting, semanas 31-34) -----------------------------
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.mypy_cache/
+.ruff_cache/
+
+# --- Logs y temporales -------------------------------------------------------
+*.log
+.cache/
+tmp/
+*.tmp
+
+# --- Sistema operativo -------------------------------------------------------
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Editores ----------------------------------------------------------------
+.idea/
+*.swp
+*.swo
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+
+# --- Salidas locales de las prácticas ----------------------------------------
+sandbox/
+practicas-locales/

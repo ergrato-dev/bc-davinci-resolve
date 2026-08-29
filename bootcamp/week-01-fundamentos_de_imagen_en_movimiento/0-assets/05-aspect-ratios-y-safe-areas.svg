@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 430" width="880" height="430" role="img"
+     aria-label="Arriba, cuatro rectángulos comparando las proporciones 4:3, 16:9, 2.39:1 y 9:16, todos con la misma altura de referencia salvo el vertical. Abajo, un cuadro 16:9 con dos marcos interiores marcados: action safe al 90 por ciento y title safe al 80 por ciento, y una franja superior e inferior sombreada que indica dónde tapan las interfaces de las plataformas verticales.">
+  <title>Aspect ratios habituales y encuadre seguro</title>
+  <style>
+    .bg    { fill: #101418; }
+    .surf  { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .t     { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h     { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .s     { font-size: 12px; fill: #93a1b0; }
+    .lbl   { font-size: 13px; font-weight: 600; fill: #e8eef4; }
+    .safe  { fill: none; stroke-dasharray: 5 4; stroke-width: 1.5; }
+  </style>
+
+  <rect class="bg" width="880" height="430"/>
+
+  <text class="t h" x="40" y="34">Las proporciones que vas a ver</text>
+
+  <!-- 4:3 -->
+  <rect class="surf" x="40" y="52" width="144" height="108"/>
+  <text class="t lbl" x="112" y="180" text-anchor="middle">4:3</text>
+  <text class="t s"   x="112" y="196" text-anchor="middle">1.33:1 · archivo, retro</text>
+
+  <!-- 16:9 -->
+  <rect x="216" y="52" width="192" height="108" fill="#191f26" stroke="#4a9eff" stroke-width="2"/>
+  <text class="t lbl" x="312" y="180" text-anchor="middle" fill="#4a9eff">16:9</text>
+  <text class="t s"   x="312" y="196" text-anchor="middle" fill="#4a9eff">1.78:1 · el estándar actual</text>
+
+  <!-- 2.39:1 -->
+  <rect class="surf" x="440" y="79" width="258" height="54"/>
+  <text class="t lbl" x="569" y="180" text-anchor="middle">2.39:1</text>
+  <text class="t s"   x="569" y="196" text-anchor="middle">cine anamórfico</text>
+
+  <!-- 9:16 -->
+  <rect class="surf" x="762" y="52" width="61" height="108"/>
+  <text class="t lbl" x="792" y="180" text-anchor="middle">9:16</text>
+  <text class="t s"   x="792" y="196" text-anchor="middle">vertical</text>
+
+  <line x1="40" y1="222" x2="840" y2="222" stroke="#2f3a45" stroke-width="1"/>
+
+  <text class="t h" x="40" y="252">Encuadre seguro sobre un cuadro 16:9</text>
+
+  <!-- Cuadro 16:9 grande: 400x225 -->
+  <g transform="translate(40,268)">
+    <rect x="0" y="0" width="400" height="225" fill="#191f26" stroke="#2f3a45" stroke-width="1"/>
+    <!-- action safe 90% -->
+    <rect class="safe" x="20" y="11.25" width="360" height="202.5" stroke="#3fb950"/>
+    <!-- title safe 80% -->
+    <rect class="safe" x="40" y="22.5" width="320" height="180" stroke="#f5a524"/>
+    <text class="t s" x="200" y="122" text-anchor="middle" fill="#93a1b0">zona segura para textos</text>
+  </g>
+
+  <text class="t lbl" x="470" y="292" fill="#3fb950">action safe · 90 %</text>
+  <text class="t s"   x="470" y="310">Lo que pase aquí dentro se ve en cualquier pantalla.</text>
+
+  <text class="t lbl" x="470" y="340" fill="#f5a524">title safe · 80 %</text>
+  <text class="t s"   x="470" y="358">Los textos de aquí dentro se leen enteros.</text>
+
+  <text class="t lbl" x="470" y="392">Hoy la razón es otra</text>
+  <text class="t s"   x="470" y="410">Ya no es el marco del televisor: son la interfaz de la plataforma y el recorte automático.</text>
+</svg>
