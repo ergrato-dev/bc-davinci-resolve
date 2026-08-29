@@ -1,0 +1,104 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 450" width="880" height="450" role="img"
+     aria-label="Una onda continua recorre el grafico. Sobre ella caen treinta y una medidas verticales regulares que solo pueden apoyarse en unas pocas alturas marcadas por lineas discontinuas. El eje horizontal corresponde a la frecuencia de muestreo, cuantas medidas se toman por segundo, y el vertical a la profundidad de bits, con cuanta precision se anota cada medida.">
+  <title>Muestreo y cuantizacion de una onda de audio</title>
+  <style>
+    .bg   { fill: #101418; }
+    .surf { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .surf2{ fill: #232b34; stroke: #2f3a45; stroke-width: 1; }
+    .t    { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h    { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .s    { font-size: 12px; fill: #93a1b0; }
+    .lbl  { font-size: 13px; font-weight: 600; fill: #e8eef4; }
+    .mono { font-size: 12px; fill: #93a1b0; }
+    .rail { stroke: #2f3a45; stroke-width: 1; }
+  </style>
+
+  <rect class="bg" width="880" height="450"/>
+  <text class="t h" x="40" y="38">Muestrear una onda: cada cuanto mido y con cuanta precision anoto</text>
+  <text class="t s" x="40" y="58">Las dos decisiones son independientes y se pagan por separado</text>
+  <line class="rail" x1="110" y1="210" x2="830" y2="210"/>
+  <polyline points="110.0,210.0 112.0,207.3 114.0,204.5 116.0,201.8 118.0,199.1 120.0,196.5 122.0,193.8 124.0,191.2 126.0,188.6 128.0,186.1 130.0,183.6 132.0,181.2 134.0,178.8 136.0,176.5 138.0,174.3 140.0,172.1 142.0,170.0 144.0,168.0 146.0,166.1 148.0,164.2 150.0,162.5 152.0,160.8 154.0,159.2 156.0,157.7 158.0,156.3 160.0,155.1 162.0,153.9 164.0,152.8 166.0,151.8 168.0,150.9 170.0,150.1 172.0,149.4 174.0,148.8 176.0,148.4 178.0,148.0 180.0,147.7 182.0,147.5 184.0,147.4 186.0,147.4 188.0,147.4 190.0,147.6 192.0,147.8 194.0,148.2 196.0,148.5 198.0,149.0 200.0,149.6 202.0,150.2 204.0,150.8 206.0,151.5 208.0,152.3 210.0,153.1 212.0,154.0 214.0,154.9 216.0,155.9 218.0,156.8 220.0,157.8 222.0,158.9 224.0,159.9 226.0,160.9 228.0,162.0 230.0,163.1 232.0,164.2 234.0,165.2 236.0,166.3 238.0,167.3 240.0,168.4 242.0,169.4 244.0,170.4 246.0,171.4 248.0,172.3 250.0,173.2 252.0,174.1 254.0,175.0 256.0,175.8 258.0,176.6 260.0,177.4 262.0,178.1 264.0,178.8 266.0,179.4 268.0,180.0 270.0,180.5 272.0,181.0 274.0,181.5 276.0,182.0 278.0,182.3 280.0,182.7 282.0,183.0 284.0,183.3 286.0,183.6 288.0,183.8 290.0,184.0 292.0,184.1 294.0,184.3 296.0,184.4 298.0,184.5 300.0,184.6 302.0,184.7 304.0,184.8 306.0,184.9 308.0,184.9 310.0,185.0 312.0,185.1 314.0,185.2 316.0,185.3 318.0,185.4 320.0,185.5 322.0,185.7 324.0,185.9 326.0,186.1 328.0,186.4 330.0,186.7 332.0,187.0 334.0,187.4 336.0,187.9 338.0,188.3 340.0,188.9 342.0,189.5 344.0,190.1 346.0,190.9 348.0,191.6 350.0,192.5 352.0,193.4 354.0,194.4 356.0,195.4 358.0,196.5 360.0,197.7 362.0,198.9 364.0,200.2 366.0,201.6 368.0,203.1 370.0,204.6 372.0,206.2 374.0,207.8 376.0,209.5 378.0,211.3 380.0,213.1 382.0,215.0 384.0,216.9 386.0,218.9 388.0,220.9 390.0,223.0 392.0,225.1 394.0,227.3 396.0,229.4 398.0,231.6 400.0,233.8 402.0,236.1 404.0,238.3 406.0,240.6 408.0,242.8 410.0,245.1 412.0,247.3 414.0,249.6 416.0,251.8 418.0,254.0 420.0,256.1 422.0,258.3 424.0,260.3 426.0,262.4 428.0,264.4 430.0,266.3 432.0,268.2 434.0,270.0 436.0,271.8 438.0,273.4 440.0,275.0 442.0,276.5 444.0,278.0 446.0,279.3 448.0,280.5 450.0,281.7 452.0,282.7 454.0,283.7 456.0,284.5 458.0,285.2 460.0,285.9 462.0,286.4 464.0,286.8 466.0,287.1 468.0,287.2 470.0,287.3 472.0,287.2 474.0,287.1 476.0,286.8 478.0,286.4 480.0,285.9 482.0,285.2 484.0,284.5 486.0,283.7 488.0,282.7 490.0,281.7 492.0,280.5 494.0,279.3 496.0,278.0 498.0,276.5 500.0,275.0 502.0,273.4 504.0,271.8 506.0,270.0 508.0,268.2 510.0,266.3 512.0,264.4 514.0,262.4 516.0,260.3 518.0,258.3 520.0,256.1 522.0,254.0 524.0,251.8 526.0,249.6 528.0,247.3 530.0,245.1 532.0,242.8 534.0,240.6 536.0,238.3 538.0,236.1 540.0,233.8 542.0,231.6 544.0,229.4 546.0,227.3 548.0,225.1 550.0,223.0 552.0,220.9 554.0,218.9 556.0,216.9 558.0,215.0 560.0,213.1 562.0,211.3 564.0,209.5 566.0,207.8 568.0,206.2 570.0,204.6 572.0,203.1 574.0,201.6 576.0,200.2 578.0,198.9 580.0,197.7 582.0,196.5 584.0,195.4 586.0,194.4 588.0,193.4 590.0,192.5 592.0,191.6 594.0,190.9 596.0,190.1 598.0,189.5 600.0,188.9 602.0,188.3 604.0,187.9 606.0,187.4 608.0,187.0 610.0,186.7 612.0,186.4 614.0,186.1 616.0,185.9 618.0,185.7 620.0,185.5 622.0,185.4 624.0,185.3 626.0,185.2 628.0,185.1 630.0,185.0 632.0,184.9 634.0,184.9 636.0,184.8 638.0,184.7 640.0,184.6 642.0,184.5 644.0,184.4 646.0,184.3 648.0,184.1 650.0,184.0 652.0,183.8 654.0,183.6 656.0,183.3 658.0,183.0 660.0,182.7 662.0,182.3 664.0,182.0 666.0,181.5 668.0,181.0 670.0,180.5 672.0,180.0 674.0,179.4 676.0,178.8 678.0,178.1 680.0,177.4 682.0,176.6 684.0,175.8 686.0,175.0 688.0,174.1 690.0,173.2 692.0,172.3 694.0,171.4 696.0,170.4 698.0,169.4 700.0,168.4 702.0,167.3 704.0,166.3 706.0,165.2 708.0,164.2 710.0,163.1 712.0,162.0 714.0,160.9 716.0,159.9 718.0,158.9 720.0,157.8 722.0,156.8 724.0,155.9 726.0,154.9 728.0,154.0 730.0,153.1 732.0,152.3 734.0,151.5 736.0,150.8 738.0,150.2 740.0,149.6 742.0,149.0 744.0,148.5 746.0,148.2 748.0,147.8 750.0,147.6 752.0,147.4 754.0,147.4 756.0,147.4 758.0,147.5 760.0,147.7 762.0,148.0 764.0,148.4 766.0,148.8 768.0,149.4 770.0,150.1 772.0,150.9 774.0,151.8 776.0,152.8 778.0,153.9 780.0,155.1 782.0,156.3 784.0,157.7 786.0,159.2 788.0,160.8 790.0,162.5 792.0,164.2 794.0,166.1 796.0,168.0 798.0,170.0 800.0,172.1 802.0,174.3 804.0,176.5 806.0,178.8 808.0,181.2 810.0,183.6 812.0,186.1 814.0,188.6 816.0,191.2 818.0,193.8 820.0,196.5 822.0,199.1 824.0,201.8 826.0,204.5 828.0,207.3 830.0,210.0" fill="none" stroke="#93a1b0" stroke-width="2"/>
+  <line x1="110.0" y1="210" x2="110.0" y2="210.0" stroke="#4a9eff" stroke-width="2"/>
+  <circle cx="110.0" cy="210.0" r="3.5" fill="#4a9eff"/>
+  <line x1="134.0" y1="210" x2="134.0" y2="187.0" stroke="#4a9eff" stroke-width="2"/>
+  <circle cx="134.0" cy="187.0" r="3.5" fill="#4a9eff"/>
+  <line x1="158.0" y1="210" x2="158.0" y2="164.0" stroke="#4a9eff" stroke-width="2"/>
+  <circle cx="158.0" cy="164.0" r="3.5" fill="#4a9eff"/>
+  <line x1="182.0" y1="210" x2="182.0" y2="141.0" stroke="#4a9eff" stroke-width="2"/>
+  <circle cx="182.0" cy="141.0" r="3.5" fill="#4a9eff"/>
+  <line x1="206.0" y1="210" x2="206.0" y2="141.0" stroke="#4a9eff" stroke-width="2"/>
+  <circle cx="206.0" cy="141.0" r="3.5" fill="#4a9eff"/>
+  <line x1="230.0" y1="210" x2="230.0" y2="164.0" stroke="#4a9eff" stroke-width="2"/>
+  <circle cx="230.0" cy="164.0" r="3.5" fill="#4a9eff"/>
+  <line x1="254.0" y1="210" x2="254.0" y2="164.0" stroke="#4a9eff" stroke-width="2"/>
+  <circle cx="254.0" cy="164.0" r="3.5" fill="#4a9eff"/>
+  <line x1="278.0" y1="210" x2="278.0" y2="187.0" stroke="#4a9eff" stroke-width="2"/>
+  <circle cx="278.0" cy="187.0" r="3.5" fill="#4a9eff"/>
+  <line x1="302.0" y1="210" x2="302.0" y2="187.0" stroke="#4a9eff" stroke-width="2"/>
+  <circle cx="302.0" cy="187.0" r="3.5" fill="#4a9eff"/>
+  <line x1="326.0" y1="210" x2="326.0" y2="187.0" stroke="#4a9eff" stroke-width="2"/>
+  <circle cx="326.0" cy="187.0" r="3.5" fill="#4a9eff"/>
+  <line x1="350.0" y1="210" x2="350.0" y2="187.0" stroke="#4a9eff" stroke-width="2"/>
+  <circle cx="350.0" cy="187.0" r="3.5" fill="#4a9eff"/>
+  <line x1="374.0" y1="210" x2="374.0" y2="210.0" stroke="#4a9eff" stroke-width="2"/>
+  <circle cx="374.0" cy="210.0" r="3.5" fill="#4a9eff"/>
+  <line x1="398.0" y1="210" x2="398.0" y2="233.0" stroke="#4a9eff" stroke-width="2"/>
+  <circle cx="398.0" cy="233.0" r="3.5" fill="#4a9eff"/>
+  <line x1="422.0" y1="210" x2="422.0" y2="256.0" stroke="#4a9eff" stroke-width="2"/>
+  <circle cx="422.0" cy="256.0" r="3.5" fill="#4a9eff"/>
+  <line x1="446.0" y1="210" x2="446.0" y2="279.0" stroke="#4a9eff" stroke-width="2"/>
+  <circle cx="446.0" cy="279.0" r="3.5" fill="#4a9eff"/>
+  <line x1="470.0" y1="210" x2="470.0" y2="279.0" stroke="#4a9eff" stroke-width="2"/>
+  <circle cx="470.0" cy="279.0" r="3.5" fill="#4a9eff"/>
+  <line x1="494.0" y1="210" x2="494.0" y2="279.0" stroke="#4a9eff" stroke-width="2"/>
+  <circle cx="494.0" cy="279.0" r="3.5" fill="#4a9eff"/>
+  <line x1="518.0" y1="210" x2="518.0" y2="256.0" stroke="#4a9eff" stroke-width="2"/>
+  <circle cx="518.0" cy="256.0" r="3.5" fill="#4a9eff"/>
+  <line x1="542.0" y1="210" x2="542.0" y2="233.0" stroke="#4a9eff" stroke-width="2"/>
+  <circle cx="542.0" cy="233.0" r="3.5" fill="#4a9eff"/>
+  <line x1="566.0" y1="210" x2="566.0" y2="210.0" stroke="#4a9eff" stroke-width="2"/>
+  <circle cx="566.0" cy="210.0" r="3.5" fill="#4a9eff"/>
+  <line x1="590.0" y1="210" x2="590.0" y2="187.0" stroke="#4a9eff" stroke-width="2"/>
+  <circle cx="590.0" cy="187.0" r="3.5" fill="#4a9eff"/>
+  <line x1="614.0" y1="210" x2="614.0" y2="187.0" stroke="#4a9eff" stroke-width="2"/>
+  <circle cx="614.0" cy="187.0" r="3.5" fill="#4a9eff"/>
+  <line x1="638.0" y1="210" x2="638.0" y2="187.0" stroke="#4a9eff" stroke-width="2"/>
+  <circle cx="638.0" cy="187.0" r="3.5" fill="#4a9eff"/>
+  <line x1="662.0" y1="210" x2="662.0" y2="187.0" stroke="#4a9eff" stroke-width="2"/>
+  <circle cx="662.0" cy="187.0" r="3.5" fill="#4a9eff"/>
+  <line x1="686.0" y1="210" x2="686.0" y2="164.0" stroke="#4a9eff" stroke-width="2"/>
+  <circle cx="686.0" cy="164.0" r="3.5" fill="#4a9eff"/>
+  <line x1="710.0" y1="210" x2="710.0" y2="164.0" stroke="#4a9eff" stroke-width="2"/>
+  <circle cx="710.0" cy="164.0" r="3.5" fill="#4a9eff"/>
+  <line x1="734.0" y1="210" x2="734.0" y2="141.0" stroke="#4a9eff" stroke-width="2"/>
+  <circle cx="734.0" cy="141.0" r="3.5" fill="#4a9eff"/>
+  <line x1="758.0" y1="210" x2="758.0" y2="141.0" stroke="#4a9eff" stroke-width="2"/>
+  <circle cx="758.0" cy="141.0" r="3.5" fill="#4a9eff"/>
+  <line x1="782.0" y1="210" x2="782.0" y2="164.0" stroke="#4a9eff" stroke-width="2"/>
+  <circle cx="782.0" cy="164.0" r="3.5" fill="#4a9eff"/>
+  <line x1="806.0" y1="210" x2="806.0" y2="187.0" stroke="#4a9eff" stroke-width="2"/>
+  <circle cx="806.0" cy="187.0" r="3.5" fill="#4a9eff"/>
+  <line x1="830.0" y1="210" x2="830.0" y2="210.0" stroke="#4a9eff" stroke-width="2"/>
+  <circle cx="830.0" cy="210.0" r="3.5" fill="#4a9eff"/>
+  <line x1="110" y1="302" x2="830" y2="302" stroke="#2f3a45" stroke-width="1" stroke-dasharray="2 8"/>
+  <line x1="110" y1="279" x2="830" y2="279" stroke="#2f3a45" stroke-width="1" stroke-dasharray="2 8"/>
+  <line x1="110" y1="256" x2="830" y2="256" stroke="#2f3a45" stroke-width="1" stroke-dasharray="2 8"/>
+  <line x1="110" y1="233" x2="830" y2="233" stroke="#2f3a45" stroke-width="1" stroke-dasharray="2 8"/>
+  <line x1="110" y1="210" x2="830" y2="210" stroke="#2f3a45" stroke-width="1" stroke-dasharray="2 8"/>
+  <line x1="110" y1="187" x2="830" y2="187" stroke="#2f3a45" stroke-width="1" stroke-dasharray="2 8"/>
+  <line x1="110" y1="164" x2="830" y2="164" stroke="#2f3a45" stroke-width="1" stroke-dasharray="2 8"/>
+  <line x1="110" y1="141" x2="830" y2="141" stroke="#2f3a45" stroke-width="1" stroke-dasharray="2 8"/>
+  <line x1="110" y1="118" x2="830" y2="118" stroke="#2f3a45" stroke-width="1" stroke-dasharray="2 8"/>
+  <text class="t s" x="40" y="112">amplitud</text>
+  <text class="t s" x="470" y="332" text-anchor="middle">tiempo</text>
+  <rect class="surf" x="40" y="332" width="392" height="98" rx="6"/>
+  <text class="t lbl" x="62" y="358">Horizontal: frecuencia de muestreo</text>
+  <text class="t s"   x="62" y="380">Cada cuanto se mide la onda. 48 000 veces por</text>
+  <text class="t s"   x="62" y="398">segundo en todo el video profesional: 48 kHz.</text>
+  <text class="t s"   x="62" y="416">Hay que muestrear a mas del doble de la frecuencia mas alta.</text>
+  <rect class="surf" x="448" y="332" width="392" height="98" rx="6"/>
+  <text class="t lbl" x="470" y="358">Vertical: profundidad de bits</text>
+  <text class="t s"   x="470" y="380">Con cuanta precision se anota cada medida.</text>
+  <text class="t s"   x="470" y="398">16 bits para entregar, 24 para grabar y trabajar.</text>
+  <text class="t s"   x="470" y="416">Los escalones que faltan se oyen como ruido de fondo.</text>
+</svg>

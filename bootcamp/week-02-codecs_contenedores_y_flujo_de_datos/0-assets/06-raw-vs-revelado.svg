@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 416" width="880" height="416" role="img"
+     aria-label="Cadena de tres etapas. Primero el sensor, dibujado como una rejilla de filtros rojos, verdes y azules donde cada fotosito mide un solo color. Segundo, el archivo Blackmagic RAW, que guarda por un lado la imagen con el debayer ya hecho a medias y por otro la metadata con el ISO, el balance de blancos, la exposicion y la curva. Tercero, el revelado en el panel Camera Raw de Resolve, donde esos parametros siguen siendo ajustables.">
+  <title>Del patron de Bayer al revelado de un archivo RAW</title>
+  <style>
+    .bg   { fill: #101418; }
+    .surf { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .surf2{ fill: #232b34; stroke: #2f3a45; stroke-width: 1; }
+    .t    { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h    { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .s    { font-size: 12px; fill: #93a1b0; }
+    .lbl  { font-size: 13px; font-weight: 600; fill: #e8eef4; }
+    .mono { font-size: 12px; fill: #93a1b0; }
+    .rail { stroke: #2f3a45; stroke-width: 1; }
+  </style>
+
+  <rect class="bg" width="880" height="416"/>
+  <text class="t h" x="40" y="38">De lo que mide el sensor a la imagen final</text>
+  <text class="t s" x="40" y="58">En RAW, las decisiones sobre la imagen viajan aparte y se aplican al revelar</text>
+  <rect class="surf" x="40" y="92" width="240" height="240" rx="6"/>
+  <text class="t lbl" x="60" y="118">1 · Sensor</text>
+  <text class="t s"   x="60" y="136">patron de Bayer: cada fotosito</text>
+  <text class="t s"   x="60" y="152">mide un solo color</text>
+  <rect x="62" y="168" width="24" height="24" fill="#4ade80"/>
+  <rect x="88" y="168" width="24" height="24" fill="#ff5f56"/>
+  <rect x="114" y="168" width="24" height="24" fill="#4ade80"/>
+  <rect x="140" y="168" width="24" height="24" fill="#ff5f56"/>
+  <rect x="166" y="168" width="24" height="24" fill="#4ade80"/>
+  <rect x="192" y="168" width="24" height="24" fill="#ff5f56"/>
+  <rect x="62" y="194" width="24" height="24" fill="#5b9cff"/>
+  <rect x="88" y="194" width="24" height="24" fill="#4ade80"/>
+  <rect x="114" y="194" width="24" height="24" fill="#5b9cff"/>
+  <rect x="140" y="194" width="24" height="24" fill="#4ade80"/>
+  <rect x="166" y="194" width="24" height="24" fill="#5b9cff"/>
+  <rect x="192" y="194" width="24" height="24" fill="#4ade80"/>
+  <rect x="62" y="220" width="24" height="24" fill="#4ade80"/>
+  <rect x="88" y="220" width="24" height="24" fill="#ff5f56"/>
+  <rect x="114" y="220" width="24" height="24" fill="#4ade80"/>
+  <rect x="140" y="220" width="24" height="24" fill="#ff5f56"/>
+  <rect x="166" y="220" width="24" height="24" fill="#4ade80"/>
+  <rect x="192" y="220" width="24" height="24" fill="#ff5f56"/>
+  <rect x="62" y="246" width="24" height="24" fill="#5b9cff"/>
+  <rect x="88" y="246" width="24" height="24" fill="#4ade80"/>
+  <rect x="114" y="246" width="24" height="24" fill="#5b9cff"/>
+  <rect x="140" y="246" width="24" height="24" fill="#4ade80"/>
+  <rect x="166" y="246" width="24" height="24" fill="#5b9cff"/>
+  <rect x="192" y="246" width="24" height="24" fill="#4ade80"/>
+  <rect x="62" y="272" width="24" height="24" fill="#4ade80"/>
+  <rect x="88" y="272" width="24" height="24" fill="#ff5f56"/>
+  <rect x="114" y="272" width="24" height="24" fill="#4ade80"/>
+  <rect x="140" y="272" width="24" height="24" fill="#ff5f56"/>
+  <rect x="166" y="272" width="24" height="24" fill="#4ade80"/>
+  <rect x="192" y="272" width="24" height="24" fill="#ff5f56"/>
+  <rect x="62" y="298" width="24" height="24" fill="#5b9cff"/>
+  <rect x="88" y="298" width="24" height="24" fill="#4ade80"/>
+  <rect x="114" y="298" width="24" height="24" fill="#5b9cff"/>
+  <rect x="140" y="298" width="24" height="24" fill="#4ade80"/>
+  <rect x="166" y="298" width="24" height="24" fill="#5b9cff"/>
+  <rect x="192" y="298" width="24" height="24" fill="#4ade80"/>
+  <path d="M 292 212 L 316 212" stroke="#93a1b0" stroke-width="2"/>
+  <path d="M 310 206 L 318 212 L 310 218 Z" fill="#93a1b0"/>
+  <rect class="surf" x="328" y="92" width="240" height="240" rx="6"/>
+  <text class="t lbl" x="348" y="118">2 · Archivo .braw</text>
+  <text class="t s"   x="348" y="136">debayer parcial hecho ya;</text>
+  <text class="t s"   x="348" y="152">el resto queda pendiente</text>
+  <rect class="surf2" x="348" y="168" width="200" height="66" rx="4"/>
+  <rect x="348" y="168" width="5" height="66" fill="#4a9eff"/>
+  <text class="t lbl" x="366" y="192">Imagen</text>
+  <text class="t s"   x="366" y="212">medidas del sensor, ya</text>
+  <text class="t s"   x="366" y="228">comprimidas y manejables</text>
+  <rect class="surf2" x="348" y="244" width="200" height="72" rx="4"/>
+  <rect x="348" y="244" width="5" height="72" fill="#f5a524"/>
+  <text class="t lbl" x="366" y="268">Metadata</text>
+  <text class="t s"   x="366" y="288">ISO, balance de blancos,</text>
+  <text class="t s"   x="366" y="304">exposicion, curva</text>
+  <path d="M 580 212 L 604 212" stroke="#93a1b0" stroke-width="2"/>
+  <path d="M 598 206 L 606 212 L 598 218 Z" fill="#93a1b0"/>
+  <rect class="surf" x="616" y="92" width="224" height="240" rx="6"/>
+  <text class="t lbl" x="636" y="118">3 · Revelado en Resolve</text>
+  <text class="t s"   x="636" y="136">panel Camera Raw</text>
+  <rect class="surf2" x="636" y="162" width="184" height="28" rx="4"/>
+  <text class="t s" x="650" y="181">Balance de blancos</text>
+  <circle cx="800" cy="176" r="5" fill="#3fb950"/>
+  <rect class="surf2" x="636" y="196" width="184" height="28" rx="4"/>
+  <text class="t s" x="650" y="215">ISO</text>
+  <circle cx="800" cy="210" r="5" fill="#3fb950"/>
+  <rect class="surf2" x="636" y="230" width="184" height="28" rx="4"/>
+  <text class="t s" x="650" y="249">Exposicion</text>
+  <circle cx="800" cy="244" r="5" fill="#3fb950"/>
+  <rect class="surf2" x="636" y="264" width="184" height="28" rx="4"/>
+  <text class="t s" x="650" y="283">Gamma y gama</text>
+  <circle cx="800" cy="278" r="5" fill="#3fb950"/>
+  <rect class="surf2" x="636" y="298" width="184" height="28" rx="4"/>
+  <text class="t s" x="650" y="317">Decode quality</text>
+  <circle cx="800" cy="312" r="5" fill="#3fb950"/>
+  <rect class="surf" x="40" y="348" width="800" height="52" rx="6"/>
+  <text class="t s" x="62" y="370">Lo que es ajustable sin perdida es lo que aun no se ha decidido. El encuadre y el foco no estan aqui:</text>
+  <text class="t s" x="62" y="388">son decisiones de rodaje, y ningun revelado las cambia.</text>
+</svg>

@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 410" width="880" height="410" role="img"
+     aria-label="Dos barras horizontales de gris que van de oscuro a claro. La de arriba esta construida con diez escalones y las franjas se distinguen a simple vista. La de abajo usa cuarenta escalones y la transicion se percibe continua. Debajo, la comparacion entre 8 bits, con 256 tonos por canal, y 10 bits, con 1024.">
+  <title>Banding: el mismo degradado con distinta profundidad de bits</title>
+  <style>
+    .bg   { fill: #101418; }
+    .surf { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .surf2{ fill: #232b34; stroke: #2f3a45; stroke-width: 1; }
+    .t    { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h    { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .s    { font-size: 12px; fill: #93a1b0; }
+    .lbl  { font-size: 13px; font-weight: 600; fill: #e8eef4; }
+    .mono { font-size: 12px; fill: #93a1b0; }
+    .rail { stroke: #2f3a45; stroke-width: 1; }
+  </style>
+
+  <rect class="bg" width="880" height="410"/>
+  <text class="t h" x="40" y="38">El mismo degradado con pocos y con muchos escalones</text>
+  <text class="t s" x="40" y="58">Cuantos menos tonos disponibles, mas ancha es cada franja y antes se ve</text>
+  <text class="t lbl" x="40" y="108">Pocos tonos</text>
+  <text class="t s"   x="40" y="126">los escalones se ven: eso es banding</text>
+  <rect x="250.00" y="94" width="59.60" height="56" fill="#181818"/>
+  <rect x="309.00" y="94" width="59.60" height="56" fill="#2d2d2d"/>
+  <rect x="368.00" y="94" width="59.60" height="56" fill="#424242"/>
+  <rect x="427.00" y="94" width="59.60" height="56" fill="#585858"/>
+  <rect x="486.00" y="94" width="59.60" height="56" fill="#6d6d6d"/>
+  <rect x="545.00" y="94" width="59.60" height="56" fill="#828282"/>
+  <rect x="604.00" y="94" width="59.60" height="56" fill="#979797"/>
+  <rect x="663.00" y="94" width="59.60" height="56" fill="#adadad"/>
+  <rect x="722.00" y="94" width="59.60" height="56" fill="#c2c2c2"/>
+  <rect x="781.00" y="94" width="59.60" height="56" fill="#d7d7d7"/>
+  <rect x="250" y="94" width="590" height="56" fill="none" stroke="#2f3a45" stroke-width="1"/>
+  <text class="t lbl" x="40" y="228">Cuatro veces mas tonos</text>
+  <text class="t s"   x="40" y="246">la transicion se lee como continua</text>
+  <rect x="250.00" y="214" width="15.35" height="56" fill="#181818"/>
+  <rect x="264.75" y="214" width="15.35" height="56" fill="#1d1d1d"/>
+  <rect x="279.50" y="214" width="15.35" height="56" fill="#222222"/>
+  <rect x="294.25" y="214" width="15.35" height="56" fill="#272727"/>
+  <rect x="309.00" y="214" width="15.35" height="56" fill="#2c2c2c"/>
+  <rect x="323.75" y="214" width="15.35" height="56" fill="#303030"/>
+  <rect x="338.50" y="214" width="15.35" height="56" fill="#353535"/>
+  <rect x="353.25" y="214" width="15.35" height="56" fill="#3a3a3a"/>
+  <rect x="368.00" y="214" width="15.35" height="56" fill="#3f3f3f"/>
+  <rect x="382.75" y="214" width="15.35" height="56" fill="#444444"/>
+  <rect x="397.50" y="214" width="15.35" height="56" fill="#494949"/>
+  <rect x="412.25" y="214" width="15.35" height="56" fill="#4e4e4e"/>
+  <rect x="427.00" y="214" width="15.35" height="56" fill="#535353"/>
+  <rect x="441.75" y="214" width="15.35" height="56" fill="#585858"/>
+  <rect x="456.50" y="214" width="15.35" height="56" fill="#5d5d5d"/>
+  <rect x="471.25" y="214" width="15.35" height="56" fill="#616161"/>
+  <rect x="486.00" y="214" width="15.35" height="56" fill="#666666"/>
+  <rect x="500.75" y="214" width="15.35" height="56" fill="#6b6b6b"/>
+  <rect x="515.50" y="214" width="15.35" height="56" fill="#707070"/>
+  <rect x="530.25" y="214" width="15.35" height="56" fill="#757575"/>
+  <rect x="545.00" y="214" width="15.35" height="56" fill="#7a7a7a"/>
+  <rect x="559.75" y="214" width="15.35" height="56" fill="#7f7f7f"/>
+  <rect x="574.50" y="214" width="15.35" height="56" fill="#848484"/>
+  <rect x="589.25" y="214" width="15.35" height="56" fill="#898989"/>
+  <rect x="604.00" y="214" width="15.35" height="56" fill="#8e8e8e"/>
+  <rect x="618.75" y="214" width="15.35" height="56" fill="#929292"/>
+  <rect x="633.50" y="214" width="15.35" height="56" fill="#979797"/>
+  <rect x="648.25" y="214" width="15.35" height="56" fill="#9c9c9c"/>
+  <rect x="663.00" y="214" width="15.35" height="56" fill="#a1a1a1"/>
+  <rect x="677.75" y="214" width="15.35" height="56" fill="#a6a6a6"/>
+  <rect x="692.50" y="214" width="15.35" height="56" fill="#ababab"/>
+  <rect x="707.25" y="214" width="15.35" height="56" fill="#b0b0b0"/>
+  <rect x="722.00" y="214" width="15.35" height="56" fill="#b5b5b5"/>
+  <rect x="736.75" y="214" width="15.35" height="56" fill="#bababa"/>
+  <rect x="751.50" y="214" width="15.35" height="56" fill="#bfbfbf"/>
+  <rect x="766.25" y="214" width="15.35" height="56" fill="#c3c3c3"/>
+  <rect x="781.00" y="214" width="15.35" height="56" fill="#c8c8c8"/>
+  <rect x="795.75" y="214" width="15.35" height="56" fill="#cdcdcd"/>
+  <rect x="810.50" y="214" width="15.35" height="56" fill="#d2d2d2"/>
+  <rect x="825.25" y="214" width="15.35" height="56" fill="#d7d7d7"/>
+  <rect x="250" y="214" width="590" height="56" fill="none" stroke="#2f3a45" stroke-width="1"/>
+  <rect class="surf" x="40" y="300" width="800" height="92" rx="6"/>
+  <text class="t lbl" x="66" y="326">8 bits = 256 tonos por canal</text>
+  <text class="t s"   x="66" y="346">Movil, camara de consumo, H.264, casi todo internet</text>
+  <text class="t s"   x="66" y="366">Aguanta poco etalonaje: subir contraste separa escalones que ya existian</text>
+  <text class="t lbl" x="470" y="326">10 bits = 1024 tonos por canal</text>
+  <text class="t s"   x="470" y="346">ProRes 422, DNxHR, camaras recientes, HDR</text>
+  <text class="t s"   x="470" y="366">Cuatro veces mas margen para corregir sin romper el degradado</text>
+</svg>

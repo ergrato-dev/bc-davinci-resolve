@@ -1,0 +1,66 @@
+{
+  "semana": "02",
+  "titulo": "Codecs, contenedores y flujo de datos",
+  "checks": [
+    {
+      "id": "proyecto-abierto",
+      "descripcion": "BC-Bootcamp-Resolve es el proyecto abierto ahora mismo",
+      "op": "ping",
+      "args": {},
+      "expr": "r.get('project') == 'BC-Bootcamp-Resolve'",
+      "pista": "Abrelo desde el Project Manager. Los checks leen el proyecto que este abierto, no el que exista."
+    },
+    {
+      "id": "frame-rate-intacto",
+      "descripcion": "El timeline frame rate sigue siendo 24 fps despues de importar",
+      "op": "project_settings",
+      "args": {},
+      "expr": "float(r['settings']['timelineFrameRate']) == 24.0",
+      "pista": "Al importar, Resolve puede preguntar si quieres cambiar el frame rate del proyecto al del clip. Hay que decir que no. Si ya dijiste que si, el ajuste esta bloqueado: crea el proyecto de nuevo, configuralo e importa despues."
+    },
+    {
+      "id": "bin-formatos-activo",
+      "descripcion": "BC-Formatos es el bin activo del media pool",
+      "op": "media_list",
+      "args": {},
+      "expr": "r.get('bin') == 'BC-Formatos'",
+      "pista": "En la pagina Media, haz clic sobre el bin BC-Formatos en la lista de la izquierda. El puente lee el bin seleccionado, y los dos checks de propiedades dependen de este."
+    },
+    {
+      "id": "banco-completo",
+      "descripcion": "El bin activo, BC-Formatos, tiene al menos cuatro clips",
+      "op": "media_list",
+      "args": {},
+      "expr": "len(r['clips']) >= 4",
+      "pista": "Practica 03, paso 4: selecciona los cuatro archivos en Media Storage y usa clic derecho > Add into Media Pool, con BC-Formatos como bin activo. Este check lee el bin activo: si bin-formatos-activo falla, arregla ese primero."
+    },
+    {
+      "id": "banco-nombres",
+      "descripcion": "Los cuatro clips del bin activo tienen el nombre exacto que se pide",
+      "op": "media_list",
+      "args": {},
+      "expr": "any(c['name'].startswith('BC-formato-h264') for c in r['clips']) and any(c['name'].startswith('BC-formato-segundo') for c in r['clips']) and any(c['name'].startswith('BC-formato-audio') for c in r['clips']) and any(c['name'].startswith('BC-formato-alpha') for c in r['clips'])",
+      "pista": "Renombra las copias en el disco, no dentro de Resolve: BC-formato-h264.mp4, BC-formato-segundo.mp4, BC-formato-audio.wav y BC-formato-alpha.png. Mayusculas y guiones incluidos. Este check lee el bin activo: si bin-formatos-activo falla, arregla ese primero."
+    },
+    {
+      "id": "video-h264",
+      "descripcion": "BC-formato-h264.mp4 lleva de verdad un codec H.264",
+      "op": "media_clip_properties",
+      "args": {
+        "clip_name": "BC-formato-h264.mp4"
+      },
+      "expr": "'H.264' in r['properties']['Video Codec']",
+      "pista": "Ese clip es H.265 o algo distinto. Comprueba con MediaInfo: el campo Format del bloque Video debe decir AVC. Si tu movil graba en H.265, usa para este archivo un clip de Pexels."
+    },
+    {
+      "id": "contenedor-quicktime",
+      "descripcion": "Resolve identifica el contenedor del .mp4 como la familia QuickTime",
+      "op": "media_clip_properties",
+      "args": {
+        "clip_name": "BC-formato-h264.mp4"
+      },
+      "expr": "r['properties']['Format'] == 'QuickTime'",
+      "pista": "MP4 y MOV descienden del mismo estandar y Resolve reconoce la familia, no la extension. Si falla, el archivo no es un .mp4 real: solo lleva esa extension. Remuxealo con ffmpeg -i entrada -c copy salida.mp4."
+    }
+  ]
+}

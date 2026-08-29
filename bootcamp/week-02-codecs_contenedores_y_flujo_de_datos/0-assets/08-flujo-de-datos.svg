@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 406" width="880" height="406" role="img"
+     aria-label="Cadena de cuatro etapas unidas por flechas: la tarjeta de la camara a unos noventa megabytes por segundo, el disco de trabajo con las velocidades tipicas de un disco mecanico, un SSD SATA y un NVMe, DaVinci Resolve leyendo todas las pistas a la vez, y la carpeta de cache y proxies en un disco aparte. Debajo, la conversion de megabits por segundo a megabytes por segundo y a gigabytes por hora.">
+  <title>El camino de los datos, de la tarjeta al montaje</title>
+  <style>
+    .bg   { fill: #101418; }
+    .surf { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .surf2{ fill: #232b34; stroke: #2f3a45; stroke-width: 1; }
+    .t    { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h    { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .s    { font-size: 12px; fill: #93a1b0; }
+    .lbl  { font-size: 13px; font-weight: 600; fill: #e8eef4; }
+    .mono { font-size: 12px; fill: #93a1b0; }
+    .rail { stroke: #2f3a45; stroke-width: 1; }
+  </style>
+
+  <rect class="bg" width="880" height="406"/>
+  <text class="t h" x="40" y="38">El camino de los datos, y la velocidad de cada tramo</text>
+  <text class="t s" x="40" y="58">El tramo mas lento manda: si el disco no entrega a tiempo, la reproduccion se entrecorta</text>
+  <rect class="surf" x="40" y="90" width="155" height="150" rx="6"/>
+  <rect x="40" y="90" width="155" height="5" fill="#f5a524"/>
+  <text class="t lbl" x="56" y="124">Tarjeta de la camara</text>
+  <text class="t s" x="56" y="150">SD UHS-I: ~90 MB/s</text>
+  <text class="t s" x="56" y="170">Solo para copiar de ella.</text>
+  <text class="t s" x="56" y="190">Nunca montar desde aqui</text>
+  <path d="M 207 165 L 239 165" stroke="#93a1b0" stroke-width="2"/>
+  <path d="M 233 159 L 241 165 L 233 171 Z" fill="#93a1b0"/>
+  <rect class="surf" x="255" y="90" width="155" height="150" rx="6"/>
+  <rect x="255" y="90" width="155" height="5" fill="#4a9eff"/>
+  <text class="t lbl" x="271" y="124">Disco de trabajo</text>
+  <text class="t s" x="271" y="150">HDD externo: 80-150 MB/s</text>
+  <text class="t s" x="271" y="170">SSD SATA: ~500 MB/s</text>
+  <text class="t s" x="271" y="190">NVMe: 2000-7000 MB/s</text>
+  <path d="M 422 165 L 454 165" stroke="#93a1b0" stroke-width="2"/>
+  <path d="M 448 159 L 456 165 L 448 171 Z" fill="#93a1b0"/>
+  <rect class="surf" x="470" y="90" width="155" height="150" rx="6"/>
+  <rect x="470" y="90" width="155" height="5" fill="#3fb950"/>
+  <text class="t lbl" x="486" y="124">DaVinci Resolve</text>
+  <text class="t s" x="486" y="150">Suma los MB/s de todas</text>
+  <text class="t s" x="486" y="170">las pistas que suenan a la</text>
+  <text class="t s" x="486" y="190">vez, mas el render cache</text>
+  <path d="M 637 165 L 669 165" stroke="#93a1b0" stroke-width="2"/>
+  <path d="M 663 159 L 671 165 L 663 171 Z" fill="#93a1b0"/>
+  <rect class="surf" x="685" y="90" width="155" height="150" rx="6"/>
+  <rect x="685" y="90" width="155" height="5" fill="#a371f7"/>
+  <text class="t lbl" x="701" y="124">Cache y proxies</text>
+  <text class="t s" x="701" y="150">Disco rapido y aparte.</text>
+  <text class="t s" x="701" y="170">Es desechable: se</text>
+  <text class="t s" x="701" y="190">regenera cuando haga falta</text>
+  <rect class="surf" x="40" y="262" width="800" height="126" rx="6"/>
+  <text class="t lbl" x="62" y="288">La cuenta que hay que saber hacer</text>
+  <text class="t s"   x="62" y="314">Mbps entre 8 = MB/s.  MB/s por 3600 = MB por hora.</text>
+  <text class="t s"   x="62" y="336">Atajo: Mbps entre 2 = GB por hora, aproximadamente.</text>
+  <text class="t s"   x="62" y="360">Ejemplo: movil a 20 Mbps = 2,5 MB/s = unos 9 GB por hora de grabacion.</text>
+  <text class="t s"   x="470" y="314">Un intermedio de montaje multiplica por seis o siete ese espacio.</text>
+  <text class="t s"   x="470" y="336">Cuatro pistas de intermedio piden unos 80 MB/s de lectura.</text>
+  <text class="t s"   x="470" y="360">Ahi un disco mecanico ya va al limite.</text>
+</svg>

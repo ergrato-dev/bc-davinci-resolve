@@ -223,11 +223,37 @@ lista el bin activo.
                "resolution": "1920x1080", "path": "C:\\...\\plano-01.mp4" } ] }
 ```
 
+### `media_clip_properties`
+
+Todas las propiedades que Resolve conoce de un clip **del bin activo**. Lleva
+`args: {"clip_name": "BC-formato-h264.mp4"}`, con el nombre tal y como aparece en el
+media pool. Devuelve más de doscientos campos; estos son los que usa el bootcamp:
+
+```json
+{ "clip": "BC-formato-h264.mp4", "bin": "BC-Formatos",
+  "properties": { "Format": "QuickTime", "Video Codec": "H.264 High L4.2",
+                  "Audio Codec": "AAC", "Bit Depth": "8", "Audio Bit Depth": "32",
+                  "Sample Rate": "48000", "Audio Ch": "2", "Data Level": "Auto",
+                  "Alpha mode": "None", "PAR": "Square", "Resolution": "1920x1080",
+                  "FPS": 60, "Type": "Video + Audio",
+                  "Input Color Space": "Rec.709 (Scene)", "Input Gamma": "Rec.709" } }
+```
+
+> [!IMPORTANT]
+> Lee del **bin activo**. Un check que la use depende de que el bin correcto esté
+> seleccionado en el media pool, así que conviene precederlo de un check sobre
+> `media_list` sin argumentos que compruebe cuál es el bin activo, y decirlo en la pista.
+
+> [!NOTE]
+> Un `.mp4` reporta `Format: QuickTime`: Resolve reconoce la familia del contenedor, no la
+> extensión. Los tipos tampoco son homogéneos aquí: `Bit Depth` llega como cadena y `FPS`
+> como número. *Verificado en 21.0.4.5, agosto de 2026.*
+
 ### Otras operaciones de lectura
 
 | Operación | Para qué | Se usa a partir de |
 | --------- | -------- | ------------------ |
-| `media_clip_properties` | Metadata y propiedades de un clip concreto | Semana 04 |
+| `media_clip_properties` | Metadata y propiedades de un clip concreto | Semana 02 |
 | `marker_list` / `timeline_list_markers` | Marcadores de la timeline | Semana 09 |
 | `timeline_detect_gaps` | Huecos entre clips | Semana 09 |
 | `render_presets` / `render_formats` | Presets y codecs disponibles | Semana 28 |
@@ -242,6 +268,20 @@ lista el bin activo.
 3. Rompe el estado a propósito en Resolve y comprueba que el check **falla**. Un check
    que nunca ha fallado no está probado.
 4. Escribe la `pista` como si se la dijeras a alguien que acaba de instalar el programa.
+
+> [!WARNING]
+> **Cuidado con las comprensiones anidadas.** La expresión se evalúa con `r` en el ámbito
+> local, y una comprensión crea un ámbito nuevo que no lo ve. Solo el **primer iterable**
+> de la comprensión se evalúa en el ámbito de fuera:
+>
+> ```python
+> len([c for c in r['clips'] if c['name'] == 'x']) >= 1     # funciona
+> all(n in [c['name'] for c in r['clips']] for n in NOMBRES) # NameError: name 'r'
+> any(c['name'].startswith('BC-') for c in r['clips'])       # funciona
+> ```
+>
+> Si necesitas comprobar varios nombres, encadena con `and` una expresión por nombre, cada
+> una con `r` en la posición del primer iterable.
 
 > [!TIP]
 > Los ejercicios nombran proyectos, timelines y bins con el prefijo `BC-`

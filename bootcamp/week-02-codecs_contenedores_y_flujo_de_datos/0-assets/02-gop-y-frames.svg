@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 430" width="880" height="430" role="img"
+     aria-label="Dos tiras de doce frames comparadas. La de arriba, intra-frame, tiene doce frames I completos e independientes. La de abajo, long-GOP, tiene un frame I seguido de frames P y B unidos por flechas que apuntan al frame I, indicando que dependen de el para poder decodificarse.">
+  <title>Frames I, P y B en un codec intra-frame y en uno long-GOP</title>
+  <style>
+    .bg   { fill: #101418; }
+    .surf { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .surf2{ fill: #232b34; stroke: #2f3a45; stroke-width: 1; }
+    .t    { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h    { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .s    { font-size: 12px; fill: #93a1b0; }
+    .lbl  { font-size: 13px; font-weight: 600; fill: #e8eef4; }
+    .mono { font-size: 12px; fill: #93a1b0; }
+    .rail { stroke: #2f3a45; stroke-width: 1; }
+  </style>
+
+  <rect class="bg" width="880" height="430"/>
+  <text class="t h" x="40" y="38">Intra-frame y long-GOP: en que se apoya cada frame</text>
+  <text class="t s" x="40" y="58">El brillo del recuadro indica cuanta informacion guarda ese frame</text>
+  <text class="t lbl" x="40" y="106">Intra-frame</text>
+  <text class="t s"   x="40" y="124">todos los frames son completos</text>
+  <rect x="250" y="96" width="42" height="52" rx="3" fill="#4a9eff" stroke="#4a9eff" stroke-width="2"/>
+  <text class="t lbl" x="271" y="128" text-anchor="middle" fill="#e8eef4">I</text>
+  <rect x="300" y="96" width="42" height="52" rx="3" fill="#4a9eff" stroke="#4a9eff" stroke-width="2"/>
+  <text class="t lbl" x="321" y="128" text-anchor="middle" fill="#e8eef4">I</text>
+  <rect x="350" y="96" width="42" height="52" rx="3" fill="#4a9eff" stroke="#4a9eff" stroke-width="2"/>
+  <text class="t lbl" x="371" y="128" text-anchor="middle" fill="#e8eef4">I</text>
+  <rect x="400" y="96" width="42" height="52" rx="3" fill="#4a9eff" stroke="#4a9eff" stroke-width="2"/>
+  <text class="t lbl" x="421" y="128" text-anchor="middle" fill="#e8eef4">I</text>
+  <rect x="450" y="96" width="42" height="52" rx="3" fill="#4a9eff" stroke="#4a9eff" stroke-width="2"/>
+  <text class="t lbl" x="471" y="128" text-anchor="middle" fill="#e8eef4">I</text>
+  <rect x="500" y="96" width="42" height="52" rx="3" fill="#4a9eff" stroke="#4a9eff" stroke-width="2"/>
+  <text class="t lbl" x="521" y="128" text-anchor="middle" fill="#e8eef4">I</text>
+  <rect x="550" y="96" width="42" height="52" rx="3" fill="#4a9eff" stroke="#4a9eff" stroke-width="2"/>
+  <text class="t lbl" x="571" y="128" text-anchor="middle" fill="#e8eef4">I</text>
+  <rect x="600" y="96" width="42" height="52" rx="3" fill="#4a9eff" stroke="#4a9eff" stroke-width="2"/>
+  <text class="t lbl" x="621" y="128" text-anchor="middle" fill="#e8eef4">I</text>
+  <rect x="650" y="96" width="42" height="52" rx="3" fill="#4a9eff" stroke="#4a9eff" stroke-width="2"/>
+  <text class="t lbl" x="671" y="128" text-anchor="middle" fill="#e8eef4">I</text>
+  <rect x="700" y="96" width="42" height="52" rx="3" fill="#4a9eff" stroke="#4a9eff" stroke-width="2"/>
+  <text class="t lbl" x="721" y="128" text-anchor="middle" fill="#e8eef4">I</text>
+  <rect x="750" y="96" width="42" height="52" rx="3" fill="#4a9eff" stroke="#4a9eff" stroke-width="2"/>
+  <text class="t lbl" x="771" y="128" text-anchor="middle" fill="#e8eef4">I</text>
+  <rect x="800" y="96" width="42" height="52" rx="3" fill="#4a9eff" stroke="#4a9eff" stroke-width="2"/>
+  <text class="t lbl" x="821" y="128" text-anchor="middle" fill="#e8eef4">I</text>
+  <text class="t lbl" x="40" y="236">Long-GOP</text>
+  <text class="t s"   x="40" y="254">un frame completo y once por diferencias</text>
+  <rect x="250" y="226" width="42" height="52" rx="3" fill="#4a9eff" stroke="#4a9eff" stroke-width="2"/>
+  <text class="t lbl" x="271" y="258" text-anchor="middle" fill="#e8eef4">I</text>
+  <rect x="300" y="226" width="42" height="52" rx="3" fill="#232b34" stroke="#f5a524" stroke-width="2"/>
+  <text class="t lbl" x="321" y="258" text-anchor="middle" fill="#e8eef4">B</text>
+  <rect x="350" y="226" width="42" height="52" rx="3" fill="#232b34" stroke="#f5a524" stroke-width="2"/>
+  <text class="t lbl" x="371" y="258" text-anchor="middle" fill="#e8eef4">B</text>
+  <rect x="400" y="226" width="42" height="52" rx="3" fill="#232b34" stroke="#3fb950" stroke-width="2"/>
+  <text class="t lbl" x="421" y="258" text-anchor="middle" fill="#e8eef4">P</text>
+  <rect x="450" y="226" width="42" height="52" rx="3" fill="#232b34" stroke="#f5a524" stroke-width="2"/>
+  <text class="t lbl" x="471" y="258" text-anchor="middle" fill="#e8eef4">B</text>
+  <rect x="500" y="226" width="42" height="52" rx="3" fill="#232b34" stroke="#f5a524" stroke-width="2"/>
+  <text class="t lbl" x="521" y="258" text-anchor="middle" fill="#e8eef4">B</text>
+  <rect x="550" y="226" width="42" height="52" rx="3" fill="#232b34" stroke="#3fb950" stroke-width="2"/>
+  <text class="t lbl" x="571" y="258" text-anchor="middle" fill="#e8eef4">P</text>
+  <rect x="600" y="226" width="42" height="52" rx="3" fill="#232b34" stroke="#f5a524" stroke-width="2"/>
+  <text class="t lbl" x="621" y="258" text-anchor="middle" fill="#e8eef4">B</text>
+  <rect x="650" y="226" width="42" height="52" rx="3" fill="#232b34" stroke="#f5a524" stroke-width="2"/>
+  <text class="t lbl" x="671" y="258" text-anchor="middle" fill="#e8eef4">B</text>
+  <rect x="700" y="226" width="42" height="52" rx="3" fill="#232b34" stroke="#3fb950" stroke-width="2"/>
+  <text class="t lbl" x="721" y="258" text-anchor="middle" fill="#e8eef4">P</text>
+  <rect x="750" y="226" width="42" height="52" rx="3" fill="#232b34" stroke="#f5a524" stroke-width="2"/>
+  <text class="t lbl" x="771" y="258" text-anchor="middle" fill="#e8eef4">B</text>
+  <rect x="800" y="226" width="42" height="52" rx="3" fill="#232b34" stroke="#f5a524" stroke-width="2"/>
+  <text class="t lbl" x="821" y="258" text-anchor="middle" fill="#e8eef4">B</text>
+  <path d="M 321 284 Q 296 306 271 284" fill="none" stroke="#2f3a45" stroke-width="1.5"/>
+  <path d="M 371 284 Q 346 306 271 284" fill="none" stroke="#2f3a45" stroke-width="1.5"/>
+  <path d="M 421 284 Q 396 306 271 284" fill="none" stroke="#2f3a45" stroke-width="1.5"/>
+  <path d="M 471 284 Q 446 306 271 284" fill="none" stroke="#2f3a45" stroke-width="1.5"/>
+  <path d="M 521 284 Q 496 306 271 284" fill="none" stroke="#2f3a45" stroke-width="1.5"/>
+  <path d="M 571 284 Q 546 306 271 284" fill="none" stroke="#2f3a45" stroke-width="1.5"/>
+  <path d="M 621 284 Q 596 306 271 284" fill="none" stroke="#2f3a45" stroke-width="1.5"/>
+  <path d="M 671 284 Q 646 306 271 284" fill="none" stroke="#2f3a45" stroke-width="1.5"/>
+  <path d="M 721 284 Q 696 306 271 284" fill="none" stroke="#2f3a45" stroke-width="1.5"/>
+  <path d="M 771 284 Q 746 306 271 284" fill="none" stroke="#2f3a45" stroke-width="1.5"/>
+  <path d="M 821 284 Q 796 306 271 284" fill="none" stroke="#2f3a45" stroke-width="1.5"/>
+  <text class="t s" x="250" y="326">Cada frame P y B necesita el frame I del grupo para poder mostrarse</text>
+  <rect class="surf" x="40" y="352" width="800" height="60" rx="6"/>
+  <rect x="60" y="368" width="14" height="14" rx="2" fill="#4a9eff"/>
+  <text class="t s" x="84" y="380">I: imagen completa</text>
+  <rect x="256" y="368" width="14" height="14" rx="2" fill="#232b34" stroke="#3fb950" stroke-width="2"/>
+  <text class="t s" x="280" y="380">P: diferencias respecto a un frame anterior</text>
+  <rect x="576" y="368" width="14" height="14" rx="2" fill="#232b34" stroke="#f5a524" stroke-width="2"/>
+  <text class="t s" x="600" y="380">B: diferencias en los dos sentidos</text>
+</svg>

@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 340" width="880" height="340" role="img"
+     aria-label="Tres rejillas de ocho pixeles, dos filas por cuatro columnas. En 4:4:4 cada pixel tiene su propia muestra de color. En 4:2:2 solo la tienen las columnas alternas. En 4:2:0 solo un pixel de cada bloque de dos por dos. En las tres, todos los pixeles conservan su muestra de brillo.">
+  <title>Chroma subsampling 4:4:4, 4:2:2 y 4:2:0</title>
+  <style>
+    .bg   { fill: #101418; }
+    .surf { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .surf2{ fill: #232b34; stroke: #2f3a45; stroke-width: 1; }
+    .t    { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h    { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .s    { font-size: 12px; fill: #93a1b0; }
+    .lbl  { font-size: 13px; font-weight: 600; fill: #e8eef4; }
+    .mono { font-size: 12px; fill: #93a1b0; }
+    .rail { stroke: #2f3a45; stroke-width: 1; }
+  </style>
+
+  <rect class="bg" width="880" height="340"/>
+  <text class="t h" x="40" y="38">Cuantas muestras de color hay por cada 8 pixeles</text>
+  <text class="t s" x="40" y="58">El brillo se guarda siempre entero: una muestra por pixel. Lo que se recorta es el color</text>
+  <text class="t lbl" x="60" y="88">4:4:4</text>
+  <text class="t s"   x="60" y="106">100 % del color  ·  una muestra por pixel</text>
+  <rect x="60" y="130" width="44" height="44" fill="#232b34" stroke="#2f3a45" stroke-width="1"/>
+  <circle cx="71" cy="141" r="4" fill="#93a1b0"/>
+  <circle cx="90" cy="160" r="7" fill="#4a9eff"/>
+  <rect x="104" y="130" width="44" height="44" fill="#232b34" stroke="#2f3a45" stroke-width="1"/>
+  <circle cx="115" cy="141" r="4" fill="#93a1b0"/>
+  <circle cx="134" cy="160" r="7" fill="#4a9eff"/>
+  <rect x="148" y="130" width="44" height="44" fill="#232b34" stroke="#2f3a45" stroke-width="1"/>
+  <circle cx="159" cy="141" r="4" fill="#93a1b0"/>
+  <circle cx="178" cy="160" r="7" fill="#4a9eff"/>
+  <rect x="192" y="130" width="44" height="44" fill="#232b34" stroke="#2f3a45" stroke-width="1"/>
+  <circle cx="203" cy="141" r="4" fill="#93a1b0"/>
+  <circle cx="222" cy="160" r="7" fill="#4a9eff"/>
+  <rect x="60" y="174" width="44" height="44" fill="#232b34" stroke="#2f3a45" stroke-width="1"/>
+  <circle cx="71" cy="185" r="4" fill="#93a1b0"/>
+  <circle cx="90" cy="204" r="7" fill="#4a9eff"/>
+  <rect x="104" y="174" width="44" height="44" fill="#232b34" stroke="#2f3a45" stroke-width="1"/>
+  <circle cx="115" cy="185" r="4" fill="#93a1b0"/>
+  <circle cx="134" cy="204" r="7" fill="#4a9eff"/>
+  <rect x="148" y="174" width="44" height="44" fill="#232b34" stroke="#2f3a45" stroke-width="1"/>
+  <circle cx="159" cy="185" r="4" fill="#93a1b0"/>
+  <circle cx="178" cy="204" r="7" fill="#4a9eff"/>
+  <rect x="192" y="174" width="44" height="44" fill="#232b34" stroke="#2f3a45" stroke-width="1"/>
+  <circle cx="203" cy="185" r="4" fill="#93a1b0"/>
+  <circle cx="222" cy="204" r="7" fill="#4a9eff"/>
+  <text class="t lbl" x="330" y="88">4:2:2</text>
+  <text class="t s"   x="330" y="106">50 % del color  ·  una cada dos, en horizontal</text>
+  <rect x="330" y="130" width="44" height="44" fill="#232b34" stroke="#2f3a45" stroke-width="1"/>
+  <circle cx="341" cy="141" r="4" fill="#93a1b0"/>
+  <circle cx="360" cy="160" r="7" fill="#4a9eff"/>
+  <rect x="374" y="130" width="44" height="44" fill="#232b34" stroke="#2f3a45" stroke-width="1"/>
+  <circle cx="385" cy="141" r="4" fill="#93a1b0"/>
+  <rect x="418" y="130" width="44" height="44" fill="#232b34" stroke="#2f3a45" stroke-width="1"/>
+  <circle cx="429" cy="141" r="4" fill="#93a1b0"/>
+  <circle cx="448" cy="160" r="7" fill="#4a9eff"/>
+  <rect x="462" y="130" width="44" height="44" fill="#232b34" stroke="#2f3a45" stroke-width="1"/>
+  <circle cx="473" cy="141" r="4" fill="#93a1b0"/>
+  <rect x="330" y="174" width="44" height="44" fill="#232b34" stroke="#2f3a45" stroke-width="1"/>
+  <circle cx="341" cy="185" r="4" fill="#93a1b0"/>
+  <circle cx="360" cy="204" r="7" fill="#4a9eff"/>
+  <rect x="374" y="174" width="44" height="44" fill="#232b34" stroke="#2f3a45" stroke-width="1"/>
+  <circle cx="385" cy="185" r="4" fill="#93a1b0"/>
+  <rect x="418" y="174" width="44" height="44" fill="#232b34" stroke="#2f3a45" stroke-width="1"/>
+  <circle cx="429" cy="185" r="4" fill="#93a1b0"/>
+  <circle cx="448" cy="204" r="7" fill="#4a9eff"/>
+  <rect x="462" y="174" width="44" height="44" fill="#232b34" stroke="#2f3a45" stroke-width="1"/>
+  <circle cx="473" cy="185" r="4" fill="#93a1b0"/>
+  <text class="t lbl" x="600" y="88">4:2:0</text>
+  <text class="t s"   x="600" y="106">25 % del color  ·  una por bloque de 2 x 2</text>
+  <rect x="600" y="130" width="44" height="44" fill="#232b34" stroke="#2f3a45" stroke-width="1"/>
+  <circle cx="611" cy="141" r="4" fill="#93a1b0"/>
+  <circle cx="630" cy="160" r="7" fill="#4a9eff"/>
+  <rect x="644" y="130" width="44" height="44" fill="#232b34" stroke="#2f3a45" stroke-width="1"/>
+  <circle cx="655" cy="141" r="4" fill="#93a1b0"/>
+  <rect x="688" y="130" width="44" height="44" fill="#232b34" stroke="#2f3a45" stroke-width="1"/>
+  <circle cx="699" cy="141" r="4" fill="#93a1b0"/>
+  <circle cx="718" cy="160" r="7" fill="#4a9eff"/>
+  <rect x="732" y="130" width="44" height="44" fill="#232b34" stroke="#2f3a45" stroke-width="1"/>
+  <circle cx="743" cy="141" r="4" fill="#93a1b0"/>
+  <rect x="600" y="174" width="44" height="44" fill="#232b34" stroke="#2f3a45" stroke-width="1"/>
+  <circle cx="611" cy="185" r="4" fill="#93a1b0"/>
+  <rect x="644" y="174" width="44" height="44" fill="#232b34" stroke="#2f3a45" stroke-width="1"/>
+  <circle cx="655" cy="185" r="4" fill="#93a1b0"/>
+  <rect x="688" y="174" width="44" height="44" fill="#232b34" stroke="#2f3a45" stroke-width="1"/>
+  <circle cx="699" cy="185" r="4" fill="#93a1b0"/>
+  <rect x="732" y="174" width="44" height="44" fill="#232b34" stroke="#2f3a45" stroke-width="1"/>
+  <circle cx="743" cy="185" r="4" fill="#93a1b0"/>
+  <rect class="surf" x="40" y="252" width="800" height="70" rx="6"/>
+  <circle cx="66" cy="278" r="4" fill="#93a1b0"/>
+  <text class="t s" x="82" y="282">muestra de brillo (luma): siempre una por pixel</text>
+  <circle cx="450" cy="278" r="7" fill="#4a9eff"/>
+  <text class="t s" x="470" y="282">muestra de color (croma): la que se recorta</text>
+  <text class="t s" x="66" y="308">Se nota al hacer croma, al saturar mucho y en los bordes de texto de color. No se arregla despues.</text>
+</svg>
