@@ -1,0 +1,62 @@
+{
+  "semana": "04",
+  "titulo": "Media page: ingesta y organizacion",
+  "checks": [
+    {
+      "id": "proyecto-abierto",
+      "descripcion": "BC-Bootcamp-Resolve es el proyecto abierto ahora mismo",
+      "op": "ping",
+      "args": {},
+      "expr": "r.get('project') == 'BC-Bootcamp-Resolve'",
+      "pista": "Abrelo desde el Project Manager, en la raiz de tu biblioteca original. Si te quedaste en BC-Pruebas-semana03 despues del paso 7 de la practica 02, vuelve: los checks leen el proyecto abierto, no el que exista."
+    },
+    {
+      "id": "frame-rate-bloqueado",
+      "descripcion": "El timeline frame rate de BC-Bootcamp-Resolve sigue siendo 24 fps",
+      "op": "project_settings",
+      "args": {},
+      "expr": "float(r['settings']['timelineFrameRate']) == 24.0",
+      "pista": "File > Project Settings > Master Settings > Timeline frame rate. Desde la Semana 02 hay clips en el media pool, asi que el campo aparece atenuado y no se puede cambiar. Si te sale otro valor, el proyecto abierto no es el del bootcamp."
+    },
+    {
+      "id": "bin-basicos",
+      "descripcion": "El bin 01-Basicos tiene 15 clips o mas",
+      "op": "media_list",
+      "args": { "bin": ["01-Basicos"] },
+      "expr": "len([c for c in r['clips'] if c['path']]) >= 15",
+      "pista": "Practica 02, pasos 3 y 4. El nombre es exacto: 01-Basicos, sin tilde, con mayuscula inicial y con el cero delante. El bin tiene que colgar de Master, no de otro bin. Un bin que no existe devuelve lo mismo que un bin vacio, asi que comprueba las dos cosas."
+    },
+    {
+      "id": "bin-entrevista",
+      "descripcion": "El bin 02-Entrevista tiene al menos un clip",
+      "op": "media_list",
+      "args": { "bin": ["02-Entrevista"] },
+      "expr": "len([c for c in r['clips'] if c['path']]) >= 1",
+      "pista": "Practica 02, paso 4. Necesitas un clip de alguien hablando, de 60 segundos o mas, en la carpeta 02-entrevista/ del pack. Si no encuentras uno, grabalo tu: es el material de la Semana 14."
+    },
+    {
+      "id": "bin-propio",
+      "descripcion": "El bin 08-Propio tiene 10 clips propios o mas",
+      "op": "media_list",
+      "args": { "bin": ["08-Propio"] },
+      "expr": "len([c for c in r['clips'] if c['path']]) >= 10",
+      "pista": "Practica 02, paso 5. Son diez planos de tu pieza grabados por ti, importados desde BC-Propio/. El nombre del bin es 08-Propio, en singular. Si aun no los has grabado, el movil sirve para las cinco opciones de pieza del bootcamp."
+    },
+    {
+      "id": "bin-escenas",
+      "descripcion": "El bin 09-Escenas tiene tres subclips o mas de la deteccion de escenas",
+      "op": "media_list",
+      "args": { "bin": ["09-Escenas"] },
+      "expr": "len([c for c in r['clips'] if c['path']]) >= 3",
+      "pista": "Practica 04, pasos 4 a 6. Selecciona 09-Escenas como bin activo ANTES de lanzar Scene Cut Detection: los subclips caen en el bin seleccionado. Si cayeron en otro sitio, arrastralos; mover entre bins no duplica nada."
+    },
+    {
+      "id": "master-limpio",
+      "descripcion": "El bin Master no tiene ningun clip suelto: solo bins y timelines",
+      "op": "media_list",
+      "args": { "bin": ["Master"] },
+      "expr": "len([c for c in r['clips'] if c['path']]) == 0",
+      "pista": "Practica 02, paso 6. Mueve a su bin cualquier clip que cuelgue directamente de la raiz, incluidos los cuatro de la Semana 02. La timeline BC-Montaje-v1 no cuenta y puede quedarse: una timeline no tiene ruta de archivo."
+    }
+  ]
+}

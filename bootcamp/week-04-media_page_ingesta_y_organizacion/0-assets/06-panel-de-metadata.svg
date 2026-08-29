@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" width="880" height="420" role="img"
+     aria-label="Esquema del panel Metadata: arriba el selector de conjunto de campos, en el centro los campos de Shot and Scene con descripcion, keywords, escena, plano y toma, y a la derecha la separacion entre metadata que trae el archivo y metadata que escribes tu.">
+  <title>El panel Metadata y los dos orígenes de la metadata</title>
+  <style>
+    .bg   { fill: #101418; }
+    .surf { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .surf2{ fill: #232b34; stroke: #2f3a45; stroke-width: 1; }
+    .t    { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h    { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .lbl  { font-size: 13px; font-weight: 600; fill: #e8eef4; }
+    .s    { font-size: 12px; fill: #93a1b0; }
+    .m    { font-size: 12px; fill: #e8eef4; }
+  </style>
+
+  <rect class="bg" width="880" height="420"/>
+  <text class="t h" x="40" y="38">Metadata: lo que el archivo trae y lo que escribes tú</text>
+  <text class="t s" x="40" y="58">Se escribe en la base del proyecto, no dentro del archivo de vídeo</text>
+
+  <rect class="surf" x="40" y="82" width="450" height="292" rx="6"/>
+  <text class="t lbl" x="60" y="108">Panel Metadata</text>
+
+  <rect class="surf2" x="60" y="122" width="410" height="26" rx="3"/>
+  <text class="t m" x="74" y="140">Conjunto de campos:  Shot &amp; Scene</text>
+
+  <rect class="surf2" x="60" y="158" width="410" height="26" rx="3"/>
+  <text class="t s" x="74" y="176">Description</text>
+  <text class="t m" x="210" y="176">calle mojada, contraluz</text>
+
+  <rect class="surf2" x="60" y="192" width="410" height="26" rx="3"/>
+  <text class="t s" x="74" y="210">Keywords</text>
+  <text class="t m" x="210" y="210">exterior, noche, lluvia</text>
+
+  <rect class="surf2" x="60" y="226" width="410" height="26" rx="3"/>
+  <text class="t s" x="74" y="244">Scene</text>
+  <text class="t m" x="210" y="244">02</text>
+
+  <rect class="surf2" x="60" y="260" width="410" height="26" rx="3"/>
+  <text class="t s" x="74" y="278">Shot</text>
+  <text class="t m" x="210" y="278">B</text>
+
+  <rect class="surf2" x="60" y="294" width="410" height="26" rx="3"/>
+  <text class="t s" x="74" y="312">Take</text>
+  <text class="t m" x="210" y="312">3</text>
+
+  <text class="t s" x="60" y="348">Con varios clips seleccionados, lo que escribas se aplica a todos.</text>
+
+  <rect class="surf" x="514" y="82" width="326" height="140" rx="6"/>
+  <rect x="514" y="82" width="326" height="4" fill="#4a9eff"/>
+  <text class="t lbl" x="536" y="112">La trae el archivo</text>
+  <text class="t s"   x="536" y="134">Codec, resolución, frame rate, fecha</text>
+  <text class="t s"   x="536" y="152">de grabación, cámara, timecode.</text>
+  <text class="t s"   x="536" y="176">La escribió la cámara. No se discute:</text>
+  <text class="t s"   x="536" y="194">se lee, y sirve para filtrar.</text>
+
+  <rect class="surf" x="514" y="234" width="326" height="140" rx="6"/>
+  <rect x="514" y="234" width="326" height="4" fill="#3fb950"/>
+  <text class="t lbl" x="536" y="264">La escribes tú</text>
+  <text class="t s"   x="536" y="286">Description, Keywords, Scene, Shot,</text>
+  <text class="t s"   x="536" y="304">Take, Comments, Good Take.</text>
+  <text class="t s"   x="536" y="328">Es la que convierte doscientos clips</text>
+  <text class="t s"   x="536" y="346">en un archivo que se puede consultar.</text>
+
+  <text class="t s" x="40" y="404">Borrar el proyecto borra esta metadata: no viaja dentro del .mp4. El .drp sí la lleva.</text>
+</svg>

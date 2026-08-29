@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img"
+     aria-label="Comparacion de la vista de miniaturas y la vista de lista del media pool. La de miniaturas muestra imagen y sirve para reconocer; la de lista muestra columnas de codec, resolucion, frame rate y keywords, y sirve para comparar y detectar material que no encaja.">
+  <title>Vista de miniaturas y vista de lista</title>
+  <style>
+    .bg   { fill: #101418; }
+    .surf { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .surf2{ fill: #232b34; stroke: #2f3a45; stroke-width: 1; }
+    .t    { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h    { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .lbl  { font-size: 13px; font-weight: 600; fill: #e8eef4; }
+    .s    { font-size: 12px; fill: #93a1b0; }
+    .m    { font-size: 12px; fill: #e8eef4; }
+    .warn { font-size: 12px; font-weight: 600; fill: #f5a524; }
+  </style>
+
+  <rect class="bg" width="880" height="400"/>
+  <text class="t h" x="40" y="38">Dos vistas del mismo bin, para dos trabajos distintos</text>
+
+  <rect class="surf" x="40" y="62" width="360" height="248" rx="6"/>
+  <rect x="40" y="62" width="360" height="4" fill="#4a9eff"/>
+  <text class="t lbl" x="60" y="92">Miniaturas</text>
+  <text class="t s"   x="60" y="112">Para reconocer un plano</text>
+
+  <rect class="surf2" x="60" y="128" width="100" height="62" rx="3"/>
+  <rect class="surf2" x="172" y="128" width="100" height="62" rx="3"/>
+  <rect class="surf2" x="284" y="128" width="100" height="62" rx="3"/>
+  <rect class="surf2" x="60" y="200" width="100" height="62" rx="3"/>
+  <rect class="surf2" x="172" y="200" width="100" height="62" rx="3"/>
+  <rect class="surf2" x="284" y="200" width="100" height="62" rx="3"/>
+  <rect x="60" y="200" width="100" height="4" fill="#f85149"/>
+  <rect x="172" y="128" width="100" height="4" fill="#5b9cff"/>
+
+  <text class="t s" x="60" y="288">Pasar el ratón sobre la miniatura recorre el clip sin abrirlo.</text>
+
+  <rect class="surf" x="424" y="62" width="416" height="248" rx="6"/>
+  <rect x="424" y="62" width="416" height="4" fill="#3fb950"/>
+  <text class="t lbl" x="444" y="92">Lista</text>
+  <text class="t s"   x="444" y="112">Para comparar y para detectar lo raro</text>
+
+  <rect class="surf2" x="444" y="128" width="376" height="24" rx="3"/>
+  <text class="t s" x="456" y="145">Nombre</text>
+  <text class="t s" x="580" y="145">Codec</text>
+  <text class="t s" x="668" y="145">Res.</text>
+  <text class="t s" x="756" y="145">FPS</text>
+
+  <rect class="surf2" x="444" y="158" width="376" height="24" rx="3"/>
+  <text class="t m" x="456" y="175">plano-01.mp4</text>
+  <text class="t s" x="580" y="175">H.264</text>
+  <text class="t s" x="668" y="175">1920</text>
+  <text class="t s" x="756" y="175">24</text>
+
+  <rect class="surf2" x="444" y="188" width="376" height="24" rx="3"/>
+  <text class="t m" x="456" y="205">plano-02.mp4</text>
+  <text class="t s" x="580" y="205">H.264</text>
+  <text class="t s" x="668" y="205">1920</text>
+  <text class="t s" x="756" y="205">24</text>
+
+  <rect class="surf2" x="444" y="218" width="376" height="24" rx="3"/>
+  <rect x="444" y="218" width="4" height="24" fill="#f5a524"/>
+  <text class="t m" x="456" y="235">plano-03.mp4</text>
+  <text class="t s" x="580" y="235">HEVC</text>
+  <text class="t s" x="668" y="235">3840</text>
+  <text class="t warn" x="756" y="235">60</text>
+
+  <text class="t s" x="444" y="270">La fila que no se parece a las demás es el material que va a dar problemas.</text>
+  <text class="t s" x="444" y="288">Las columnas se eligen con clic derecho sobre la cabecera.</text>
+
+  <text class="t s" x="40" y="348">El buscador del media pool filtra el bin abierto por nombre y por metadata; se limpia borrando el texto.</text>
+  <text class="t s" x="40" y="370">Ordenar por una columna no reordena nada en el disco: solo cambia cómo lo estás mirando.</text>
+</svg>

@@ -55,7 +55,26 @@ terceros.
 
 ---
 
-_Las semanas 04 a 36 añadirán aquí sus trucos según se publiquen._
+## Semana 04 — Media page: ingesta y organización
+
+| Truco | Cómo |
+| ----- | ---- |
+| Heredar la estructura de carpetas del disco en bins | Clic derecho sobre la carpeta en Media Storage > `Add Folder and SubFolders into Media Pool` |
+| Copiar a dos discos en una sola pasada, con verificación | Añade dos destinos al mismo trabajo del Clone Tool |
+| Comprobar en treinta segundos si un archivo se ha corrompido | `./scripts/preparar-medios.sh`, con el pack ya sellado con `--sellar` |
+| Ver un clip antes de importarlo | Selecciónalo en el panel `Media Storage`: aparece en el viewer sin entrar al proyecto |
+| Distinguir una timeline de un clip en el media pool | La columna `File Path` de una timeline está vacía |
+| Describir cuarenta clips en quince minutos | Selección múltiple en el media pool y escribe la keyword una sola vez |
+| Encontrar el material que va a dar problemas antes de montar | Vista de lista, ordena por `Frame Rate` y por `Video Codec` |
+| Elegir qué columnas ves | Clic derecho sobre la **cabecera de columnas**, en vista de lista |
+| Ver los power bins, que están ocultos por defecto | `View > Show Power Bins` |
+| Saber qué te falta por describir | Un smart bin con la regla de `Keywords` vacío |
+| Recuperar un bin que "se ha vaciado" de golpe | Borra el texto del buscador del media pool |
+| No perder nunca un descarte | Muévelo a `10-Descartes` en vez de quitarlo del media pool |
+
+---
+
+_Las semanas 05 a 36 añadirán aquí sus trucos según se publiquen._
 
 ---
 

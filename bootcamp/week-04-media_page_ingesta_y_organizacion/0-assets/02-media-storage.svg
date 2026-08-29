@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img"
+     aria-label="Comparacion entre las dos formas de meter material en el proyecto: arrastrar archivos sueltos al media pool, o usar Add Folder and SubFolders into Media Pool para que Resolve replique la estructura de carpetas creando bins.">
+  <title>Las dos formas de entrar material desde Media Storage</title>
+  <style>
+    .bg   { fill: #101418; }
+    .surf { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .surf2{ fill: #232b34; stroke: #2f3a45; stroke-width: 1; }
+    .t    { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h    { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .lbl  { font-size: 13px; font-weight: 600; fill: #e8eef4; }
+    .s    { font-size: 12px; fill: #93a1b0; }
+    .m    { font-size: 12px; fill: #e8eef4; }
+  </style>
+
+  <rect class="bg" width="880" height="400"/>
+  <text class="t h" x="40" y="38">Media Storage: de tu disco al media pool</text>
+  <text class="t s" x="40" y="58">La lista de discos sale de Preferences &gt; System &gt; Media Storage. La primera entrada manda.</text>
+
+  <rect class="surf" x="40" y="82" width="386" height="266" rx="6"/>
+  <rect x="40" y="82" width="386" height="4" fill="#f5a524"/>
+  <text class="t lbl" x="60" y="112">Arrastrar los archivos sueltos</text>
+  <text class="t s"   x="60" y="132">Selección múltiple y arrastre al media pool</text>
+
+  <rect class="surf2" x="60" y="150" width="346" height="26" rx="3"/>
+  <text class="t m" x="74" y="168">01-basicos/  ·  18 archivos seleccionados</text>
+
+  <path d="M233 186 L233 208" stroke="#f5a524" stroke-width="2"/>
+  <path d="M227 202 L233 210 L239 202 Z" fill="#f5a524"/>
+
+  <rect class="surf2" x="60" y="218" width="346" height="106" rx="3"/>
+  <text class="t lbl" x="74" y="240">Master</text>
+  <text class="t s"   x="86" y="262">plano-01.mp4</text>
+  <text class="t s"   x="86" y="280">plano-02.mp4</text>
+  <text class="t s"   x="86" y="298">…y dieciséis más, todos juntos</text>
+  <text class="t s"   x="74" y="316">Rápido hoy, caro en la semana doce.</text>
+
+  <rect class="surf" x="454" y="82" width="386" height="266" rx="6"/>
+  <rect x="454" y="82" width="386" height="4" fill="#3fb950"/>
+  <text class="t lbl" x="474" y="112">Add Folder and SubFolders into Media Pool</text>
+  <text class="t s"   x="474" y="132">Clic derecho sobre la carpeta, opción con Create Bins</text>
+
+  <rect class="surf2" x="474" y="150" width="346" height="26" rx="3"/>
+  <text class="t m" x="488" y="168">00-medios-bootcamp/  ·  la carpeta entera</text>
+
+  <path d="M647 186 L647 208" stroke="#3fb950" stroke-width="2"/>
+  <path d="M641 202 L647 210 L653 202 Z" fill="#3fb950"/>
+
+  <rect class="surf2" x="474" y="218" width="346" height="106" rx="3"/>
+  <text class="t lbl" x="488" y="240">Master</text>
+  <text class="t s"   x="500" y="262">01-Basicos      ·  18 clips</text>
+  <text class="t s"   x="500" y="280">02-Entrevista   ·  2 clips</text>
+  <text class="t s"   x="500" y="298">06-Audio        ·  9 clips</text>
+  <text class="t s"   x="488" y="316">La estructura del disco, ya replicada en bins.</text>
+
+  <text class="t s" x="40" y="378">En los dos casos Resolve guarda referencias: ni un byte de vídeo se copia al proyecto.</text>
+</svg>

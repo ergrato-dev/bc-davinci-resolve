@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 380" width="880" height="380" role="img"
+     aria-label="Las tres capas de clasificacion de un clip: keywords en texto para buscar, flags de color para marcar estados temporales y color de clip para el estado permanente. Cada una con su uso y su alcance.">
+  <title>Keywords, flags y color de clip</title>
+  <style>
+    .bg   { fill: #101418; }
+    .surf { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .surf2{ fill: #232b34; stroke: #2f3a45; stroke-width: 1; }
+    .t    { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h    { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .lbl  { font-size: 13px; font-weight: 600; fill: #e8eef4; }
+    .s    { font-size: 12px; fill: #93a1b0; }
+    .m    { font-size: 12px; fill: #e8eef4; }
+  </style>
+
+  <rect class="bg" width="880" height="380"/>
+  <text class="t h" x="40" y="38">Tres capas, tres preguntas distintas</text>
+
+  <rect class="surf" x="40" y="62" width="256" height="230" rx="6"/>
+  <rect x="40" y="62" width="256" height="4" fill="#4a9eff"/>
+  <text class="t lbl" x="60" y="92">Keywords</text>
+  <text class="t s"   x="60" y="112">¿De qué es este plano?</text>
+  <rect class="surf2" x="60" y="128" width="216" height="80" rx="4"/>
+  <text class="t m" x="76" y="150">exterior · noche · lluvia</text>
+  <text class="t s" x="76" y="172">Texto. Se busca, se filtra</text>
+  <text class="t s" x="76" y="190">y alimenta los smart bins.</text>
+  <text class="t s" x="60" y="232">Permanente. Vale a los</text>
+  <text class="t s" x="60" y="250">nueve meses igual que hoy.</text>
+  <text class="t s" x="60" y="276">Panel Metadata</text>
+
+  <rect class="surf" x="312" y="62" width="256" height="230" rx="6"/>
+  <rect x="312" y="62" width="256" height="4" fill="#3fb950"/>
+  <text class="t lbl" x="332" y="92">Flag</text>
+  <text class="t s"   x="332" y="112">¿Qué me falta por hacer?</text>
+  <rect class="surf2" x="332" y="128" width="216" height="80" rx="4"/>
+  <circle cx="352" cy="150" r="7" fill="#3fb950"/>
+  <text class="t m" x="368" y="155">revisado</text>
+  <circle cx="352" cy="176" r="7" fill="#f5a524"/>
+  <text class="t m" x="368" y="181">pendiente de audio</text>
+  <text class="t s" x="332" y="232">Temporal. Se pone, se</text>
+  <text class="t s" x="332" y="250">cumple y se quita.</text>
+  <text class="t s" x="332" y="276">Clic derecho &gt; Flags</text>
+
+  <rect class="surf" x="584" y="62" width="256" height="230" rx="6"/>
+  <rect x="584" y="62" width="256" height="4" fill="#f5a524"/>
+  <text class="t lbl" x="604" y="92">Clip Color</text>
+  <text class="t s"   x="604" y="112">¿Qué clase de plano es?</text>
+  <rect class="surf2" x="604" y="128" width="216" height="80" rx="4"/>
+  <rect x="620" y="142" width="14" height="14" rx="2" fill="#5b9cff"/>
+  <text class="t m" x="644" y="155">material propio</text>
+  <rect x="620" y="168" width="14" height="14" rx="2" fill="#f85149"/>
+  <text class="t m" x="644" y="181">descarte</text>
+  <text class="t s" x="604" y="232">Se ve de un vistazo, sin</text>
+  <text class="t s" x="604" y="250">abrir ningún panel.</text>
+  <text class="t s" x="604" y="276">Clic derecho &gt; Clip Color</text>
+
+  <text class="t s" x="40" y="330">Elige un significado por color y escríbelo. Un código de colores que no está anotado deja de existir en dos semanas.</text>
+  <text class="t s" x="40" y="352">Las tres capas se guardan en el proyecto, y las tres viajan dentro del .drp.</text>
+</svg>

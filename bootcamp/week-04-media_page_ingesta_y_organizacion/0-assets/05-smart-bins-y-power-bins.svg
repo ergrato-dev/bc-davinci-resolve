@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img"
+     aria-label="Comparacion de los tres tipos de bin: el bin normal donde los clips se meten a mano y vive en un proyecto, el smart bin que se llena solo aplicando reglas sobre la metadata, y el power bin que es compartido por todos los proyectos de la biblioteca.">
+  <title>Bin normal, Smart Bin y Power Bin</title>
+  <style>
+    .bg   { fill: #101418; }
+    .surf { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .surf2{ fill: #232b34; stroke: #2f3a45; stroke-width: 1; }
+    .t    { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h    { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .lbl  { font-size: 13px; font-weight: 600; fill: #e8eef4; }
+    .s    { font-size: 12px; fill: #93a1b0; }
+    .m    { font-size: 12px; fill: #e8eef4; }
+  </style>
+
+  <rect class="bg" width="880" height="400"/>
+  <text class="t h" x="40" y="38">Tres bins que se parecen y no hacen lo mismo</text>
+
+  <rect class="surf" x="40" y="62" width="256" height="256" rx="6"/>
+  <rect x="40" y="62" width="256" height="4" fill="#4a9eff"/>
+  <text class="t lbl" x="60" y="92">Bin</text>
+  <text class="t s"   x="60" y="112">Lo llenas tú, a mano</text>
+  <rect class="surf2" x="60" y="128" width="216" height="94" rx="4"/>
+  <text class="t m" x="76" y="150">01-Basicos</text>
+  <text class="t s" x="76" y="172">Arrastras el clip: entra.</text>
+  <text class="t s" x="76" y="190">Lo sacas: sale.</text>
+  <text class="t s" x="76" y="208">Un clip vive en uno solo.</text>
+  <text class="t s" x="60" y="248">Alcance: este proyecto</text>
+  <text class="t s" x="60" y="272">Se crea con File &gt; New Bin</text>
+  <text class="t s" x="60" y="296">Para: la estructura estable</text>
+
+  <rect class="surf" x="312" y="62" width="256" height="256" rx="6"/>
+  <rect x="312" y="62" width="256" height="4" fill="#3fb950"/>
+  <text class="t lbl" x="332" y="92">Smart Bin</text>
+  <text class="t s"   x="332" y="112">Se llena solo, con reglas</text>
+  <rect class="surf2" x="332" y="128" width="216" height="94" rx="4"/>
+  <text class="t m" x="348" y="150">Keywords contiene «coche»</text>
+  <text class="t s" x="348" y="172">Es una búsqueda guardada.</text>
+  <text class="t s" x="348" y="190">Nada se mueve de su bin;</text>
+  <text class="t s" x="348" y="208">el clip solo se muestra aquí.</text>
+  <text class="t s" x="332" y="248">Alcance: este proyecto</text>
+  <text class="t s" x="332" y="272">Depende de la metadata</text>
+  <text class="t s" x="332" y="296">Para: preguntas que repites</text>
+
+  <rect class="surf" x="584" y="62" width="256" height="256" rx="6"/>
+  <rect x="584" y="62" width="256" height="4" fill="#f5a524"/>
+  <text class="t lbl" x="604" y="92">Power Bin</text>
+  <text class="t s"   x="604" y="112">Compartido entre proyectos</text>
+  <rect class="surf2" x="604" y="128" width="216" height="94" rx="4"/>
+  <text class="t m" x="620" y="150">BC-Recursos</text>
+  <text class="t s" x="620" y="172">Logotipo, cortinilla, música</text>
+  <text class="t s" x="620" y="190">de cabecera: lo que reutilizas</text>
+  <text class="t s" x="620" y="208">en cada pieza.</text>
+  <text class="t s" x="604" y="248">Alcance: toda la biblioteca</text>
+  <text class="t s" x="604" y="272">View &gt; Show Power Bins</text>
+  <text class="t s" x="604" y="296">Para: material recurrente</text>
+
+  <text class="t s" x="40" y="352">Ninguno de los tres copia archivos: los tres guardan referencias al mismo archivo del disco.</text>
+  <text class="t s" x="40" y="374">Un smart bin sin metadata escrita sale vacío, y eso no es un fallo del smart bin.</text>
+</svg>

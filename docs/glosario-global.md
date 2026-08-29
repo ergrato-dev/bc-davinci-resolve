@@ -13,14 +13,14 @@ de toda la documentación del mundo.
 
 ## A
 
+- **Alfa, canal** (*alpha channel*) — Un canal extra, además de rojo, verde y azul, que
+  guarda la transparencia de cada píxel. Un PNG puede tenerlo; un JPG no.
 - **Archivo de proyecto** (*Project Archive*, `.dra`) — Una carpeta que contiene el
   proyecto **y** una copia de todos sus medios. Es la caja de mudanza; no confundir con
   el `.drp`, que no lleva medios.
 - **Aspect ratio** (*aspect ratio*) — La proporción entre el ancho y el alto de la
   imagen. 16:9 es el estándar de televisión y web; 9:16 el vertical de móvil; 2.39:1 el
   panorámico de cine.
-- **Alfa, canal** (*alpha channel*) — Un canal extra, además de rojo, verde y azul, que
-  guarda la transparencia de cada píxel. Un PNG puede tenerlo; un JPG no.
 
 ## B
 
@@ -30,6 +30,10 @@ de toda la documentación del mundo.
   llamaba *base de datos*.
 - **Bin** (*bin*) — Una carpeta dentro del media pool de Resolve. Organiza clips dentro
   del proyecto; no mueve nada en tu disco.
+- **Bin activo** (*current bin*) — El bin seleccionado en el media pool. Es donde caen
+  los clips que importas y los subclips que genera Scene Cut Detection.
+- **Bin Master** (*Master*) — La raíz del media pool. Todo lo demás cuelga de él, y la
+  regla de oficio es no dejar material suelto ahí: solo bins y timelines.
 - **Bit depth** (*bit depth*) — Ver *profundidad de bits*.
 - **Bitrate** (*bitrate*) — Cuántos datos por segundo ocupa un vídeo, normalmente en
   megabits por segundo (Mbps). Más bitrate, más calidad y más peso.
@@ -47,10 +51,16 @@ de toda la documentación del mundo.
   4:2:0.
 - **Clip** (*clip*) — Un trozo de vídeo o audio, tanto en el media pool como en la
   timeline.
+- **Clone Tool** (*Clone Tool*) — El panel de la página Media que copia carpetas
+  verificando cada archivo por su huella, y que admite varios destinos en un mismo
+  trabajo.
 - **Codec** (*codec*) — El método para comprimir y descomprimir vídeo o audio. H.264,
   ProRes y DNxHR son codecs.
 - **Contenedor** (*container*) — El archivo que envuelve al vídeo, al audio y a los
   metadatos. `.mp4`, `.mov` y `.mkv` son contenedores, no codecs.
+- **Corrupción silenciosa** (*silent corruption*) — Un daño en un archivo que no produce
+  ningún error: tamaño y fecha correctos, se abre, se reproduce, y tiene un trozo
+  destrozado. Solo la detecta una huella.
 
 ## D
 
@@ -59,6 +69,8 @@ de toda la documentación del mundo.
 - **dBFS** (*dBFS*) — Decibelios respecto a la escala completa digital. 0 dBFS es el
   máximo absoluto: por encima, el sonido se corta.
 - **Deliver** (*Deliver*) — La página de Resolve donde se configura y se lanza el render.
+- **`Description`** (*Description*) — El campo de metadata donde va prosa, para
+  acordarte de lo que se ve. No confundir con `Keywords`, que son etiquetas y sí filtran.
 - **DRP** (*`.drp`*) — El archivo que produce `Export Project`. Contiene el proyecto
   entero y ningún medio; pesa unos pocos megabytes.
 - **Dynamic Project Switching** (*Dynamic Project Switching*) — Modo que permite tener
@@ -72,6 +84,9 @@ de toda la documentación del mundo.
 ## F
 
 - **Fairlight** (*Fairlight*) — La página de audio de Resolve.
+- **Flag** (*Flags*) — Una marca de color sobre un clip que señala algo pendiente. Es
+  temporal: se pone, se cumple y se quita. No confundir con un marcador, que se pega a
+  un punto concreto dentro del clip.
 - **Frame** (*frame*) — Una imagen fija de la secuencia. El vídeo es una sucesión de
   frames.
 - **Frame rate** (*frame rate*) — Cuántos frames se muestran por segundo. Se mide en
@@ -84,6 +99,8 @@ de toda la documentación del mundo.
   fotograma con su grado. No es caché: no se regenera.
 - **Gamma** (*gamma*) — La curva que relaciona el valor numérico de un píxel con el
   brillo que finalmente se ve. Sin ella, las imágenes se verían mal repartidas.
+- **`Good Take`** (*Good Take*) — El campo de metadata que marca la toma buena de una
+  serie. Sirve como regla de smart bin.
 - **Grado** (*grade*) — El conjunto de ajustes de color aplicados a un clip.
 
 ## H
@@ -92,13 +109,25 @@ de toda la documentación del mundo.
   y lo más brillante que el estándar clásico.
 - **Headroom** (*headroom*) — El margen que dejas entre tu nivel de audio habitual y el
   máximo, para que un pico inesperado no sature.
+- **Huella** (*checksum*, *hash*) — Un número calculado leyendo todos los bytes de un
+  archivo. Un solo bit distinto la cambia entera, y por eso comprueba que una copia es
+  idéntica al original. Familias habituales: `MD5`, `SHA-1`, `SHA-256`, `xxHash`.
 
 ## I
 
+- **Importar** (*import*) — Escribir en el media pool una referencia a un archivo del
+  disco. No copia nada, es instantáneo, y por eso mover la carpeta de material después
+  deja los clips *offline*.
 - **Ingesta** (*ingest*) — Meter el material en el sistema: copiarlo, verificarlo,
   importarlo y organizarlo.
 - **Intra-frame** (*intra-frame*) — Codecs que comprimen cada frame por separado. Más
   pesados, mucho más fáciles de editar. ProRes y DNxHR son intra-frame.
+
+## K
+
+- **Keyword** (*Keywords*) — Una etiqueta de texto sobre un clip, escrita en el panel
+  Metadata. Se busca, se filtra y alimenta los smart bins. Se escriben en minúsculas,
+  sin acentos y en singular, de un vocabulario cerrado.
 
 ## L
 
@@ -121,6 +150,10 @@ de toda la documentación del mundo.
   referencias a archivos de tu disco, no copias.
 - **Media Storage** (*Media Storage*) — La lista ordenada de carpetas de las que Resolve
   lee, en `Preferences > System`. La primera entrada es su ubicación por defecto.
+- **Metadata** (*metadata*) — La información que describe un clip. La que trae el
+  archivo (codec, resolución, fecha, cámara) se lee; la que escribes tú (`Description`,
+  `Keywords`, `Scene`, `Shot`, `Take`) se guarda en el proyecto, no dentro del `.mp4`, y
+  se pierde si quitas el clip del media pool.
 - **Multicámara** (*multicam*) — Editar una escena rodada con varias cámaras a la vez,
   sincronizadas.
 
@@ -144,6 +177,9 @@ de toda la documentación del mundo.
   reproduce la timeline en pantalla. No es el `Timeline frame rate`, que define la pieza.
 - **PostgreSQL** (*PostgreSQL*) — Gestor de bases de datos que atiende a varios clientes a
   la vez. Es lo que hay debajo de una biblioteca de proyectos en red.
+- **Power Bin** (*Power Bin*) — Un bin cuyo alcance es la biblioteca de proyectos
+  entera: su contenido está disponible en todos tus proyectos. Se muestra con
+  `View > Show Power Bins` y no viaja dentro del `.drp`.
 - **Power window** (*Power Window*) — Una forma dibujada sobre la imagen para que una
   corrección de color afecte solo a esa zona.
 - **Preferences** (*Preferences*) — Los ajustes que describen tu ordenador: GPU, memoria,
@@ -174,7 +210,12 @@ de toda la documentación del mundo.
   él. Es lo que guarda el media pool, y explica los clips *offline*.
 - **Regenerable** — Lo que Resolve puede volver a calcular a partir del proyecto y de los
   medios: caché, medios optimizados y proxies. Borrarlo cuesta procesado, no trabajo.
+- **Regla 3-2-1** — La convención de respaldo del oficio: tres copias del material, en
+  dos tipos de soporte distintos, y una de ellas fuera del edificio.
 - **Relink** (*relink*) — Volver a enlazar un clip *offline* con su archivo.
+- **Remuxear** (*remux*) — Cambiar un archivo de contenedor sin recomprimir el vídeo:
+  `ffmpeg -i entrada.mkv -c copy salida.mp4`. Es lo que hace falta con los `.mkv` de
+  OBS, que Resolve no importa.
 - **Render** (*render*) — Calcular y escribir el archivo final de vídeo.
 - **Respaldos de proyecto** (*Project Backups*) — Las copias con fecha que Resolve hace
   solo, en tres escalones: minutos, horas y días. Permiten volver atrás en el tiempo.
@@ -183,13 +224,22 @@ de toda la documentación del mundo.
 
 ## S
 
+- **Scene Cut Detection** (*Scene Cut Detection*) — La operación que busca los cortes de
+  un archivo ya montado comparando cada fotograma con el anterior. Detecta bien los
+  cortes secos, se le escapan los fundidos y se cree cortes los flashes. El resultado
+  son subclips, no archivos nuevos.
 - **Scopes** (*scopes*) — Los medidores gráficos que muestran objetivamente los valores
   de la imagen: waveform, parade, vectorscope, histograma.
 - **Slip / Slide** (*slip / slide*) — Dos formas de recortar: *slip* cambia qué parte
   del clip se ve sin mover su posición; *slide* mueve el clip sin cambiar qué se ve.
+- **Smart Bin** (*Smart Bin*) — Una búsqueda guardada con forma de bin: muestra los clips
+  que cumplen sus reglas, sin moverlos de su bin. Sale vacío si la metadata no está
+  escrita.
 - **SQLite** (*SQLite*) — El formato de base de datos en un solo archivo con el que
   Resolve guarda cada proyecto. Copiarlo a mano mientras se escribe lo corrompe.
 - **SRT** (*SubRip*) — El formato de archivo de subtítulos más extendido.
+- **Subclip** (*subclip*) — Una referencia al mismo archivo con un punto de entrada y uno
+  de salida propios. Cuarenta subclips de un archivo de 500 MB siguen ocupando 500 MB.
 
 ## T
 
@@ -206,6 +256,12 @@ de toda la documentación del mundo.
 
 - **Vectorscope** (*vectorscope*) — El scope circular que muestra el color de la imagen:
   el ángulo es el tono y la distancia al centro, la saturación.
+- **Vista de lista** (*List View*) — La presentación del media pool con una fila por
+  clip y una columna por propiedad. Es donde se compara, se ordena y se detecta el
+  material que no encaja. Las columnas se eligen con clic derecho sobre su cabecera.
+- **Vocabulario de keywords** — La lista cerrada de diez o quince palabras con la que se
+  etiqueta, escrita antes de empezar. Sin ella aparecen variantes de la misma palabra y
+  ninguna búsqueda devuelve el conjunto completo.
 - **VRAM** (*VRAM*) — La memoria de la tarjeta gráfica. El recurso que Resolve agota
   antes que ningún otro.
 

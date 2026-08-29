@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 380" width="880" height="380" role="img"
+     aria-label="Diagrama de Scene Cut Detection: un archivo unico que contiene varios planos ya montados se analiza buscando saltos bruscos entre fotogramas consecutivos, y el resultado son subclips separados que entran en el media pool sin duplicar el archivo.">
+  <title>Cómo funciona Scene Cut Detection</title>
+  <style>
+    .bg   { fill: #101418; }
+    .surf { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .surf2{ fill: #232b34; stroke: #2f3a45; stroke-width: 1; }
+    .t    { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h    { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .lbl  { font-size: 13px; font-weight: 600; fill: #e8eef4; }
+    .s    { font-size: 12px; fill: #93a1b0; }
+    .m    { font-size: 12px; fill: #e8eef4; }
+  </style>
+
+  <rect class="bg" width="880" height="380"/>
+  <text class="t h" x="40" y="38">Scene Cut Detection: recuperar los cortes de un archivo ya montado</text>
+  <text class="t s" x="40" y="58">Sirve cuando te llega la pieza plana y no el material: un master antiguo, una descarga, un archivo de emisión</text>
+
+  <rect class="surf" x="40" y="82" width="800" height="86" rx="6"/>
+  <text class="t lbl" x="60" y="108">1 · Un archivo, varios planos dentro</text>
+  <rect class="surf2" x="60" y="120" width="760" height="32" rx="3"/>
+  <rect x="60" y="120" width="190" height="32" fill="#232b34"/>
+  <path d="M250 120 L250 152" stroke="#f5a524" stroke-width="2"/>
+  <path d="M436 120 L436 152" stroke="#f5a524" stroke-width="2"/>
+  <path d="M622 120 L622 152" stroke="#f5a524" stroke-width="2"/>
+  <text class="t s" x="130" y="141">plano A</text>
+  <text class="t s" x="320" y="141">plano B</text>
+  <text class="t s" x="506" y="141">plano C</text>
+  <text class="t s" x="700" y="141">plano D</text>
+
+  <rect class="surf" x="40" y="182" width="800" height="90" rx="6"/>
+  <text class="t lbl" x="60" y="208">2 · Resolve compara cada fotograma con el anterior</text>
+  <text class="t s"   x="60" y="230">Cuando la diferencia entre dos fotogramas seguidos se dispara, marca ahí un corte. Un fundido</text>
+  <text class="t s"   x="60" y="248">encadenado cambia poco a poco, así que se le escapa: los cortes se revisan y se corrigen a mano</text>
+  <text class="t s"   x="60" y="266">antes de aceptar nada. El umbral de sensibilidad es un ajuste, no una ley.</text>
+
+  <rect class="surf" x="40" y="286" width="800" height="62" rx="6"/>
+  <text class="t lbl" x="60" y="312">3 · Los cortes entran en el media pool como subclips</text>
+  <rect class="surf2" x="60" y="322" width="182" height="14" rx="2"/>
+  <rect class="surf2" x="252" y="322" width="182" height="14" rx="2"/>
+  <rect class="surf2" x="444" y="322" width="182" height="14" rx="2"/>
+  <rect class="surf2" x="636" y="322" width="184" height="14" rx="2"/>
+  <text class="t s" x="640" y="312">Un solo archivo en el disco: son referencias con entrada y salida distintas</text>
+</svg>

@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" width="880" height="420" role="img"
+     aria-label="Arbol de bins del proyecto del bootcamp colgando del bin Master, con los bins numerados del pack de medios, el bin de material propio y el de escenas. A la derecha, la regla de que un clip vive en un solo bin y que mover no duplica.">
+  <title>El árbol de bins del proyecto</title>
+  <style>
+    .bg   { fill: #101418; }
+    .surf { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .surf2{ fill: #232b34; stroke: #2f3a45; stroke-width: 1; }
+    .t    { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h    { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .lbl  { font-size: 13px; font-weight: 600; fill: #e8eef4; }
+    .s    { font-size: 12px; fill: #93a1b0; }
+    .m    { font-size: 12px; fill: #e8eef4; }
+    .ln   { stroke: #2f3a45; stroke-width: 1; }
+  </style>
+
+  <rect class="bg" width="880" height="420"/>
+  <text class="t h" x="40" y="38">Un bin es una carpeta del proyecto, no del disco</text>
+  <text class="t s" x="40" y="58">Los números delante del nombre fuerzan el orden y hacen que el bin se escriba siempre igual</text>
+
+  <rect class="surf" x="40" y="82" width="450" height="292" rx="6"/>
+
+  <rect class="surf2" x="60" y="100" width="410" height="28" rx="3"/>
+  <rect x="60" y="100" width="4" height="28" fill="#a371f7"/>
+  <text class="t lbl" x="76" y="119">Master</text>
+  <text class="t s"   x="150" y="119">la raíz. Aquí no cuelga material suelto</text>
+
+  <path class="ln" d="M78 132 L78 352"/>
+
+  <rect class="surf2" x="92" y="138" width="378" height="26" rx="3"/>
+  <text class="t m" x="106" y="156">01-Basicos</text>
+  <text class="t s" x="300" y="156">18 clips del pack</text>
+  <path class="ln" d="M78 151 L92 151"/>
+
+  <rect class="surf2" x="92" y="172" width="378" height="26" rx="3"/>
+  <text class="t m" x="106" y="190">02-Entrevista</text>
+  <text class="t s" x="300" y="190">1 clip con voz</text>
+  <path class="ln" d="M78 185 L92 185"/>
+
+  <rect class="surf2" x="92" y="206" width="378" height="26" rx="3"/>
+  <text class="t m" x="106" y="224">03-Multicamara … 07-Graficos</text>
+  <text class="t s" x="300" y="224">vacíos, ya creados</text>
+  <path class="ln" d="M78 219 L92 219"/>
+
+  <rect class="surf2" x="92" y="240" width="378" height="26" rx="3"/>
+  <rect x="92" y="240" width="4" height="26" fill="#3fb950"/>
+  <text class="t m" x="106" y="258">08-Propio</text>
+  <text class="t s" x="300" y="258">tu material</text>
+  <path class="ln" d="M78 253 L92 253"/>
+
+  <rect class="surf2" x="92" y="274" width="378" height="26" rx="3"/>
+  <rect x="92" y="274" width="4" height="26" fill="#4a9eff"/>
+  <text class="t m" x="106" y="292">09-Escenas</text>
+  <text class="t s" x="300" y="292">cortes detectados</text>
+  <path class="ln" d="M78 287 L92 287"/>
+
+  <rect class="surf2" x="92" y="308" width="378" height="26" rx="3"/>
+  <rect x="92" y="308" width="4" height="26" fill="#f85149"/>
+  <text class="t m" x="106" y="326">10-Descartes</text>
+  <text class="t s" x="300" y="326">lo que no se borra</text>
+  <path class="ln" d="M78 321 L92 321"/>
+
+  <rect class="surf2" x="92" y="342" width="378" height="26" rx="3"/>
+  <text class="t m" x="106" y="360">BC-Montaje-v1</text>
+  <text class="t s" x="300" y="360">la timeline, en la raíz</text>
+  <path class="ln" d="M78 355 L92 355"/>
+
+  <rect class="surf" x="514" y="82" width="326" height="292" rx="6"/>
+  <text class="t lbl" x="536" y="110">Tres reglas que ahorran meses</text>
+
+  <rect class="surf2" x="536" y="126" width="282" height="70" rx="4"/>
+  <rect x="536" y="126" width="4" height="70" fill="#4a9eff"/>
+  <text class="t lbl" x="552" y="148">Un clip, un bin</text>
+  <text class="t s"   x="552" y="168">Arrastrar entre bins mueve, no</text>
+  <text class="t s"   x="552" y="186">copia. No hay dos versiones.</text>
+
+  <rect class="surf2" x="536" y="206" width="282" height="70" rx="4"/>
+  <rect x="536" y="206" width="4" height="70" fill="#3fb950"/>
+  <text class="t lbl" x="552" y="228">Bin activo</text>
+  <text class="t s"   x="552" y="248">Lo que importes cae en el bin</text>
+  <text class="t s"   x="552" y="266">seleccionado. Mira antes.</text>
+
+  <rect class="surf2" x="536" y="286" width="282" height="70" rx="4"/>
+  <rect x="536" y="286" width="4" height="70" fill="#f5a524"/>
+  <text class="t lbl" x="552" y="308">Borrar del bin no borra el disco</text>
+  <text class="t s"   x="552" y="328">Quita la referencia. El archivo</text>
+  <text class="t s"   x="552" y="346">sigue donde estaba.</text>
+
+  <text class="t s" x="40" y="404">Verificado en DaVinci Resolve 21.0.4.5, agosto de 2026.</text>
+</svg>

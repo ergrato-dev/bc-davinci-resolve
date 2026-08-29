@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img"
+     aria-label="Diagrama de una copia verificada: la tarjeta se lee, se escribe en dos destinos y de cada archivo se calcula una huella que se compara con la del origen. Abajo, la diferencia con una copia del explorador de archivos, que no comprueba nada.">
+  <title>Copia verificada frente a copia a secas</title>
+  <style>
+    .bg   { fill: #101418; }
+    .surf { fill: #191f26; stroke: #2f3a45; stroke-width: 1; }
+    .surf2{ fill: #232b34; stroke: #2f3a45; stroke-width: 1; }
+    .t    { font-family: Inter, Roboto, "Segoe UI", system-ui, sans-serif; }
+    .h    { font-size: 15px; font-weight: 600; fill: #e8eef4; }
+    .lbl  { font-size: 13px; font-weight: 600; fill: #e8eef4; }
+    .s    { font-size: 12px; fill: #93a1b0; }
+    .ok   { font-size: 12px; font-weight: 600; fill: #3fb950; }
+    .ko   { font-size: 12px; font-weight: 600; fill: #f85149; }
+  </style>
+
+  <rect class="bg" width="880" height="400"/>
+  <text class="t h" x="40" y="38">Una copia verificada comprueba; una copia a secas confía</text>
+
+  <rect class="surf" x="40" y="62" width="800" height="184" rx="6"/>
+  <text class="t lbl" x="60" y="88">Clone Tool</text>
+
+  <rect class="surf2" x="60" y="104" width="150" height="72" rx="4"/>
+  <rect x="60" y="104" width="4" height="72" fill="#4a9eff"/>
+  <text class="t lbl" x="76" y="126">Origen</text>
+  <text class="t s"   x="76" y="146">La tarjeta,</text>
+  <text class="t s"   x="76" y="164">entera y sin tocar</text>
+
+  <path d="M218 140 L268 140" stroke="#4a9eff" stroke-width="2"/>
+  <path d="M262 134 L270 140 L262 146 Z" fill="#4a9eff"/>
+
+  <rect class="surf2" x="278" y="104" width="164" height="72" rx="4"/>
+  <rect x="278" y="104" width="4" height="72" fill="#3fb950"/>
+  <text class="t lbl" x="294" y="126">Destino 1</text>
+  <text class="t s"   x="294" y="146">Disco de trabajo</text>
+  <text class="t ok"  x="294" y="166">huella coincide</text>
+
+  <rect class="surf2" x="454" y="104" width="164" height="72" rx="4"/>
+  <rect x="454" y="104" width="4" height="72" fill="#3fb950"/>
+  <text class="t lbl" x="470" y="126">Destino 2</text>
+  <text class="t s"   x="470" y="146">Disco externo</text>
+  <text class="t ok"  x="470" y="166">huella coincide</text>
+
+  <rect class="surf2" x="640" y="104" width="180" height="72" rx="4"/>
+  <rect x="640" y="104" width="4" height="72" fill="#f5a524"/>
+  <text class="t lbl" x="656" y="126">Huella</text>
+  <text class="t s"   x="656" y="146">Un número calculado</text>
+  <text class="t s"   x="656" y="164">a partir de cada byte</text>
+
+  <text class="t s" x="60" y="206">La tarjeta no se formatea hasta que las dos huellas de destino coinciden con la de origen.</text>
+  <text class="t s" x="60" y="228">Un solo destino no es un respaldo: es el mismo archivo en otro sitio, esperando a que falle el disco.</text>
+
+  <rect class="surf" x="40" y="266" width="800" height="94" rx="6"/>
+  <text class="t lbl" x="60" y="292">Copiar y pegar en el explorador de archivos</text>
+  <text class="t s"   x="60" y="314">Copia los bytes y no comprueba ninguno. Si un sector falla a mitad, el archivo llega y se abre;</text>
+  <text class="t ko"  x="60" y="334">el destrozo aparece en el minuto tres, la semana que ya formateaste la tarjeta.</text>
+  <text class="t s"   x="60" y="352">Tres cifras de un mismo archivo —tamaño, fecha y huella— y solo la tercera detecta corrupción silenciosa.</text>
+</svg>
