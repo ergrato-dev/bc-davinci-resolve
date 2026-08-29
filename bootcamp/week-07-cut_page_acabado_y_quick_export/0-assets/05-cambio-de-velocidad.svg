@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 380" width="880" height="380" role="img"
+     aria-label="El mismo clip a tres velocidades. Al 100 por ciento ocupa su duracion original. Al 200 por ciento ocupa la mitad de la timeline y se enseña uno de cada dos fotogramas grabados. Al 50 por ciento ocupa el doble y cada fotograma se repite, que es lo que produce el movimiento a tirones.">
+  <title>Velocidad y duración son la misma cosa</title>
+  <style>
+    .bg{fill:#101418}.surf{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .clip{fill:#232b34;stroke:#4a9eff;stroke-width:2}
+    .fr{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .dup{fill:#191f26;stroke:#f5a524;stroke-width:1;stroke-dasharray:3 2}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .am{font-size:12px;font-weight:600;fill:#f5a524}
+  </style>
+  <rect class="bg" width="880" height="380"/>
+  <text class="t h" x="40" y="36">Cambiar la velocidad de un clip cambia la duración de tu pieza.</text>
+
+  <rect class="surf" x="40" y="58" width="800" height="86" rx="6"/>
+  <text class="t lbl" x="60" y="82">100 % · la duración original</text>
+  <rect class="clip" x="60" y="96" width="400" height="34" rx="3"/>
+  <text class="t s" x="76" y="118">8 fotogramas grabados, 8 enseñados</text>
+  <text class="t s" x="700" y="118">8 s</text>
+
+  <rect class="surf" x="40" y="160" width="800" height="86" rx="6"/>
+  <text class="t lbl" x="60" y="184">200 % · la mitad de duración</text>
+  <rect class="clip" x="60" y="198" width="200" height="34" rx="3"/>
+  <text class="t s" x="76" y="220">se enseña uno de cada dos</text>
+  <text class="t s" x="700" y="220">4 s</text>
+  <text class="t s" x="290" y="220">Acelerar descarta fotogramas: se ve limpio siempre.</text>
+
+  <rect class="surf" x="40" y="262" width="800" height="86" rx="6"/>
+  <text class="t lbl" x="60" y="286">50 % · el doble de duración</text>
+  <rect class="fr" x="60" y="300" width="48" height="34" rx="3"/>
+  <rect class="dup" x="110" y="300" width="48" height="34" rx="3"/>
+  <rect class="fr" x="160" y="300" width="48" height="34" rx="3"/>
+  <rect class="dup" x="210" y="300" width="48" height="34" rx="3"/>
+  <rect class="fr" x="260" y="300" width="48" height="34" rx="3"/>
+  <rect class="dup" x="310" y="300" width="48" height="34" rx="3"/>
+  <rect class="fr" x="360" y="300" width="48" height="34" rx="3"/>
+  <rect class="dup" x="410" y="300" width="48" height="34" rx="3"/>
+  <text class="t s" x="700" y="322">16 s</text>
+  <text class="t am" x="480" y="315">Los punteados no existen: hay que repetirlos o inventarlos.</text>
+  <text class="t am" x="480" y="333">Por eso la cámara lenta se ve a tirones.</text>
+</svg>

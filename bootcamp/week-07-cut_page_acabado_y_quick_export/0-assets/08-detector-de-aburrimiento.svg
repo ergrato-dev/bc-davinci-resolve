@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img"
+     aria-label="La timeline superior con el Boring Detector activado: los clips mas largos que el umbral aparecen marcados en gris claro, los mas cortos en rojo. A la derecha, la ventana Analyze Timeline Edits con los dos deslizadores, Boring Clips en segundos y Jump Cuts en fotogramas.">
+  <title>El Boring Detector sobre la timeline superior</title>
+  <style>
+    .bg{fill:#101418}.surf{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .clip{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .long{fill:#232b34;stroke:#93a1b0;stroke-width:3}
+    .short{fill:#232b34;stroke:#f85149;stroke-width:3}
+    .win{fill:#191f26;stroke:#4a9eff;stroke-width:2}
+    .track{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .er{font-size:12px;font-weight:600;fill:#f85149}
+  </style>
+  <rect class="bg" width="880" height="400"/>
+  <text class="t h" x="40" y="36">El detector mide duraciones y las marca en la timeline de arriba.</text>
+
+  <rect class="surf" x="40" y="58" width="800" height="128" rx="6"/>
+  <text class="t lbl" x="60" y="82">Timeline superior · la pieza entera, siempre visible</text>
+  <rect class="clip" x="60" y="96" width="70" height="44" rx="3"/>
+  <rect class="long" x="134" y="96" width="130" height="44" rx="3"/>
+  <rect class="clip" x="268" y="96" width="56" height="44" rx="3"/>
+  <rect class="short" x="328" y="96" width="10" height="44" rx="2"/>
+  <rect class="clip" x="342" y="96" width="64" height="44" rx="3"/>
+  <rect class="long" x="410" y="96" width="120" height="44" rx="3"/>
+  <rect class="long" x="534" y="96" width="110" height="44" rx="3"/>
+  <rect class="long" x="648" y="96" width="100" height="44" rx="3"/>
+  <rect class="clip" x="752" y="96" width="68" height="44" rx="3"/>
+  <text class="t s" x="60" y="164">Gris claro: más largo que el umbral. Rojo: más corto. Un racimo de gris es un tramo, no tres planos.</text>
+
+  <rect class="win" x="40" y="212" width="380" height="150" rx="6"/>
+  <text class="t lbl" x="62" y="238">Analyze Timeline Edits</text>
+  <text class="t s" x="62" y="266">Boring Clips</text>
+  <rect class="track" x="62" y="278" width="330" height="8" rx="4"/>
+  <circle cx="200" cy="282" r="7" fill="#4a9eff"/>
+  <text class="t s" x="62" y="308">mínimo de segundos para marcar como largo</text>
+  <text class="t s" x="62" y="334">Jump Cuts</text>
+  <rect class="track" x="62" y="344" width="330" height="8" rx="4"/>
+  <circle cx="90" cy="348" r="7" fill="#4a9eff"/>
+
+  <rect class="surf" x="440" y="212" width="400" height="150" rx="6"/>
+  <text class="t lbl" x="462" y="238">Puntos de partida</text>
+  <text class="t s" x="462" y="264">Videoclip · 4 s y 2 fotogramas</text>
+  <text class="t s" x="462" y="286">Tutorial o vlog · 8 s y 2 fotogramas</text>
+  <text class="t s" x="462" y="308">Documental o entrevista · 12 s y 2 fotogramas</text>
+  <text class="t s" x="462" y="330">Ficción · 8 s y 2 fotogramas</text>
+  <text class="t er" x="462" y="352">Jump Cuts en 2 fotogramas encuentra los flash frames.</text>
+</svg>

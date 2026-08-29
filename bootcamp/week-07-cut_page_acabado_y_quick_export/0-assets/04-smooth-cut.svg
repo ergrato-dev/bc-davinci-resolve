@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img"
+     aria-label="Arriba, un salto de montaje: la cabeza del sujeto esta en una posicion antes del corte y en otra despues. Abajo, un Smooth Cut de cuatro fotogramas desplaza progresivamente la cabeza de una posicion a la otra, de modo que el corte deja de verse.">
+  <title>Un salto de montaje y su reparación con Smooth Cut</title>
+  <style>
+    .bg{fill:#101418}.surf{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .fr{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .frw{fill:#232b34;stroke:#f5a524;stroke-width:2}
+    .head{fill:#93a1b0}
+    .headw{fill:#f5a524}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .er{font-size:12px;font-weight:600;fill:#f85149}
+    .ok{font-size:12px;font-weight:600;fill:#3fb950}
+  </style>
+  <rect class="bg" width="880" height="400"/>
+  <text class="t h" x="40" y="36">Smooth Cut no tapa el salto: lo deshace deformando el sujeto.</text>
+
+  <rect class="surf" x="40" y="56" width="800" height="140" rx="6"/>
+  <text class="t lbl" x="60" y="80">Sin nada · el corte se ve</text>
+  <rect class="fr" x="60" y="94" width="90" height="72" rx="3"/><circle class="head" cx="90" cy="130" r="12"/>
+  <rect class="fr" x="156" y="94" width="90" height="72" rx="3"/><circle class="head" cx="186" cy="130" r="12"/>
+  <rect x="250" y="88" width="2" height="84" fill="#f85149"/>
+  <rect class="fr" x="256" y="94" width="90" height="72" rx="3"/><circle class="head" cx="316" cy="130" r="12"/>
+  <rect class="fr" x="352" y="94" width="90" height="72" rx="3"/><circle class="head" cx="412" cy="130" r="12"/>
+  <text class="t er" x="470" y="126">La cabeza salta de golpe de un sitio a otro:</text>
+  <text class="t er" x="470" y="146">el fondo no cambia, así que el corte se hace visible.</text>
+  <text class="t s" x="60" y="186">Cada rectángulo es un fotograma. La línea roja es el corte.</text>
+
+  <rect class="surf" x="40" y="214" width="800" height="140" rx="6"/>
+  <text class="t lbl" x="60" y="238">Con Smooth Cut de 4 fotogramas · el corte deja de verse</text>
+  <rect class="fr" x="60" y="252" width="90" height="72" rx="3"/><circle class="head" cx="90" cy="288" r="12"/>
+  <rect class="frw" x="156" y="252" width="44" height="72" rx="3"/><circle class="headw" cx="178" cy="288" r="12"/>
+  <rect class="frw" x="204" y="252" width="44" height="72" rx="3"/><circle class="headw" cx="238" cy="288" r="12"/>
+  <rect class="frw" x="252" y="252" width="44" height="72" rx="3"/><circle class="headw" cx="290" cy="288" r="12"/>
+  <rect class="frw" x="300" y="252" width="44" height="72" rx="3"/><circle class="headw" cx="330" cy="288" r="12"/>
+  <rect class="fr" x="352" y="252" width="90" height="72" rx="3"/><circle class="head" cx="412" cy="288" r="12"/>
+  <text class="t ok" x="470" y="284">La posición se desplaza poco a poco durante</text>
+  <text class="t ok" x="470" y="304">cuatro fotogramas. El ojo no lo registra.</text>
+  <text class="t s" x="60" y="344">Con un segundo, la deformación se ve y el sujeto parece de goma. Entre 2 y 6 fotogramas.</text>
+
+  <text class="t s" x="40" y="384">No funciona con cámara en mano, con fondo en movimiento, ni si la postura cambió mucho.</text>
+</svg>

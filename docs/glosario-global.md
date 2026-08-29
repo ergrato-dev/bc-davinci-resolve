@@ -13,6 +13,11 @@ de toda la documentación del mundo.
 
 ## A
 
+- **A-roll** (*A-roll*) — El material que sostiene el relato: quien habla, la acción
+  principal, la continuidad. Vive en `Video 1`, la única pista que hace ripple.
+- **Acabado** (*fine cut* / *finishing*) — La pasada que viene después del montaje bruto:
+  transiciones, ajustes de duración, sonido audible y rótulos. No cambia qué cuenta la pieza;
+  cambia cómo se lee.
 - **Alfa, canal** (*alpha channel*) — Un canal extra, además de rojo, verde y azul, que
   guarda la transparencia de cada píxel. Un PNG puede tenerlo; un JPG no.
 - **Ángulo** (*angle*) — Cada una de las cámaras que contiene un clip multicámara. Su
@@ -31,6 +36,8 @@ de toda la documentación del mundo.
 
 ## B
 
+- **B-roll** (*B-roll*) — El material que se pone encima del A-roll para ilustrar, tapar un
+  salto o dar aire. Vive en `Video 2`, que no hace ripple.
 - **Barrido, obturador** — Ver *obturador*.
 - **Biblioteca de proyectos** (*Project Library*) — El contenedor donde viven todos tus
   proyectos. Puede ser local, en red sobre PostgreSQL o en la nube. Hasta Resolve 17 se
@@ -44,6 +51,9 @@ de toda la documentación del mundo.
 - **Bit depth** (*bit depth*) — Ver *profundidad de bits*.
 - **Bitrate** (*bitrate*) — Cuántos datos por segundo ocupa un vídeo, normalmente en
   megabits por segundo (Mbps). Más bitrate, más calidad y más peso.
+- **`Boring Detector`** (*Boring Detector*) — La herramienta de la Cut page que analiza en
+  vivo la duración de cada clip y marca en la timeline superior los que se salen de los
+  umbrales: gris claro los demasiado largos, rojo los demasiado cortos.
 - **Borrado con ripple** (*ripple delete*) — El borrado que quita un clip y cierra el
   hueco arrastrando hacia la izquierda todo lo que venía detrás. El borrado normal deja el
   hueco, invisible en la timeline y un parpadeo a negro en reproducción.
@@ -70,6 +80,9 @@ de toda la documentación del mundo.
   pista de encima con un reencuadre ampliado, para simular un plano más cerrado.
 - **Codec** (*codec*) — El método para comprimir y descomprimir vídeo o audio. H.264,
   ProRes y DNxHR son codecs.
+- **Cola** (*handle*) — El material del archivo que queda fuera del rango marcado con `I` y
+  `O`. Es la reserva con la que se hacen las transiciones y con la que se recorta después. En
+  inglés, los dos extremos juntos son *heads and tails*.
 - **Colas** (*handles*) — Los fotogramas que quedan fuera de los puntos de entrada y
   salida de un subclip y que siguen existiendo en el archivo. Sin colas no hay
   transiciones ni ajustes de corte posibles: se dejan uno o dos segundos a cada lado.
@@ -78,6 +91,10 @@ de toda la documentación del mundo.
 - **Corrupción silenciosa** (*silent corruption*) — Un daño en un archivo que no produce
   ningún error: tamaño y fecha correctos, se abre, se reproduce, y tiene un trozo
   destrozado. Solo la detecta una huella.
+- **Corte** (*cut*) — El cambio instantáneo de un plano al siguiente, sin nada en medio. Es
+  lo contrario de una transición.
+- **`Cross Dissolve`** (*Cross Dissolve*) — La disolvencia estándar de Resolve y su
+  transición por defecto: un plano se desvanece mientras el otro aparece.
 - **Cuello de botella** (*bottleneck*) — El eslabón más lento de la cadena que va del
   disco al visor. Hay tres —descompresión, disco y cálculo de efectos— y cada uno se
   arregla con una herramienta distinta.
@@ -98,16 +115,23 @@ de toda la documentación del mundo.
   acordarte de lo que se ve. No confundir con `Keywords`, que son etiquetas y sí filtran.
 - **`Detail Zoom`** (*Detail Zoom*) — La escala corta de la vista de detalle de la timeline
   de la Cut page, la que se usa para trabajar sobre un corte concreto.
+- **Disolvencia** (*dissolve*) — La transición en la que los dos planos conviven un rato.
+  Comunica paso del tiempo, cambio de localización o cambio de tema.
 - **Doble sistema** (*dual system sound*) — Grabar la imagen en un aparato y el sonido en
   otro. Es lo normal en cuanto el micrófono bueno no está en la cámara, y es lo que
   obliga a sincronizar.
 - **DRP** (*`.drp`*) — El archivo que produce `Export Project`. Contiene el proyecto
   entero y ningún medio; pesa unos pocos megabytes.
+- **`Duplicate Timeline`** (*Duplicate Timeline*) — El comando del menú contextual del media
+  pool que crea una copia de una timeline. Es la base de la convención de versionado del
+  bootcamp.
 - **Dynamic Project Switching** (*Dynamic Project Switching*) — Modo que permite tener
   varios proyectos abiertos a la vez y saltar entre ellos al instante. Consume memoria.
 
 ## E
 
+- **`Edit Actions`** (*Edit Actions*) — El tercero de los tres iconos de la barra de la
+  timeline de la Cut page: `Trim Start to Playhead`, `Trim End to Playhead` y `Resync Clip`.
 - **Etalonaje** (*color grading*) — Dar a la imagen su aspecto final: contraste, color y
   look. Distinto de la *corrección*, que es dejarla neutra y correcta.
 
@@ -120,9 +144,14 @@ de toda la documentación del mundo.
 - **Flag** (*Flags*) — Una marca de color sobre un clip que señala algo pendiente. Es
   temporal: se pone, se cumple y se quita. No confundir con un marcador, que se pega a
   un punto concreto dentro del clip.
+- **Flash frame** (*flash frame*) — Un clip de uno o dos fotogramas que nadie puso a
+  propósito. En pantalla es un fogonazo; en la timeline, invisible a escala normal.
 - **Forma de onda, sincronización por** (*waveform sync*) — Alinear dos grabaciones del
   mismo momento comparando el dibujo de su sonido. No necesita preparación previa y sí
   necesita que los dos archivos tengan audio parecido.
+- **Fotogramas duplicados** (*duplicate frame detection*, *dupe detection*) — La detección
+  que marca con barras de color los tramos en los que un mismo rango de fotogramas se ha usado
+  más de una vez. Se activa con `View > Show Duplicate Frames`.
 - **Frame** (*frame*) — Una imagen fija de la secuencia. El vídeo es una sucesión de
   frames.
 - **Frame rate** (*frame rate*) — Cuántos frames se muestran por segundo. Se mide en
@@ -137,6 +166,8 @@ de toda la documentación del mundo.
   fotograma con su grado. No es caché: no se regenera.
 - **Gamma** (*gamma*) — La curva que relaciona el valor numérico de un píxel con el
   brillo que finalmente se ve. Sin ella, las imágenes se verían mal repartidas.
+- **Generador** (*generator*) — Un clip que Resolve produce en vez de leer del disco: una
+  carta de color, un fondo, un título. Su duración por defecto son 5 segundos.
 - **`Good Take`** (*Good Take*) — El campo de metadata que marca la toma buena de una
   serie. Sirve como regla de smart bin.
 - **GOP** (*Group of Pictures*) — El bloque de fotogramas que va de un fotograma
@@ -150,6 +181,9 @@ de toda la documentación del mundo.
   y lo más brillante que el estándar clásico.
 - **Headroom** (*headroom*) — El margen que dejas entre tu nivel de audio habitual y el
   máximo, para que un pico inesperado no sature.
+- **`Hover Scrub Preview`** (*Hover Scrub Preview*) — La opción de los navegadores de
+  transiciones y títulos que previsualiza el efecto en el visor al pasar el ratón por encima
+  de su miniatura.
 - **Huella** (*checksum*, *hash*) — Un número calculado leyendo todos los bytes de un
   archivo. Un solo bit distinto la cambia entera, y por eso comprueba que una copia es
   idéntica al original. Familias habituales: `MD5`, `SHA-1`, `SHA-256`, `xxHash`.
@@ -166,6 +200,8 @@ de toda la documentación del mundo.
   importarlo y organizarlo.
 - **Inserto** (*insert shot*) — Un plano de detalle colocado sobre el montaje principal:
   un objeto, un cartel, unas manos. Va en la pista de encima y no sustituye a nada.
+- **Interpolar** (*interpolate*) — Calcular un valor intermedio a partir de dos conocidos.
+  En vídeo, inventar el fotograma que iría entre dos grabados.
 - **Intra-frame** (*intra-frame*) — Codecs que comprimen cada frame por separado. Más
   pesados, mucho más fáciles de editar. ProRes y DNxHR son intra-frame.
 
@@ -195,6 +231,8 @@ de toda la documentación del mundo.
 
 ## M
 
+- **`Media limit`** (*media limit*) — El borde del archivo de origen: el punto a partir del
+  cual un clip no se puede alargar más. Es el límite físico de las colas.
 - **Media pool** (*Media Pool*) — El almacén de clips del proyecto. Lo que ves ahí son
   referencias a archivos de tu disco, no copias.
 - **Media Storage** (*Media Storage*) — La lista ordenada de carpetas de las que Resolve
@@ -216,6 +254,8 @@ de toda la documentación del mundo.
 
 ## N
 
+- **Nivelar** (*leveling*) — Poner cada clip en un rango de volumen razonable para que la
+  pieza se pueda escuchar entera sin tocar el volumen del sistema. No es lo mismo que mezclar.
 - **Nodo** (*node*) — Cada paso del procesamiento en la página Color y en Fusion. Se
   encadenan formando un grafo.
 
@@ -266,6 +306,8 @@ de toda la documentación del mundo.
 
 - **Qualifier** (*Qualifier*) — La herramienta de la página Color que selecciona una
   zona de la imagen por su color, su tono o su brillo.
+- **`Quick Export`** (*Quick Export*) — El comando de `File` que exporta la timeline
+  eligiendo solo un preset, desde cualquier página del programa. No es un master.
 
 ## R
 
@@ -273,6 +315,8 @@ de toda la documentación del mundo.
   exposición y el balance de blancos, con mucho margen.
 - **Rec.709** (*Rec.709*) — El espacio de color estándar de la televisión de alta
   definición y de casi todo el vídeo web. El destino por defecto del bootcamp.
+- **Recorte** (*clipping*) — Lo que pasa cuando una señal de audio intenta pasar de 0 dBFS:
+  los picos se aplanan y suena a distorsión áspera. No se puede deshacer.
 - **Reencuadre** (*reframe*) — Ampliar digitalmente la imagen y quedarse con una parte. No
   añade detalle: usa menos superficie de la grabada, así que pierde nitidez.
 - **Referencia** (*reference*) — Una anotación de dónde está un archivo, no una copia de
@@ -290,14 +334,21 @@ de toda la documentación del mundo.
   solo, en tres escalones: minutos, horas y días. Permiten volver atrás en el tiempo.
 - **Ripple** (*ripple*) — Editar desplazando todo lo que viene después, en lugar de
   dejar un hueco.
+- **`Ripple Delete Silence`** (*Ripple Delete Silence*) — La operación de
+  `Clip > Audio Operations` que borra los tramos de audio por debajo de un umbral cerrando el
+  hueco. Acorta la pieza, hace ripple y crea saltos de montaje.
 - **`Ripple Overwrite`** (*Ripple Overwrite*) — La herramienta de la Cut page que sustituye
   el clip del destino por el material marcado y recoloca el resto sin dejar huecos.
+- **Rótulo** (*lower third*, *title*) — Un título superpuesto que da información que la
+  imagen no puede dar: quién habla, dónde estamos, de qué va la pieza.
 
 ## S
 
 - **Salto de eje** (*jump cut*) — El corte entre dos trozos del mismo plano que produce un
   salto visible. Es el efecto secundario de acortar una entrevista, y se tapa con un plano
   de recurso.
+- **Salto de montaje** (*jump cut*) — El respingo que da un sujeto cuando se pegan dos
+  trozos del mismo plano y su posición ha cambiado. Se ve porque el fondo no cambia.
 - **Scene Cut Detection** (*Scene Cut Detection*) — La operación que busca los cortes de
   un archivo ya montado comparando cada fotograma con el anterior. Detecta bien los
   cortes secos, se le escapan los fundidos y se cree cortes los flashes. El resultado
@@ -311,6 +362,9 @@ de toda la documentación del mundo.
   escrita.
 - **`Smart Insert`** (*Smart Insert*) — La herramienta de la Cut page que mete el material
   en el punto de corte y desplaza hacia la derecha todo lo que venía después.
+- **`Smooth Cut`** (*Smooth Cut*) — La transición que repara un salto de montaje deformando
+  el sujeto de una posición a la otra en lugar de mezclar las dos imágenes. Funciona entre 2 y
+  6 fotogramas.
 - **`Snapping`** (*Snapping*) — El imán de la timeline: hace que los clips se peguen entre
   sí y al cabezal al arrastrarlos. Se alterna con `N`.
 - **`Source Clip`** (*Source Clip*) — El modo del visor de origen que muestra un solo clip.
@@ -318,6 +372,8 @@ de toda la documentación del mundo.
   ángulo elegido en la pista de encima alineado por hora de grabación. Es la del sync bin.
 - **`Source Tape`** (*Source Tape*) — El modo del visor de origen que presenta todos los
   clips del bin seleccionado como una sola cinta continua. El orden de la cinta es el del bin.
+- **`Speed Warp`** (*Speed Warp*) — El procesado con motor neuronal que Resolve usa desde la
+  versión 20 para `Smooth Cut` y para los cambios de velocidad de alta calidad.
 - **SQLite** (*SQLite*) — El formato de base de datos en un solo archivo con el que
   Resolve guarda cada proyecto. Copiarlo a mano mientras se escribe lo corrompe.
 - **SRT** (*SubRip*) — El formato de archivo de subtítulos más extendido.
@@ -328,17 +384,26 @@ de toda la documentación del mundo.
 
 ## T
 
+- **`Text`** (*Text*) — El título más simple y flexible de la categoría `Titles`: un bloque
+  de texto sobre transparencia, sin animación. No confundir con `Text+`, que es el motor de
+  texto de Fusion.
 - **Timecode** (*timecode*) — La dirección exacta de un frame, escrita
   `horas:minutos:segundos:frames`.
 - **Timeline** (*timeline*) — La secuencia de montaje: las pistas con los clips
   colocados en el tiempo.
+- **`Timeline Actions`** (*Timeline Actions*) — El segundo de los tres iconos de la barra de
+  la timeline de la Cut page: lo que añade o modifica la timeline entera.
 - **Timeline doble** (*dual timeline*) — La disposición de la timeline en la Cut page: la
   pieza entera arriba a escala fija y el detalle ampliado abajo. Sustituye al zoom.
 - **Timeline frame rate** (*Timeline frame rate*) — Cuántos frames por segundo tiene tu
   pieza. El único ajuste irreversible: se congela con el primer clip del media pool.
+- **`Timeline Options`** (*Timeline Options*) — El primero de los tres iconos: cómo se ve y
+  se comporta la timeline, incluido el `Boring Detector` y el `Fixed Playhead`.
 - **`Timeline Proxy Mode`** (*Timeline Proxy Mode*) — El ajuste que reduce al vuelo la
   resolución de cálculo de la timeline, sin generar ningún archivo. Es la solución
   instantánea y la de peor imagen; no sustituye a proxies ni a optimizados.
+- **Transición** (*transition*) — Cualquier cambio de plano que no sea un corte seco. Se
+  alinea de tres formas respecto al corte: `Start on Edit`, `Center on Edit` y `End on Edit`.
 - **Trimming** (*trimming*) — Ajustar con precisión dónde empieza y dónde acaba cada
   clip en la timeline.
 
@@ -346,6 +411,8 @@ de toda la documentación del mundo.
 
 - **Vectorscope** (*vectorscope*) — El scope circular que muestra el color de la imagen:
   el ángulo es el tono y la distancia al centro, la saturación.
+- **Velocidad** (*speed*) — El multiplicador que decide cuántos fotogramas grabados se
+  enseñan por fotograma de timeline. Cambiarla cambia la duración del clip.
 - **Vínculo** (*linked selection*) — La relación que hace que el vídeo y el audio de un
   mismo clip se comporten como una sola pieza al moverlos o borrarlos.
 - **Vista de lista** (*List View*) — La presentación del media pool con una fila por

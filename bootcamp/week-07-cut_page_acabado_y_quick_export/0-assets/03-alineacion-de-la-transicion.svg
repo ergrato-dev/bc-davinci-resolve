@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img"
+     aria-label="Las tres alineaciones de una transicion respecto al punto de corte: centrada en el corte, terminando en el corte y empezando en el corte. La centrada consume la mitad de la duracion de cola a cada lado; las otras dos consumen la duracion entera de un solo clip.">
+  <title>Las tres alineaciones de una transición</title>
+  <style>
+    .bg{fill:#101418}.surf{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .clip{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .diss{fill:#232b34;stroke:#f5a524;stroke-width:2}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .am{font-size:12px;font-weight:600;fill:#f5a524}
+  </style>
+  <rect class="bg" width="880" height="400"/>
+  <text class="t h" x="40" y="36">La alineación decide de qué clip sale la cola.</text>
+
+  <rect class="surf" x="40" y="56" width="800" height="98" rx="6"/>
+  <text class="t lbl" x="60" y="80">Center on Edit · por defecto</text>
+  <rect class="clip" x="60" y="94" width="330" height="38" rx="3"/><text class="t s" x="76" y="118">plano A</text>
+  <rect class="clip" x="392" y="94" width="330" height="38" rx="3"/><text class="t s" x="408" y="118">plano B</text>
+  <rect class="diss" x="344" y="88" width="96" height="50" rx="4" fill-opacity="0.25"/>
+  <rect x="391" y="86" width="2" height="54" fill="#f5a524"/>
+  <text class="t am" x="740" y="118">mitad y mitad</text>
+
+  <rect class="surf" x="40" y="170" width="800" height="98" rx="6"/>
+  <text class="t lbl" x="60" y="194">End on Edit · termina en el corte</text>
+  <rect class="clip" x="60" y="208" width="330" height="38" rx="3"/><text class="t s" x="76" y="232">plano A</text>
+  <rect class="clip" x="392" y="208" width="330" height="38" rx="3"/><text class="t s" x="408" y="232">plano B</text>
+  <rect class="diss" x="296" y="202" width="96" height="50" rx="4" fill-opacity="0.25"/>
+  <rect x="391" y="200" width="2" height="54" fill="#f5a524"/>
+  <text class="t am" x="740" y="232">toda de B</text>
+
+  <rect class="surf" x="40" y="284" width="800" height="98" rx="6"/>
+  <text class="t lbl" x="60" y="308">Start on Edit · empieza en el corte</text>
+  <rect class="clip" x="60" y="322" width="330" height="38" rx="3"/><text class="t s" x="76" y="346">plano A</text>
+  <rect class="clip" x="392" y="322" width="330" height="38" rx="3"/><text class="t s" x="408" y="346">plano B</text>
+  <rect class="diss" x="392" y="316" width="96" height="50" rx="4" fill-opacity="0.25"/>
+  <rect x="391" y="314" width="2" height="54" fill="#f5a524"/>
+  <text class="t am" x="740" y="346">toda de A</text>
+</svg>

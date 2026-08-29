@@ -109,6 +109,24 @@ tiene cada uno en tu instalación.
 
 Se explican en la Semana 06.
 
+Y los del acabado, que se explican en la Semana 07:
+
+| Acción | Windows | macOS | Qué hace |
+| ------ | ------- | ----- | -------- |
+| Seleccionar el punto de corte más cercano | `V` | `V` | El cabezal no tiene que estar exactamente encima |
+| Añadir la transición estándar | `Ctrl+T` | `Cmd+T` | Por defecto, un `Cross Dissolve` de un segundo |
+| Alternar la alineación del corte | `U` | `U` | Principio, centro o final; pulsado antes de añadir la transición |
+| Dividir un clip en el cabezal | `Ctrl+\` | `Cmd+\` | Añade un punto de corte en medio de un clip |
+| Copiar / cortar / pegar clips | `Ctrl+C` `Ctrl+X` `Ctrl+V` | `Cmd+C` `Cmd+X` `Cmd+V` | **Pegar sobrescribe** lo que haya en el cabezal |
+
+> [!WARNING]
+> En la Cut page, pegar coloca los clips en el fotograma del cabezal, en la misma pista de
+> la que se copiaron, y **machaca lo que haya ahí**. Si no quieres perder nada, pega después
+> del último clip.
+
+*Verificados en el DaVinci Resolve 21 Reference Manual, capítulos 36 y 38, agosto de 2026.
+Gana siempre lo que diga `DaVinci Resolve > Keyboard Customization` en tu instalación.*
+
 ---
 
 ## 5. Color

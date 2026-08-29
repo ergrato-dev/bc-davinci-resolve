@@ -1,0 +1,78 @@
+{
+  "semana": "07",
+  "titulo": "Cut page: acabado y quick export",
+  "checks": [
+    {
+      "id": "proyecto-abierto",
+      "descripcion": "BC-Bootcamp-Resolve es el proyecto abierto ahora mismo",
+      "op": "ping",
+      "args": {},
+      "expr": "r.get('project') == 'BC-Bootcamp-Resolve'",
+      "pista": "Abrelo desde el Project Manager, en la raiz de tu biblioteca original. Los checks leen el proyecto abierto, no el que exista en disco."
+    },
+    {
+      "id": "frame-rate-bloqueado",
+      "descripcion": "El timeline frame rate de BC-Bootcamp-Resolve sigue siendo 24 fps",
+      "op": "project_settings",
+      "args": {},
+      "expr": "float(r['settings']['timelineFrameRate']) == 24.0",
+      "pista": "File > Project Settings > Master Settings > Timeline frame rate. Con clips en el media pool el campo aparece atenuado y no se puede cambiar, asi que si te sale otro valor el proyecto abierto no es el del bootcamp."
+    },
+    {
+      "id": "montaje-v1-conservada",
+      "descripcion": "BC-Montaje-v1 sigue existiendo, sin tocar",
+      "op": "timeline_list",
+      "args": {},
+      "expr": "'BC-Montaje-v1' in r['timelines']",
+      "pista": "Practica 01, paso 2. El acabado de esta semana va sobre una COPIA. Si renombraste v1 en vez de duplicarla, has perdido el montaje bruto de la Semana 06 y con el la unica evidencia de como estaba antes. Recuperalo del respaldo BC-Bootcamp-Resolve-semana06.drp."
+    },
+    {
+      "id": "montaje-v2-existe",
+      "descripcion": "Existe la timeline BC-Montaje-v2",
+      "op": "timeline_list",
+      "args": {},
+      "expr": "'BC-Montaje-v2' in r['timelines']",
+      "pista": "Practica 01, paso 2. Clic derecho sobre BC-Montaje-v1 en el media pool > Duplicate Timeline, y renombra la copia como BC-Montaje-v2. El nombre es exacto: guiones, uve minuscula y el 2 sin ceros delante."
+    },
+    {
+      "id": "montaje-v2-activo",
+      "descripcion": "BC-Montaje-v2 es la timeline abierta ahora mismo",
+      "op": "timeline_probe",
+      "args": {},
+      "expr": "r['name'] == 'BC-Montaje-v2'",
+      "pista": "timeline_probe y timeline_detect_gaps leen la timeline ACTIVA. Si acabas de mirar BC-Sync-Cut-v1 o BC-Montaje-v1, te habras quedado en ella: doble clic en BC-Montaje-v2 en el media pool y repite. Los tres checks siguientes tambien dependen de esto."
+    },
+    {
+      "id": "montaje-v2-clips",
+      "descripcion": "La pista de video principal de BC-Montaje-v2 tiene dieciocho clips o mas",
+      "op": "timeline_probe",
+      "args": {},
+      "expr": "[t for t in r['tracks'] if t['type'] == 'video'][0]['item_count'] >= 18",
+      "pista": "Practica 01, pasos 5 y 6. Son los quince o mas de la Semana 06 mas los planos de la escena multicamara que traes de BC-Sync-Cut-v1. El check mira Video 1, no las pistas de encima: si pegaste la escena en Video 2 no cuenta, y ademas tapa en vez de montar."
+    },
+    {
+      "id": "montaje-v2-sin-huecos",
+      "descripcion": "Video 1 de BC-Montaje-v2 no tiene huecos ni solapes",
+      "op": "timeline_detect_gaps",
+      "args": { "track": 1 },
+      "expr": "r['clean'] and len(r['gaps']) == 0 and len(r['overlaps']) == 0",
+      "pista": "Practica 02, paso 8. Un hueco es un parpadeo a negro que a la escala de la timeline no se ve. Suele aparecer al pegar la escena multicamara con el iman desactivado, o al borrar un clip sin ripple. Activa el iman con N, localiza el hueco ampliando la vista de detalle y borralo con ripple."
+    },
+    {
+      "id": "montaje-v2-pista-de-titulos",
+      "descripcion": "BC-Montaje-v2 tiene tres pistas de video o mas",
+      "op": "timeline_probe",
+      "args": {},
+      "expr": "r['video_tracks'] >= 3",
+      "pista": "Practica 03, pasos 6 a 8. Video 1 la continuidad, Video 2 los recursos, Video 3 los titulos. La pista nueva aparece sola al soltar el primer titulo en la zona gris vacia de encima de Video 2, o a mano desde el icono Timeline Actions > Add Video Track."
+    },
+    {
+      "id": "bin-entregas",
+      "descripcion": "El bin 12-Entregas tiene al menos un archivo exportado",
+      "op": "media_list",
+      "args": { "bin": ["12-Entregas"] },
+      "expr": "len([c for c in r['clips'] if c['path']]) >= 1",
+      "pista": "Practica 04, pasos 5 y 6. El nombre del bin es exacto: 12-Entregas, con el 12 delante y la E mayuscula, y cuelga de Master. Dentro va el archivo que saco File > Quick Export, reimportado desde 03-entregas/. Un bin que no existe devuelve lo mismo que un bin vacio, asi que comprueba las dos cosas."
+    }
+  ]
+}

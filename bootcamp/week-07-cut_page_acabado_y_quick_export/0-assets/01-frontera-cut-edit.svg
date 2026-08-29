@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 440" width="880" height="440" role="img"
+     aria-label="Una sola timeline compartida por las dos paginas. La Cut page acaba transiciones estandar, Smooth Cut, velocidad constante, nivel de audio, titulos rapidos y una salida rapida. La Edit page y las fases siguientes se ocupan del trimming al fotograma, las rampas de velocidad, el diseno de titulos, los subtitulos, la mezcla y el color.">
+  <title>La frontera entre la Cut page y la Edit page</title>
+  <style>
+    .bg{fill:#101418}.surf{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .card{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .now{fill:#232b34;stroke:#3fb950;stroke-width:2}
+    .later{fill:#191f26;stroke:#4a9eff;stroke-width:2;stroke-dasharray:5 4}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .ok{font-size:12px;font-weight:600;fill:#3fb950}
+    .nx{font-size:12px;font-weight:600;fill:#4a9eff}
+  </style>
+  <rect class="bg" width="880" height="440"/>
+  <text class="t h" x="40" y="36">Una timeline. Dos páginas. Dos momentos del trabajo.</text>
+
+  <rect class="surf" x="40" y="56" width="800" height="64" rx="6"/>
+  <text class="t lbl" x="60" y="80">La misma timeline del mismo proyecto</text>
+  <rect class="card" x="60" y="90" width="110" height="18" rx="3"/>
+  <rect class="card" x="174" y="90" width="86" height="18" rx="3"/>
+  <rect class="card" x="264" y="90" width="132" height="18" rx="3"/>
+  <rect class="card" x="400" y="90" width="98" height="18" rx="3"/>
+  <rect class="card" x="502" y="90" width="150" height="18" rx="3"/>
+  <rect class="card" x="656" y="90" width="164" height="18" rx="3"/>
+
+  <rect class="now" x="40" y="140" width="386" height="264" rx="6"/>
+  <text class="t lbl" x="62" y="168">Cut page · Semana 07</text>
+  <text class="t ok" x="62" y="188">Lo que se acaba ahora</text>
+  <text class="t s" x="62" y="214">Transiciones estándar, en un botón</text>
+  <text class="t s" x="62" y="236">Smooth Cut sobre los saltos</text>
+  <text class="t s" x="62" y="258">Velocidad constante por clip</text>
+  <text class="t s" x="62" y="280">Nivel de audio por clip</text>
+  <text class="t s" x="62" y="302">Títulos rápidos, para que se lean</text>
+  <text class="t s" x="62" y="324">Quick Export: una salida vista y oída</text>
+  <text class="t s" x="62" y="360">Ninguna necesita precisión</text>
+  <text class="t s" x="62" y="380">de fotograma. Son decisiones de bulto.</text>
+
+  <rect class="later" x="454" y="140" width="386" height="264" rx="6"/>
+  <text class="t lbl" x="476" y="168">Edit page y siguientes</text>
+  <text class="t nx" x="476" y="188">Lo que se deja para después</text>
+  <text class="t s" x="476" y="214">Trimming al fotograma · Semana 09</text>
+  <text class="t s" x="476" y="236">Rampas de velocidad · Semana 10</text>
+  <text class="t s" x="476" y="258">Diseño de títulos · Semana 11</text>
+  <text class="t s" x="476" y="280">Subtítulos · Semana 12</text>
+  <text class="t s" x="476" y="302">Mezcla y loudness · Semanas 13-15</text>
+  <text class="t s" x="476" y="324">Color · Semanas 16-22</text>
+  <text class="t s" x="476" y="360">Todo esto está anclado a un instante</text>
+  <text class="t s" x="476" y="380">o pide control fino. Hoy se rehace.</text>
+
+  <text class="t s" x="40" y="428">La regla: ¿lo que hay debajo de esto se va a mover todavía? Si sí, no lo hagas ahora.</text>
+</svg>

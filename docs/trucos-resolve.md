@@ -139,7 +139,50 @@ terceros.
 
 ---
 
-_Las semanas 07 a 36 añadirán aquí sus trucos según se publiquen._
+## Semana 07 — Cut page: acabado y quick export
+
+| Truco | Cómo |
+| ----- | ---- |
+| Decidir si algo toca ahora | ¿Lo que hay debajo se va a mover todavía? Si sí, no lo hagas |
+| Congelar el bruto antes de acabarlo | Clic derecho > `Duplicate Timeline`, y trabaja en la copia |
+| Encontrar cualquier ajuste de la timeline | Los tres iconos: `Timeline Options`, `Timeline Actions`, `Edit Actions` |
+| Saber si un clip tiene cola en dos segundos | Arrastra su borde hacia fuera: si no se mueve, no hay |
+| Que una transición quepa siempre | Pídela de 12 fotogramas en vez de 24 |
+| Gastar cola de un solo lado | Alineación `Start on Edit` o `End on Edit` en vez de centrada |
+| Poner una disolvencia sin ratón | `V` selecciona el corte más cercano, `Ctrl+T` / `Cmd+T` la añade |
+| Elegir la alineación desde el teclado | `U` alterna principio, centro y final antes de `Ctrl+T` |
+| Quitar una transición | Selecciónala y `Delete`, o el botón `Cut` con el cabezal cerca |
+| Ver los dos números de una duración a la vez | Clic derecho > `Change Duration`: segundos y fotogramas |
+| Que el botón ponga siempre lo que tú quieres | `Timeline Options > Set Default Transition` |
+| Deshacer un experimento masivo | `Timeline Actions > Clear Transition from All Edits` |
+| Saber si una transición sobra | Quítala y reproduce: si no la echas de menos, sobraba |
+| Que un `Smooth Cut` no se note | Cámbialo a 4 fotogramas nada más ponerlo |
+| Juzgar un `Smooth Cut` | A velocidad normal, dos o tres pases, nunca parado |
+| Que un plano dure exactamente lo que quieres | Escribe la duración en `Duration`, no el porcentaje |
+| Comparar un efecto con y sin él | El interruptor de la izquierda de la categoría, en `Tools` |
+| Ver de un vistazo qué clips llevan velocidad | `Timeline Options > Display Speed Keyframes` |
+| Ralentización que no se ve | No bajes del 80 % con material grabado a 24 fps |
+| Bajar el volumen de un clip | `Tools > Audio` y el deslizador |
+| Comprobar si los recursos ensucian la voz | Silencia `Video 2` desde su cabecera y compara |
+| Quitar pausas largas de una entrevista | `Clip > Audio Operations > Ripple Delete Silence` |
+| Que no te pique el diálogo | Sube `Minimum to Trip` a 24 fotogramas o más |
+| Crear la pista de títulos sin menús | Arrastra el primer título a la zona gris de encima de `Video 2` |
+| Ver un título antes de colocarlo | `Hover Scrub Preview` y pasa el ratón por la miniatura |
+| Escribir el texto donde se ve | Doble clic sobre el texto en el visor |
+| Centrar un rótulo sin tocar números | Al arrastrarlo se pega al centro y a los tercios |
+| Ver la pieza sin rótulos | Desactiva `Video 3` desde su cabecera |
+| Encontrar los flash frames de golpe | `Jump Cuts` a 2 fotogramas y mira los rojos |
+| Ver dónde se hace larga tu pieza | Los racimos de gris en la timeline de arriba |
+| Detectar planos repetidos | `View > Show Duplicate Frames` |
+| Exportar solo un minuto | Marca `I` y `O` en la timeline antes de `File > Quick Export` |
+| El preset que abre en todas partes | `H.264 Master` |
+| Comprobar que un archivo exportado es válido | Reimpórtalo al proyecto y reprodúcelo |
+| Ver si los rótulos se leen de verdad | Míralo en el móvil, no solo en el monitor |
+| Comprobar cualquier atajo en tu instalación | `DaVinci Resolve > Keyboard Customization`, busca el comando por nombre |
+
+---
+
+_Las semanas 08 a 36 añadirán aquí sus trucos según se publiquen._
 
 
 ---

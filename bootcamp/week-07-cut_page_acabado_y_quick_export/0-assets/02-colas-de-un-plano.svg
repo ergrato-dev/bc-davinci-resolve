@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img"
+     aria-label="El archivo completo de un clip con su cola de entrada y su cola de salida a los lados del tramo visible en la timeline. Debajo, una disolvencia centrada en el corte consume media duracion de cola de salida del primer clip y media de cola de entrada del segundo.">
+  <title>Las colas de un plano y lo que consume una disolvencia</title>
+  <style>
+    .bg{fill:#101418}.surf{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .file{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .vis{fill:#232b34;stroke:#4a9eff;stroke-width:2}
+    .tail{fill:#191f26;stroke:#2f3a45;stroke-width:1;stroke-dasharray:4 3}
+    .diss{fill:#232b34;stroke:#f5a524;stroke-width:2}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .am{font-size:12px;font-weight:600;fill:#f5a524}
+  </style>
+  <rect class="bg" width="880" height="400"/>
+  <text class="t h" x="40" y="36">El clip de la timeline es una ventana. El archivo sigue a los dos lados.</text>
+
+  <rect class="surf" x="40" y="58" width="800" height="128" rx="6"/>
+  <text class="t lbl" x="60" y="82">Un clip, visto entero</text>
+  <rect class="tail" x="60" y="96" width="150" height="40" rx="3"/>
+  <text class="t s" x="72" y="121">cola de entrada</text>
+  <rect class="vis" x="212" y="96" width="380" height="40" rx="3"/>
+  <text class="t s" x="228" y="121">lo que se ve en la timeline</text>
+  <rect class="tail" x="594" y="96" width="186" height="40" rx="3"/>
+  <text class="t s" x="606" y="121">cola de salida</text>
+  <text class="t s" x="60" y="164">El borde del archivo es un límite duro: se llama media limit y no se puede pasar.</text>
+
+  <rect class="surf" x="40" y="206" width="800" height="150" rx="6"/>
+  <text class="t lbl" x="60" y="230">Una disolvencia centrada de 24 fotogramas, a 24 fps</text>
+  <rect class="vis" x="60" y="244" width="330" height="40" rx="3"/>
+  <text class="t s" x="76" y="269">plano A</text>
+  <rect class="tail" x="392" y="244" width="96" height="40" rx="3"/>
+  <text class="t s" x="400" y="269">cola A</text>
+  <rect class="tail" x="352" y="292" width="96" height="40" rx="3"/>
+  <text class="t s" x="360" y="317">cola B</text>
+  <rect class="vis" x="450" y="292" width="330" height="40" rx="3"/>
+  <text class="t s" x="466" y="317">plano B</text>
+  <rect class="diss" x="378" y="238" width="94" height="100" rx="4" fill-opacity="0.25"/>
+  <text class="t am" x="384" y="352">12 f + 12 f</text>
+  <rect x="424" y="232" width="2" height="112" fill="#f5a524"/>
+  <text class="t s" x="500" y="352">Sin cola en uno de los dos lados, Resolve acorta la transición sin avisar.</text>
+</svg>

@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 380" width="880" height="380" role="img"
+     aria-label="Tres pistas de video apiladas. Video 1 lleva la continuidad y hace ripple: cualquier cambio recoloca lo que viene detras. Video 2 lleva los planos de recurso y no hace ripple. Video 3 lleva los titulos, tambien sin ripple, para poder apagarlos todos de un clic y no mezclarlos con los recursos.">
+  <title>El reparto de pistas: continuidad, recursos y títulos</title>
+  <style>
+    .bg{fill:#101418}.surf{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .base{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .broll{fill:#232b34;stroke:#4a9eff;stroke-width:2}
+    .title{fill:#232b34;stroke:#a371f7;stroke-width:2}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .am{font-size:12px;font-weight:600;fill:#f5a524}
+  </style>
+  <rect class="bg" width="880" height="380"/>
+  <text class="t h" x="40" y="36">Cada pista tiene un trabajo, y solo la de abajo hace ripple.</text>
+
+  <rect class="surf" x="40" y="58" width="800" height="250" rx="6"/>
+
+  <text class="t lbl" x="60" y="98">Video 3</text>
+  <text class="t s" x="60" y="116">títulos</text>
+  <rect class="title" x="180" y="80" width="120" height="40" rx="3"/><text class="t s" x="192" y="105">nombre</text>
+  <rect class="title" x="470" y="80" width="110" height="40" rx="3"/><text class="t s" x="482" y="105">sitio</text>
+  <rect class="title" x="690" y="80" width="130" height="40" rx="3"/><text class="t s" x="702" y="105">créditos</text>
+
+  <text class="t lbl" x="60" y="168">Video 2</text>
+  <text class="t s" x="60" y="186">recursos</text>
+  <rect class="broll" x="230" y="150" width="140" height="40" rx="3"/><text class="t s" x="242" y="175">recurso</text>
+  <rect class="broll" x="520" y="150" width="120" height="40" rx="3"/><text class="t s" x="532" y="175">recurso</text>
+
+  <text class="t lbl" x="60" y="238">Video 1</text>
+  <text class="t s" x="60" y="256">continuidad</text>
+  <rect class="base" x="180" y="220" width="150" height="40" rx="3"/><text class="t s" x="192" y="245">A</text>
+  <rect class="base" x="334" y="220" width="130" height="40" rx="3"/><text class="t s" x="346" y="245">B</text>
+  <rect class="base" x="468" y="220" width="170" height="40" rx="3"/><text class="t s" x="480" y="245">C</text>
+  <rect class="base" x="642" y="220" width="178" height="40" rx="3"/><text class="t s" x="654" y="245">D</text>
+
+  <text class="t am" x="60" y="290">Un cambio de duración en Video 1 recoloca todo lo que viene detrás — y descoloca lo de arriba.</text>
+
+  <text class="t s" x="40" y="336">Manda siempre la pista más alta: si un título cae sobre un recurso, uno de los dos desaparece.</text>
+  <text class="t s" x="40" y="358">Desactivar Video 3 enseña la pieza sin rótulos; desactivar las dos, la continuidad desnuda.</text>
+</svg>
