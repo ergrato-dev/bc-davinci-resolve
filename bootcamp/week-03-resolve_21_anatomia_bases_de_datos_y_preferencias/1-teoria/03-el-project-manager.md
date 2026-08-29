@@ -208,3 +208,11 @@ nunca al revés.
 - [ ] Sé qué hace Dynamic Project Switching y por qué no se deja siempre encendido
 - [ ] Distingo `Export Project`, *Project Archive* y *Project Backups*
 - [ ] Sé que borrar un proyecto no tiene deshacer, y exporto antes de borrar
+
+---
+
+| Anterior | Actual | Siguiente |
+| -------- | ------ | --------- |
+| [02 · Bibliotecas de proyectos: local, en red y en la nube](02-bibliotecas-de-proyectos.md) | **03 · El Project Manager** | [04 · Copias de seguridad](04-copias-de-seguridad.md) |
+
+← [Volver a la Semana 03](../README.md)

@@ -195,3 +195,11 @@ se repite, no.
 - [ ] Sé que Live Save y los backups no son lo mismo
 - [ ] Exporto un `.drp` al cerrar cada semana
 - [ ] Sé que nada de esto respalda mi material, y tengo una copia aparte
+
+---
+
+| Anterior | Actual | Siguiente |
+| -------- | ------ | --------- |
+| [03 · El Project Manager](03-el-project-manager.md) | **04 · Copias de seguridad** | [05 · Preferences: los ajustes de tu ordenador](05-preferences-los-ajustes-de-tu-ordenador.md) |
+
+← [Volver a la Semana 03](../README.md)

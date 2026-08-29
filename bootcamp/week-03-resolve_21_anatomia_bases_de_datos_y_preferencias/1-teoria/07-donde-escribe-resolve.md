@@ -205,3 +205,11 @@ día y no volver a mirar. Es exactamente lo que hace la
 - [ ] Reconozco las carpetas `CacheClip` y `.gallery`
 - [ ] Sé recuperar espacio en orden, de menos a más doloroso
 - [ ] Sé qué cuatro cosas no se borran nunca para hacer sitio
+
+---
+
+| Anterior | Actual | Siguiente |
+| -------- | ------ | --------- |
+| [06 · Project Settings: los ajustes de tu vídeo](06-project-settings-los-ajustes-de-tu-video.md) | **07 · Dónde escribe Resolve** | [08 · El espacio de trabajo](08-el-espacio-de-trabajo.md) |
+
+← [Volver a la Semana 03](../README.md)

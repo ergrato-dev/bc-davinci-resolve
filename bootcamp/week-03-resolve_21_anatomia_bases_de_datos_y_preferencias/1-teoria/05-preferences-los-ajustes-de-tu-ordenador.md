@@ -206,3 +206,11 @@ Renombrar en vez de borrar es la diferencia entre una prueba y una pérdida.
 - [ ] Sé dónde está la carpeta `Preferences` en mi disco
 - [ ] Sé cómo volver a los valores de fábrica sin perder nada por el camino
 - [ ] Sé que mis preferencias no viajan con el proyecto
+
+---
+
+| Anterior | Actual | Siguiente |
+| -------- | ------ | --------- |
+| [04 · Copias de seguridad](04-copias-de-seguridad.md) | **05 · Preferences: los ajustes de tu ordenador** | [06 · Project Settings: los ajustes de tu vídeo](06-project-settings-los-ajustes-de-tu-video.md) |
+
+← [Volver a la Semana 03](../README.md)

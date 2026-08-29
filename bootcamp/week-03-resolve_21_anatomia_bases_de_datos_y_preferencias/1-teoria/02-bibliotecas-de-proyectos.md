@@ -197,3 +197,11 @@ Para el bootcamp, la estrategia es la de la [teoría 04](04-copias-de-seguridad.
 - [ ] Sé crear una biblioteca local nueva y volver a la anterior
 - [ ] Sé que una biblioteca nueva nace vacía y que los proyectos se mueven con `.drp`
 - [ ] Sé que respaldar una biblioteca y respaldar un proyecto son cosas distintas
+
+---
+
+| Anterior | Actual | Siguiente |
+| -------- | ------ | --------- |
+| [01 · El modelo de datos de Resolve](01-el-modelo-de-datos-de-resolve.md) | **02 · Bibliotecas de proyectos: local, en red y en la nube** | [03 · El Project Manager](03-el-project-manager.md) |
+
+← [Volver a la Semana 03](../README.md)

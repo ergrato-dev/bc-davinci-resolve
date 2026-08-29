@@ -200,3 +200,11 @@ sistemáticamente.
 - [ ] Sé cuál es el único ajuste irreversible y cuándo se congela
 - [ ] Sé guardar un preset de proyecto y ponerlo por defecto
 - [ ] Sé qué ajustes viajan con el `.drp` y cuáles se quedan en la máquina
+
+---
+
+| Anterior | Actual | Siguiente |
+| -------- | ------ | --------- |
+| [05 · Preferences: los ajustes de tu ordenador](05-preferences-los-ajustes-de-tu-ordenador.md) | **06 · Project Settings: los ajustes de tu vídeo** | [07 · Dónde escribe Resolve](07-donde-escribe-resolve.md) |
+
+← [Volver a la Semana 03](../README.md)

@@ -194,3 +194,11 @@ semana lo lees entero de una vez; después lo consultarás cuando una semana lo 
 - [ ] Sé qué versión de Resolve tengo instalada
 - [ ] Sé reconocer una función de Studio de las tres formas en que aparece
 - [ ] He leído entero `docs/free-vs-studio.md`
+
+---
+
+| Anterior | Actual | Siguiente |
+| -------- | ------ | --------- |
+| [07 · Dónde escribe Resolve](07-donde-escribe-resolve.md) | **08 · El espacio de trabajo** | — |
+
+← [Volver a la Semana 03](../README.md)

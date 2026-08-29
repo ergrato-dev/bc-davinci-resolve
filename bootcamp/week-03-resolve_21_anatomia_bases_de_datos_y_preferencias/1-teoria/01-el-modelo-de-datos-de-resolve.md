@@ -205,3 +205,11 @@ tener material dentro:
 - [ ] Sé qué significa que un clip esté *offline* y por qué no es una pérdida de trabajo
 - [ ] Sé dónde vive mi biblioteca de proyectos en mi disco
 - [ ] Sé que no se toca esa carpeta a mano, y por qué
+
+---
+
+| Anterior | Actual | Siguiente |
+| -------- | ------ | --------- |
+| — | **01 · El modelo de datos de Resolve** | [02 · Bibliotecas de proyectos: local, en red y en la nube](02-bibliotecas-de-proyectos.md) |
+
+← [Volver a la Semana 03](../README.md)
