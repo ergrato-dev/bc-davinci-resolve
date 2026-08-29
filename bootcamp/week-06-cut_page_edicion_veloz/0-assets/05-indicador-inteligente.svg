@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img"
+     aria-label="El indicador inteligente: cuando el cabezal esta cerca de un punto de corte, la Cut page marca ese corte como destino de la edicion; cuando esta lejos de cualquier corte, el destino es la propia posicion del cabezal.">
+  <title>El indicador inteligente de la Cut page</title>
+  <style>
+    .bg{fill:#101418}.surf{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .clip{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .ok{font-size:12px;font-weight:600;fill:#3fb950}
+    .am{font-size:12px;font-weight:600;fill:#f5a524}
+  </style>
+  <rect class="bg" width="880" height="400"/>
+  <text class="t h" x="40" y="38">Dónde va a caer la edición: lo decide la distancia al corte más cercano</text>
+
+  <rect class="surf" x="40" y="62" width="800" height="136" rx="6"/>
+  <text class="t lbl" x="60" y="88">Caso A · el cabezal está cerca de un corte</text>
+  <rect class="clip" x="60" y="104" width="240" height="52" rx="3"/><text class="t s" x="76" y="134">plano-08</text>
+  <rect class="clip" x="304" y="104" width="240" height="52" rx="3"/><text class="t s" x="320" y="134">plano-09</text>
+  <rect class="clip" x="548" y="104" width="272" height="52" rx="3"/><text class="t s" x="564" y="134">plano-10</text>
+  <rect x="330" y="96" width="2" height="68" fill="#f5a524"/>
+  <polygon points="296,92 310,92 303,102" fill="#e8eef4"/>
+  <text class="t ok" x="60" y="184">La edición cae en el corte marcado, no bajo el cabezal. Es lo que quieres el 90 % del tiempo.</text>
+
+  <rect class="surf" x="40" y="216" width="800" height="136" rx="6"/>
+  <text class="t lbl" x="60" y="242">Caso B · el cabezal está lejos de cualquier corte</text>
+  <rect class="clip" x="60" y="258" width="240" height="52" rx="3"/><text class="t s" x="76" y="288">plano-08</text>
+  <rect class="clip" x="304" y="258" width="240" height="52" rx="3"/><text class="t s" x="320" y="288">plano-09</text>
+  <rect class="clip" x="548" y="258" width="272" height="52" rx="3"/><text class="t s" x="564" y="288">plano-10</text>
+  <rect x="430" y="250" width="2" height="68" fill="#f5a524"/>
+  <polygon points="424,246 438,246 431,256" fill="#e8eef4"/>
+  <text class="t am" x="60" y="338">La edición cae en la posición del cabezal, partiendo el clip por ahí.</text>
+
+  <text class="t s" x="40" y="378">Antes de pulsar un botón de edición, mira el indicador. Es la diferencia entre montar y deshacer.</text>
+</svg>

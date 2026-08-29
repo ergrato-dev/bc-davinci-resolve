@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 380" width="880" height="380" role="img"
+     aria-label="El source tape: los clips de un bin, que en el media pool son elementos sueltos, se ven en el visor como una sola cinta continua que se recorre de principio a fin sin abrir cada archivo.">
+  <title>Qué es el source tape</title>
+  <style>
+    .bg{fill:#101418}.surf{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .clip{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .ok{font-size:12px;font-weight:600;fill:#3fb950}
+  </style>
+  <rect class="bg" width="880" height="380"/>
+  <text class="t h" x="40" y="38">El bin entero, como una sola cinta</text>
+
+  <rect class="surf" x="40" y="62" width="800" height="112" rx="6"/>
+  <text class="t lbl" x="60" y="88">En el media pool · 32 elementos sueltos que hay que abrir uno a uno</text>
+  <g>
+    <rect class="clip" x="60" y="104" width="86" height="46" rx="3"/><text class="t s" x="72" y="132">plano-01</text>
+    <rect class="clip" x="154" y="104" width="86" height="46" rx="3"/><text class="t s" x="166" y="132">plano-02</text>
+    <rect class="clip" x="248" y="104" width="86" height="46" rx="3"/><text class="t s" x="260" y="132">plano-03</text>
+    <rect class="clip" x="342" y="104" width="86" height="46" rx="3"/><text class="t s" x="354" y="132">plano-04</text>
+    <rect class="clip" x="436" y="104" width="86" height="46" rx="3"/><text class="t s" x="448" y="132">plano-05</text>
+    <rect class="clip" x="530" y="104" width="86" height="46" rx="3"/><text class="t s" x="542" y="132">plano-06</text>
+    <rect class="clip" x="624" y="104" width="86" height="46" rx="3"/><text class="t s" x="636" y="132">plano-07</text>
+    <rect class="clip" x="718" y="104" width="102" height="46" rx="3"/><text class="t s" x="730" y="132">…y 25 más</text>
+  </g>
+
+  <rect class="surf" x="40" y="196" width="800" height="112" rx="6"/>
+  <text class="t lbl" x="60" y="222">En el visor, con Source Tape activado · una cinta seguida</text>
+  <rect class="clip" x="60" y="238" width="760" height="46" rx="3"/>
+  <line x1="155" y1="238" x2="155" y2="284" stroke="#2f3a45"/>
+  <line x1="248" y1="238" x2="248" y2="284" stroke="#2f3a45"/>
+  <line x1="340" y1="238" x2="340" y2="284" stroke="#2f3a45"/>
+  <line x1="452" y1="238" x2="452" y2="284" stroke="#2f3a45"/>
+  <line x1="548" y1="238" x2="548" y2="284" stroke="#2f3a45"/>
+  <line x1="640" y1="238" x2="640" y2="284" stroke="#2f3a45"/>
+  <line x1="730" y1="238" x2="730" y2="284" stroke="#2f3a45"/>
+  <text class="t s" x="76" y="266">un único flujo · se recorre con J K L y se marca con I y O</text>
+
+  <rect class="surf" x="40" y="326" width="800" height="40" rx="6"/>
+  <text class="t ok" x="60" y="351">El orden de la cinta es el orden del bin: ordena el bin antes de revisar.</text>
+</svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 360" width="880" height="360" role="img"
+     aria-label="Fast Review recorre la timeline a velocidad variable: los clips largos pasan mas deprisa y los cortos mas despacio, de forma que todos ocupan aproximadamente el mismo tiempo de revision.">
+  <title>Cómo funciona Fast Review</title>
+  <style>
+    .bg{fill:#101418}.surf{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .clip{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .am{font-size:12px;font-weight:600;fill:#f5a524}
+  </style>
+  <rect class="bg" width="880" height="360"/>
+  <text class="t h" x="40" y="38">Fast Review: el tiempo de revisión, repartido a partes iguales</text>
+
+  <rect class="surf" x="40" y="62" width="800" height="112" rx="6"/>
+  <text class="t lbl" x="60" y="88">La timeline, con clips de duraciones muy distintas</text>
+  <rect class="clip" x="60" y="104" width="330" height="46" rx="3"/><text class="t s" x="76" y="132">entrevista · 4 min</text>
+  <rect class="clip" x="394" y="104" width="70" height="46" rx="3"/><text class="t s" x="404" y="132">8 s</text>
+  <rect class="clip" x="468" y="104" width="52" height="46" rx="3"/><text class="t s" x="476" y="132">5 s</text>
+  <rect class="clip" x="524" y="104" width="180" height="46" rx="3"/><text class="t s" x="540" y="132">plano largo · 90 s</text>
+  <rect class="clip" x="708" y="104" width="112" height="46" rx="3"/><text class="t s" x="722" y="132">30 s</text>
+
+  <rect class="surf" x="40" y="196" width="800" height="112" rx="6"/>
+  <text class="t lbl" x="60" y="222">Con Fast Review · cada clip recibe un tiempo parecido en pantalla</text>
+  <rect class="clip" x="60" y="238" width="152" height="46" rx="3"/><text class="t am" x="76" y="266">×16</text>
+  <rect class="clip" x="216" y="238" width="152" height="46" rx="3"/><text class="t am" x="232" y="266">×1</text>
+  <rect class="clip" x="372" y="238" width="152" height="46" rx="3"/><text class="t am" x="388" y="266">×1</text>
+  <rect class="clip" x="528" y="238" width="152" height="46" rx="3"/><text class="t am" x="544" y="266">×6</text>
+  <rect class="clip" x="684" y="238" width="136" height="46" rx="3"/><text class="t am" x="700" y="266">×2</text>
+
+  <text class="t s" x="40" y="340">Las cifras ilustran el reparto; la velocidad exacta la calcula Resolve a partir de la duración de cada clip.</text>
+</svg>

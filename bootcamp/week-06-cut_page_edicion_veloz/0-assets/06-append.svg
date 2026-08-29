@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 360" width="880" height="360" role="img"
+     aria-label="Append coloca el clip al final de la timeline, detras del ultimo clip, sin importar donde este el cabezal y sin desplazar nada de lo que ya habia.">
+  <title>Cómo funciona Append</title>
+  <style>
+    .bg{fill:#101418}.surf{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .clip{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .new{fill:#232b34;stroke:#3fb950;stroke-width:2}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .ok{font-size:12px;font-weight:600;fill:#3fb950}
+  </style>
+  <rect class="bg" width="880" height="360"/>
+  <text class="t h" x="40" y="38">Append: al final, siempre, pase lo que pase</text>
+
+  <rect class="surf" x="40" y="62" width="800" height="112" rx="6"/>
+  <text class="t lbl" x="60" y="88">Antes · el cabezal está en medio, y da igual</text>
+  <rect class="clip" x="60" y="104" width="170" height="46" rx="3"/><text class="t s" x="76" y="132">plano-01</text>
+  <rect class="clip" x="234" y="104" width="150" height="46" rx="3"/><text class="t s" x="250" y="132">plano-02</text>
+  <rect class="clip" x="388" y="104" width="190" height="46" rx="3"/><text class="t s" x="404" y="132">plano-03</text>
+  <rect x="300" y="98" width="2" height="58" fill="#f5a524"/>
+
+  <rect class="surf" x="40" y="196" width="800" height="112" rx="6"/>
+  <text class="t lbl" x="60" y="222">Después · el clip nuevo entra detrás del último, y nada se ha movido</text>
+  <rect class="clip" x="60" y="238" width="170" height="46" rx="3"/><text class="t s" x="76" y="266">plano-01</text>
+  <rect class="clip" x="234" y="238" width="150" height="46" rx="3"/><text class="t s" x="250" y="266">plano-02</text>
+  <rect class="clip" x="388" y="238" width="190" height="46" rx="3"/><text class="t s" x="404" y="266">plano-03</text>
+  <rect class="new" x="582" y="238" width="160" height="46" rx="3"/><text class="t ok" x="598" y="266">plano-04</text>
+
+  <text class="t s" x="40" y="336">Por eso Append es la herramienta de la primera pasada: no hay nada que colocar, solo que elegir.</text>
+</svg>

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" width="880" height="420" role="img"
+     aria-label="Place on Top coloca el clip en la pista de video superior sobre lo que ya hay, y Close Up hace lo mismo aplicandole ademas un reencuadre ampliado para simular un primer plano.">
+  <title>Close Up y Place on Top</title>
+  <style>
+    .bg{fill:#101418}.surf{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .clip{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .new{fill:#232b34;stroke:#3fb950;stroke-width:2}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .ok{font-size:12px;font-weight:600;fill:#3fb950}
+  </style>
+  <rect class="bg" width="880" height="420"/>
+  <text class="t h" x="40" y="38">Las dos que no tocan lo que ya montaste</text>
+
+  <rect class="surf" x="40" y="62" width="800" height="146" rx="6"/>
+  <text class="t lbl" x="60" y="88">Place on Top · el clip va a la pista de encima</text>
+  <text class="t s" x="60" y="112">Video 2</text>
+  <rect class="new" x="140" y="96" width="180" height="38" rx="3"/><text class="t ok" x="156" y="120">plano nuevo</text>
+  <text class="t s" x="60" y="164">Video 1</text>
+  <rect class="clip" x="140" y="148" width="220" height="38" rx="3"/><text class="t s" x="156" y="172">A</text>
+  <rect class="clip" x="364" y="148" width="220" height="38" rx="3"/><text class="t s" x="380" y="172">B</text>
+  <rect class="clip" x="588" y="148" width="232" height="38" rx="3"/><text class="t s" x="604" y="172">C</text>
+
+  <rect class="surf" x="40" y="226" width="800" height="146" rx="6"/>
+  <text class="t lbl" x="60" y="252">Close Up · lo mismo, más un reencuadre ampliado sobre el clip nuevo</text>
+  <text class="t s" x="60" y="276">Video 2</text>
+  <rect class="new" x="140" y="260" width="180" height="38" rx="3"/><text class="t ok" x="156" y="284">plano nuevo · ampliado</text>
+  <text class="t s" x="60" y="328">Video 1</text>
+  <rect class="clip" x="140" y="312" width="220" height="38" rx="3"/><text class="t s" x="156" y="336">A</text>
+  <rect class="clip" x="364" y="312" width="220" height="38" rx="3"/><text class="t s" x="380" y="336">B</text>
+  <rect class="clip" x="588" y="312" width="232" height="38" rx="3"/><text class="t s" x="604" y="336">C</text>
+
+  <text class="t s" x="40" y="398">La pista de abajo sigue intacta: quitar la de arriba devuelve el montaje a como estaba.</text>
+</svg>

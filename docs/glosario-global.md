@@ -17,6 +17,8 @@ de toda la documentación del mundo.
   guarda la transparencia de cada píxel. Un PNG puede tenerlo; un JPG no.
 - **Ángulo** (*angle*) — Cada una de las cámaras que contiene un clip multicámara. Su
   orden se fija al crearlo y es el orden en el que se seleccionan al montar.
+- **`Append`** (*Append*) — La herramienta de edición de la Cut page que coloca el
+  material al final de la timeline, ignorando el cabezal y sin desplazar ni sustituir nada.
 - **Archivo de proyecto** (*Project Archive*, `.dra`) — Una carpeta que contiene el
   proyecto **y** una copia de todos sus medios. Es la caja de mudanza; no confundir con
   el `.drp`, que no lleva medios.
@@ -42,11 +44,16 @@ de toda la documentación del mundo.
 - **Bit depth** (*bit depth*) — Ver *profundidad de bits*.
 - **Bitrate** (*bitrate*) — Cuántos datos por segundo ocupa un vídeo, normalmente en
   megabits por segundo (Mbps). Más bitrate, más calidad y más peso.
+- **Borrado con ripple** (*ripple delete*) — El borrado que quita un clip y cierra el
+  hueco arrastrando hacia la izquierda todo lo que venía detrás. El borrado normal deja el
+  hueco, invisible en la timeline y un parpadeo a negro en reproducción.
 - **BRAW** (*Blackmagic RAW*) — El formato RAW de Blackmagic Design. Guarda los datos
   del sensor con parámetros de revelado editables después.
 
 ## C
 
+- **Cabezal** (*playhead*) — La línea vertical que marca el fotograma que estás viendo. En
+  la timeline de detalle de la Cut page no se mueve: se desplaza la timeline por debajo.
 - **Caché de render** (*render cache*) — Copias precalculadas que Resolve guarda en
   disco para que la reproducción no se atasque.
 - **CacheClip** (*CacheClip*) — La carpeta que Resolve crea con ese nombre literal para
@@ -59,6 +66,8 @@ de toda la documentación del mundo.
 - **Clone Tool** (*Clone Tool*) — El panel de la página Media que copia carpetas
   verificando cada archivo por su huella, y que admite varios destinos en un mismo
   trabajo.
+- **`Close Up`** (*Close Up*) — La herramienta de la Cut page que coloca el clip en la
+  pista de encima con un reencuadre ampliado, para simular un plano más cerrado.
 - **Codec** (*codec*) — El método para comprimir y descomprimir vídeo o audio. H.264,
   ProRes y DNxHR son codecs.
 - **Colas** (*handles*) — Los fotogramas que quedan fuera de los puntos de entrada y
@@ -72,6 +81,8 @@ de toda la documentación del mundo.
 - **Cuello de botella** (*bottleneck*) — El eslabón más lento de la cadena que va del
   disco al visor. Hay tres —descompresión, disco y cálculo de efectos— y cada uno se
   arregla con una herramienta distinta.
+- **Cut page** (*Cut page*) — La página dedicada a la primera pasada de un montaje: un
+  visor, timeline doble, seis herramientas de edición, source tape y sync bin.
 
 ## D
 
@@ -85,6 +96,8 @@ de toda la documentación del mundo.
   rates casi iguales (23,976 frente a 24 fps).
 - **`Description`** (*Description*) — El campo de metadata donde va prosa, para
   acordarte de lo que se ve. No confundir con `Keywords`, que son etiquetas y sí filtran.
+- **`Detail Zoom`** (*Detail Zoom*) — La escala corta de la vista de detalle de la timeline
+  de la Cut page, la que se usa para trabajar sobre un corte concreto.
 - **Doble sistema** (*dual system sound*) — Grabar la imagen en un aparato y el sonido en
   otro. Es lo normal en cuanto el micrófono bueno no está en la cámara, y es lo que
   obliga a sincronizar.
@@ -101,6 +114,9 @@ de toda la documentación del mundo.
 ## F
 
 - **Fairlight** (*Fairlight*) — La página de audio de Resolve.
+- **`Fast Review`** (*Fast Review*) — El control de la Cut page que recorre la timeline a
+  velocidad variable, calculada por clip, para que todos ocupen un tiempo parecido en
+  pantalla. Silencia el audio mientras dura.
 - **Flag** (*Flags*) — Una marca de color sobre un clip que señala algo pendiente. Es
   temporal: se pone, se cumple y se quita. No confundir con un marcador, que se pega a
   un punto concreto dentro del clip.
@@ -111,6 +127,8 @@ de toda la documentación del mundo.
   frames.
 - **Frame rate** (*frame rate*) — Cuántos frames se muestran por segundo. Se mide en
   fps. 24, 25, 30, 50 y 60 son los habituales.
+- **`Full Extent Zoom`** (*Full Extent Zoom*) — La escala completa de la timeline en la
+  vista de detalle de la Cut page.
 - **Fusion** (*Fusion*) — La página de composición y efectos por nodos.
 
 ## G
@@ -141,8 +159,13 @@ de toda la documentación del mundo.
 - **Importar** (*import*) — Escribir en el media pool una referencia a un archivo del
   disco. No copia nada, es instantáneo, y por eso mover la carpeta de material después
   deja los clips *offline*.
+- **Indicador inteligente** (*smart indicator*) — La marca de la timeline de la Cut page
+  que señala dónde va a caer la próxima edición: en el corte cercano si el cabezal está
+  cerca de uno, y en la posición del cabezal si no.
 - **Ingesta** (*ingest*) — Meter el material en el sistema: copiarlo, verificarlo,
   importarlo y organizarlo.
+- **Inserto** (*insert shot*) — Un plano de detalle colocado sobre el montaje principal:
+  un objeto, un cartel, unas manos. Va en la pista de encima y no sustituye a nada.
 - **Intra-frame** (*intra-frame*) — Codecs que comprimen cada frame por separado. Más
   pesados, mucho más fáciles de editar. ProRes y DNxHR son intra-frame.
 
@@ -183,6 +206,11 @@ de toda la documentación del mundo.
   archivo (codec, resolución, fecha, cámara) se lee; la que escribes tú (`Description`,
   `Keywords`, `Scene`, `Shot`, `Take`) se guarda en el proyecto, no dentro del `.mp4`, y
   se pierde si quitas el clip del media pool.
+- **Montaje bruto** (*rough cut*) — La versión de una pieza que ya va de principio a fin
+  pero no está acabada: cortes aproximados, sin transiciones ni títulos y con el sonido que
+  trajo cada clip.
+- **`Multi Source`** (*Multi Source*) — El modo del visor de origen de la Cut page que
+  muestra varios clips a la vez en cuadrícula, para comparar tomas o ángulos.
 - **Multicámara** (*multicam*) — Editar una escena rodada con varias cámaras a la vez,
   sincronizadas.
 
@@ -202,6 +230,12 @@ de toda la documentación del mundo.
 
 ## P
 
+- **Pista superior** (*upper track*) — Una pista de vídeo por encima de la principal. Lo
+  que hay en ella tapa lo de abajo mientras dura; las pistas de audio, en cambio, se suman.
+- **`Place on Top`** (*Place on Top*) — La herramienta de la Cut page que coloca el clip en
+  la pista de vídeo inmediatamente superior, sin desplazar, sustituir ni alargar nada.
+- **Plano de recurso** (*b-roll*, *cutaway*) — Un plano colocado sobre el montaje principal
+  para tapar un salto o enseñar lo que se cuenta, conservando el audio de debajo.
 - **Playback frame rate** (*Playback frame rate*) — A cuántos frames por segundo se
   reproduce la timeline en pantalla. No es el `Timeline frame rate`, que define la pieza.
 - **PostgreSQL** (*PostgreSQL*) — Gestor de bases de datos que atiende a varios clientes a
@@ -226,6 +260,7 @@ de toda la documentación del mundo.
 - **`Proxy Handling`** (*Playback > Proxy Handling*) — El interruptor de reproducción
   que decide si Resolve prefiere los proxies, prefiere el material original o los ignora.
   Es la forma de comprobar que los proxies están funcionando.
+- **Punto de corte** (*edit point*) — La junta entre dos clips consecutivos de una pista.
 
 ## Q
 
@@ -238,6 +273,8 @@ de toda la documentación del mundo.
   exposición y el balance de blancos, con mucho margen.
 - **Rec.709** (*Rec.709*) — El espacio de color estándar de la televisión de alta
   definición y de casi todo el vídeo web. El destino por defecto del bootcamp.
+- **Reencuadre** (*reframe*) — Ampliar digitalmente la imagen y quedarse con una parte. No
+  añade detalle: usa menos superficie de la grabada, así que pierde nitidez.
 - **Referencia** (*reference*) — Una anotación de dónde está un archivo, no una copia de
   él. Es lo que guarda el media pool, y explica los clips *offline*.
 - **Regenerable** — Lo que Resolve puede volver a calcular a partir del proyecto y de los
@@ -253,9 +290,14 @@ de toda la documentación del mundo.
   solo, en tres escalones: minutos, horas y días. Permiten volver atrás en el tiempo.
 - **Ripple** (*ripple*) — Editar desplazando todo lo que viene después, en lugar de
   dejar un hueco.
+- **`Ripple Overwrite`** (*Ripple Overwrite*) — La herramienta de la Cut page que sustituye
+  el clip del destino por el material marcado y recoloca el resto sin dejar huecos.
 
 ## S
 
+- **Salto de eje** (*jump cut*) — El corte entre dos trozos del mismo plano que produce un
+  salto visible. Es el efecto secundario de acortar una entrevista, y se tapa con un plano
+  de recurso.
 - **Scene Cut Detection** (*Scene Cut Detection*) — La operación que busca los cortes de
   un archivo ya montado comparando cada fotograma con el anterior. Detecta bien los
   cortes secos, se le escapan los fundidos y se cree cortes los flashes. El resultado
@@ -267,11 +309,22 @@ de toda la documentación del mundo.
 - **Smart Bin** (*Smart Bin*) — Una búsqueda guardada con forma de bin: muestra los clips
   que cumplen sus reglas, sin moverlos de su bin. Sale vacío si la metadata no está
   escrita.
+- **`Smart Insert`** (*Smart Insert*) — La herramienta de la Cut page que mete el material
+  en el punto de corte y desplaza hacia la derecha todo lo que venía después.
+- **`Snapping`** (*Snapping*) — El imán de la timeline: hace que los clips se peguen entre
+  sí y al cabezal al arrastrarlos. Se alterna con `N`.
+- **`Source Clip`** (*Source Clip*) — El modo del visor de origen que muestra un solo clip.
+- **`Source Overwrite`** (*Source Overwrite*) — La herramienta de la Cut page que coloca el
+  ángulo elegido en la pista de encima alineado por hora de grabación. Es la del sync bin.
+- **`Source Tape`** (*Source Tape*) — El modo del visor de origen que presenta todos los
+  clips del bin seleccionado como una sola cinta continua. El orden de la cinta es el del bin.
 - **SQLite** (*SQLite*) — El formato de base de datos en un solo archivo con el que
   Resolve guarda cada proyecto. Copiarlo a mano mientras se escribe lo corrompe.
 - **SRT** (*SubRip*) — El formato de archivo de subtítulos más extendido.
 - **Subclip** (*subclip*) — Una referencia al mismo archivo con un punto de entrada y uno
   de salida propios. Cuarenta subclips de un archivo de 500 MB siguen ocupando 500 MB.
+- **Sync bin** (*Sync Bin*) — La vista del media pool de la Cut page que coloca el material
+  por hora de grabación y muestra qué grababa cada cámara en el instante del cabezal.
 
 ## T
 
@@ -279,6 +332,8 @@ de toda la documentación del mundo.
   `horas:minutos:segundos:frames`.
 - **Timeline** (*timeline*) — La secuencia de montaje: las pistas con los clips
   colocados en el tiempo.
+- **Timeline doble** (*dual timeline*) — La disposición de la timeline en la Cut page: la
+  pieza entera arriba a escala fija y el detalle ampliado abajo. Sustituye al zoom.
 - **Timeline frame rate** (*Timeline frame rate*) — Cuántos frames por segundo tiene tu
   pieza. El único ajuste irreversible: se congela con el primer clip del media pool.
 - **`Timeline Proxy Mode`** (*Timeline Proxy Mode*) — El ajuste que reduce al vuelo la
@@ -291,6 +346,8 @@ de toda la documentación del mundo.
 
 - **Vectorscope** (*vectorscope*) — El scope circular que muestra el color de la imagen:
   el ángulo es el tono y la distancia al centro, la saturación.
+- **Vínculo** (*linked selection*) — La relación que hace que el vídeo y el audio de un
+  mismo clip se comporten como una sola pieza al moverlos o borrarlos.
 - **Vista de lista** (*List View*) — La presentación del media pool con una fila por
   clip y una columna por propiedad. Es donde se compara, se ordena y se detecta el
   material que no encaja. Las columnas se eligen con clic derecho sobre su cabecera.
@@ -308,6 +365,11 @@ de toda la documentación del mundo.
   escribe este proyecto su caché, sus stills y sus proxies.
 - **Workspace** (*Workspace*) — El menú desde el que se muestran y ocultan paneles, se
   gestionan los layouts y se lanzan los scripts.
+
+## Z
+
+- **`Zoom to Fit`** (*Zoom to Fit*) — El ajuste de la vista de detalle de la Cut page que
+  encaja el conjunto en el ancho disponible.
 
 ---
 

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img"
+     aria-label="La timeline doble de la Cut page: arriba la timeline completa a escala fija con un rectangulo que marca el tramo visible, abajo el detalle ampliado de ese tramo con el cabezal fijo en el centro.">
+  <title>La timeline doble de la Cut page</title>
+  <style>
+    .bg{fill:#101418}.surf{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .clip{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .ac{font-size:12px;font-weight:600;fill:#4a9eff}
+  </style>
+  <rect class="bg" width="880" height="400"/>
+  <text class="t h" x="40" y="38">Una timeline, dos escalas, cero zoom que gestionar</text>
+
+  <rect class="surf" x="40" y="60" width="800" height="118" rx="6"/>
+  <text class="t lbl" x="60" y="86">Arriba · la timeline entera, siempre completa</text>
+  <g>
+    <rect class="clip" x="60" y="102" width="60" height="34" rx="2"/>
+    <rect class="clip" x="122" y="102" width="38" height="34" rx="2"/>
+    <rect class="clip" x="162" y="102" width="74" height="34" rx="2"/>
+    <rect class="clip" x="238" y="102" width="46" height="34" rx="2"/>
+    <rect class="clip" x="286" y="102" width="92" height="34" rx="2"/>
+    <rect class="clip" x="380" y="102" width="54" height="34" rx="2"/>
+    <rect class="clip" x="436" y="102" width="70" height="34" rx="2"/>
+    <rect class="clip" x="508" y="102" width="40" height="34" rx="2"/>
+    <rect class="clip" x="550" y="102" width="86" height="34" rx="2"/>
+    <rect class="clip" x="638" y="102" width="58" height="34" rx="2"/>
+    <rect class="clip" x="698" y="102" width="122" height="34" rx="2"/>
+  </g>
+  <rect x="380" y="96" width="128" height="46" fill="none" stroke="#4a9eff" stroke-width="2" rx="3"/>
+  <text class="t ac" x="380" y="162">este es el tramo que estás viendo abajo</text>
+
+  <rect class="surf" x="40" y="196" width="800" height="130" rx="6"/>
+  <text class="t lbl" x="60" y="222">Abajo · el detalle, ampliado, con el cabezal quieto en el centro</text>
+  <rect class="clip" x="60" y="240" width="180" height="52" rx="3"/>
+  <text class="t s" x="76" y="270">plano-14</text>
+  <rect class="clip" x="244" y="240" width="196" height="52" rx="3"/>
+  <text class="t s" x="260" y="270">plano-15</text>
+  <rect class="clip" x="444" y="240" width="150" height="52" rx="3"/>
+  <text class="t s" x="460" y="270">plano-16</text>
+  <rect class="clip" x="598" y="240" width="222" height="52" rx="3"/>
+  <text class="t s" x="614" y="270">plano-17</text>
+  <rect x="438" y="232" width="2" height="68" fill="#f5a524"/>
+  <text class="t s" x="452" y="314">El cabezal no se mueve: se mueve la timeline por debajo.</text>
+
+  <rect class="surf" x="40" y="344" width="800" height="40" rx="6"/>
+  <text class="t s" x="60" y="369">Nunca pierdes de vista el conjunto mientras trabajas en el detalle. Ese es todo el truco.</text>
+</svg>

@@ -92,6 +92,23 @@ atajo que conviene memorizar el primer día.
 
 Se explican uno por uno en las Semanas 06, 08 y 09.
 
+### En la Cut page
+
+La Cut page tiene sus **seis** herramientas de edición como botones siempre visibles en la
+barra de herramientas: `Smart Insert`, `Append`, `Ripple Overwrite`, `Close Up`,
+`Place on Top` y `Source Overwrite`. Se pulsan con el ratón, y sus comandos aparecen por
+nombre en `DaVinci Resolve > Keyboard Customization`, que es donde comprobar qué tecla
+tiene cada uno en tu instalación.
+
+| Acción | Atajo | Qué hace |
+| ------ | ----- | -------- |
+| Ir a la Cut page | `Shift+3` | La timeline es la misma que en Edit |
+| Marcar entrada / salida | `I` / `O` | Funciona igual sobre un clip y sobre el source tape |
+| Alternar el imán | `N` | Déjalo activado toda la primera pasada |
+| Recorrer material | `J` `K` `L` | Pulsar `L` o `J` varias veces multiplica la velocidad |
+
+Se explican en la Semana 06.
+
 ---
 
 ## 5. Color

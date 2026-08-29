@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 440" width="880" height="440" role="img"
+     aria-label="Smart Insert mete el clip en el corte y empuja hacia la derecha todo lo que venia despues, alargando la timeline; Ripple Overwrite sustituye el clip existente por el nuevo y ajusta la duracion de la timeline segun la diferencia.">
+  <title>Smart Insert frente a Ripple Overwrite</title>
+  <style>
+    .bg{fill:#101418}.surf{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .clip{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .new{fill:#232b34;stroke:#3fb950;stroke-width:2}
+    .gone{fill:#191f26;stroke:#f85149;stroke-width:1;stroke-dasharray:4 3}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .er{font-size:12px;font-weight:600;fill:#f85149}
+  </style>
+  <rect class="bg" width="880" height="440"/>
+  <text class="t h" x="40" y="38">Las dos añaden en medio. Una empuja; la otra machaca.</text>
+
+  <rect class="surf" x="40" y="62" width="800" height="96" rx="6"/>
+  <text class="t lbl" x="60" y="88">Punto de partida</text>
+  <rect class="clip" x="60" y="102" width="150" height="42" rx="3"/><text class="t s" x="76" y="128">A</text>
+  <rect class="clip" x="214" y="102" width="150" height="42" rx="3"/><text class="t s" x="230" y="128">B</text>
+  <rect class="clip" x="368" y="102" width="150" height="42" rx="3"/><text class="t s" x="384" y="128">C</text>
+  <rect x="212" y="96" width="2" height="54" fill="#f5a524"/>
+
+  <rect class="surf" x="40" y="176" width="800" height="110" rx="6"/>
+  <text class="t lbl" x="60" y="202">Smart Insert · entra en el corte y empuja. La timeline se alarga.</text>
+  <rect class="clip" x="60" y="216" width="150" height="42" rx="3"/><text class="t s" x="76" y="242">A</text>
+  <rect class="new" x="214" y="216" width="120" height="42" rx="3"/><text class="t s" x="230" y="242">nuevo</text>
+  <rect class="clip" x="338" y="216" width="150" height="42" rx="3"/><text class="t s" x="354" y="242">B</text>
+  <rect class="clip" x="492" y="216" width="150" height="42" rx="3"/><text class="t s" x="508" y="242">C</text>
+  <text class="t s" x="60" y="278">No se pierde nada. Todo lo de la derecha se desplaza.</text>
+
+  <rect class="surf" x="40" y="304" width="800" height="110" rx="6"/>
+  <text class="t lbl" x="60" y="330">Ripple Overwrite · sustituye el clip del destino por el nuevo</text>
+  <rect class="clip" x="60" y="344" width="150" height="42" rx="3"/><text class="t s" x="76" y="370">A</text>
+  <rect class="new" x="214" y="344" width="120" height="42" rx="3"/><text class="t s" x="230" y="370">nuevo</text>
+  <rect class="gone" x="338" y="344" width="90" height="42" rx="3"/><text class="t er" x="352" y="370">B fuera</text>
+  <rect class="clip" x="432" y="344" width="150" height="42" rx="3"/><text class="t s" x="448" y="370">C</text>
+  <text class="t s" x="60" y="406">B sale del montaje. La timeline se acorta o se alarga según lo que midan los dos.</text>
+</svg>

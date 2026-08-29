@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img"
+     aria-label="El sync bin muestra, para el instante en que esta el cabezal de la timeline, todos los clips de las demas camaras que estaban grabando en ese mismo momento, alineados por hora de grabacion.">
+  <title>Qué muestra el sync bin</title>
+  <style>
+    .bg{fill:#101418}.surf{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .clip{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .live{fill:#232b34;stroke:#4a9eff;stroke-width:2}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .ac{font-size:12px;font-weight:600;fill:#4a9eff}
+  </style>
+  <rect class="bg" width="880" height="400"/>
+  <text class="t h" x="40" y="38">El sync bin: qué grababan las demás cámaras en este instante</text>
+
+  <rect class="surf" x="40" y="62" width="800" height="196" rx="6"/>
+  <text class="t lbl" x="60" y="88">Material colocado por hora de grabación, no por orden de bin</text>
+  <text class="t s" x="60" y="118">CAM A</text>
+  <rect class="clip" x="130" y="102" width="200" height="26" rx="2"/>
+  <rect class="clip" x="336" y="102" width="290" height="26" rx="2"/>
+  <rect class="clip" x="632" y="102" width="188" height="26" rx="2"/>
+  <text class="t s" x="60" y="158">CAM B</text>
+  <rect class="clip" x="160" y="142" width="240" height="26" rx="2"/>
+  <rect class="live" x="406" y="142" width="250" height="26" rx="2"/>
+  <rect class="clip" x="662" y="142" width="158" height="26" rx="2"/>
+  <text class="t s" x="60" y="198">CAM C</text>
+  <rect class="clip" x="140" y="182" width="180" height="26" rx="2"/>
+  <rect class="clip" x="326" y="182" width="200" height="26" rx="2"/>
+  <rect class="live" x="532" y="182" width="288" height="26" rx="2"/>
+  <rect x="510" y="94" width="2" height="130" fill="#f5a524"/>
+  <text class="t s" x="60" y="238">La línea ámbar es el instante en el que está tu montaje. En azul, lo que estaba grabando cada cámara ahí.</text>
+
+  <rect class="surf" x="40" y="276" width="800" height="76" rx="6"/>
+  <text class="t ac" x="60" y="302">Source Overwrite es el botón que le corresponde:</text>
+  <text class="t s" x="60" y="326">coloca el ángulo elegido en la pista de encima, alineado en su sitio exacto por hora de grabación.</text>
+
+  <text class="t s" x="40" y="382">Sin hora de grabación coherente entre cámaras, el sync bin no puede alinear nada.</text>
+</svg>

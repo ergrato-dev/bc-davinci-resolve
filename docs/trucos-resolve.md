@@ -101,7 +101,46 @@ terceros.
 
 ---
 
-_Las semanas 06 a 36 añadirán aquí sus trucos según se publiquen._
+## Semana 06 — Cut page: edición veloz
+
+| Truco | Cómo |
+| ----- | ---- |
+| Entrar y salir de la Cut page sin ratón | `Shift+3` para Cut, `Shift+4` para Edit: la timeline es la misma |
+| Saltar al minuto cuatro sin buscar | Clic directo en la timeline de arriba, a esa altura |
+| Ver el ritmo de tu pieza de un vistazo | La distribución de cortes en la timeline de arriba |
+| Recorrer material a tres velocidades | `L` `L` `L` acelera, `K` para, `J` hace lo mismo hacia atrás |
+| No dejar huecos invisibles | Imán activado con `N` desde el primer clip |
+| Trabajar siempre en el mismo punto de la pantalla | El cabezal de la timeline de detalle no se mueve: aprovéchalo |
+| Revisar doscientos clips sin abrir ninguno | `Source Tape` en el visor de la Cut page |
+| Reproducir la jornada en el orden en que ocurrió | Ordena el bin por hora de grabación antes de activar el source tape |
+| Revisar solo un tipo de material | Selecciona un smart bin de la Semana 04 en vez de un bin |
+| Volver a algo que acabas de ver | Modo `Recent 5 Mins` del visor |
+| Comparar dos tomas de lo mismo | Modo `Multi Source` |
+| Saltarte los silencios de una entrevista | Activa la forma de onda sobre el source tape |
+| Ver un montaje de seis minutos en menos de dos | Fast Review sobre la timeline |
+| Detectar planos repetidos | En fast review saltan solos: los ves casi seguidos |
+| No perder lo que detectas revisando | Marcador con `M` al vuelo, sin parar la revisión |
+| Saber dónde va a caer una edición | Mira el indicador inteligente antes de pulsar el botón |
+| Forzar que caiga en un corte | Acerca el cabezal a ese corte |
+| Forzar que caiga en medio de un plano | Aléjalo de cualquier corte |
+| Montar sin miedo a romper nada | Append no desplaza ni machaca: solo añade al final |
+| El ciclo más rápido de la semana | Source tape, `I`, `O`, Append, seguir |
+| Meter un clip entero sin marcar | No marques `I` ni `O`: entra completo |
+| Elegir herramienta de corrección sin dudar | ¿Lo que hay en el destino se queda o se va? |
+| Quitar sin dejar agujeros | Borrado con ripple, y comprueba ampliando la vista de detalle |
+| No descolocar lo de la pista de arriba | Cierra la estructura de `Video 1` antes de poner nada encima |
+| Probar un plano sin arriesgar el montaje | Ponlo en la pista de arriba: quitarlo lo deja como estaba |
+| Que un recurso tape de verdad | Que empiece antes del corte y acabe después |
+| Ver qué hay debajo de un recurso | Desactiva `Video 2` desde su cabecera y reproduce |
+| Comprobar que un sync bin alinea bien | Cabezal en un momento reconocible: ¿coinciden los ángulos? |
+| Colocar un ángulo ya sincronizado de un botón | Source Overwrite, que alinea por hora de grabación |
+| Que un multicámara no suene a eco | Suena una sola pista de audio: la de la base |
+| Comprobar cualquier atajo en tu instalación | `DaVinci Resolve > Keyboard Customization`, busca el comando por nombre |
+
+---
+
+_Las semanas 07 a 36 añadirán aquí sus trucos según se publiquen._
+
 
 ---
 
