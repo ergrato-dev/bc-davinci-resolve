@@ -1,0 +1,86 @@
+{
+  "semana": "12",
+  "titulo": "Multicamara, subtitulos y gestion de timeline",
+  "checks": [
+    {
+      "id": "proyecto-abierto",
+      "descripcion": "BC-Bootcamp-Resolve es el proyecto abierto ahora mismo",
+      "op": "ping",
+      "args": {},
+      "expr": "r.get('project') == 'BC-Bootcamp-Resolve'",
+      "pista": "Abrelo desde el Project Manager, en la raiz de tu biblioteca original. Los checks leen el proyecto abierto, no el que exista en disco."
+    },
+    {
+      "id": "montaje-v5-conservada",
+      "descripcion": "BC-Montaje-v5 sigue existiendo",
+      "op": "timeline_list",
+      "args": {},
+      "expr": "'BC-Montaje-v5' in r['timelines']",
+      "pista": "El trabajo de esta semana va sobre una copia, no sobre la pieza rotulada de la Semana 11. Si BC-Montaje-v5 ha desaparecido es que la renombraste en vez de duplicarla: recuperala del respaldo BC-Bootcamp-Resolve-semana11.drp, importandolo con otro nombre para no machacar lo que tienes. Desactivarla con Disable Timeline NO la borra: timeline_list la sigue viendo."
+    },
+    {
+      "id": "montaje-v6-activa",
+      "descripcion": "BC-Montaje-v6 existe y es la timeline abierta ahora mismo",
+      "op": "timeline_probe",
+      "args": {},
+      "expr": "r['name'] == 'BC-Montaje-v6'",
+      "pista": "Practica 01, paso 1: clic derecho sobre BC-Montaje-v5 > Duplicate Timeline, y renombra la copia. El nombre es exacto: BC-Montaje-v6, con guiones, M mayuscula, uve minuscula y el 6 sin ceros delante. Ojo con los otros dos fallos tipicos de esta semana: quedarte dentro de un clip multicamara abierto con Open in Timeline, y quedarte en BC-Multicam-v1 despues de la practica 02. Mira el control de ruta de la esquina inferior izquierda de la timeline; si hay dos nombres, estas dentro de algo. Los cuatro checks siguientes dependen de esto."
+    },
+    {
+      "id": "montaje-v6-clips",
+      "descripcion": "La pista de video 1 de BC-Montaje-v6 conserva quince clips o mas",
+      "op": "timeline_probe",
+      "args": {},
+      "expr": "len([t for t in r['tracks'] if t['type'] == 'video' and t['index'] == 1 and t['item_count'] >= 15]) == 1",
+      "pista": "Esta semana no se remonta: se subtitula. Si has bajado de quince clips es que has borrado planos, o que has importado el XML encima de tu timeline en vez de como timeline nueva. La importacion de la practica 04 crea BC-Intercambio-v1; no toca BC-Montaje-v6. Si el numero ha cambiado, restaura el punto de respaldo antes-de-la-semana-12 de la practica 01."
+    },
+    {
+      "id": "montaje-v6-sin-huecos",
+      "descripcion": "La pista de video 1 de BC-Montaje-v6 no tiene huecos ni solapes",
+      "op": "timeline_detect_gaps",
+      "args": { "track": 1 },
+      "expr": "r['clean'] and len(r['gaps']) == 0 and len(r['overlaps']) == 0",
+      "pista": "Los subtitulos van en su propia pista de subtitulos y no tocan la V1, asi que un hueco aqui viene de otra parte: de haber borrado un plano, o de un arrastre accidental mientras trabajabas en la pista de subtitulos con el control de destino equivocado. Recorre la V1 en Detail Zoom, selecciona el hueco y borralo con Forward Delete."
+    },
+    {
+      "id": "pista-de-subtitulos",
+      "descripcion": "BC-Montaje-v6 tiene una pista de subtitulos con ocho subtitulos o mas",
+      "op": "timeline_probe",
+      "args": {},
+      "expr": "len([t for t in r['tracks'] if t['type'] == 'subtitle' and t['item_count'] >= 8]) >= 1",
+      "pista": "Practica 03, pasos 2 y 5. La pista se crea con clic derecho en cualquier cabecera de pista > Add Subtitle Track: es un tipo de pista propio, no una pista de video. Los subtitulos se anaden con Inspector > Captions > Create Caption, con el cabezal donde empieza la frase. Si tienes la pista pero el conteo sale a cero, comprueba el control de destino ST: los subtitulos pueden haber caido en otra pista. Y si no ves ninguna pista de subtitulos en la timeline, no significa que no exista: la zona de subtitulos se oculta desde Timeline View Options."
+    },
+    {
+      "id": "subtitulos-pista-con-nombre",
+      "descripcion": "La pista de subtitulos esta renombrada con su codigo de idioma",
+      "op": "timeline_probe",
+      "args": {},
+      "expr": "len([t for t in r['tracks'] if t['type'] == 'subtitle' and t['item_count'] >= 8 and t['name'] and not t['name'].startswith('Subtitle ')]) >= 1",
+      "pista": "Practica 03, paso 2. Una pista de subtitulos nueva se llama Subtitle 1, y ese nombre NO vale: el manual avisa de que el nombre de la pista se usa al exportar y al codificar, asi que viaja al archivo de salida. Renombrala con doble clic sobre su nombre y pon el codigo de idioma: es-ES, es-MX, en-US, el que corresponda a tu pieza. Codigos ISO 639-1 para el idioma e ISO 3166-1 para el pais."
+    },
+    {
+      "id": "multicam-v1-existe",
+      "descripcion": "La timeline BC-Multicam-v1 existe",
+      "op": "timeline_list",
+      "args": {},
+      "expr": "'BC-Multicam-v1' in r['timelines']",
+      "pista": "Practica 02, paso 1. Es la timeline del ejercicio de multicamara, aparte de tu pieza, igual que BC-Escena-v1 en la Semana 08. El nombre es exacto: BC-Multicam-v1, con guiones y uve minuscula. No confundir con el CLIP multicamara, que se llama BC-Multicam-01 y vive en el bin 03-Multicamara: son dos cosas distintas y las dos hacen falta."
+    },
+    {
+      "id": "intercambio-v1-existe",
+      "descripcion": "La timeline BC-Intercambio-v1 existe",
+      "op": "timeline_list",
+      "args": {},
+      "expr": "'BC-Intercambio-v1' in r['timelines']",
+      "pista": "Practica 04, paso 2. Es BC-Montaje-v6 exportada a XML y vuelta a importar, para ver que se pierde en el viaje. El nombre se escribe en el campo Timeline name del dialogo de importacion, y por defecto trae el nombre de la timeline original: si lo dejas, tendras dos timelines parecidas y este check fallara. Que la timeline importada llegue con los clips offline es normal y no invalida el ejercicio: lo que se compara es la estructura."
+    },
+    {
+      "id": "bin-de-intercambio",
+      "descripcion": "El bin 14-Intercambio contiene dos elementos o mas",
+      "op": "media_list",
+      "args": { "bin": ["14-Intercambio"] },
+      "expr": "len(r['clips']) >= 2",
+      "pista": "Practicas 03 y 04. El nombre del bin es exacto: 14-Intercambio, con el 14 delante y la I mayuscula, y cuelga de Master. Dentro van dos cosas: el .srt exportado y reimportado en el paso 10 de la practica 03, y la timeline BC-Intercambio-v1 del paso 2 de la practica 04. Selecciona el bin ANTES de importar cada una: caen en el bin activo. Un bin que no existe devuelve lo mismo que uno vacio, asi que comprueba las dos cosas. Este check no filtra por ruta de archivo a proposito: una timeline importada no tiene ruta."
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" width="880" height="420" role="img"
+     aria-label="Las tres formas de sacar un subtitulo de Resolve: archivo aparte en SRT o WebVTT, quemado en la imagen, o incrustado como metadato CEA-608 dentro del archivo. Cada una con quien la puede apagar y donde se usa.">
+  <title>Las tres salidas del subtítulo</title>
+  <style>
+    .bg{fill:#101418}
+    .card{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .frame{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .col{font-size:13px;font-weight:600;fill:#4a9eff}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .ok{font-size:12px;font-weight:600;fill:#3fb950}
+    .no{font-size:12px;font-weight:600;fill:#f85149}
+    .am{font-size:12px;font-weight:600;fill:#f5a524}
+  </style>
+  <rect class="bg" width="880" height="420"/>
+  <text class="t h" x="40" y="34">La pregunta no es el formato. Es quién tiene que poder apagarlo.</text>
+
+  <rect class="card" x="40" y="56" width="256" height="240" rx="4"/>
+  <text class="t lbl" x="60" y="82">As a separate file</text>
+  <rect class="frame" x="60" y="96" width="216" height="70" rx="2"/>
+  <text class="t s" x="120" y="138">— la imagen, limpia</text>
+  <rect class="frame" x="60" y="176" width="216" height="26" rx="2"/>
+  <text class="t s" x="74" y="194">pieza.es-ES.srt</text>
+  <text class="t s" x="60" y="224">Dos archivos. El reproductor</text>
+  <text class="t s" x="60" y="242">junta imagen y texto.</text>
+  <text class="t ok" x="60" y="270">El espectador lo apaga.</text>
+  <text class="t am" x="60" y="288">IMSC1 · DFXP · SRT · WebVTT</text>
+
+  <rect class="card" x="312" y="56" width="256" height="240" rx="4"/>
+  <text class="t lbl" x="332" y="82">Burn into video</text>
+  <rect class="frame" x="332" y="96" width="216" height="70" rx="2"/>
+  <text class="t" x="360" y="150" font-size="12" font-weight="600" fill="#e8eef4" stroke="#101418" stroke-width="2.5" paint-order="stroke">— No sabía que trabajabas aquí.</text>
+  <text class="t s" x="332" y="196">Un archivo. El texto son</text>
+  <text class="t s" x="332" y="214">píxeles de la imagen.</text>
+  <text class="t no" x="332" y="242">Nadie lo apaga. Nunca.</text>
+  <text class="t s" x="332" y="270">Para redes donde el vídeo</text>
+  <text class="t s" x="332" y="288">se reproduce mudo.</text>
+
+  <rect class="card" x="584" y="56" width="256" height="240" rx="4"/>
+  <text class="t lbl" x="604" y="82">As embedded captions</text>
+  <rect class="frame" x="604" y="96" width="216" height="70" rx="2"/>
+  <text class="t s" x="664" y="138">— la imagen, limpia</text>
+  <text class="t s" x="604" y="196">Un archivo. El texto viaja</text>
+  <text class="t s" x="604" y="214">dentro como metadato.</text>
+  <text class="t ok" x="604" y="242">El espectador lo apaga.</text>
+  <text class="t am" x="604" y="270">CEA-608 en MXF OP1A</text>
+  <text class="t am" x="604" y="288">y en QuickTime</text>
+
+  <rect class="card" x="40" y="316" width="800" height="88" rx="4"/>
+  <text class="t col" x="60" y="340">DÓNDE SE ELIGE</text>
+  <text class="t s" x="60" y="362">Página Deliver &gt; panel Video de los Render Settings &gt; grupo Subtitle Settings, al final. Casilla Export Subtitle, y el desplegable Format.</text>
+  <text class="t s" x="60" y="384">Fuera del render: File &gt; Export Subtitle, o clic derecho en la cabecera de la pista &gt; Export Subtitle. Por esa vía solo salen .srt y .vtt.</text>
+</svg>

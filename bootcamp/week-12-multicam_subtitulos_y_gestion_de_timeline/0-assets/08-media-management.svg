@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 440" width="880" height="440" role="img"
+     aria-label="La ventana de Media Management: primero el alcance entre proyecto entero, timelines o clips; despues la operacion entre Copy y Transcode; y despues cuanto material, entre todo, solo el usado, o el usado recortado con colas. Debajo, el aviso de que Relink to new files cambia a que archivos apunta el proyecto.">
+  <title>Media Management</title>
+  <style>
+    .bg{fill:#101418}
+    .card{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .box{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .sel{fill:#232b34;stroke:#4a9eff;stroke-width:1.5}
+    .warn{fill:#191f26;stroke:#f5a524;stroke-width:1.5}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .col{font-size:13px;font-weight:600;fill:#4a9eff}
+    .s{font-size:12px;fill:#93a1b0}
+    .am{font-size:12px;font-weight:600;fill:#f5a524}
+  </style>
+  <rect class="bg" width="880" height="440"/>
+  <text class="t h" x="40" y="34">Tres decisiones en este orden: sobre qué, qué operación, cuánto material.</text>
+
+  <text class="t col" x="40" y="72">1 · ALCANCE</text>
+  <rect class="box" x="40" y="86" width="160" height="30" rx="3"/>
+  <text class="t s" x="56" y="106">Entire Project</text>
+  <rect class="sel" x="210" y="86" width="160" height="30" rx="3"/>
+  <text class="t s" x="226" y="106">Timelines</text>
+  <rect class="box" x="380" y="86" width="160" height="30" rx="3"/>
+  <text class="t s" x="396" y="106">Clips</text>
+  <text class="t s" x="562" y="106">Lo que tuvieras seleccionado decide el alcance de partida.</text>
+
+  <text class="t col" x="40" y="152">2 · OPERACIÓN</text>
+  <rect class="sel" x="40" y="166" width="200" height="30" rx="3"/>
+  <text class="t s" x="56" y="186">Copy</text>
+  <rect class="box" x="250" y="166" width="200" height="30" rx="3"/>
+  <text class="t s" x="266" y="186">Transcode</text>
+  <text class="t s" x="472" y="180">Copy duplica los archivos tal cual.</text>
+  <text class="t s" x="472" y="198">Transcode los reescribe en otro codec.</text>
+
+  <text class="t col" x="40" y="232">3 · CUÁNTO MATERIAL</text>
+  <rect class="box" x="40" y="246" width="250" height="30" rx="3"/>
+  <text class="t s" x="56" y="266">All media</text>
+  <rect class="box" x="300" y="246" width="250" height="30" rx="3"/>
+  <text class="t s" x="316" y="266">Used media</text>
+  <rect class="sel" x="40" y="286" width="510" height="30" rx="3"/>
+  <text class="t s" x="56" y="306">Used media and trim keeping 12 frame handles</text>
+  <text class="t s" x="576" y="266">«Used» = lo que aparece en la timeline.</text>
+  <text class="t s" x="576" y="284">Las colas son los fotogramas de más</text>
+  <text class="t s" x="576" y="302">a cada lado: sin ellas no hay transición</text>
+  <text class="t s" x="576" y="320">ni margen de trimming.</text>
+
+  <rect class="warn" x="40" y="338" width="800" height="86" rx="4"/>
+  <text class="t am" x="60" y="362">DOS CASILLAS QUE HAY QUE MIRAR ANTES DE PULSAR START</text>
+  <text class="t s" x="60" y="384">Relink to new files · el proyecto deja de apuntar a los archivos originales y pasa a apuntar a las copias recortadas. Si las borras, te quedas sin material.</text>
+  <text class="t s" x="60" y="404">Consolidate multiple edit segments into one media file · un solo archivo por original en vez de uno por corte. Ocupa más y simplifica el etalonaje.</text>
+  <text class="t s" x="60" y="420">La ventana estima el tamaño final antes de empezar. Léelo: es el único aviso de que no cabe.</text>
+</svg>

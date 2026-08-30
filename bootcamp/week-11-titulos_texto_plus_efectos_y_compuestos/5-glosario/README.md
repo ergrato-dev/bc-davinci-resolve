@@ -209,6 +209,6 @@
 
 | Anterior | Actual | Siguiente |
 | -------- | ------ | --------- |
-| [Glosario Semana 10](../../week-10-velocidad_transformaciones_y_estabilizacion/5-glosario/README.md) | **Glosario Semana 11** | [Glosario Semana 12](../../week-12-multicam_subtitulos_y_gestion_de_timeline/README.md) |
+| [Glosario Semana 10](../../week-10-velocidad_transformaciones_y_estabilizacion/5-glosario/README.md) | **Glosario Semana 11** | [Glosario Semana 12](../../week-12-multicam_subtitulos_y_gestion_de_timeline/5-glosario/README.md) |
 
 ← [Volver a la Semana 11](../README.md) · [Glosario global](../../../docs/glosario-global.md)

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 440" width="880" height="440" role="img"
+     aria-label="Una timeline con dos pistas de subtitulos encima de las de video: solo una puede estar visible a la vez. Cada pista lleva su idioma y su nombre, que es el que sale al exportar. Debajo, las tres regiones R1, R2 y R3 de una misma pista de subtitulos.">
+  <title>La pista de subtítulos</title>
+  <style>
+    .bg{fill:#101418}
+    .card{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .clip{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .sub{fill:#232b34;stroke:#3fb950;stroke-width:1.5}
+    .off{fill:#191f26;stroke:#2f3a45;stroke-width:1;stroke-dasharray:3 3}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .col{font-size:13px;font-weight:600;fill:#4a9eff}
+    .s{font-size:12px;fill:#93a1b0}
+    .ok{font-size:12px;font-weight:600;fill:#3fb950}
+    .am{font-size:12px;font-weight:600;fill:#f5a524}
+  </style>
+  <rect class="bg" width="880" height="440"/>
+  <text class="t h" x="40" y="34">Una pista por idioma. Solo una visible a la vez.</text>
+
+  <text class="t ok" x="40" y="72">ST2</text>
+  <rect class="off" x="90" y="56" width="500" height="24" rx="3"/>
+  <text class="t s" x="106" y="73">en-US · apagada: encender ST1 apaga esta</text>
+  <text class="t s" x="608" y="73">nombre = idioma</text>
+
+  <text class="t ok" x="40" y="108">ST1</text>
+  <rect class="sub" x="90" y="92" width="90" height="24" rx="3"/>
+  <text class="t s" x="100" y="109">es-ES 01</text>
+  <rect class="sub" x="190" y="92" width="110" height="24" rx="3"/>
+  <text class="t s" x="200" y="109">es-ES 02</text>
+  <rect class="sub" x="312" y="92" width="80" height="24" rx="3"/>
+  <text class="t s" x="322" y="109">es-ES 03</text>
+  <rect class="sub" x="404" y="92" width="120" height="24" rx="3"/>
+  <text class="t s" x="414" y="109">es-ES 04</text>
+  <text class="t am" x="608" y="109">el nombre viaja al exportar</text>
+
+  <text class="t s" x="40" y="144">V2</text>
+  <rect class="clip" x="90" y="128" width="180" height="24" rx="3"/>
+  <text class="t s" x="106" y="145">rótulos · Semana 11</text>
+
+  <text class="t s" x="40" y="180">V1</text>
+  <rect class="clip" x="90" y="164" width="500" height="24" rx="3"/>
+  <text class="t s" x="290" y="181">el montaje</text>
+
+  <text class="t s" x="40" y="216">A1</text>
+  <rect class="clip" x="90" y="200" width="500" height="24" rx="3"/>
+  <text class="t s" x="300" y="217">diálogo</text>
+
+  <line x1="40" y1="252" x2="840" y2="252" stroke="#2f3a45" stroke-width="1"/>
+
+  <text class="t col" x="40" y="278">LAS TRES REGIONES DE UNA MISMA PISTA · hasta tres subtítulos a la vez</text>
+
+  <text class="t s" x="40" y="310">R3</text>
+  <rect class="sub" x="90" y="294" width="140" height="22" rx="3"/>
+  <text class="t s" x="102" y="310">— ¿Y tú qué dices?</text>
+  <text class="t s" x="40" y="340">R2</text>
+  <rect class="sub" x="190" y="324" width="150" height="22" rx="3"/>
+  <text class="t s" x="202" y="340">— Que no pienso ir.</text>
+  <text class="t s" x="40" y="370">R1</text>
+  <rect class="sub" x="90" y="354" width="90" height="22" rx="3"/>
+  <text class="t s" x="102" y="370">— Vamos.</text>
+  <rect class="sub" x="350" y="354" width="120" height="22" rx="3"/>
+  <text class="t s" x="362" y="370">— Como quieras.</text>
+
+  <text class="t s" x="500" y="310">Dos personajes hablando encima:</text>
+  <text class="t s" x="500" y="328">R2 y R3 se solapan en el tiempo</text>
+  <text class="t s" x="500" y="346">y cada región tiene su posición</text>
+  <text class="t s" x="500" y="364">en pantalla y su estilo propios.</text>
+  <text class="t am" x="500" y="392">R1 es la de fábrica. R2 y R3 se añaden a mano.</text>
+
+  <rect class="card" x="40" y="404" width="800" height="28" rx="4"/>
+  <text class="t s" x="60" y="424">Clic derecho en la cabecera de pistas &gt; Add Subtitle Track. La pista nace llamándose «Subtitle 1»: renómbrala antes de escribir nada.</text>
+</svg>

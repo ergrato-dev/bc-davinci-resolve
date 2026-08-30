@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 440" width="880" height="440" role="img"
+     aria-label="Tres clips de angulo independientes en el media pool se convierten en un unico clip multicamara con su distintivo. Debajo, ese clip abierto con Open in Timeline se ve como una pila vertical de pistas, una por angulo, desplazadas entre si hasta quedar sincronizadas.">
+  <title>El clip multicámara</title>
+  <style>
+    .bg{fill:#101418}
+    .card{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .clip{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .mc{fill:#232b34;stroke:#4a9eff;stroke-width:1.5}
+    .ang{fill:#232b34;stroke:#a371f7;stroke-width:1.5}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .col{font-size:13px;font-weight:600;fill:#4a9eff}
+    .s{font-size:12px;fill:#93a1b0}
+    .am{font-size:12px;font-weight:600;fill:#f5a524}
+    .vi{font-size:12px;font-weight:600;fill:#a371f7}
+  </style>
+  <rect class="bg" width="880" height="440"/>
+  <text class="t h" x="40" y="34">Tres archivos sueltos entran. Un solo clip con tres ángulos sale.</text>
+
+  <text class="t col" x="40" y="70">MEDIA POOL · ANTES</text>
+  <rect class="clip" x="40" y="84" width="150" height="54" rx="3"/>
+  <text class="t s" x="56" y="106">CAM-A.mp4</text>
+  <text class="t s" x="56" y="126">ISO · ángulo 1</text>
+  <rect class="clip" x="40" y="146" width="150" height="54" rx="3"/>
+  <text class="t s" x="56" y="168">CAM-B.mp4</text>
+  <text class="t s" x="56" y="188">ISO · ángulo 2</text>
+  <rect class="clip" x="40" y="208" width="150" height="54" rx="3"/>
+  <text class="t s" x="56" y="230">CAM-C.mp4</text>
+  <text class="t s" x="56" y="250">ISO · ángulo 3</text>
+
+  <text class="t am" x="214" y="150">Create Multicam Clip</text>
+  <text class="t am" x="214" y="168">Using Selected Clips</text>
+  <line x1="214" y1="180" x2="380" y2="180" stroke="#f5a524" stroke-width="1.5"/>
+  <path d="M380 180 l-8 -5 v10 z" fill="#f5a524"/>
+
+  <text class="t col" x="404" y="70">MEDIA POOL · DESPUÉS</text>
+  <rect class="mc" x="404" y="146" width="180" height="70" rx="3"/>
+  <text class="t s" x="420" y="176">BC-Multicam</text>
+  <rect x="412" y="196" width="14" height="12" rx="2" fill="#4a9eff"/>
+  <text class="t s" x="434" y="206">distintivo de multicámara</text>
+
+  <text class="t s" x="608" y="168">un solo clip, tres ángulos dentro.</text>
+  <text class="t s" x="608" y="186">Se edita como cualquier otro:</text>
+  <text class="t s" x="608" y="204">se arrastra, se recorta, se mueve.</text>
+
+  <line x1="40" y1="284" x2="840" y2="284" stroke="#2f3a45" stroke-width="1"/>
+
+  <text class="t vi" x="40" y="310">OPEN IN TIMELINE · la pila vertical de ángulos, ya sincronizados</text>
+
+  <text class="t s" x="40" y="342">V3</text>
+  <rect class="ang" x="80" y="326" width="420" height="22" rx="3"/>
+  <text class="t s" x="96" y="342">ángulo 3 · CAM-C</text>
+  <text class="t s" x="40" y="372">V2</text>
+  <rect class="ang" x="120" y="356" width="420" height="22" rx="3"/>
+  <text class="t s" x="136" y="372">ángulo 2 · CAM-B</text>
+  <text class="t s" x="40" y="402">V1</text>
+  <rect class="ang" x="60" y="386" width="420" height="22" rx="3"/>
+  <text class="t s" x="76" y="402">ángulo 1 · CAM-A</text>
+
+  <text class="t am" x="600" y="342">el desplazamiento de cada pista</text>
+  <text class="t am" x="600" y="360">ES la sincronización</text>
+  <text class="t s" x="600" y="386">aquí se renombran los ángulos,</text>
+  <text class="t s" x="600" y="404">se reordenan y se borran los que sobran</text>
+</svg>

@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 460" width="880" height="460" role="img"
+     aria-label="Los cuatro metodos de Angle Sync de un clip multicamara: Timecode, Sound por forma de onda, In-Out por puntos de entrada y salida, y Marker por marcadores manuales. Cada uno con lo que necesita del rodaje y su punto debil.">
+  <title>Los cuatro métodos de sincronía</title>
+  <style>
+    .bg{fill:#101418}
+    .card{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .col{font-size:13px;font-weight:600;fill:#4a9eff}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .ok{font-size:12px;font-weight:600;fill:#3fb950}
+    .no{font-size:12px;font-weight:600;fill:#f85149}
+    .am{font-size:12px;font-weight:600;fill:#f5a524}
+  </style>
+  <rect class="bg" width="880" height="460"/>
+  <text class="t h" x="40" y="34">Angle Sync · el método lo decide el rodaje, no la preferencia.</text>
+
+  <rect class="card" x="40" y="56" width="390" height="150" rx="4"/>
+  <text class="t lbl" x="60" y="82">Timecode</text>
+  <text class="t s" x="60" y="104">Alinea por el código de tiempo grabado en cada archivo.</text>
+  <text class="t ok" x="60" y="126">Exige: cámaras con timecode sincronizado (jam sync).</text>
+  <text class="t no" x="60" y="148">Un móvil no lo tiene. Dos móviles, menos.</text>
+  <text class="t am" x="60" y="176">El más rápido y el más exacto — cuando existe.</text>
+
+  <rect class="card" x="450" y="56" width="390" height="150" rx="4"/>
+  <text class="t lbl" x="470" y="82">Sound</text>
+  <text class="t s" x="470" y="104">Compara la forma de onda del audio de cada ángulo.</text>
+  <text class="t ok" x="470" y="126">Exige: que las tres cámaras oyeran lo mismo.</text>
+  <text class="t no" x="470" y="148">Falla con ambiente muy distinto o silencio largo.</text>
+  <text class="t am" x="470" y="176">El método por defecto de un rodaje con móviles.</text>
+
+  <rect class="card" x="40" y="222" width="390" height="150" rx="4"/>
+  <text class="t lbl" x="60" y="248">In or Out</text>
+  <text class="t s" x="60" y="270">Alinea el punto de entrada (o de salida) que pones tú.</text>
+  <text class="t ok" x="60" y="292">Exige: un instante reconocible en los tres ángulos.</text>
+  <text class="t no" x="60" y="314">Manual, y falla al fotograma si te equivocas.</text>
+  <text class="t am" x="60" y="342">La red de seguridad cuando los otros tres fallan.</text>
+
+  <rect class="card" x="450" y="222" width="390" height="150" rx="4"/>
+  <text class="t lbl" x="470" y="248">Marker</text>
+  <text class="t s" x="470" y="270">Alinea los marcadores que has puesto en cada ángulo.</text>
+  <text class="t ok" x="470" y="292">Exige: haber marcado el mismo instante en todos.</text>
+  <text class="t no" x="470" y="314">Un marcador mal puesto descuadra ese ángulo solo.</text>
+  <text class="t am" x="470" y="342">Útil cuando hay claqueta o palmada visible.</text>
+
+  <rect class="card" x="40" y="388" width="800" height="52" rx="4"/>
+  <text class="t col" x="60" y="412">LA PALMADA</text>
+  <text class="t s" x="150" y="412">Antes de rodar, una palmada delante de las tres cámaras: se ve y se oye.</text>
+  <text class="t s" x="150" y="430">Sirve para Sound, para In or Out y para Marker. Cuesta dos segundos y salva la tarde.</text>
+</svg>

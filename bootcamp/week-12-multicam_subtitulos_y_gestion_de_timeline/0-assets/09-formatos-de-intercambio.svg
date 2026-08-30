@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 460" width="880" height="460" role="img"
+     aria-label="Los cinco formatos de intercambio de timeline: DRT entre Resolves, OTIO como formato abierto de la Academy Software Foundation, XML de Final Cut, AAF hacia Avid y Pro Tools, y EDL, que solo lleva una pista de video. Debajo, el orden recomendado por el manual y la regla de que el intercambio nunca lleva medios salvo el paquete otioz.">
+  <title>Formatos de intercambio</title>
+  <style>
+    .bg{fill:#101418}
+    .card{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .col{font-size:13px;font-weight:600;fill:#4a9eff}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .ok{font-size:12px;font-weight:600;fill:#3fb950}
+    .no{font-size:12px;font-weight:600;fill:#f85149}
+    .am{font-size:12px;font-weight:600;fill:#f5a524}
+  </style>
+  <rect class="bg" width="880" height="460"/>
+  <text class="t h" x="40" y="34">Cinco formatos. El que uses depende de a dónde va, no de cuál conoces.</text>
+
+  <rect class="card" x="40" y="56" width="800" height="66" rx="4"/>
+  <text class="t lbl" x="60" y="80">.drt</text>
+  <text class="t s" x="150" y="80">DaVinci Resolve Timeline · de un Resolve a otro Resolve</text>
+  <text class="t ok" x="60" y="104">Lleva: la timeline entera, con todo lo que Resolve sabe hacer. Es el que menos pierde.</text>
+  <text class="t no" x="600" y="104">Una timeline por archivo.</text>
+
+  <rect class="card" x="40" y="134" width="800" height="66" rx="4"/>
+  <text class="t lbl" x="60" y="158">.otio · .otioz</text>
+  <text class="t s" x="150" y="158">OpenTimelineIO · formato abierto de la Academy Software Foundation</text>
+  <text class="t ok" x="60" y="182">Lleva: más que AAF y que XML. Es el recomendado del manual para salir de Resolve.</text>
+  <text class="t am" x="600" y="182">.otioz empaqueta los medios.</text>
+
+  <rect class="card" x="40" y="212" width="800" height="66" rx="4"/>
+  <text class="t lbl" x="60" y="236">.xml</text>
+  <text class="t s" x="150" y="236">Final Cut Pro 7 XML y Final Cut Pro X XML · Premiere, Final Cut y casi todo lo demás</text>
+  <text class="t ok" x="60" y="260">Lleva: cortes, velocidades, transiciones y sizing. Los efectos no soportados se conservan escritos.</text>
+
+  <rect class="card" x="40" y="290" width="800" height="66" rx="4"/>
+  <text class="t lbl" x="60" y="314">.aaf</text>
+  <text class="t s" x="150" y="314">Advanced Authoring Format · Avid Media Composer y Pro Tools</text>
+  <text class="t ok" x="60" y="338">Lleva: la vía estándar hacia el montador de Avid y hacia el mezclador de sonido.</text>
+  <text class="t no" x="600" y="338">Si reeditas, pierde efectos.</text>
+
+  <rect class="card" x="40" y="368" width="800" height="66" rx="4"/>
+  <text class="t lbl" x="60" y="392">.edl</text>
+  <text class="t s" x="150" y="392">Edit Decision List, formato CMX 3600 · el más antiguo y el más universal</text>
+  <text class="t ok" x="60" y="416">Lleva: cortes, disolvencias y velocidad lineal. Necesita reel name y timecode correctos.</text>
+  <text class="t no" x="600" y="416">UNA sola pista de vídeo.</text>
+
+  <text class="t am" x="40" y="450">Ninguno lleva los archivos de vídeo, salvo .otioz. Un intercambio son instrucciones; los medios viajan aparte.</text>
+</svg>

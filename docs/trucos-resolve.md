@@ -431,9 +431,76 @@ terceros.
 
 ---
 
+## Semana 12 — Multicámara, subtítulos y gestión de timeline
+
+| Truco | Cómo |
+| ----- | ---- |
+| Crear un clip multicámara | Selecciona los ángulos `>` clic derecho `>` `Create Multicam Clip Using Selected Clips` |
+| Decidir en qué bin cae | Selecciona el bin **antes** de crearlo |
+| Sincronizar sin timecode | `Angle Sync > Sound` |
+| Sincronizar sin audio útil | `Angle Sync > In`, con el punto de entrada en la palmada |
+| Garantizar la sincronía en cualquier rodaje | Una palmada delante de todas las cámaras, con todas grabando |
+| Que los ángulos se llamen como tus archivos | `Angle Name > Clip Name` |
+| Unir en un ángulo los trozos de una misma cámara | `Detect clips from same camera` |
+| Usar una grabadora externa como audio de todos | Impórtala como un ángulo más y elige `Reference Audio` |
+| Comprobar la sincronía en diez segundos | Un sonido seco, ampliar a fotogramas, comparar |
+| Abrir el clip multicámara | Clic derecho en el media pool `>` `Open in Timeline` |
+| Corregir un fotograma de desfase | Dentro del clip abierto, con `.` y `,` |
+| Renombrar un ángulo | Doble clic sobre el nombre de su pista, dentro del clip abierto |
+| Reordenar los ángulos | `Move Track Up` / `Move Track Down` en la cabecera |
+| Saber si estás dentro de un clip | El control de ruta de la esquina inferior izquierda |
+| Poner marcadores que valgan para todos los ángulos | Ponlos en el clip multicámara: los comparten |
+| Encender el Multicam Viewer | Desplegable de modo del visor de origen `>` `Multicam` |
+| Elegir cuántos ángulos ver | Desplegable de la esquina inferior derecha: `1x1`, `1x2`, `2x2`, `3x3`, `4x4` |
+| Cortar y conmutar sin ratón | Teclas `1` a `9` |
+| Solo conmutar | `Alt`+clic, o `Alt`+`1` a `9` |
+| Cambiar solo la imagen | `Alt+Shift+]` (Win) / `Opt+Shift+]` (Mac) |
+| Cambiar solo el sonido | `Alt+Shift+\` |
+| Cambiar los dos | `Alt+Shift+[` |
+| Saltar al ángulo anterior o siguiente | `Ctrl+Shift+←` / `Ctrl+Shift+→` (Win) · `Cmd+Shift` en Mac |
+| Pasar a otro grupo de ángulos | `Alt+Shift+←` / `Alt+Shift+→` (Win) · `Opt+Shift` en Mac |
+| Cambiar el ángulo desde la timeline | Clic derecho `>` `Switch Multicam Clip Angle` |
+| Quitar un cambio de cámara | Selecciona el punto de edición con `V` y pulsa `Supr` |
+| Encontrar el ISO de un plano | `Clip > Match Frame to Source Clip` |
+| Cambiar el timecode de inicio de un clip | Clic derecho en el media pool `>` `Starting Timecode` |
+| Crear una pista de subtítulos | Clic derecho en cualquier cabecera de pista `>` `Add Subtitle Track` |
+| Elegir en qué pista caen los subtítulos nuevos | El control de destino `ST1`, `ST2`… |
+| Añadir un subtítulo en el cabezal | `Inspector > Captions >` `Create Caption` |
+| Añadirlo desde la timeline | Clic derecho en la pista `>` `Add Subtitle` |
+| Ver la lista de todos los subtítulos | Selecciona la cabecera y abre `Inspector > Captions` |
+| Ganar sitio para leerla | Pon el Inspector a altura completa |
+| Ocultar la zona de subtítulos | `Timeline View Options` `>` el botón de subtítulos |
+| Poner dos subtítulos a la vez en pantalla | Clic derecho dentro de la pista `>` `Add Subtitle Region` |
+| Mover un subtítulo de región | Arrástralo arriba o abajo dentro de la pista |
+| Dar estilo a todos los subtítulos de una pista | Selecciona la **cabecera** y abre `Inspector > Track` |
+| Sacar un subtítulo del estilo de la pista | `Captions >` casilla `Customize Caption` |
+| Guardar tu estilo de subtítulos | Menú de tres puntos `>` `Save Track as Preset` |
+| Llevártelo a otro equipo | Menú de tres puntos `>` `Export Preset` |
+| Corregir un nombre en toda la pista | Icono de búsqueda `>` `Replace All` |
+| Saber si un subtítulo es ilegible | El CPS se pone rojo |
+| Importar un archivo de subtítulos | Clic derecho en el media pool `>` `Import Subtitle` |
+| Colocarlo respetando su timecode | Clic derecho sobre el clip `>` `Insert Selected Subtitles to Timeline Using Timecode` |
+| Crear la pista y colocarlo de una vez | Arrástralo a la zona gris de encima de las pistas de vídeo |
+| Exportar los subtítulos rápido | Clic derecho en la cabecera de la pista `>` `Export Subtitle` |
+| Elegir cómo salen al renderizar | Deliver `>` `Video` `>` `Subtitle Settings` |
+| Duplicar la timeline abierta | `Ctrl+4` / `Cmd+4` y `Edit > Duplicate Timeline` |
+| Marcar un punto antes de una prueba | `Alt+Ctrl+S` (Win) / `Opt+Cmd+S` (Mac) |
+| Volver a un punto anterior | Clic derecho `>` `Restore Timeline Backup` |
+| Ver qué cambió respecto a ayer | Clic derecho `>` `Compare with Timeline Backup` |
+| Recuperar una timeline borrada | Menú de opciones del media pool `>` `Deleted Timeline Backups` |
+| Aligerar un proyecto con muchas timelines | `Disable Timeline` en las cerradas |
+| Agrupar las desactivadas | Smart bin con `MediaPool Properties > Timeline` `is Disabled` |
+| Llevar una timeline a otro proyecto | Exporta `.drt` y haz doble clic en el archivo |
+| Exportar la timeline abierta a XML o AAF | `Ctrl+Shift+O` (Win) / `Cmd+Shift+O` (Mac) |
+| Importar una timeline | `Ctrl+Shift+I` (Win) / `Cmd+Shift+I` (Mac) |
+| Exportar la pista que quieres en una EDL | Asígnale el control de destino antes |
+| Que no te cambien los ajustes del proyecto al importar | Desmarca `Automatically set project settings` |
+| Saber si Media Management cabe antes de empezar | La estimación de tamaño, debajo de las opciones |
+| Comprobar cualquier atajo en tu instalación | `Alt+Ctrl+K` (Win) / `Opt+Cmd+K` (Mac) |
+
 ---
 
-_Las semanas 12 a 36 añadirán aquí sus trucos según se publiquen._
+_Las semanas 13 a 36 añadirán aquí sus trucos según se publiquen._
 
 
 ---
