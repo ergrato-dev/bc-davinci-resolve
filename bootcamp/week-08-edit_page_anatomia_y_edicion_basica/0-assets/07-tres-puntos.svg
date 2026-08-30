@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 440" width="880" height="440" role="img"
+     aria-label="La edicion de tres puntos. Hay cuatro puntos posibles: entrada y salida en el clip de origen y entrada y salida en la timeline. Basta con marcar tres; Resolve calcula el cuarto. Se muestran los tres casos habituales: entrada y salida en origen mas cabezal en la timeline, entrada y salida en la timeline mas entrada en origen, y salida en la timeline sola, que produce una edicion hacia atras.">
+  <title>Los cuatro puntos de una edición y por qué basta con tres</title>
+  <style>
+    .bg{fill:#101418}
+    .surf{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .src{fill:#232b34;stroke:#4a9eff;stroke-width:2}
+    .tl{fill:#232b34;stroke:#3fb950;stroke-width:2}
+    .rng{fill:#4a9eff;fill-opacity:0.28}
+    .rng2{fill:#3fb950;fill-opacity:0.28}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .am{font-size:12px;font-weight:600;fill:#f5a524}
+    .mini{font-size:11px;font-weight:600;fill:#e8eef4}
+  </style>
+  <rect class="bg" width="880" height="440"/>
+  <text class="t h" x="40" y="34">Cuatro puntos posibles. Marcas tres y Resolve calcula el que falta.</text>
+
+  <rect class="surf" x="40" y="52" width="800" height="104" rx="6"/>
+  <text class="t lbl" x="60" y="76">Caso 1 · lo más común: I y O en el origen, cabezal en la timeline</text>
+  <rect class="src" x="60" y="88" width="340" height="26" rx="3"/>
+  <rect class="rng" x="140" y="88" width="170" height="26"/>
+  <text class="t mini" x="146" y="106">I</text>
+  <text class="t mini" x="296" y="106">O</text>
+  <rect class="tl" x="440" y="88" width="380" height="26" rx="3"/>
+  <rect x="560" y="82" width="2" height="38" fill="#f5a524"/>
+  <text class="t am" x="566" y="80">cabezal</text>
+  <text class="t s" x="60" y="140">El origen decide la duración. El cabezal decide dónde empieza. La salida se calcula.</text>
+
+  <rect class="surf" x="40" y="172" width="800" height="104" rx="6"/>
+  <text class="t lbl" x="60" y="196">Caso 2 · el hueco manda: I y O en la timeline, solo I en el origen</text>
+  <rect class="src" x="60" y="208" width="340" height="26" rx="3"/>
+  <rect class="rng" x="140" y="208" width="256" height="26"/>
+  <text class="t mini" x="146" y="226">I</text>
+  <rect class="tl" x="440" y="208" width="380" height="26" rx="3"/>
+  <rect class="rng2" x="540" y="208" width="150" height="26"/>
+  <text class="t mini" x="546" y="226">I</text>
+  <text class="t mini" x="676" y="226">O</text>
+  <text class="t s" x="60" y="260">La timeline decide la duración. Del origen solo se usa desde su I lo que quepa.</text>
+
+  <rect class="surf" x="40" y="292" width="800" height="104" rx="6"/>
+  <text class="t lbl" x="60" y="316">Caso 3 · edición hacia atrás: solo O en la timeline</text>
+  <rect class="src" x="60" y="328" width="340" height="26" rx="3"/>
+  <rect class="rng" x="140" y="328" width="170" height="26"/>
+  <text class="t mini" x="146" y="346">I</text>
+  <text class="t mini" x="296" y="346">O</text>
+  <rect class="tl" x="440" y="328" width="380" height="26" rx="3"/>
+  <rect class="rng2" x="600" y="328" width="120" height="26"/>
+  <text class="t mini" x="706" y="346">O</text>
+  <text class="t s" x="60" y="380">La O del origen se alinea con la O de la timeline y el clip se coloca hacia atrás.</text>
+
+  <text class="t s" x="40" y="422">Sin ningún punto en el origen se usa el archivo entero; sin ninguno en la timeline manda el cabezal.</text>
+</svg>

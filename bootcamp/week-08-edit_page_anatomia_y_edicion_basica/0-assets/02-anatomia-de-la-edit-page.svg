@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 440" width="880" height="440" role="img"
+     aria-label="Reparto de la pantalla de la Edit page: arriba a la izquierda el media pool y la biblioteca de efectos, arriba al centro los dos visores de origen y timeline, arriba a la derecha el inspector, abajo la barra de herramientas y la timeline con sus cabeceras de pista.">
+  <title>Cómo se reparte la pantalla de la Edit page</title>
+  <style>
+    .bg{fill:#101418}
+    .panel{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .view{fill:#232b34;stroke:#4a9eff;stroke-width:2}
+    .tl{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .clip{fill:#2f3a45;stroke:#4a9eff;stroke-width:1}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+  </style>
+  <rect class="bg" width="880" height="440"/>
+  <text class="t h" x="40" y="34">Edit page: cinco zonas, y cada una responde a una pregunta distinta.</text>
+
+  <rect class="panel" x="40" y="52" width="180" height="180" rx="5"/>
+  <text class="t lbl" x="54" y="74">Media Pool</text>
+  <text class="t s" x="54" y="94">Bins y clips</text>
+  <text class="t s" x="54" y="114">Effects Library</text>
+  <text class="t s" x="54" y="134">Edit Index</text>
+  <text class="t s" x="54" y="154">Sound Library</text>
+  <text class="t s" x="54" y="184">«¿Qué material</text>
+  <text class="t s" x="54" y="202">tengo?»</text>
+
+  <rect class="view" x="232" y="52" width="200" height="130" rx="5"/>
+  <text class="t lbl" x="246" y="74">Source Viewer</text>
+  <text class="t s" x="246" y="94">El clip como está</text>
+  <text class="t s" x="246" y="112">en su archivo</text>
+  <text class="t s" x="246" y="140">Aquí se marcan</text>
+  <text class="t s" x="246" y="158">los puntos I y O</text>
+  <text class="t s" x="246" y="176">del origen</text>
+
+  <rect class="view" x="444" y="52" width="200" height="130" rx="5"/>
+  <text class="t lbl" x="458" y="74">Timeline Viewer</text>
+  <text class="t s" x="458" y="94">La pieza montada,</text>
+  <text class="t s" x="458" y="112">con todo aplicado</text>
+  <text class="t s" x="458" y="140">Aquí se marcan</text>
+  <text class="t s" x="458" y="158">los puntos I y O</text>
+  <text class="t s" x="458" y="176">del destino</text>
+
+  <rect class="panel" x="656" y="52" width="184" height="180" rx="5"/>
+  <text class="t lbl" x="670" y="74">Inspector</text>
+  <text class="t s" x="670" y="94">Los ajustes del</text>
+  <text class="t s" x="670" y="112">clip seleccionado</text>
+  <text class="t s" x="670" y="140">Transform, Crop,</text>
+  <text class="t s" x="670" y="158">Speed, Audio</text>
+  <text class="t s" x="670" y="184">«¿Cómo se ve</text>
+  <text class="t s" x="670" y="202">este plano?»</text>
+
+  <rect class="panel" x="232" y="194" width="412" height="38" rx="5"/>
+  <text class="t s" x="246" y="218">Barra de herramientas: modos, Insert, Overwrite, Replace, Snapping, Linked Selection</text>
+
+  <rect class="tl" x="40" y="248" width="800" height="150" rx="5"/>
+  <text class="t lbl" x="54" y="270">Timeline</text>
+  <rect class="panel" x="54" y="282" width="120" height="30" rx="3"/>
+  <text class="t s" x="64" y="302">Video 2</text>
+  <rect class="clip" x="300" y="282" width="140" height="30" rx="3"/>
+  <rect class="panel" x="54" y="318" width="120" height="30" rx="3"/>
+  <text class="t s" x="64" y="338">Video 1</text>
+  <rect class="clip" x="180" y="318" width="200" height="30" rx="3"/>
+  <rect class="clip" x="384" y="318" width="160" height="30" rx="3"/>
+  <rect class="clip" x="548" y="318" width="240" height="30" rx="3"/>
+  <rect class="panel" x="54" y="354" width="120" height="26" rx="3"/>
+  <text class="t s" x="64" y="372">Audio 1</text>
+  <rect class="clip" x="180" y="354" width="608" height="26" rx="3"/>
+  <text class="t s" x="200" y="304">Las cabeceras de la izquierda mandan sobre toda la pista.</text>
+
+  <text class="t s" x="40" y="424">Ninguna zona es decorativa: el orden de trabajo es media pool, source viewer, destino, timeline.</text>
+</svg>

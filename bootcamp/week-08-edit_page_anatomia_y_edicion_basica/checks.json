@@ -1,0 +1,78 @@
+{
+  "semana": "08",
+  "titulo": "Edit page: anatomia y edicion basica",
+  "checks": [
+    {
+      "id": "proyecto-abierto",
+      "descripcion": "BC-Bootcamp-Resolve es el proyecto abierto ahora mismo",
+      "op": "ping",
+      "args": {},
+      "expr": "r.get('project') == 'BC-Bootcamp-Resolve'",
+      "pista": "Abrelo desde el Project Manager, en la raiz de tu biblioteca original. Los checks leen el proyecto abierto, no el que exista en disco."
+    },
+    {
+      "id": "frame-rate-bloqueado",
+      "descripcion": "El timeline frame rate de BC-Bootcamp-Resolve sigue siendo 24 fps",
+      "op": "project_settings",
+      "args": {},
+      "expr": "float(r['settings']['timelineFrameRate']) == 24.0",
+      "pista": "File > Project Settings > Master Settings > Timeline frame rate. Con clips en el media pool el campo aparece atenuado y no se puede cambiar, asi que si te sale otro valor el proyecto abierto no es el del bootcamp. Ojo tambien con haber creado BC-Escena-v1 con Use Custom Settings y otro frame rate: ese ajuste es de la timeline, no del proyecto, y no lo ve este check, pero rompe la sincronia igual."
+    },
+    {
+      "id": "montaje-v2-conservada",
+      "descripcion": "BC-Montaje-v2 sigue existiendo",
+      "op": "timeline_list",
+      "args": {},
+      "expr": "'BC-Montaje-v2' in r['timelines']",
+      "pista": "El trabajo de esta semana va en una timeline NUEVA, no sobre el montaje de la Semana 07. Si BC-Montaje-v2 ha desaparecido es que la renombraste en vez de crear una timeline aparte: recuperala del respaldo BC-Bootcamp-Resolve-semana07.drp, importandolo con otro nombre para no machacar lo que tienes."
+    },
+    {
+      "id": "escena-v1-existe",
+      "descripcion": "Existe la timeline BC-Escena-v1",
+      "op": "timeline_list",
+      "args": {},
+      "expr": "'BC-Escena-v1' in r['timelines']",
+      "pista": "Practica 02, paso 2. Selecciona el bin Master, File > New Timeline, y llamala BC-Escena-v1. El nombre es exacto: guiones, E mayuscula, uve minuscula y el 1 sin ceros delante."
+    },
+    {
+      "id": "escena-v1-activa",
+      "descripcion": "BC-Escena-v1 es la timeline abierta ahora mismo",
+      "op": "timeline_probe",
+      "args": {},
+      "expr": "r['name'] == 'BC-Escena-v1'",
+      "pista": "timeline_probe y timeline_detect_gaps leen la timeline ACTIVA. Si acabas de comparar con BC-Montaje-v2, te habras quedado en ella: doble clic en BC-Escena-v1 en el media pool y repite. Los cuatro checks siguientes tambien dependen de esto."
+    },
+    {
+      "id": "escena-v1-clips",
+      "descripcion": "La pista de video principal de BC-Escena-v1 tiene ocho clips o mas",
+      "op": "timeline_probe",
+      "args": {},
+      "expr": "[t for t in r['tracks'] if t['type'] == 'video'][0]['item_count'] >= 8",
+      "pista": "Practica 03, paso 1. El check mira la primera pista de video, la que llamaste Continuidad, no las de encima: los recursos que pusiste con Place on Top no cuentan aqui, y si montaste la escena en la pista de arriba, cuentala otra vez abajo."
+    },
+    {
+      "id": "escena-v1-sin-huecos",
+      "descripcion": "La pista Continuidad de BC-Escena-v1 no tiene huecos ni solapes",
+      "op": "timeline_detect_gaps",
+      "args": { "track": 1 },
+      "expr": "r['clean'] and len(r['gaps']) == 0 and len(r['overlaps']) == 0",
+      "pista": "Practica 04, paso 2. Un hueco es un parpadeo a negro que a la escala normal de la timeline no se ve. Donde mas aparecen es donde usaste Fit to Fill, si el rango del origen no llenaba el hueco del todo. Activa el iman con N, recorre la pista en Detail Zoom y borra el hueco con ripple."
+    },
+    {
+      "id": "escena-v1-pistas",
+      "descripcion": "BC-Escena-v1 tiene dos pistas de video y tres de audio o mas",
+      "op": "timeline_probe",
+      "args": {},
+      "expr": "r['video_tracks'] >= 2 and r['audio_tracks'] >= 3",
+      "pista": "Practica 02, paso 2. Se piden en el dialogo New Timeline Options al crearla, en No. of Video Tracks y No. of Audio Tracks. Si te faltan, clic derecho sobre una cabecera de pista > Add Track, o Add Tracks para varias a la vez."
+    },
+    {
+      "id": "escena-v1-pistas-con-nombre",
+      "descripcion": "Ninguna pista de BC-Escena-v1 conserva su nombre por defecto",
+      "op": "timeline_probe",
+      "args": {},
+      "expr": "all(not t['name'].startswith('Video ') and not t['name'].startswith('Audio ') for t in r['tracks'] if t['type'] in ('video', 'audio'))",
+      "pista": "Practica 02, paso 3. Los nombres propuestos son Continuidad, Recursos, Dialogo, Ambiente y Reserva. Para editar un nombre, la pista tiene que ser lo bastante alta y la vista tiene que estar en tira de imagenes o miniatura: en la vista minimizada los nombres no se ven. Sin acentos, que estos nombres viajan a los archivos de intercambio de la Semana 12."
+    }
+  ]
+}

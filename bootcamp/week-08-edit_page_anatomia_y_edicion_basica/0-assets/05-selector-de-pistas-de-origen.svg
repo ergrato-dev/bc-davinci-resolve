@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" width="880" height="420" role="img"
+     aria-label="El selector de pistas de origen. La columna azul de la izquierda son las pistas que trae el clip de origen; la columna roja de la derecha son las pistas de la timeline. Arrastrando el icono azul de video 1 hasta la fila de video 2 se decide que el video del clip entre en la pista Video 2 de la timeline.">
+  <title>Cómo se conecta el origen con el destino: el Source Track Selector</title>
+  <style>
+    .bg{fill:#101418}
+    .surf{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .src{fill:#232b34;stroke:#4a9eff;stroke-width:2}
+    .dst{fill:#232b34;stroke:#f85149;stroke-width:2}
+    .off{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .clip{fill:#2f3a45;stroke:#2f3a45;stroke-width:1}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .az{font-size:12px;font-weight:600;fill:#4a9eff}
+    .ro{font-size:12px;font-weight:600;fill:#f85149}
+    .mini{font-size:11px;fill:#e8eef4}
+  </style>
+  <rect class="bg" width="880" height="420"/>
+  <text class="t h" x="40" y="34">El clip trae unas pistas. La timeline tiene otras. Aquí se decide qué entra dónde.</text>
+
+  <text class="t az" x="60" y="72">Azul: lo que trae el clip</text>
+  <text class="t ro" x="300" y="72">Rojo: las pistas de tu timeline</text>
+
+  <rect class="src" x="60" y="86" width="34" height="30" rx="3"/>
+  <text class="t mini" x="68" y="106">v1</text>
+  <rect class="dst" x="300" y="86" width="34" height="30" rx="3"/>
+  <text class="t mini" x="308" y="106">V2</text>
+  <rect class="clip" x="344" y="86" width="440" height="30" rx="3"/>
+  <text class="t s" x="360" y="106">Video 2 — recursos</text>
+
+  <rect class="off" x="60" y="124" width="34" height="30" rx="3"/>
+  <rect class="dst" x="300" y="124" width="34" height="30" rx="3"/>
+  <text class="t mini" x="308" y="144">V1</text>
+  <rect class="clip" x="344" y="124" width="440" height="30" rx="3"/>
+  <text class="t s" x="360" y="144">Video 1 — continuidad</text>
+
+  <rect class="src" x="60" y="168" width="34" height="30" rx="3"/>
+  <text class="t mini" x="68" y="188">a1</text>
+  <rect class="dst" x="300" y="168" width="34" height="30" rx="3"/>
+  <text class="t mini" x="308" y="188">A1</text>
+  <rect class="clip" x="344" y="168" width="440" height="30" rx="3"/>
+  <text class="t s" x="360" y="188">Audio 1 — diálogo</text>
+
+  <rect class="off" x="60" y="206" width="34" height="30" rx="3"/>
+  <rect class="off" x="300" y="206" width="34" height="30" rx="3"/>
+  <text class="t mini" x="308" y="226" fill="#93a1b0">A2</text>
+  <rect class="clip" x="344" y="206" width="440" height="30" rx="3" fill-opacity="0.4"/>
+  <text class="t s" x="360" y="226">Audio 2 — apagada: no recibe nada</text>
+
+  <path d="M 98 101 L 296 101" stroke="#4a9eff" stroke-width="2" fill="none" stroke-dasharray="5 4"/>
+  <path d="M 98 183 L 296 183" stroke="#4a9eff" stroke-width="2" fill="none" stroke-dasharray="5 4"/>
+  <text class="t s" x="120" y="94">el vídeo del clip entra en V2</text>
+  <text class="t s" x="120" y="176">su audio entra en A1</text>
+
+  <rect class="surf" x="40" y="256" width="800" height="130" rx="6"/>
+  <text class="t lbl" x="60" y="280">Tres cosas que hay que saber de este control</text>
+  <text class="t s" x="60" y="304">1 · Un icono apagado no recibe nada. Así se edita un plano sin su audio, o al revés.</text>
+  <text class="t s" x="60" y="326">2 · Si el destino apunta a la pista equivocada, el clip entra igual: en el sitio equivocado.</text>
+  <text class="t s" x="60" y="348">3 · Cuando te pierdas: `Timeline > Source Track Selector > Reset Track Selectors`.</text>
+  <text class="t s" x="60" y="372">Es el control que más veces explica un «no me ha hecho lo que le he pedido».</text>
+</svg>

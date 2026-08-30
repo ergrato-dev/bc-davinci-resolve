@@ -182,7 +182,55 @@ terceros.
 
 ---
 
-_Las semanas 08 a 36 añadirán aquí sus trucos según se publiquen._
+## Semana 08 — Edit page: anatomía y edición básica
+
+| Truco | Cómo |
+| ----- | ---- |
+| Decidir en qué página trabajar | ¿La frase menciona una pista o un fotograma? Si sí, Edit |
+| Comprobar que Cut y Edit son la misma timeline | Mueve el cabezal en una y cambia con `Shift+3` / `Shift+4` |
+| Ver la timeline entera y volver al detalle | `Shift+Z` |
+| Recuperar la pantalla cuando se ha desordenado | `Workspace > Reset UI Layout` |
+| Guardar tu disposición de paneles | `Workspace > Layout Presets > Save Layout As Preset` |
+| Volver al modo normal desde cualquier modo | `A` |
+| Encontrar un corte por su número | `Index > Edit Index`, doble clic en la línea |
+| Manejar muchas pistas sin marearse | `Index > Tracks` |
+| Cambiar de visor sin ratón | `Q` |
+| Limpiar los puntos antes de cada edición | `Alt+X` (Win) / `Opt+X` (Mac) |
+| Ver cuánto dura lo que has marcado | El campo de duración del visor |
+| Marcar por sonido y no por imagen | Menú de tres puntos `> Show Full Clip Audio Waveform` |
+| Ver la pieza a pantalla completa | `Workspace > Viewer Mode > Cinema Viewer`, atajo `P` |
+| Recorrer un clip a la velocidad del gesto | Mantén `C` y mueve el ratón sobre el visor |
+| Llevar el cabezal donde está el ratón | `C` sobre la timeline |
+| Saltar de corte en corte | Flecha arriba y flecha abajo |
+| Bloquear o desbloquear todas las pistas de vídeo | `Alt+Shift+9` (Win) / `Opt+Shift+9` (Mac) |
+| Poner varias cabeceras en el mismo estado | Clic sobre un control y arrastra hacia arriba o abajo |
+| Limpiar una timeline llena de pistas vacías | Clic derecho en la cabecera `> Delete Empty Tracks` |
+| Mandar el vídeo a una pista sin ratón | `Alt+1` … `Alt+8` (Win) / `Opt+1` … `Opt+8` (Mac) |
+| Mandar el audio a una pista sin ratón | `Alt+Ctrl+1` … `8` (Win) / `Opt+Cmd+1` … `8` (Mac) |
+| Editar un plano sin su sonido | Apaga el icono de audio del origen |
+| Elegir qué canal de audio de un clip usar | Clic derecho sobre el icono de audio azul |
+| Salir de cualquier lío de destinos | `Timeline > Source Track Selector > Reset Track Selectors` |
+| Crear una timeline sin menús | `Ctrl+N` (Win) / `Cmd+N` (Mac) |
+| Que la timeline caiga donde quieres | Selecciona el bin **antes** de crearla |
+| Tener todas las timelines a la vista | `Preferences > User > Editing > Smart Bin for Timelines` |
+| Marcar un punto seguro antes de un cambio grande | `File > Create Timeline Backup` |
+| Recuperar una timeline de hace dos horas | Clic derecho `> Restore Timeline Backup` |
+| Llevarte solo un montaje a otro proyecto | Exporta un `.drt` |
+| Colocar un plano por su final | Marca solo la `O` en la timeline |
+| Llenar un hueco exacto | `I` y `O` en la timeline, solo `I` en el origen |
+| Meter algo sin comerte nada | `F9`, y comprueba las pistas de encima |
+| Sincronizar una acción con un fotograma | `F11`, con los dos cabezales colocados |
+| Poner un rótulo encima sin crear la pista a mano | `F12` |
+| Ver todos los modos a la vez | Arrastra el clip sobre el visor de timeline |
+| Insertar arrastrando | `Ctrl+Shift` (Win) / `Cmd+Shift` (Mac) mientras arrastras |
+| Saltarte el imán solo esta vez | `N` mientras estás arrastrando |
+| Separar audio de vídeo puntualmente | `Alt` (Win) / `Opt` (Mac) al hacer clic |
+| Entender la diferencia entre dos modos | Haz uno, mira, `Ctrl+Z`, haz el otro |
+| Comprobar cualquier atajo en tu instalación | `DaVinci Resolve > Keyboard Customization`, busca el comando por nombre |
+
+---
+
+_Las semanas 09 a 36 añadirán aquí sus trucos según se publiquen._
 
 
 ---

@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" width="880" height="420" role="img"
+     aria-label="Los controles de la cabecera de una pista de la Edit page, de izquierda a derecha: color de pista, selector de pistas de origen y destino, boton de bloqueo, sync lock, boton de activar o silenciar la pista, nombre de la pista y numero de clips.">
+  <title>Los controles de la cabecera de pista, uno a uno</title>
+  <style>
+    .bg{fill:#101418}
+    .surf{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .hdr{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .ctl{fill:#2f3a45;stroke:#4a9eff;stroke-width:1}
+    .clip{fill:#2f3a45;stroke:#4a9eff;stroke-width:1}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .am{font-size:12px;font-weight:600;fill:#f5a524}
+    .mini{font-size:11px;fill:#e8eef4}
+  </style>
+  <rect class="bg" width="880" height="420"/>
+  <text class="t h" x="40" y="34">La cabecera de pista: siete controles que mandan sobre todo lo que hay a su derecha.</text>
+
+  <rect class="hdr" x="40" y="54" width="330" height="56" rx="4"/>
+  <rect x="44" y="58" width="6" height="48" fill="#4a9eff"/>
+  <rect class="ctl" x="60" y="66" width="26" height="32" rx="3"/>
+  <text class="t mini" x="66" y="87">V1</text>
+  <rect class="ctl" x="94" y="66" width="26" height="32" rx="3"/>
+  <text class="t mini" x="102" y="87">L</text>
+  <rect class="ctl" x="128" y="66" width="26" height="32" rx="3"/>
+  <text class="t mini" x="136" y="87">S</text>
+  <rect class="ctl" x="162" y="66" width="26" height="32" rx="3"/>
+  <text class="t mini" x="170" y="87">E</text>
+  <text class="t mini" x="200" y="80">Video 1</text>
+  <text class="t s" x="200" y="98">14 clips</text>
+  <rect class="clip" x="380" y="54" width="460" height="56" rx="4"/>
+  <text class="t s" x="400" y="88">Todo lo que hay en esta pista obedece a esos controles</text>
+
+  <rect class="surf" x="40" y="128" width="800" height="240" rx="6"/>
+  <text class="t lbl" x="60" y="152">Barra de color</text>
+  <text class="t s" x="230" y="152">Dieciséis colores. El mismo código se ve en el mezclador y en Fairlight.</text>
+  <text class="t lbl" x="60" y="180">Source Track Selector</text>
+  <text class="t s" x="230" y="180">Dos columnas: azul el origen, rojo el destino. Decide dónde cae lo que editas.</text>
+  <text class="t lbl" x="60" y="208">Lock Track</text>
+  <text class="t s" x="230" y="208">Bloquea la pista: no se puede mover ni sustituir nada. Se puede etalonar igual.</text>
+  <text class="t lbl" x="60" y="236">Sync Lock</text>
+  <text class="t s" x="230" y="236">Decide si la pista se desplaza con las demás cuando otra hace ripple.</text>
+  <text class="t lbl" x="60" y="264">Solo (solo audio)</text>
+  <text class="t s" x="230" y="264">Silencia todas las demás pistas de audio y deja sonar solo esta.</text>
+  <text class="t lbl" x="60" y="292">Enable Track / Mute</text>
+  <text class="t s" x="230" y="292">Apaga la pista: no se ve, no llega al color y no entra en el render.</text>
+  <text class="t lbl" x="60" y="320">Nombre y nº de clips</text>
+  <text class="t s" x="230" y="320">El nombre se edita con un clic. El contador solo aparece si la pista es alta.</text>
+  <text class="t am" x="60" y="348">Ojo</text>
+  <text class="t s" x="230" y="348">Bloquear no es apagar: una pista bloqueada se sigue viendo y se sigue rindiendo.</text>
+
+  <text class="t s" x="40" y="396">Clic derecho sobre la cabecera: `Add Track`, `Add Tracks`, `Delete Track`, `Delete Empty Tracks`, `Move Track Up`.</text>
+</svg>

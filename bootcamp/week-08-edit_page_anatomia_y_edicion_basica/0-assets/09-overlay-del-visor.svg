@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img"
+     aria-label="El overlay de edicion del visor de timeline. Al arrastrar un clip sobre el visor aparecen zonas: la grande de la izquierda es Overwrite por defecto, y a la derecha hay botones para Insert, Replace, Fit to Fill, Place on Top, Ripple Overwrite y Append at End. Se suelta el clip sobre la zona del modo que se quiere.">
+  <title>El overlay de edición: soltar el clip sobre el modo que quieres</title>
+  <style>
+    .bg{fill:#101418}
+    .surf{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .view{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .big{fill:#232b34;stroke:#4a9eff;stroke-width:2}
+    .zone{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .mini{font-size:11px;fill:#e8eef4}
+    .az{font-size:12px;font-weight:600;fill:#4a9eff}
+  </style>
+  <rect class="bg" width="880" height="400"/>
+  <text class="t h" x="40" y="34">Arrastra un clip sobre el visor de timeline y el visor se convierte en un menú.</text>
+
+  <rect class="view" x="40" y="54" width="480" height="230" rx="6"/>
+  <rect class="big" x="56" y="70" width="230" height="198" rx="4"/>
+  <text class="t az" x="72" y="164">Overwrite</text>
+  <text class="t s" x="72" y="184">la zona grande,</text>
+  <text class="t s" x="72" y="202">por defecto</text>
+
+  <rect class="zone" x="298" y="70" width="206" height="30" rx="3"/>
+  <text class="t mini" x="310" y="90">Insert</text>
+  <rect class="zone" x="298" y="104" width="206" height="30" rx="3"/>
+  <text class="t mini" x="310" y="124">Replace</text>
+  <rect class="zone" x="298" y="138" width="206" height="30" rx="3"/>
+  <text class="t mini" x="310" y="158">Fit to Fill</text>
+  <rect class="zone" x="298" y="172" width="206" height="30" rx="3"/>
+  <text class="t mini" x="310" y="192">Place on Top</text>
+  <rect class="zone" x="298" y="206" width="206" height="30" rx="3"/>
+  <text class="t mini" x="310" y="226">Ripple Overwrite</text>
+  <rect class="zone" x="298" y="240" width="206" height="28" rx="3"/>
+  <text class="t mini" x="310" y="259">Append at End</text>
+
+  <rect class="surf" x="544" y="54" width="296" height="230" rx="6"/>
+  <text class="t lbl" x="564" y="80">Para qué sirve de verdad</text>
+  <text class="t s" x="564" y="106">Es la lista completa de modos</text>
+  <text class="t s" x="564" y="124">que existen, siempre a la vista.</text>
+  <text class="t s" x="564" y="152">Mientras no te sepas los atajos,</text>
+  <text class="t s" x="564" y="170">es más rápido que el menú `Edit`.</text>
+  <text class="t s" x="564" y="198">Suelta a la izquierda sin mirar</text>
+  <text class="t s" x="564" y="216">y harás un `Overwrite`.</text>
+  <text class="t s" x="564" y="244">Los puntos I y O siguen mandando</text>
+  <text class="t s" x="564" y="262">igual que con el teclado.</text>
+
+  <rect class="surf" x="40" y="304" width="800" height="66" rx="6"/>
+  <text class="t s" x="60" y="328">Arrastrar directamente a la timeline es otra cosa: eso es un `Overwrite` en el sitio donde sueltas,</text>
+  <text class="t s" x="60" y="350">y ahí no hay menú. Si quieres elegir el modo, el destino es el visor, no la pista.</text>
+</svg>

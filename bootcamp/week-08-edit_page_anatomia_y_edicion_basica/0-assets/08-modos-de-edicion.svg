@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 480" width="880" height="480" role="img"
+     aria-label="Los cinco modos de edicion basicos comparados sobre la misma timeline. Overwrite pisa lo que habia y no cambia la duracion. Insert parte la timeline y empuja todo a la derecha, alargandola. Replace sustituye el clip que cruza el cabezal respetando su duracion. Fit to Fill estira o comprime el clip para llenar un hueco exacto. Place on Top sube el clip a la pista de encima sin tocar lo de abajo.">
+  <title>Qué le hace cada modo de edición a la timeline</title>
+  <style>
+    .bg{fill:#101418}
+    .surf{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .old{fill:#2f3a45;stroke:#2f3a45;stroke-width:1}
+    .new{fill:#232b34;stroke:#4a9eff;stroke-width:2}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .am{font-size:12px;font-weight:600;fill:#f5a524}
+    .mini{font-size:11px;fill:#e8eef4}
+  </style>
+  <rect class="bg" width="880" height="480"/>
+  <text class="t h" x="40" y="30">El mismo clip, cinco modos. Lo que cambia no es lo que entra: es lo que le pasa al resto.</text>
+
+  <text class="t lbl" x="40" y="62">Antes</text>
+  <rect class="old" x="150" y="46" width="150" height="24" rx="3"/>
+  <rect class="old" x="304" y="46" width="150" height="24" rx="3"/>
+  <rect class="old" x="458" y="46" width="150" height="24" rx="3"/>
+  <text class="t mini" x="160" y="63">A</text>
+  <text class="t mini" x="314" y="63">B</text>
+  <text class="t mini" x="468" y="63">C</text>
+
+  <text class="t lbl" x="40" y="112">Overwrite</text>
+  <text class="t s" x="40" y="130">F10</text>
+  <rect class="old" x="150" y="96" width="150" height="24" rx="3"/>
+  <rect class="new" x="304" y="96" width="150" height="24" rx="3"/>
+  <rect class="old" x="458" y="96" width="150" height="24" rx="3"/>
+  <text class="t mini" x="314" y="113">nuevo</text>
+  <text class="t s" x="630" y="113">B desaparece. La pieza dura igual.</text>
+
+  <text class="t lbl" x="40" y="172">Insert</text>
+  <text class="t s" x="40" y="190">F9</text>
+  <rect class="old" x="150" y="156" width="150" height="24" rx="3"/>
+  <rect class="new" x="304" y="156" width="150" height="24" rx="3"/>
+  <rect class="old" x="458" y="156" width="150" height="24" rx="3"/>
+  <rect class="old" x="612" y="156" width="150" height="24" rx="3"/>
+  <text class="t mini" x="314" y="173">nuevo</text>
+  <text class="t mini" x="468" y="173">B</text>
+  <text class="t mini" x="622" y="173">C</text>
+  <text class="t am" x="630" y="146">la pieza se alarga</text>
+
+  <text class="t lbl" x="40" y="232">Replace</text>
+  <text class="t s" x="40" y="250">F11</text>
+  <rect class="old" x="150" y="216" width="150" height="24" rx="3"/>
+  <rect class="new" x="304" y="216" width="150" height="24" rx="3"/>
+  <rect class="old" x="458" y="216" width="150" height="24" rx="3"/>
+  <text class="t mini" x="314" y="233">nuevo</text>
+  <text class="t s" x="630" y="233">Toma la duración exacta de B.</text>
+
+  <text class="t lbl" x="40" y="292">Fit to Fill</text>
+  <text class="t s" x="40" y="310">Shift+F11</text>
+  <rect class="old" x="150" y="276" width="150" height="24" rx="3"/>
+  <rect class="new" x="304" y="276" width="150" height="24" rx="3"/>
+  <rect class="old" x="458" y="276" width="150" height="24" rx="3"/>
+  <text class="t mini" x="314" y="293">nuevo, retimado</text>
+  <text class="t s" x="630" y="293">Cambia su velocidad para caber.</text>
+
+  <text class="t lbl" x="40" y="368">Place on Top</text>
+  <text class="t s" x="40" y="386">F12</text>
+  <rect class="new" x="304" y="332" width="150" height="24" rx="3"/>
+  <text class="t mini" x="314" y="349">nuevo</text>
+  <rect class="old" x="150" y="362" width="150" height="24" rx="3"/>
+  <rect class="old" x="304" y="362" width="150" height="24" rx="3"/>
+  <rect class="old" x="458" y="362" width="150" height="24" rx="3"/>
+  <text class="t mini" x="314" y="379">B</text>
+  <text class="t s" x="630" y="349">Sube a la pista de encima.</text>
+  <text class="t s" x="630" y="367">Crea la pista si no existe.</text>
+
+  <rect class="surf" x="40" y="408" width="800" height="52" rx="6"/>
+  <text class="t s" x="60" y="430">Solo `Insert` mueve lo que hay a la derecha. Solo `Fit to Fill` cambia la velocidad del clip.</text>
+  <text class="t s" x="60" y="450">Solo `Place on Top` puede crear una pista nueva por su cuenta.</text>
+</svg>

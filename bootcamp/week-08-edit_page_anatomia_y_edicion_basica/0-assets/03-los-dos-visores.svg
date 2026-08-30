@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img"
+     aria-label="Los dos visores de la Edit page. El visor de origen muestra el clip como esta en su archivo, con su propia barra de reproduccion y sus puntos de entrada y salida. El visor de timeline muestra la pieza montada con todo aplicado y tiene sus propios puntos de entrada y salida. La tecla Q cambia el foco de uno a otro.">
+  <title>Los dos visores y por qué cada uno tiene sus propios puntos I y O</title>
+  <style>
+    .bg{fill:#101418}
+    .surf{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .view{fill:#232b34;stroke:#4a9eff;stroke-width:2}
+    .view2{fill:#232b34;stroke:#3fb950;stroke-width:2}
+    .bar{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .rng{fill:#4a9eff;fill-opacity:0.30;stroke:#4a9eff;stroke-width:1}
+    .rng2{fill:#3fb950;fill-opacity:0.30;stroke:#3fb950;stroke-width:1}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .am{font-size:12px;font-weight:600;fill:#f5a524}
+  </style>
+  <rect class="bg" width="880" height="400"/>
+  <text class="t h" x="40" y="34">Dos visores, dos juegos de puntos I y O. Confundirlos es el error número uno.</text>
+
+  <rect class="view" x="40" y="54" width="380" height="150" rx="5"/>
+  <text class="t lbl" x="56" y="78">Source Viewer — el archivo</text>
+  <text class="t s" x="56" y="100">Lo que hay grabado, entero, sin nada aplicado</text>
+  <text class="t s" x="56" y="120">Se abre con doble clic en el media pool</text>
+  <rect class="bar" x="56" y="136" width="348" height="26" rx="3"/>
+  <rect class="rng" x="130" y="136" width="150" height="26" rx="3"/>
+  <text class="t s" x="56" y="184">El rango azul es lo que vas a llevarte a la timeline</text>
+
+  <rect class="view2" x="460" y="54" width="380" height="150" rx="5"/>
+  <text class="t lbl" x="476" y="78">Timeline Viewer — la pieza</text>
+  <text class="t s" x="476" y="100">Lo montado, con color y Fusion ya aplicados</text>
+  <text class="t s" x="476" y="120">Es la salida real del programa</text>
+  <rect class="bar" x="476" y="136" width="348" height="26" rx="3"/>
+  <rect class="rng2" x="560" y="136" width="130" height="26" rx="3"/>
+  <text class="t s" x="476" y="184">El rango verde es el hueco de la timeline que vas a llenar</text>
+
+  <rect class="surf" x="40" y="224" width="800" height="60" rx="6"/>
+  <text class="t am" x="60" y="248">Q</text>
+  <text class="t s" x="86" y="248">alterna el foco entre los dos visores. El que tiene el foco es el que recibe la I y la O.</text>
+  <text class="t s" x="60" y="270">Si marcas y no pasa lo que esperas, el foco estaba en el otro visor. Es así casi siempre.</text>
+
+  <rect class="surf" x="40" y="300" width="800" height="66" rx="6"/>
+  <text class="t lbl" x="60" y="324">Por qué la imagen puede no coincidir</text>
+  <text class="t s" x="60" y="346">El visor de timeline enseña el grado de color y el comp de Fusion; el de origen, no.</text>
+  <text class="t s" x="60" y="362">Que se vean distintos no es un fallo: es que uno es el material y el otro el resultado.</text>
+</svg>

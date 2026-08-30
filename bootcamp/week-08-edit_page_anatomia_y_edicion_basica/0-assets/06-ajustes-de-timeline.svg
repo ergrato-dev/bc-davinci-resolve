@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img"
+     aria-label="El dialogo de nueva timeline. Con la casilla Use Project Settings marcada, la timeline hereda la resolucion, el frame rate y la gestion de color del proyecto. Al desmarcarla aparecen los paneles Format, Monitor, Output y Color para ajustarlos solo en esa timeline.">
+  <title>Use Project Settings: cuándo heredar y cuándo separar</title>
+  <style>
+    .bg{fill:#101418}
+    .surf{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .ok{fill:#232b34;stroke:#3fb950;stroke-width:2}
+    .cust{fill:#232b34;stroke:#f5a524;stroke-width:2}
+    .fld{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .vd{font-size:12px;font-weight:600;fill:#3fb950}
+    .am{font-size:12px;font-weight:600;fill:#f5a524}
+  </style>
+  <rect class="bg" width="880" height="400"/>
+  <text class="t h" x="40" y="34">Cada timeline puede tener sus propios ajustes. Por defecto, hereda los del proyecto.</text>
+
+  <rect class="ok" x="40" y="56" width="390" height="230" rx="6"/>
+  <text class="t lbl" x="60" y="82">`Use Project Settings` marcada</text>
+  <text class="t vd" x="60" y="104">Lo normal, y lo del bootcamp</text>
+  <rect class="fld" x="60" y="118" width="350" height="26" rx="3"/>
+  <text class="t s" x="72" y="136">Timeline name: BC-Escena-v1</text>
+  <rect class="fld" x="60" y="152" width="350" height="26" rx="3"/>
+  <text class="t s" x="72" y="170">Start timecode: 01:00:00:00</text>
+  <rect class="fld" x="60" y="186" width="350" height="26" rx="3"/>
+  <text class="t s" x="72" y="204">Video tracks / Audio tracks</text>
+  <text class="t s" x="60" y="234">Resolución, frame rate y color: los del proyecto.</text>
+  <text class="t s" x="60" y="254">Si cambia el proyecto, cambia esta timeline con él.</text>
+  <text class="t s" x="60" y="274">Una decisión menos que se te puede escapar.</text>
+
+  <rect class="cust" x="450" y="56" width="390" height="230" rx="6"/>
+  <text class="t lbl" x="470" y="82">`Use Project Settings` sin marcar</text>
+  <text class="t am" x="470" y="104">Aparecen cuatro paneles más</text>
+  <rect class="fld" x="470" y="118" width="350" height="26" rx="3"/>
+  <text class="t s" x="482" y="136">Format — resolución, frame rate, aspecto de píxel</text>
+  <rect class="fld" x="470" y="152" width="350" height="26" rx="3"/>
+  <text class="t s" x="482" y="170">Monitor — lo que sale por la salida de vídeo</text>
+  <rect class="fld" x="470" y="186" width="350" height="26" rx="3"/>
+  <text class="t s" x="482" y="204">Output — escalado de la timeline al render</text>
+  <rect class="fld" x="470" y="220" width="350" height="26" rx="3"/>
+  <text class="t s" x="482" y="238">Color — gestión de color solo para esta timeline</text>
+  <text class="t s" x="470" y="274">Sirve para entregar varias versiones. No esta semana.</text>
+
+  <rect class="surf" x="40" y="304" width="800" height="66" rx="6"/>
+  <text class="t s" x="60" y="328">Una timeline creada se edita después con clic derecho sobre ella en el media pool &gt;</text>
+  <text class="t s" x="60" y="350">`Timelines &gt; Timeline Settings`. Y siempre se puede volver a `Use Project Settings`.</text>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 400" width="880" height="400" role="img"
+     aria-label="Comparacion entre la Cut page y la Edit page. La Cut page decide el orden y la duracion gruesa con una sola timeline y pocos controles. La Edit page trabaja con dos visores, muchas pistas, inspector y control de destino, y es donde se afina.">
+  <title>Qué hace mejor cada página: Cut decide, Edit afina</title>
+  <style>
+    .bg{fill:#101418}
+    .surf{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .cut{fill:#232b34;stroke:#4a9eff;stroke-width:2}
+    .edit{fill:#232b34;stroke:#3fb950;stroke-width:2}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .az{font-size:12px;font-weight:600;fill:#4a9eff}
+    .vd{font-size:12px;font-weight:600;fill:#3fb950}
+  </style>
+  <rect class="bg" width="880" height="400"/>
+  <text class="t h" x="40" y="36">La misma pieza, dos páginas. No compiten: se reparten el trabajo.</text>
+
+  <rect class="cut" x="40" y="58" width="390" height="250" rx="6"/>
+  <text class="t lbl" x="60" y="84">Cut page</text>
+  <text class="t az" x="60" y="104">Decide</text>
+  <text class="t s" x="60" y="128">Qué plano va antes que cuál</text>
+  <text class="t s" x="60" y="150">Cuánto dura cada uno, a ojo</text>
+  <text class="t s" x="60" y="172">Un visor, una timeline doble</text>
+  <text class="t s" x="60" y="194">Pocas pistas, poco donde perderse</text>
+  <text class="t s" x="60" y="216">Los botones hacen una cosa cada uno</text>
+  <text class="t s" x="60" y="238">Velocidad: montar rápido y no pararse</text>
+  <text class="t s" x="60" y="270">Semanas 06 y 07</text>
+
+  <rect class="edit" x="450" y="58" width="390" height="250" rx="6"/>
+  <text class="t lbl" x="470" y="84">Edit page</text>
+  <text class="t vd" x="470" y="104">Afina</text>
+  <text class="t s" x="470" y="128">Dónde exactamente entra cada plano</text>
+  <text class="t s" x="470" y="150">Qué se empuja y qué se pisa al entrar</text>
+  <text class="t s" x="470" y="172">Dos visores: origen y timeline</text>
+  <text class="t s" x="470" y="194">Muchas pistas, con control de destino</text>
+  <text class="t s" x="470" y="216">Inspector, Index, ajustes por timeline</text>
+  <text class="t s" x="470" y="238">Precisión: decidir al fotograma</text>
+  <text class="t s" x="470" y="270">Semanas 08 a 12</text>
+
+  <rect class="surf" x="40" y="326" width="800" height="52" rx="6"/>
+  <text class="t s" x="60" y="348">La regla de esta semana: si te sirve una respuesta aproximada, Cut es más rápida.</text>
+  <text class="t s" x="60" y="368">Si necesitas decir el fotograma, la pista y el modo de edición, es trabajo de Edit.</text>
+</svg>
