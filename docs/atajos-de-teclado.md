@@ -170,6 +170,34 @@ Y los de marcadores, que también son de la Semana 09:
 *Verificados en el DaVinci Resolve 21 Reference Manual, capítulos 48 y 51, agosto de 2026.
 Gana siempre lo que diga `DaVinci Resolve > Keyboard Customization` en tu instalación.*
 
+### Velocidad, transformaciones y keyframes, en la Edit page
+
+Los de la Semana 10. Son pocos y los tres primeros se usan a diario.
+
+| Acción | Windows | macOS | Qué hace |
+| ------ | ------- | ----- | -------- |
+| Abrir o cerrar los `Retime Controls` | `Ctrl+R` | `Cmd+R` | Con el clip seleccionado. Cerrarlos no deshace nada |
+| Cerrar los `Retime Controls` | `Esc` | `Esc` | Igual, sin tocar el menú |
+| Congelar el clip entero | `Shift+R` | `Shift+R` | Congela el fotograma que haya bajo el cabezal |
+| `Fit to Fill` | `Shift+F11` | `Shift+F11` | Retima el clip de origen para llenar el rango de la timeline |
+| Borrar los puntos de entrada y salida | `Alt+X` | `Opt+X` | Necesario para que `Fit to Fill` use el hueco del cabezal |
+| Pegar atributos | `Alt+V` | `Opt+V` | Copia velocidad, transformación o estabilización a otro clip |
+| Encender y apagar el overlay del visor | ``Shift+` `` | ``Shift+` `` | El overlay que tengas seleccionado en `View > Viewer Overlay` |
+| Visor al 100 % | `Alt+Shift+Z` | `Opt+Shift+Z` | Para juzgar nitidez y artefactos; `Shift+Z` encaja la pieza en la timeline |
+| Ampliar o reducir la timeline | `Ctrl+=` / `Ctrl+-` | `Cmd+=` / `Cmd+-` | |
+| Keyframe anterior / siguiente | `[` / `]` | `[` / `]` | Alcanza incluso los keyframes que quedaron fuera del clip |
+
+> [!NOTE]
+> `Mark > Add Keyframe` y `Mark > Delete Keyframe` traen atajo asignado, pero el manual lo cita de
+> forma inconsistente. **Mira el atajo al lado del comando en el propio menú `Mark`** de tu
+> instalación antes de fiarte de ninguna lista, esta incluida.
+>
+> `Clip > Change Clip Speed` **no** trae atajo de fábrica. Si lo usas mucho, asígnale uno en
+> `Keyboard Customization`.
+
+*Verificados en el DaVinci Resolve 21 Reference Manual, capítulos 46, 57, 58 y 60, agosto de 2026.
+Gana siempre lo que diga `DaVinci Resolve > Keyboard Customization` en tu instalación.*
+
 ---
 
 ## 5. Color

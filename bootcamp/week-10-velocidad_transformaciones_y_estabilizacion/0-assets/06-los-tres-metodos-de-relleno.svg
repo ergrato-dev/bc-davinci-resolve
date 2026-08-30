@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 430" width="880" height="430" role="img"
+     aria-label="Los tres metodos de relleno enfrentados sobre el mismo movimiento: Nearest repite el fotograma anterior y produce saltos, Frame Blend mezcla dos fotogramas y produce una imagen fantasma, y Optical Flow calcula hacia donde iba cada pixel y dibuja un fotograma nuevo. Debajo, donde se fija el ajuste para todo el proyecto y donde para un clip suelto.">
+  <title>Los tres métodos de relleno de fotogramas</title>
+  <style>
+    .bg{fill:#101418}
+    .card{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .fr{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .frnew{fill:#232b34;stroke:#4a9eff;stroke-width:1.5}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .col{font-size:13px;font-weight:600;fill:#4a9eff}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .red{font-size:12px;font-weight:600;fill:#f85149}
+    .am{font-size:12px;font-weight:600;fill:#f5a524}
+    .ok{font-size:12px;font-weight:600;fill:#3fb950}
+  </style>
+  <rect class="bg" width="880" height="430"/>
+  <text class="t h" x="40" y="34">Le pides dos fotogramas donde hay uno. De dónde sale el que falta.</text>
+
+  <text class="t s" x="40" y="62">Grabado: la pelota está aquí y luego aquí. Falta el intermedio.</text>
+  <rect class="fr" x="40" y="72" width="86" height="58" rx="3"/>
+  <circle cx="60" cy="112" r="7" fill="#e8eef4"/>
+  <rect class="fr" x="132" y="72" width="86" height="58" rx="3"/>
+  <circle cx="200" cy="86" r="7" fill="#e8eef4"/>
+  <text class="t s" x="232" y="106">← estos dos existen</text>
+
+  <text class="t col" x="40" y="166">NEAREST · repite el anterior</text>
+  <rect class="fr" x="40" y="176" width="86" height="58" rx="3"/>
+  <circle cx="60" cy="216" r="7" fill="#e8eef4"/>
+  <rect class="fr" x="132" y="176" width="86" height="58" rx="3"/>
+  <circle cx="60" cy="216" r="7" fill="#e8eef4"/>
+  <circle cx="152" cy="216" r="7" fill="#e8eef4"/>
+  <rect class="fr" x="224" y="176" width="86" height="58" rx="3"/>
+  <circle cx="292" cy="190" r="7" fill="#e8eef4"/>
+  <text class="t red" x="40" y="252">judder: la imagen avanza a tirones</text>
+
+  <text class="t col" x="330" y="166">FRAME BLEND · funde los dos</text>
+  <rect class="fr" x="330" y="176" width="86" height="58" rx="3"/>
+  <circle cx="350" cy="216" r="7" fill="#e8eef4"/>
+  <rect class="fr" x="422" y="176" width="86" height="58" rx="3"/>
+  <circle cx="442" cy="216" r="7" fill="#93a1b0" opacity="0.55"/>
+  <circle cx="490" cy="190" r="7" fill="#93a1b0" opacity="0.55"/>
+  <rect class="fr" x="514" y="176" width="86" height="58" rx="3"/>
+  <circle cx="582" cy="190" r="7" fill="#e8eef4"/>
+  <text class="t red" x="330" y="252">ghosting: doble imagen fantasmal</text>
+
+  <text class="t col" x="620" y="166">OPTICAL FLOW · lo dibuja</text>
+  <rect class="fr" x="620" y="176" width="86" height="58" rx="3"/>
+  <circle cx="640" cy="216" r="7" fill="#e8eef4"/>
+  <rect class="frnew" x="712" y="176" width="86" height="58" rx="3"/>
+  <circle cx="755" cy="203" r="7" fill="#4a9eff"/>
+  <text class="t s" x="804" y="206">nuevo</text>
+  <text class="t red" x="620" y="252">warping: los bordes se derriten</text>
+
+  <line x1="40" y1="272" x2="840" y2="272" stroke="#2f3a45" stroke-width="1"/>
+
+  <rect class="card" x="40" y="292" width="390" height="118" rx="4"/>
+  <text class="t lbl" x="60" y="316">Cuál elegir</text>
+  <text class="t ok" x="60" y="338">Optical Flow</text>
+  <text class="t s" x="150" y="338">movimiento simple y predecible</text>
+  <text class="t am" x="60" y="360">Frame Blend</text>
+  <text class="t s" x="150" y="360">agua, humo, cruces, ruido, cámara brusca</text>
+  <text class="t s" x="60" y="382">Nearest</text>
+  <text class="t s" x="150" y="382">fondos desenfocados y retimes mínimos</text>
+
+  <rect class="card" x="450" y="292" width="390" height="118" rx="4"/>
+  <text class="t lbl" x="470" y="316">Dónde se fija</text>
+  <text class="t s" x="470" y="338">Proyecto: Project Settings &gt; Master Settings</text>
+  <text class="t s" x="470" y="356">&gt; Frame Interpolation &gt; Retime Process</text>
+  <text class="t s" x="470" y="380">Clip: Inspector &gt; Video &gt; Retime and Scaling</text>
+  <text class="t s" x="470" y="398">De fábrica pone «Project Settings»: hereda.</text>
+</svg>

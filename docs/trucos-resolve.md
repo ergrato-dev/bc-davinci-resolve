@@ -286,7 +286,74 @@ terceros.
 
 ---
 
-_Las semanas 10 a 36 añadirán aquí sus trucos según se publiquen._
+## Semana 10 — Velocidad, transformaciones y estabilización
+
+| Truco | Cómo |
+| ----- | ---- |
+| Ver la cadencia de rodaje de todo el material de golpe | `Media Pool` en vista de lista, columna `FPS`, y ordena por ella |
+| Saber cuántas veces estira un plano | Cadencia de rodaje ÷ cadencia de proyecto |
+| Abrir o cerrar los controles de retime | `Ctrl+R` (Win) / `Cmd+R` (Mac) |
+| Cerrar los controles sin deshacer nada | `Esc` |
+| Congelar el clip entero | `Shift+R` |
+| Colocar el cabezal al fotograma antes de congelar | `Flecha izquierda` y `Flecha derecha` |
+| Rellenar un hueco con un plano que no da | `I`, `O` y `Shift+F11` |
+| Usar el hueco que cruza el cabezal como destino | Borra los puntos con `Alt+X` (Win) / `Opt+X` (Mac) antes del `Fit to Fill` |
+| Cambiar la velocidad de varios clips a la vez | Selecciónalos todos y `Clip > Change Clip Speed` |
+| Poner una duración exacta en vez de un porcentaje | El campo `Duration` del diálogo o del Inspector |
+| Que la voz no suene grave al ralentizar | Casilla `Pitch Correction` |
+| Ver de un vistazo qué clips llevan velocidad | Los distintivos de retime, a la izquierda del nombre |
+| Leer la velocidad sin abrir nada | Flechas juntas rápido, separadas y amarillas lento, a la izquierda reverse, barras rojas congelado |
+| Añadir un punto de velocidad donde está el cabezal | Desplegable de velocidad `> Add Speed Point` |
+| Rampa de cinco tramos en un clic | `Speed Ramp >` en cualquier desplegable de velocidad |
+| Rebobinado automático | `Rewind >` y el porcentaje |
+| Decidir dónde empieza el rebobinado | Coloca el cabezal dentro del tramo antes de aplicarlo |
+| Borrar el punto de velocidad correcto | Abre el desplegable que está a su derecha y `Clear Speed Point` |
+| Volver un clip al 100 % | `Reset to 100%` en el desplegable de velocidad |
+| Quitar la velocidad conservando lo demás | `Edit > Remove Attributes`, con su casilla `Ripple Sequence` |
+| Copiar un retime, un reencuadre o una estabilización a otro clip | `Edit > Paste Attributes` — `Alt+V` (Win) / `Opt+V` (Mac) |
+| Abrir las curvas de retime | Pestaña `Keyframes` `>` icono de curvas `>` marca `Retime Speed` y `Retime Frame` |
+| Añadir un punto a una curva | `Alt` (Win) / `Opt` (Mac) + clic sobre ella |
+| Saber el porcentaje exacto de un tramo | Arrástralo en `Retime Speed` y lee el rótulo emergente |
+| Comparar dos métodos de relleno sin parar | Bucle con `Ctrl+/` / `Cmd+/` y `/`, y cambia el desplegable mientras suena |
+| Cambiar el `Retime Process` de un clip suelto | `Inspector > Video > Retime and Scaling` |
+| Cambiarlo para todo el proyecto | `Project Settings > Master Settings > Frame Interpolation` |
+| Saber si un clip hereda el ajuste del proyecto | Si pone `Project Settings`, hereda |
+| Recuperar la reproducción en tiempo real | `Playback > Render Cache > Smart` |
+| Poner el visor al 100 % para juzgar la nitidez | `Alt+Shift+Z` (Win) / `Opt+Shift+Z` (Mac) |
+| Encajar la pieza entera en el ancho de la timeline | `Shift+Z` |
+| Ampliar o reducir la timeline | `Ctrl+=` / `Ctrl+-` (Win) · `Cmd+=` / `Cmd+-` (Mac) |
+| Escribir un valor exacto en un parámetro | Clic sobre el número y teclea |
+| Devolver un grupo del Inspector a su valor de fábrica | El icono de reinicio a la derecha del nombre del grupo |
+| Ampliar hacia una cara descentrada | Mueve el `Anchor Point` a la cara y luego sube el `Zoom` |
+| Estirar o achatar la imagen a propósito | Suelta el enlace entre `Zoom X` y `Zoom Y` |
+| Encender los controles gráficos del visor | El botón `Transform/Crop/Dynamic Zoom`, abajo a la izquierda |
+| Elegir el modo de overlay por menú | `View > Viewer Overlay` |
+| Encender y apagar el overlay que tengas | ``Shift+` `` |
+| Restringir un arrastre de texto a un solo eje | Mantén `Shift` |
+| Invertir el sentido de un dynamic zoom | El botón `Swap` |
+| Que un dynamic zoom no parezca un efecto | `Dynamic Zoom Ease` en `Ease In and Out` |
+| Poner un keyframe | El rombo a la derecha del parámetro en el Inspector |
+| Saber si el cabezal está sobre un keyframe | El rombo está naranja |
+| Saltar al keyframe anterior o siguiente | Las flechas a los lados del rombo, o `[` y `]` |
+| Poner keyframes con la pieza en marcha | `Mark > Add Keyframe`, con el atajo que indique el menú |
+| Saber qué se va a animar con ese atajo | El orden: retime, curva activa, último control tocado, `Audio Gain` |
+| Ver los keyframes bajo el clip sin cambiar de panel | El botón `Show Keyframe Tray` de la barra de la timeline |
+| Quitarse de encima las pistas de keyframes vacías | Tres puntos `>` `Display Parameters with Keyframes` |
+| Proteger una pista de keyframes terminada | Su candado |
+| Dejar una sola pista de keyframes activa | `Alt` (Win) / `Opt` (Mac) + clic sobre su candado |
+| Más sitio para keyframear | El icono de expandir: ventana propia, solo en la Edit page |
+| Comparar un plano con y sin estabilizar | El interruptor del grupo `Stabilization` |
+| Afinar la estabilización sin esperar otro análisis | `Strength` |
+| Saber qué controles del estabilizador exigen reanalizar | El modo, `Cropping Ratio` y `Smooth` |
+| Conservar una panorámica quitándole el temblor | `Camera Lock` apagado y `Smooth` |
+| Clavar un plano como sobre un trípode | `Camera Lock` |
+| Ampliar solo donde asoma el borde al estabilizar | `Zoom` apagado y keyframes de `Zoom` en `Transform` |
+| Medir cuánto te ha recortado el estabilizador | Apaga y enciende el interruptor mirando un borde |
+| Comprobar cualquier atajo en tu instalación | `Alt+Ctrl+K` (Win) / `Opt+Cmd+K` (Mac) |
+
+---
+
+_Las semanas 11 a 36 añadirán aquí sus trucos según se publiquen._
 
 
 ---

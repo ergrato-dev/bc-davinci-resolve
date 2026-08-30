@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" width="880" height="420" role="img"
+     aria-label="Un clip congelado entero se convierte en una sola imagen repetida; un freeze intermedio inserta dos puntos de velocidad y una franja roja que marca el tramo detenido; un reverse dibuja las flechas del control de retime hacia la izquierda.">
+  <title>Freeze frame y reverse</title>
+  <style>
+    .bg{fill:#101418}
+    .card{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .clip{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .track{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .col{font-size:13px;font-weight:600;fill:#4a9eff}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .red{font-size:12px;font-weight:600;fill:#f85149}
+    .am{font-size:12px;font-weight:600;fill:#f5a524}
+  </style>
+  <rect class="bg" width="880" height="420"/>
+  <text class="t h" x="40" y="34">Tres estados que se leen en la pista de control de retime.</text>
+
+  <text class="t col" x="40" y="68">FREEZE DE CLIP ENTERO · Clip &gt; Freeze Frame · Shift+R</text>
+  <rect class="track" x="40" y="80" width="520" height="16" rx="2"/>
+  <g fill="#f85149">
+    <rect x="60" y="82" width="2" height="12"/><rect x="100" y="82" width="2" height="12"/><rect x="140" y="82" width="2" height="12"/>
+    <rect x="180" y="82" width="2" height="12"/><rect x="220" y="82" width="2" height="12"/><rect x="260" y="82" width="2" height="12"/>
+    <rect x="300" y="82" width="2" height="12"/><rect x="340" y="82" width="2" height="12"/><rect x="380" y="82" width="2" height="12"/>
+    <rect x="420" y="82" width="2" height="12"/><rect x="460" y="82" width="2" height="12"/><rect x="500" y="82" width="2" height="12"/>
+  </g>
+  <rect class="clip" x="40" y="98" width="520" height="30" rx="3"/>
+  <text class="t s" x="52" y="118">el clip entero es el fotograma que había bajo el cabezal</text>
+  <text class="t red" x="576" y="112">barras rojas = congelado</text>
+
+  <text class="t col" x="40" y="170">FREEZE INTERMEDIO · dos puntos de velocidad</text>
+  <rect class="track" x="40" y="182" width="520" height="16" rx="2"/>
+  <g fill="#4a9eff">
+    <polygon points="52,186 60,190 52,194"/><polygon points="76,186 84,190 76,194"/><polygon points="100,186 108,190 100,194"/>
+    <polygon points="124,186 132,190 124,194"/><polygon points="148,186 156,190 148,194"/>
+  </g>
+  <g fill="#f85149">
+    <rect x="200" y="184" width="2" height="12"/><rect x="230" y="184" width="2" height="12"/><rect x="260" y="184" width="2" height="12"/>
+    <rect x="290" y="184" width="2" height="12"/><rect x="320" y="184" width="2" height="12"/>
+  </g>
+  <g fill="#4a9eff">
+    <polygon points="380,186 388,190 380,194"/><polygon points="404,186 412,190 404,194"/><polygon points="428,186 436,190 428,194"/>
+    <polygon points="452,186 460,190 452,194"/><polygon points="476,186 484,190 476,194"/><polygon points="500,186 508,190 500,194"/>
+  </g>
+  <line x1="180" y1="176" x2="180" y2="232" stroke="#e8eef4" stroke-width="2"/>
+  <line x1="350" y1="176" x2="350" y2="232" stroke="#e8eef4" stroke-width="2"/>
+  <rect class="clip" x="40" y="200" width="520" height="30" rx="3"/>
+  <text class="t s" x="52" y="220">avanza</text>
+  <text class="t s" x="230" y="220">detenido</text>
+  <text class="t s" x="400" y="220">sigue desde el fotograma siguiente</text>
+  <text class="t am" x="576" y="214">audio del clip silenciado</text>
+
+  <text class="t col" x="40" y="272">REVERSE · las flechas apuntan a la izquierda</text>
+  <rect class="track" x="40" y="284" width="520" height="16" rx="2"/>
+  <g fill="#4a9eff">
+    <polygon points="68,288 60,292 68,296"/><polygon points="108,288 100,292 108,296"/><polygon points="148,288 140,292 148,296"/>
+    <polygon points="188,288 180,292 188,296"/><polygon points="228,288 220,292 228,296"/><polygon points="268,288 260,292 268,296"/>
+    <polygon points="308,288 300,292 308,296"/><polygon points="348,288 340,292 348,296"/><polygon points="388,288 380,292 388,296"/>
+    <polygon points="428,288 420,292 428,296"/><polygon points="468,288 460,292 468,296"/><polygon points="508,288 500,292 508,296"/>
+  </g>
+  <rect class="clip" x="40" y="302" width="520" height="30" rx="3"/>
+  <text class="t s" x="52" y="322">clip entero hacia atrás; el audio también suena del revés</text>
+
+  <rect class="card" x="40" y="350" width="800" height="52" rx="4"/>
+  <text class="t lbl" x="60" y="372">El código de flechas, completo</text>
+  <text class="t s" x="60" y="392">azules separadas por igual = 100 %  ·  azules juntas = acelerado  ·  amarillas y muy separadas = lento  ·  hacia la izquierda = reverse</text>
+</svg>

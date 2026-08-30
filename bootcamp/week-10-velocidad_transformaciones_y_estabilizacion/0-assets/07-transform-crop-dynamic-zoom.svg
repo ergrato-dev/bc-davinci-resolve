@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 470" width="880" height="470" role="img"
+     aria-label="El grupo Transform del Inspector con sus parametros: zoom, posicion, rotacion, punto de anclaje, pitch y yaw; debajo, el recorte que crea transparencia y deja ver la pista de abajo, y el dynamic zoom con su recuadro verde de inicio y su recuadro rojo de final unidos por una trayectoria.">
+  <title>Transform, crop y dynamic zoom</title>
+  <style>
+    .bg{fill:#101418}
+    .card{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .img{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .under{fill:#191f26;stroke:#2f3a45;stroke-width:1;stroke-dasharray:4 3}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .col{font-size:13px;font-weight:600;fill:#4a9eff}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .am{font-size:12px;font-weight:600;fill:#f5a524}
+  </style>
+  <rect class="bg" width="880" height="470"/>
+  <text class="t h" x="40" y="34">Mover la cámara después de rodar, dentro del margen que da la resolución.</text>
+
+  <rect class="card" x="40" y="56" width="330" height="196" rx="4"/>
+  <text class="t col" x="60" y="80">Inspector &gt; Video &gt; Transform</text>
+  <text class="t s" x="60" y="104">Zoom X / Y</text><text class="t s" x="200" y="104">amplía o reduce</text>
+  <text class="t s" x="60" y="124">Position X / Y</text><text class="t s" x="200" y="124">mueve dentro del cuadro</text>
+  <text class="t s" x="60" y="144">Rotation Angle</text><text class="t s" x="200" y="144">gira sobre el anclaje</text>
+  <text class="t s" x="60" y="164">Anchor Point X / Y</text><text class="t s" x="200" y="164">el centro de todo lo demás</text>
+  <text class="t s" x="60" y="184">Pitch</text><text class="t s" x="200" y="184">inclina adelante o atrás</text>
+  <text class="t s" x="60" y="204">Yaw</text><text class="t s" x="200" y="204">inclina a izquierda o derecha</text>
+  <text class="t s" x="60" y="224">Flip Horizontal / Vertical</text><text class="t s" x="200" y="224">espeja la imagen</text>
+  <text class="t am" x="60" y="244">margen = resolución del clip ÷ resolución del proyecto</text>
+
+  <rect class="card" x="390" y="56" width="200" height="196" rx="4"/>
+  <text class="t col" x="410" y="80">Cropping</text>
+  <rect class="under" x="410" y="96" width="160" height="100" rx="3"/>
+  <rect class="img" x="440" y="112" width="100" height="68" rx="2"/>
+  <text class="t s" x="410" y="216">lo recortado no es negro:</text>
+  <text class="t s" x="410" y="234">es transparencia, y deja</text>
+  <text class="t s" x="410" y="252">ver la pista de abajo</text>
+
+  <rect class="card" x="610" y="56" width="230" height="196" rx="4"/>
+  <text class="t col" x="630" y="80">Anchor Point</text>
+  <rect class="img" x="630" y="96" width="90" height="60" rx="2"/>
+  <circle cx="675" cy="126" r="4" fill="#4a9eff"/>
+  <text class="t s" x="730" y="130">centro: gira</text>
+  <text class="t s" x="730" y="148">sobre sí misma</text>
+  <rect class="img" x="630" y="172" width="90" height="60" rx="2"/>
+  <circle cx="630" cy="232" r="4" fill="#f5a524"/>
+  <text class="t s" x="730" y="200">esquina: gira</text>
+  <text class="t s" x="730" y="218">como una puerta</text>
+
+  <line x1="40" y1="274" x2="840" y2="274" stroke="#2f3a45" stroke-width="1"/>
+
+  <text class="t col" x="40" y="302">DYNAMIC ZOOM · el travelling que no se rodó</text>
+
+  <rect class="img" x="40" y="316" width="420" height="120" rx="3"/>
+  <rect x="60" y="332" width="230" height="88" rx="2" fill="none" stroke="#3fb950" stroke-width="2"/>
+  <text class="t s" x="68" y="350">inicio</text>
+  <rect x="250" y="360" width="150" height="58" rx="2" fill="none" stroke="#f85149" stroke-width="2"/>
+  <text class="t s" x="258" y="378">final</text>
+  <line x1="175" y1="376" x2="325" y2="389" stroke="#93a1b0" stroke-width="1.5" stroke-dasharray="4 3"/>
+  <circle cx="175" cy="376" r="3" fill="#3fb950"/>
+  <circle cx="325" cy="389" r="3" fill="#f85149"/>
+
+  <rect class="card" x="480" y="316" width="360" height="120" rx="4"/>
+  <text class="t lbl" x="500" y="340">Dos controles en el Inspector</text>
+  <text class="t s" x="500" y="362">Dynamic Zoom Ease: Linear, Ease In, Ease Out,</text>
+  <text class="t s" x="500" y="380">Ease In and Out — el que hace que no se note</text>
+  <text class="t s" x="500" y="402">Swap: invierte inicio y final</text>
+  <text class="t am" x="500" y="424">tocar los recuadros activa el grupo automáticamente</text>
+
+  <text class="t s" x="40" y="458">Los controles en pantalla se encienden con el botón Transform/Crop/Dynamic Zoom del visor, o desde View &gt; Viewer Overlay.</text>
+</svg>

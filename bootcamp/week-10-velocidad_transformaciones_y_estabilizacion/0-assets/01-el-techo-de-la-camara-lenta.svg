@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 430" width="880" height="430" role="img"
+     aria-label="Una camara graba a 60 fotogramas por segundo y la timeline reproduce a 24: el plano admite bajar hasta el 40 por ciento antes de que empiecen a faltar fotogramas. Debajo, la misma cuenta con un plano grabado a 24, cuyo techo es el 100 por cien.">
+  <title>El techo de la cámara lenta</title>
+  <style>
+    .bg{fill:#101418}
+    .card{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .f{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .fok{fill:#232b34;stroke:#3fb950;stroke-width:1.5}
+    .fno{fill:#101418;stroke:#f85149;stroke-width:1.5;stroke-dasharray:3 3}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .col{font-size:14px;font-weight:600;fill:#4a9eff}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .ok{font-size:12px;font-weight:600;fill:#3fb950}
+    .no{font-size:12px;font-weight:600;fill:#f85149}
+    .am{font-size:13px;font-weight:600;fill:#f5a524}
+  </style>
+  <rect class="bg" width="880" height="430"/>
+  <text class="t h" x="40" y="34">El techo se decide el día del rodaje, no en Resolve.</text>
+
+  <text class="t col" x="40" y="70">CASO A · plano grabado a 60 fps, timeline a 24 fps</text>
+  <text class="t s" x="40" y="92">un segundo de realidad = 60 fotogramas grabados</text>
+  <g>
+    <rect class="f" x="40" y="102" width="13" height="22" rx="2"/><rect class="f" x="55" y="102" width="13" height="22" rx="2"/>
+    <rect class="f" x="70" y="102" width="13" height="22" rx="2"/><rect class="f" x="85" y="102" width="13" height="22" rx="2"/>
+    <rect class="f" x="100" y="102" width="13" height="22" rx="2"/><rect class="f" x="115" y="102" width="13" height="22" rx="2"/>
+    <rect class="f" x="130" y="102" width="13" height="22" rx="2"/><rect class="f" x="145" y="102" width="13" height="22" rx="2"/>
+    <rect class="f" x="160" y="102" width="13" height="22" rx="2"/><rect class="f" x="175" y="102" width="13" height="22" rx="2"/>
+    <rect class="f" x="190" y="102" width="13" height="22" rx="2"/><rect class="f" x="205" y="102" width="13" height="22" rx="2"/>
+    <rect class="f" x="220" y="102" width="13" height="22" rx="2"/><rect class="f" x="235" y="102" width="13" height="22" rx="2"/>
+    <rect class="f" x="250" y="102" width="13" height="22" rx="2"/><rect class="f" x="265" y="102" width="13" height="22" rx="2"/>
+    <rect class="f" x="280" y="102" width="13" height="22" rx="2"/><rect class="f" x="295" y="102" width="13" height="22" rx="2"/>
+    <rect class="f" x="310" y="102" width="13" height="22" rx="2"/><rect class="f" x="325" y="102" width="13" height="22" rx="2"/>
+  </g>
+  <text class="t s" x="352" y="118">… 60 en total</text>
+
+  <text class="t s" x="40" y="152">al 40 % ocupan 2,5 s de timeline y hay uno grabado para cada uno reproducido</text>
+  <g>
+    <rect class="fok" x="40" y="162" width="26" height="22" rx="2"/><rect class="fok" x="68" y="162" width="26" height="22" rx="2"/>
+    <rect class="fok" x="96" y="162" width="26" height="22" rx="2"/><rect class="fok" x="124" y="162" width="26" height="22" rx="2"/>
+    <rect class="fok" x="152" y="162" width="26" height="22" rx="2"/><rect class="fok" x="180" y="162" width="26" height="22" rx="2"/>
+    <rect class="fok" x="208" y="162" width="26" height="22" rx="2"/><rect class="fok" x="236" y="162" width="26" height="22" rx="2"/>
+    <rect class="fok" x="264" y="162" width="26" height="22" rx="2"/><rect class="fok" x="292" y="162" width="26" height="22" rx="2"/>
+  </g>
+  <text class="t ok" x="332" y="178">40 % · cámara lenta real</text>
+
+  <text class="t s" x="40" y="212">al 20 % faltaría uno de cada dos: Resolve tiene que inventarlos</text>
+  <g>
+    <rect class="fok" x="40" y="222" width="26" height="22" rx="2"/><rect class="fno" x="68" y="222" width="26" height="22" rx="2"/>
+    <rect class="fok" x="96" y="222" width="26" height="22" rx="2"/><rect class="fno" x="124" y="222" width="26" height="22" rx="2"/>
+    <rect class="fok" x="152" y="222" width="26" height="22" rx="2"/><rect class="fno" x="180" y="222" width="26" height="22" rx="2"/>
+    <rect class="fok" x="208" y="222" width="26" height="22" rx="2"/><rect class="fno" x="236" y="222" width="26" height="22" rx="2"/>
+    <rect class="fok" x="264" y="222" width="26" height="22" rx="2"/><rect class="fno" x="292" y="222" width="26" height="22" rx="2"/>
+  </g>
+  <text class="t no" x="332" y="238">20 % · por debajo del techo</text>
+
+  <line x1="40" y1="266" x2="840" y2="266" stroke="#2f3a45" stroke-width="1"/>
+
+  <text class="t col" x="40" y="294">CASO B · plano grabado a 24 fps, timeline a 24 fps</text>
+  <text class="t s" x="40" y="316">un fotograma grabado por cada fotograma reproducido: no sobra ninguno</text>
+  <g>
+    <rect class="fok" x="40" y="326" width="26" height="22" rx="2"/><rect class="fok" x="68" y="326" width="26" height="22" rx="2"/>
+    <rect class="fok" x="96" y="326" width="26" height="22" rx="2"/><rect class="fok" x="124" y="326" width="26" height="22" rx="2"/>
+    <rect class="fok" x="152" y="326" width="26" height="22" rx="2"/><rect class="fok" x="180" y="326" width="26" height="22" rx="2"/>
+  </g>
+  <text class="t am" x="228" y="342">techo = 100 % · este plano no admite cámara lenta sin inventar</text>
+
+  <rect class="card" x="40" y="362" width="800" height="48" rx="4"/>
+  <text class="t lbl" x="60" y="382">techo de velocidad (%) = cadencia de proyecto ÷ cadencia de rodaje × 100</text>
+  <text class="t s" x="60" y="400">24 ÷ 60 × 100 = 40 %   ·   24 ÷ 120 × 100 = 20 %   ·   24 ÷ 24 × 100 = 100 %</text>
+</svg>

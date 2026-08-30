@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" width="880" height="420" role="img"
+     aria-label="Las dos curvas de retime enfrentadas: la curva Retime Frame es una diagonal donde el eje vertical son los fotogramas del origen y el horizontal los de la timeline, con tramos tendidos para camara lenta, empinados para acelerado, horizontales para congelado y descendentes para reverse; la curva Retime Speed es una linea plana al cien por cien que se sube o se baja arrastrando tramos enteros.">
+  <title>Las dos curvas de retime</title>
+  <style>
+    .bg{fill:#101418}
+    .card{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .grid{stroke:#2f3a45;stroke-width:1}
+    .ax{stroke:#93a1b0;stroke-width:1.5}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .col{font-size:13px;font-weight:600;fill:#4a9eff}
+    .grn{font-size:13px;font-weight:600;fill:#3fb950}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .am{font-size:12px;font-weight:600;fill:#f5a524}
+  </style>
+  <rect class="bg" width="880" height="420"/>
+  <text class="t h" x="40" y="34">Los puntos deciden qué velocidad. Las curvas deciden cómo se pasa de una a otra.</text>
+
+  <rect class="card" x="40" y="56" width="390" height="270" rx="4"/>
+  <text class="t grn" x="60" y="80">RETIME FRAME · la diagonal</text>
+  <text class="t s" x="60" y="98">vertical: fotogramas del origen · horizontal: de la timeline</text>
+
+  <line class="grid" x1="90" y1="130" x2="400" y2="130"/>
+  <line class="grid" x1="90" y1="180" x2="400" y2="180"/>
+  <line class="grid" x1="90" y1="230" x2="400" y2="230"/>
+  <line class="ax" x1="90" y1="112" x2="90" y2="280"/>
+  <line class="ax" x1="90" y1="280" x2="400" y2="280"/>
+
+  <polyline points="90,280 180,240 250,240 330,140 400,190" fill="none" stroke="#3fb950" stroke-width="2.5"/>
+  <circle cx="90" cy="280" r="4" fill="#3fb950"/>
+  <circle cx="180" cy="240" r="4" fill="#3fb950"/>
+  <circle cx="250" cy="240" r="4" fill="#3fb950"/>
+  <circle cx="330" cy="140" r="4" fill="#3fb950"/>
+  <circle cx="400" cy="190" r="4" fill="#3fb950"/>
+
+  <text class="t s" x="100" y="300">tendido</text>
+  <text class="t s" x="190" y="258">plano</text>
+  <text class="t s" x="272" y="180">empinado</text>
+  <text class="t s" x="348" y="176">baja</text>
+
+  <text class="t s" x="60" y="316">tendido = lento · plano = congelado · empinado = rápido · baja = reverse</text>
+
+  <rect class="card" x="450" y="56" width="390" height="270" rx="4"/>
+  <text class="t col" x="470" y="80">RETIME SPEED · la línea plana</text>
+  <text class="t s" x="470" y="98">la altura es la velocidad; el 100 % es la línea de base</text>
+
+  <line class="grid" x1="500" y1="150" x2="810" y2="150"/>
+  <line class="grid" x1="500" y1="250" x2="810" y2="250"/>
+  <line class="ax" x1="500" y1="112" x2="500" y2="280"/>
+  <line class="ax" x1="500" y1="280" x2="810" y2="280"/>
+  <line x1="500" y1="200" x2="810" y2="200" stroke="#2f3a45" stroke-width="1" stroke-dasharray="4 4"/>
+  <text class="t s" x="812" y="204">100 %</text>
+
+  <polyline points="500,200 580,200 580,250 660,250 660,150 740,150 740,200 810,200" fill="none" stroke="#4a9eff" stroke-width="2.5"/>
+  <circle cx="580" cy="200" r="4" fill="#4a9eff"/><circle cx="580" cy="250" r="4" fill="#4a9eff"/>
+  <circle cx="660" cy="250" r="4" fill="#4a9eff"/><circle cx="660" cy="150" r="4" fill="#4a9eff"/>
+  <circle cx="740" cy="150" r="4" fill="#4a9eff"/><circle cx="740" cy="200" r="4" fill="#4a9eff"/>
+
+  <text class="t s" x="592" y="270">bajado = lento</text>
+  <text class="t s" x="672" y="142">subido = rápido</text>
+  <text class="t am" x="470" y="316">se arrastran los TRAMOS, no los puntos · no puede crear reverse</text>
+
+  <rect class="card" x="40" y="344" width="800" height="58" rx="4"/>
+  <text class="t lbl" x="60" y="368">Los puntos de las curvas y los puntos de velocidad son los mismos</text>
+  <text class="t s" x="60" y="388">Correspondencia uno a uno: mover uno mueve el otro. Construye con los Retime Controls, afina con la curva y sus asas bézier.</text>
+</svg>

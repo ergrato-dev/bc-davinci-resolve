@@ -1,0 +1,86 @@
+{
+  "semana": "10",
+  "titulo": "Velocidad, transformaciones y estabilizacion",
+  "checks": [
+    {
+      "id": "proyecto-abierto",
+      "descripcion": "BC-Bootcamp-Resolve es el proyecto abierto ahora mismo",
+      "op": "ping",
+      "args": {},
+      "expr": "r.get('project') == 'BC-Bootcamp-Resolve'",
+      "pista": "Abrelo desde el Project Manager, en la raiz de tu biblioteca original. Los checks leen el proyecto abierto, no el que exista en disco."
+    },
+    {
+      "id": "frame-rate-bloqueado",
+      "descripcion": "El timeline frame rate de BC-Bootcamp-Resolve sigue siendo 24 fps",
+      "op": "project_settings",
+      "args": {},
+      "expr": "float(r['settings']['timelineFrameRate']) == 24.0",
+      "pista": "File > Project Settings > Master Settings > Timeline frame rate. Con clips en el media pool el campo aparece atenuado y no se puede cambiar, asi que si te sale otro valor el proyecto abierto no es el del bootcamp. Ojo: la cadencia del PROYECTO no cambia porque retimes clips; lo que cambia es la de reproduccion de cada clip."
+    },
+    {
+      "id": "montaje-v3-conservada",
+      "descripcion": "BC-Montaje-v3 sigue existiendo",
+      "op": "timeline_list",
+      "args": {},
+      "expr": "'BC-Montaje-v3' in r['timelines']",
+      "pista": "El trabajo de esta semana va sobre una copia, no sobre el montaje afinado de la Semana 09. Si BC-Montaje-v3 ha desaparecido es que la renombraste en vez de duplicarla: recuperala del respaldo BC-Bootcamp-Resolve-semana09.drp, importandolo con otro nombre para no machacar lo que tienes. La comparacion del paso 8 de la practica 04 necesita las dos versiones."
+    },
+    {
+      "id": "montaje-v4-existe",
+      "descripcion": "Existe la timeline BC-Montaje-v4",
+      "op": "timeline_list",
+      "args": {},
+      "expr": "'BC-Montaje-v4' in r['timelines']",
+      "pista": "Practica 01, paso 1. Clic derecho sobre BC-Montaje-v3 > Duplicate Timeline, y renombra la copia. El nombre es exacto: BC-Montaje-v4, con guiones, M mayuscula, uve minuscula y el 4 sin ceros delante."
+    },
+    {
+      "id": "montaje-v4-activa",
+      "descripcion": "BC-Montaje-v4 es la timeline abierta ahora mismo",
+      "op": "timeline_probe",
+      "args": {},
+      "expr": "r['name'] == 'BC-Montaje-v4'",
+      "pista": "timeline_probe, timeline_detect_gaps y marker_list leen la timeline ACTIVA. Si acabas de comparar con BC-Montaje-v3 en el paso 8 de la practica 04, te habras quedado en ella: doble clic en BC-Montaje-v4 y repite. Los cinco checks siguientes tambien dependen de esto."
+    },
+    {
+      "id": "montaje-v4-clips",
+      "descripcion": "La pista de video principal de BC-Montaje-v4 conserva quince clips o mas",
+      "op": "timeline_probe",
+      "args": {},
+      "expr": "[t for t in r['tracks'] if t['type'] == 'video'][0]['item_count'] >= 15",
+      "pista": "Esta semana no se remonta: se cambia la velocidad y el encuadre de lo que ya hay. Si has bajado de quince clips es que has borrado planos enteros, y eso era la Semana 09. Restaura el respaldo de timeline antes-de-retimar de la practica 01, paso 2."
+    },
+    {
+      "id": "montaje-v4-sin-huecos",
+      "descripcion": "La pista de video principal de BC-Montaje-v4 no tiene huecos ni solapes",
+      "op": "timeline_detect_gaps",
+      "args": { "track": 1 },
+      "expr": "r['clean'] and len(r['gaps']) == 0 and len(r['overlaps']) == 0",
+      "pista": "Practica 02, paso 7. Un retime con Ripple Sequence desmarcada hace que el clip pise a su vecino o deje hueco; un retime con la casilla marcada recoloca la pieza y puede descolocar las pistas de encima. Recorre la pista en Detail Zoom, selecciona el hueco y borralo con Forward Delete."
+    },
+    {
+      "id": "retimes-aplicados",
+      "descripcion": "Tres clips de video o mas tienen la velocidad cambiada",
+      "op": "timeline_probe",
+      "args": {},
+      "expr": "len([i for tracks in [r['tracks']] for t in tracks if t['type'] == 'video' for i in t['items'] if i['source_start'] is not None and i['source_end'] is not None and abs((i['source_end'] - i['source_start'] + 1) - i['frames']) > 2]) >= 3",
+      "pista": "Practicas 02 y 03. El check compara el rango de origen que usa cada clip con lo que ocupa en la timeline: si no coinciden, ese clip esta retimado. Dos avisos. Primero: un reverse al 100 por cien NO cuenta, porque usa los mismos fotogramas en la misma duracion; haz al menos tres cambios de velocidad de verdad. Segundo: un clip grabado a una cadencia distinta de la de la timeline tambien puede contar aunque este al 100 por cien, asi que si tu material es de cadencia mixta este check puede pasar antes de tiempo; el criterio de verdad esta en la rubrica. Verificado contra la API de scripting en 21.0.4.5 para clips al 100 por cien, agosto de 2026."
+    },
+    {
+      "id": "marcadores-de-velocidad",
+      "descripcion": "Hay tres marcadores morados o mas, todos con nombre propio",
+      "op": "marker_list",
+      "args": {},
+      "expr": "len([m for m in r['markers'].values() if m['color'] == 'Purple' and m['name'] and not m['name'].startswith('Marker ')]) >= 3",
+      "pista": "Practica 01, pasos 4 y 5. Morado (Purple) es el color de esta semana para 'aqui pide un cambio de velocidad'. Se pone con Mark > Add Marker > Purple, o eligiendo el color en el desplegable del boton Add Marker. El nombre de fabrica es Marker 1, Marker 2, y asi: si dejaste alguno sin renombrar, no cuenta. Index > Markers los enseña todos y el campo Name se edita sobre la fila."
+    },
+    {
+      "id": "marcadores-de-estabilizacion",
+      "descripcion": "Hay dos marcadores cianes o mas, todos con nombre propio",
+      "op": "marker_list",
+      "args": {},
+      "expr": "len([m for m in r['markers'].values() if m['color'] == 'Cyan' and m['name'] and not m['name'].startswith('Marker ')]) >= 2",
+      "pista": "Practica 01, pasos 4 y 5, y practica 04. Cian (Cyan) es el color de esta semana para 'este plano se mueve demasiado'. La estabilizacion en si no se puede leer por la API: el marcador es la declaracion escrita de que ese plano se ha mirado, y la calidad del resultado la juzga la rubrica. Si un plano resulto no ser estabilizable, pasalo a azul con la nota y deja en cian los que si lo estan."
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 420" width="880" height="420" role="img"
+     aria-label="Las cuatro vias para cambiar la velocidad de un clip: el dialogo Change Clip Speed, los controles Speed Change del Inspector, la edicion Fit to Fill y los Retime Controls sobre la timeline, con lo que resuelve cada una y si ripplea la timeline o no.">
+  <title>Las cuatro vías para cambiar la velocidad</title>
+  <style>
+    .bg{fill:#101418}
+    .card{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .cardv{fill:#191f26;stroke:#a371f7;stroke-width:1.5}
+    .clip{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .col{font-size:13px;font-weight:600;fill:#4a9eff}
+    .vio{font-size:13px;font-weight:600;fill:#a371f7}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .ok{font-size:12px;font-weight:600;fill:#3fb950}
+    .am{font-size:12px;font-weight:600;fill:#f5a524}
+  </style>
+  <rect class="bg" width="880" height="420"/>
+  <text class="t h" x="40" y="34">Cuatro sitios distintos, cuatro problemas distintos.</text>
+
+  <rect class="card" x="40" y="56" width="390" height="130" rx="4"/>
+  <text class="t col" x="60" y="80">1 · Change Clip Speed</text>
+  <text class="t s" x="60" y="100">Clip &gt; Change Clip Speed</text>
+  <text class="t lbl" x="60" y="124">«que este plano vaya al 40 %»</text>
+  <text class="t s" x="60" y="144">Porcentaje, fps o duración. Una sola velocidad.</text>
+  <text class="t s" x="60" y="162">Casillas: Ripple Sequence · Reverse · Freeze · Pitch.</text>
+  <text class="t am" x="60" y="180">ripplea solo si marcas la casilla</text>
+
+  <rect class="card" x="450" y="56" width="390" height="130" rx="4"/>
+  <text class="t col" x="470" y="80">2 · Speed Change del Inspector</text>
+  <text class="t s" x="470" y="100">Inspector &gt; Video &gt; Speed Change</text>
+  <text class="t lbl" x="470" y="124">lo mismo, sin abrir un diálogo</text>
+  <text class="t s" x="470" y="144">Está en la Cut page y en la Edit page.</text>
+  <text class="t s" x="470" y="162">Speed % y Frames Per Second aceptan keyframes.</text>
+  <text class="t am" x="470" y="180">ripplea solo si marcas la casilla</text>
+
+  <rect class="card" x="40" y="200" width="390" height="130" rx="4"/>
+  <text class="t col" x="60" y="224">3 · Fit to Fill</text>
+  <text class="t s" x="60" y="244">Edit &gt; Fit to Fill · Shift+F11</text>
+  <text class="t lbl" x="60" y="268">«que este plano llene este hueco»</text>
+  <text class="t s" x="60" y="288">El único tipo de edición que usa los cuatro puntos.</text>
+  <text class="t s" x="60" y="306">Retima el clip mientras lo monta.</text>
+  <text class="t ok" x="60" y="324">no ripplea nunca</text>
+
+  <rect class="cardv" x="450" y="200" width="390" height="130" rx="4"/>
+  <text class="t vio" x="470" y="224">4 · Retime Controls</text>
+  <text class="t s" x="470" y="244">Clip &gt; Retime Controls · Ctrl+R / Cmd+R</text>
+  <text class="t lbl" x="470" y="268">«que este trozo vaya lento y este rápido»</text>
+  <text class="t s" x="470" y="288">La única vía con velocidad variable: rampas,</text>
+  <text class="t s" x="470" y="306">freezes intermedios y reverse por tramos.</text>
+  <text class="t am" x="470" y="324">ripplea si estás en Trim Edit Mode</text>
+
+  <rect class="card" x="40" y="346" width="800" height="56" rx="4"/>
+  <text class="t lbl" x="60" y="370">La pregunta que va antes que el porcentaje: ¿esto recoloca el resto de mi pieza?</text>
+  <rect class="clip" x="60" y="380" width="70" height="14" rx="2"/>
+  <rect class="clip" x="132" y="380" width="70" height="14" rx="2"/>
+  <rect class="clip" x="204" y="380" width="70" height="14" rx="2"/>
+  <text class="t s" x="292" y="391">con ripple, todo lo de detrás se desplaza · sin ripple, el clip pisa a su vecino o deja hueco</text>
+</svg>

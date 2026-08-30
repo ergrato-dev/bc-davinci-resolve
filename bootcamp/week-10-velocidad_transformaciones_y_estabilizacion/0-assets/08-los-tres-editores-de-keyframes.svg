@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 450" width="880" height="450" role="img"
+     aria-label="Los tres sitios donde se manejan los keyframes: el rombo del Inspector junto a cada parametro, que se pone naranja cuando el cabezal esta sobre un keyframe; el Keyframe Editor con una pista por parametro agrupadas por categoria; y el Curve Editor con la curva de valor y sus asas bezier para controlar la aceleracion.">
+  <title>Los tres editores de keyframes</title>
+  <style>
+    .bg{fill:#101418}
+    .card{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .row{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .slider{fill:#101418;stroke:#2f3a45;stroke-width:1}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .col{font-size:13px;font-weight:600;fill:#4a9eff}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .am{font-size:12px;font-weight:600;fill:#f5a524}
+  </style>
+  <rect class="bg" width="880" height="450"/>
+  <text class="t h" x="40" y="34">Tres vistas del mismo dato. Se sube de nivel cuando el de abajo se queda corto.</text>
+
+  <rect class="card" x="40" y="56" width="250" height="170" rx="4"/>
+  <text class="t col" x="60" y="80">1 · El Inspector</text>
+  <text class="t s" x="60" y="98">poner el keyframe</text>
+  <rect class="slider" x="60" y="112" width="150" height="18" rx="3"/>
+  <text class="t s" x="68" y="126">Zoom            1.000</text>
+  <polygon points="232,113 242,121 232,129 222,121" fill="#f5a524"/>
+  <text class="t s" x="60" y="152">naranja: el cabezal está sobre</text>
+  <text class="t s" x="60" y="170">un keyframe de ese parámetro</text>
+  <rect class="slider" x="60" y="182" width="150" height="18" rx="3"/>
+  <text class="t s" x="68" y="196">Position X      0.000</text>
+  <polygon points="232,183 242,191 232,199 222,191" fill="#93a1b0"/>
+  <text class="t s" x="60" y="218">gris: sin keyframe aquí</text>
+
+  <rect class="card" x="310" y="56" width="250" height="170" rx="4"/>
+  <text class="t col" x="330" y="80">2 · Keyframe Editor</text>
+  <text class="t s" x="330" y="98">cuándo ocurre cada uno</text>
+  <rect class="row" x="330" y="110" width="210" height="20" rx="2"/>
+  <text class="t s" x="338" y="124">▾ Transform</text>
+  <polygon points="440,114 446,120 440,126 434,120" fill="#e8eef4"/>
+  <polygon points="500,114 506,120 500,126 494,120" fill="#e8eef4"/>
+  <rect class="row" x="330" y="134" width="210" height="20" rx="2"/>
+  <text class="t s" x="348" y="148">Zoom</text>
+  <polygon points="440,138 446,144 440,150 434,144" fill="#4a9eff"/>
+  <rect class="row" x="330" y="158" width="210" height="20" rx="2"/>
+  <text class="t s" x="348" y="172">Position</text>
+  <polygon points="500,162 506,168 500,174 494,168" fill="#4a9eff"/>
+  <text class="t am" x="330" y="198">mover un keyframe del grupo</text>
+  <text class="t am" x="330" y="216">mueve todos los de dentro</text>
+
+  <rect class="card" x="580" y="56" width="260" height="170" rx="4"/>
+  <text class="t col" x="600" y="80">3 · Curve Editor</text>
+  <text class="t s" x="600" y="98">con qué valor y qué aceleración</text>
+  <line x1="610" y1="112" x2="610" y2="200" stroke="#93a1b0" stroke-width="1.5"/>
+  <line x1="610" y1="200" x2="820" y2="200" stroke="#93a1b0" stroke-width="1.5"/>
+  <path d="M 620 192 C 660 192 680 130 720 130" fill="none" stroke="#4a9eff" stroke-width="2.5"/>
+  <line x1="720" y1="130" x2="810" y2="130" stroke="#4a9eff" stroke-width="2.5"/>
+  <circle cx="620" cy="192" r="4" fill="#4a9eff"/>
+  <circle cx="720" cy="130" r="4" fill="#4a9eff"/>
+  <line x1="620" y1="192" x2="660" y2="192" stroke="#f5a524" stroke-width="1.5"/>
+  <circle cx="660" cy="192" r="3" fill="#f5a524"/>
+  <line x1="720" y1="130" x2="684" y2="130" stroke="#f5a524" stroke-width="1.5"/>
+  <circle cx="684" cy="130" r="3" fill="#f5a524"/>
+  <text class="t s" x="600" y="220">las asas bézier deciden si arranca de golpe o poco a poco</text>
+
+  <line x1="40" y1="248" x2="840" y2="248" stroke="#2f3a45" stroke-width="1"/>
+
+  <rect class="card" x="40" y="270" width="390" height="160" rx="4"/>
+  <text class="t lbl" x="60" y="294">Qué parámetro anima el atajo de la timeline</text>
+  <text class="t s" x="60" y="316">Resolve lo deduce, en este orden:</text>
+  <text class="t s" x="60" y="340">1. Los Retime Controls, si están abiertos</text>
+  <text class="t s" x="60" y="360">2. La curva activa del Keyframe Editor</text>
+  <text class="t s" x="60" y="380">3. El último control del Inspector que tocaste</text>
+  <text class="t s" x="60" y="400">4. Audio Gain</text>
+  <text class="t am" x="60" y="422">por eso en un clip virgen sale un keyframe de volumen</text>
+
+  <rect class="card" x="450" y="270" width="390" height="160" rx="4"/>
+  <text class="t lbl" x="470" y="294">Keyframes fuera del clip</text>
+  <rect class="row" x="470" y="312" width="200" height="26" rx="2"/>
+  <polygon points="510,319 518,325 510,331 502,325" fill="#4a9eff"/>
+  <polygon points="660,319 668,325 660,331" fill="#f5a524"/>
+  <line x1="670" y1="306" x2="670" y2="344" stroke="#f85149" stroke-width="1.5" stroke-dasharray="3 3"/>
+  <text class="t s" x="470" y="362">Si acortas un clip por encima de un keyframe,</text>
+  <text class="t s" x="470" y="382">ese keyframe sigue existiendo: se dibuja como</text>
+  <text class="t s" x="470" y="402">una flecha en el borde y sigue afectando.</text>
+  <text class="t am" x="470" y="424">se alcanza con los comandos de anterior [ y siguiente ]</text>
+</svg>
