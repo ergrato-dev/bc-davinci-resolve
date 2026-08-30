@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 440" width="880" height="440" role="img"
+     aria-label="Las guias de encuadre del visor: el rectangulo de extents con el borde exacto del cuadro, el de action safe por dentro, el de title safe mas adentro y la cruz de centro. A la derecha, un rotulo blanco sin contorno que desaparece sobre fondo claro y el mismo rotulo con contorno y sombra, que se lee.">
+  <title>Safe areas y contraste</title>
+  <style>
+    .bg{fill:#101418}
+    .card{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .frame{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .col{font-size:13px;font-weight:600;fill:#4a9eff}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .ok{font-size:12px;font-weight:600;fill:#3fb950}
+    .no{font-size:12px;font-weight:600;fill:#f85149}
+    .am{font-size:12px;font-weight:600;fill:#f5a524}
+  </style>
+  <rect class="bg" width="880" height="440"/>
+  <text class="t h" x="40" y="34">El borde del cuadro no es tuyo. Las guías son el mapa de la parte que sí.</text>
+
+  <rect class="card" x="40" y="56" width="400" height="270" rx="4"/>
+  <text class="t col" x="60" y="80">View &gt; Safe Area</text>
+
+  <rect class="frame" x="70" y="96" width="340" height="192" rx="2"/>
+  <rect x="70" y="96" width="340" height="192" fill="none" stroke="#f5a524" stroke-width="1.5"/>
+  <rect x="90" y="110" width="300" height="164" fill="none" stroke="#4a9eff" stroke-width="1.5"/>
+  <rect x="110" y="126" width="260" height="132" fill="none" stroke="#3fb950" stroke-width="1.5"/>
+  <line x1="230" y1="182" x2="230" y2="202" stroke="#93a1b0" stroke-width="1"/>
+  <line x1="220" y1="192" x2="240" y2="192" stroke="#93a1b0" stroke-width="1"/>
+
+  <text class="t am" x="70" y="308">Extents · el borde exacto del cuadro</text>
+  <text class="t" x="240" y="308" font-size="12" font-weight="600" fill="#4a9eff">Action</text>
+  <text class="t" x="300" y="308" font-size="12" font-weight="600" fill="#3fb950">Title</text>
+  <text class="t s" x="340" y="308">Center</text>
+  <text class="t s" x="70" y="326">Title siempre es el interior. Ahí dentro va todo el texto.</text>
+
+  <rect class="card" x="460" y="56" width="380" height="270" rx="4"/>
+  <text class="t col" x="480" y="80">EL FONDO SE MUEVE</text>
+
+  <rect x="480" y="96" width="160" height="90" rx="2" fill="#e8eef4"/>
+  <text class="t" x="500" y="150" font-size="17" font-weight="700" fill="#f5f7fa">Marta Ruiz</text>
+  <text class="t no" x="480" y="206">sin contorno · se pierde</text>
+  <text class="t s" x="480" y="224">en cuanto el plano se abre</text>
+
+  <rect x="660" y="96" width="160" height="90" rx="2" fill="#e8eef4"/>
+  <text class="t" x="678" y="151" font-size="17" font-weight="700" fill="#101418" stroke="#101418" stroke-width="3" opacity="0.35">Marta Ruiz</text>
+  <text class="t" x="680" y="150" font-size="17" font-weight="700" fill="#e8eef4" stroke="#101418" stroke-width="2.5" paint-order="stroke">Marta Ruiz</text>
+  <text class="t ok" x="660" y="206">contorno y sombra · se lee</text>
+  <text class="t s" x="660" y="224">sobre cualquier fondo</text>
+
+  <text class="t s" x="480" y="252">1 · contorno, con Outside Only marcado</text>
+  <text class="t s" x="480" y="270">2 · sombra negra al 50 %, desplazada</text>
+  <text class="t s" x="480" y="288">3 · fondo, si el plano es un caos</text>
+  <text class="t s" x="480" y="306">4 · adjustment clip que rebaje la imagen</text>
+  <text class="t am" x="480" y="326">se juzga reproduciendo, no en un fotograma</text>
+
+  <line x1="40" y1="348" x2="840" y2="348" stroke="#2f3a45" stroke-width="1"/>
+
+  <text class="t col" x="40" y="374">TIPOGRAFÍA · cuatro decisiones</text>
+  <text class="t s" x="40" y="396">sans-serif de peso medio</text>
+  <text class="t s" x="230" y="396">cuerpo legible a 1/4 del visor</text>
+  <text class="t s" x="450" y="396">tracking abierto en mayúsculas</text>
+  <text class="t s" x="690" y="396">caja mixta</text>
+  <text class="t am" x="40" y="420">Una sola familia en toda la pieza, dos cortes como mucho. El estilo se construye una vez y se guarda en el media pool.</text>
+</svg>

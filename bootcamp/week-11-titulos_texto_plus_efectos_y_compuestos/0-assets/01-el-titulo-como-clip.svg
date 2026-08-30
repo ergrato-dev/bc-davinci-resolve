@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 470" width="880" height="470" role="img"
+     aria-label="Un generador es un clip sin archivo: ocupa una pista, tiene duracion y entrada y salida, y su canal alpha deja ver la pista de debajo. A la derecha, la misma timeline con el titulo en la V1, donde sustituye al plano, y en la V2, donde se superpone.">
+  <title>El título es un clip</title>
+  <style>
+    .bg{fill:#101418}
+    .card{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .clip{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .tit{fill:#232b34;stroke:#4a9eff;stroke-width:1.5}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .col{font-size:13px;font-weight:600;fill:#4a9eff}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .ok{font-size:12px;font-weight:600;fill:#3fb950}
+    .err{font-size:12px;font-weight:600;fill:#f85149}
+    .am{font-size:12px;font-weight:600;fill:#f5a524}
+  </style>
+  <rect class="bg" width="880" height="470"/>
+  <text class="t h" x="40" y="34">Un título no se pega encima del vídeo: ocupa una pista.</text>
+
+  <rect class="card" x="40" y="56" width="360" height="180" rx="4"/>
+  <text class="t col" x="60" y="80">EL CANAL ALPHA</text>
+  <rect class="clip" x="60" y="96" width="150" height="90" rx="3"/>
+  <text class="t lbl" x="86" y="148">TÍTULO</text>
+  <text class="t s" x="60" y="206">alpha 0 en casi todo</text>
+  <text class="t s" x="60" y="224">el cuadro: transparente</text>
+  <text class="t s" x="235" y="120">alpha 1 · opaco</text>
+  <text class="t s" x="235" y="138">tapa lo de abajo</text>
+  <text class="t s" x="235" y="166">alpha 0 · transparente</text>
+  <text class="t s" x="235" y="184">se ve lo de abajo</text>
+  <rect x="215" y="110" width="12" height="12" fill="#e8eef4"/>
+  <rect x="215" y="156" width="12" height="12" fill="#101418" stroke="#2f3a45"/>
+
+  <rect class="card" x="420" y="56" width="420" height="180" rx="4"/>
+  <text class="t col" x="440" y="80">UN GENERADOR ES UN CLIP SIN ARCHIVO</text>
+  <text class="t s" x="440" y="106">Resolve lo calcula · no hay archivo en disco</text>
+  <text class="t s" x="440" y="126">tiene duración, entrada y salida</text>
+  <text class="t s" x="440" y="146">se recorta, se mueve, se le pone transición</text>
+  <text class="t s" x="440" y="166">acepta Transform, Cropping y keyframes</text>
+  <text class="t am" x="440" y="192">no tiene colas: no hay material, hay cálculo</text>
+  <text class="t am" x="440" y="212">duración de fábrica: 5 segundos</text>
+
+  <line x1="40" y1="258" x2="840" y2="258" stroke="#2f3a45" stroke-width="1"/>
+
+  <text class="t err" x="40" y="286">MAL · el título en la V1</text>
+  <rect class="clip" x="40" y="298" width="110" height="34" rx="3"/>
+  <text class="t s" x="62" y="320">plano 04</text>
+  <rect class="tit" x="150" y="298" width="120" height="34" rx="3"/>
+  <text class="t lbl" x="180" y="320">TÍTULO</text>
+  <rect class="clip" x="270" y="298" width="110" height="34" rx="3"/>
+  <text class="t s" x="292" y="320">plano 06</text>
+  <text class="t s" x="40" y="342">V1</text>
+  <text class="t err" x="70" y="356">el plano 05 ha desaparecido bajo el título</text>
+  <text class="t s" x="40" y="378">Una edición de sobrescritura: Resolve hace lo que le pides.</text>
+
+  <text class="t ok" x="470" y="286">BIEN · el título en la V2</text>
+  <rect class="tit" x="580" y="298" width="120" height="34" rx="3"/>
+  <text class="t lbl" x="610" y="320">TÍTULO</text>
+  <text class="t s" x="470" y="320">V2</text>
+  <rect class="clip" x="470" y="340" width="110" height="34" rx="3"/>
+  <text class="t s" x="492" y="362">plano 04</text>
+  <rect class="clip" x="580" y="340" width="120" height="34" rx="3"/>
+  <text class="t s" x="608" y="362">plano 05</text>
+  <rect class="clip" x="700" y="340" width="110" height="34" rx="3"/>
+  <text class="t s" x="722" y="362">plano 06</text>
+  <text class="t s" x="470" y="392">V1 · intacta</text>
+  <text class="t ok" x="470" y="412">la pista de arriba manda donde es opaca;</text>
+  <text class="t ok" x="470" y="430">donde es transparente, se ve la de abajo</text>
+
+  <text class="t s" x="40" y="412">V1 el montaje · V2 los rótulos · V3 los adjustment clips.</text>
+  <text class="t s" x="40" y="430">Pista nueva: clic derecho en la cabecera &gt; Add Track.</text>
+</svg>

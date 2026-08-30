@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 440" width="880" height="440" role="img"
+     aria-label="Un Fusion Title es un macro: una composicion de Fusion con varios nodos empaquetada como una sola herramienta, que solo expone en el Inspector los controles que su autor decidio publicar. A su lado, Text plus, que expone todos los suyos. Debajo, el coste de reproduccion y donde viven las plantillas en disco.">
+  <title>Fusion Titles y plantillas</title>
+  <style>
+    .bg{fill:#101418}
+    .card{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .box{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .node{fill:#232b34;stroke:#a371f7;stroke-width:1.5}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .col{font-size:13px;font-weight:600;fill:#4a9eff}
+    .vio{font-size:13px;font-weight:600;fill:#a371f7}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .am{font-size:12px;font-weight:600;fill:#f5a524}
+  </style>
+  <rect class="bg" width="880" height="440"/>
+  <text class="t h" x="40" y="34">Una plantilla te enseña solo los controles que su autor decidió publicar.</text>
+
+  <rect class="card" x="40" y="56" width="420" height="212" rx="4"/>
+  <text class="t vio" x="60" y="80">FUSION TITLE · un macro</text>
+
+  <rect class="box" x="60" y="94" width="270" height="86" rx="3" stroke-dasharray="4 3"/>
+  <text class="t s" x="70" y="112">por dentro: una composición de Fusion</text>
+  <rect class="node" x="76" y="122" width="52" height="22" rx="2"/>
+  <rect class="node" x="144" y="122" width="52" height="22" rx="2"/>
+  <rect class="node" x="212" y="122" width="52" height="22" rx="2"/>
+  <rect class="node" x="110" y="152" width="52" height="22" rx="2"/>
+  <rect class="node" x="178" y="152" width="52" height="22" rx="2"/>
+  <line x1="128" y1="133" x2="144" y2="133" stroke="#93a1b0" stroke-width="1"/>
+  <line x1="196" y1="133" x2="212" y2="133" stroke="#93a1b0" stroke-width="1"/>
+  <line x1="162" y1="163" x2="178" y2="163" stroke="#93a1b0" stroke-width="1"/>
+
+  <text class="t s" x="346" y="112">por fuera:</text>
+  <rect class="box" x="346" y="122" width="94" height="20" rx="2"/>
+  <text class="t s" x="354" y="136">Texto</text>
+  <rect class="box" x="346" y="148" width="94" height="20" rx="2"/>
+  <text class="t s" x="354" y="162">Color</text>
+  <text class="t am" x="346" y="184">y nada más</text>
+
+  <text class="t s" x="60" y="204">animación ya hecha · casi nunca se puede cambiar</text>
+  <text class="t s" x="60" y="222">si le falta un control, no se arregla: se cambia de plantilla</text>
+  <text class="t s" x="60" y="240">coste de reproducción alto: se calcula fotograma a fotograma</text>
+  <text class="t am" x="60" y="260">previsualiza pasando el ratón A LO LARGO de la miniatura</text>
+
+  <rect class="card" x="480" y="56" width="360" height="212" rx="4"/>
+  <text class="t col" x="500" y="80">TEXT+ · el generador entero</text>
+  <rect class="box" x="500" y="94" width="150" height="20" rx="2"/>
+  <text class="t s" x="508" y="108">Text</text>
+  <rect class="box" x="500" y="120" width="150" height="20" rx="2"/>
+  <text class="t s" x="508" y="134">Layout</text>
+  <rect class="box" x="500" y="146" width="150" height="20" rx="2"/>
+  <text class="t s" x="508" y="160">Transform</text>
+  <rect class="box" x="500" y="172" width="150" height="20" rx="2"/>
+  <text class="t s" x="508" y="186">Shading</text>
+  <text class="t s" x="668" y="108">todos los</text>
+  <text class="t s" x="668" y="126">controles,</text>
+  <text class="t s" x="668" y="144">siempre los</text>
+  <text class="t s" x="668" y="162">mismos</text>
+  <text class="t s" x="500" y="222">la animación la haces tú, con keyframes</text>
+  <text class="t s" x="500" y="240">coste de reproducción bajo</text>
+  <text class="t am" x="500" y="260">es lo que se guarda en el media pool y se reutiliza</text>
+
+  <line x1="40" y1="292" x2="840" y2="292" stroke="#2f3a45" stroke-width="1"/>
+
+  <rect class="card" x="40" y="312" width="390" height="106" rx="4"/>
+  <text class="t col" x="60" y="336">CUANDO SE CAE LA REPRODUCCIÓN</text>
+  <text class="t s" x="60" y="358">Playback &gt; Render Cache &gt; Smart</text>
+  <text class="t s" x="60" y="378">los efectos y plantillas de Fusion se cachean solos</text>
+  <text class="t s" x="60" y="398">menú contextual del clip &gt; Render Cache Fusion</text>
+  <text class="t s" x="60" y="410">Effect Filter para elegirlos a mano</text>
+
+  <rect class="card" x="450" y="312" width="390" height="106" rx="4"/>
+  <text class="t col" x="470" y="336">DÓNDE VIVEN EN DISCO</text>
+  <text class="t s" x="470" y="358">…/Fusion/Templates/Edit/Titles</text>
+  <text class="t s" x="470" y="378">…/Fusion/Templates/Edit/Effects</text>
+  <text class="t am" x="470" y="402">un .setting es código que Resolve ejecuta:</text>
+  <text class="t am" x="470" y="414">solo de fuentes que controles</text>
+</svg>

@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 440" width="880" height="440" role="img"
+     aria-label="Un adjustment clip en la pista V3 abarcando cuatro clips de la V1 y dos rotulos de la V2: los efectos que lleva se aplican a todo lo que queda debajo, dentro de su duracion. Debajo, la misma timeline con el adjustment clip en la V2 y los rotulos en la V3, donde el efecto ya no toca el texto.">
+  <title>Adjustment clips</title>
+  <style>
+    .bg{fill:#101418}
+    .card{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .clip{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .tit{fill:#232b34;stroke:#4a9eff;stroke-width:1.5}
+    .adj{fill:#232b34;stroke:#f5a524;stroke-width:1.5}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .col{font-size:13px;font-weight:600;fill:#4a9eff}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .am{font-size:12px;font-weight:600;fill:#f5a524}
+  </style>
+  <rect class="bg" width="880" height="440"/>
+  <text class="t h" x="40" y="34">Un efecto en un sitio, aplicado a todo lo que tiene debajo.</text>
+
+  <text class="t am" x="40" y="70">ADJUSTMENT CLIP EN LA V3 · afecta también a los rótulos</text>
+
+  <text class="t s" x="40" y="98">V3</text>
+  <rect class="adj" x="80" y="82" width="400" height="26" rx="3"/>
+  <text class="t am" x="200" y="100">Adjustment Clip · Gaussian Blur</text>
+
+  <text class="t s" x="40" y="132">V2</text>
+  <rect class="tit" x="120" y="116" width="120" height="26" rx="3"/>
+  <text class="t s" x="140" y="134">rótulo 01</text>
+  <rect class="tit" x="330" y="116" width="120" height="26" rx="3"/>
+  <text class="t s" x="350" y="134">rótulo 02</text>
+
+  <text class="t s" x="40" y="166">V1</text>
+  <rect class="clip" x="80" y="150" width="100" height="26" rx="3"/>
+  <text class="t s" x="106" y="168">plano 04</text>
+  <rect class="clip" x="180" y="150" width="100" height="26" rx="3"/>
+  <text class="t s" x="206" y="168">plano 05</text>
+  <rect class="clip" x="280" y="150" width="100" height="26" rx="3"/>
+  <text class="t s" x="306" y="168">plano 06</text>
+  <rect class="clip" x="380" y="150" width="100" height="26" rx="3"/>
+  <text class="t s" x="406" y="168">plano 07</text>
+  <rect class="clip" x="480" y="150" width="100" height="26" rx="3"/>
+  <text class="t s" x="506" y="168">plano 08</text>
+
+  <line x1="80" y1="76" x2="80" y2="182" stroke="#f5a524" stroke-width="1" stroke-dasharray="3 3"/>
+  <line x1="480" y1="76" x2="480" y2="182" stroke="#f5a524" stroke-width="1" stroke-dasharray="3 3"/>
+  <text class="t am" x="596" y="100">su duración decide</text>
+  <text class="t am" x="596" y="118">a qué tramo afecta</text>
+  <text class="t s" x="596" y="150">el plano 08 queda fuera:</text>
+  <text class="t s" x="596" y="168">no está debajo de él</text>
+
+  <line x1="40" y1="204" x2="840" y2="204" stroke="#2f3a45" stroke-width="1"/>
+
+  <text class="t col" x="40" y="230">ADJUSTMENT CLIP EN LA V2 · los rótulos quedan nítidos</text>
+
+  <text class="t s" x="40" y="258">V3</text>
+  <rect class="tit" x="120" y="242" width="120" height="26" rx="3"/>
+  <text class="t s" x="140" y="260">rótulo 01</text>
+  <rect class="tit" x="330" y="242" width="120" height="26" rx="3"/>
+  <text class="t s" x="350" y="260">rótulo 02</text>
+
+  <text class="t s" x="40" y="292">V2</text>
+  <rect class="adj" x="80" y="276" width="400" height="26" rx="3"/>
+  <text class="t am" x="200" y="294">Adjustment Clip · Gaussian Blur</text>
+
+  <text class="t s" x="40" y="326">V1</text>
+  <rect class="clip" x="80" y="310" width="400" height="26" rx="3"/>
+  <text class="t s" x="230" y="328">planos 04 a 07</text>
+  <rect class="clip" x="480" y="310" width="100" height="26" rx="3"/>
+  <text class="t s" x="506" y="328">plano 08</text>
+
+  <text class="t s" x="596" y="266">los rótulos están</text>
+  <text class="t s" x="596" y="284">POR ENCIMA:</text>
+  <text class="t s" x="596" y="302">no les afecta</text>
+
+  <rect class="card" x="40" y="352" width="800" height="70" rx="4"/>
+  <text class="t col" x="60" y="374">QUÉ PUEDE LLEVAR UN ADJUSTMENT CLIP</text>
+  <text class="t s" x="60" y="396">ResolveFX y OpenFX</text>
+  <text class="t s" x="240" y="396">Composite, Transform, Cropping y Dynamic Zoom</text>
+  <text class="t s" x="60" y="414">efectos de la página Fusion</text>
+  <text class="t s" x="240" y="414">etalonaje y sizing de la página Color — pero eso es la Semana 21</text>
+</svg>

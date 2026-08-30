@@ -1,0 +1,86 @@
+{
+  "semana": "11",
+  "titulo": "Titulos, Text+, efectos y compuestos",
+  "checks": [
+    {
+      "id": "proyecto-abierto",
+      "descripcion": "BC-Bootcamp-Resolve es el proyecto abierto ahora mismo",
+      "op": "ping",
+      "args": {},
+      "expr": "r.get('project') == 'BC-Bootcamp-Resolve'",
+      "pista": "Abrelo desde el Project Manager, en la raiz de tu biblioteca original. Los checks leen el proyecto abierto, no el que exista en disco."
+    },
+    {
+      "id": "montaje-v4-conservada",
+      "descripcion": "BC-Montaje-v4 sigue existiendo",
+      "op": "timeline_list",
+      "args": {},
+      "expr": "'BC-Montaje-v4' in r['timelines']",
+      "pista": "El trabajo de esta semana va sobre una copia, no sobre el montaje de la Semana 10. Si BC-Montaje-v4 ha desaparecido es que la renombraste en vez de duplicarla: recuperala del respaldo BC-Bootcamp-Resolve-semana10.drp, importandolo con otro nombre para no machacar lo que tienes. La comparacion del paso 7 de la practica 04 necesita las dos versiones."
+    },
+    {
+      "id": "montaje-v5-activa",
+      "descripcion": "BC-Montaje-v5 existe y es la timeline abierta ahora mismo",
+      "op": "timeline_probe",
+      "args": {},
+      "expr": "r['name'] == 'BC-Montaje-v5'",
+      "pista": "Practica 01, paso 1: clic derecho sobre BC-Montaje-v4 > Duplicate Timeline, y renombra la copia. El nombre es exacto: BC-Montaje-v5, con guiones, M mayuscula, uve minuscula y el 5 sin ceros delante. Ojo ademas con el otro fallo tipico: abrir un compound clip con Open in Timeline y verificar sin haber vuelto. Mira el control de ruta de la esquina inferior izquierda de la timeline; si hay dos nombres, estas dentro del compuesto. Los seis checks siguientes tambien dependen de esto."
+    },
+    {
+      "id": "montaje-v5-clips",
+      "descripcion": "La pista de video 1 de BC-Montaje-v5 conserva quince clips o mas",
+      "op": "timeline_probe",
+      "args": {},
+      "expr": "len([t for t in r['tracks'] if t['type'] == 'video' and t['index'] == 1 and t['item_count'] >= 15]) == 1",
+      "pista": "Esta semana no se remonta: se rotula y se decora lo que ya hay. Si has bajado de quince clips es que has borrado planos enteros, o que has convertido un tramo en compound clip DENTRO de la V1, que cuenta como un solo clip. El compuesto de la practica 04 se hace sobre un bloque de tres o cuatro planos como maximo, y por eso el minimo sigue siendo quince."
+    },
+    {
+      "id": "montaje-v5-sin-huecos",
+      "descripcion": "La pista de video 1 de BC-Montaje-v5 no tiene huecos ni solapes",
+      "op": "timeline_detect_gaps",
+      "args": { "track": 1 },
+      "expr": "r['clean'] and len(r['gaps']) == 0 and len(r['overlaps']) == 0",
+      "pista": "Practica 03. Una transicion que no tenia colas suficientes y se resolvio con Trim Clips acorta los dos planos, y eso no deja hueco; lo que si lo deja es borrar un plano para hacerle sitio a un rotulo. Los rotulos van en la V2, nunca en la V1. Recorre la pista en Detail Zoom, selecciona el hueco y borralo con Forward Delete."
+    },
+    {
+      "id": "rotulos-en-v2",
+      "descripcion": "La pista de video 2 de BC-Montaje-v5 tiene tres clips o mas",
+      "op": "timeline_probe",
+      "args": {},
+      "expr": "len([t for t in r['tracks'] if t['type'] == 'video' and t['index'] == 2 and t['item_count'] >= 3]) == 1",
+      "pista": "Practica 02. Los titulos van SUPERPUESTOS, en una pista por encima de la V1, y esta semana esa pista es la V2. Si no tienes V2, clic derecho sobre la cabecera de la pista de video en la timeline > Add Track: la nueva pista de video se crea justo encima de aquella sobre la que pulsaste. El minimo son tres: el titulo de entrada y dos rotulos de identificacion. Un titulo arrastrado sobre la V1 sustituye imagen en vez de superponerse, asi que si este check falla y montaje-v5-clips tambien, es que los pusiste en la pista equivocada."
+    },
+    {
+      "id": "capa-de-ajuste",
+      "descripcion": "Hay al menos un clip en una pista de video por encima de la 2",
+      "op": "timeline_probe",
+      "args": {},
+      "expr": "len([t for t in r['tracks'] if t['type'] == 'video' and t['index'] >= 3 and t['item_count'] >= 1]) >= 1",
+      "pista": "Practica 03, paso 6. El adjustment clip afecta a TODO lo que tiene debajo, asi que va por encima de los rotulos, no entre ellos: pista V3 o superior. Se coge de Effects Library > Toolbox > Effects > Adjustment Clip y se arrastra a la timeline. Si lo pusiste en la V2 junto a los rotulos, este check falla y ademas el efecto no esta afectando a los planos que creias."
+    },
+    {
+      "id": "bin-de-titulos",
+      "descripcion": "El bin 13-Titulos contiene dos elementos o mas",
+      "op": "media_list",
+      "args": { "bin": ["13-Titulos"] },
+      "expr": "len(r['clips']) >= 2",
+      "pista": "Practicas 02 y 04. El nombre del bin es exacto: 13-Titulos, sin tilde, con el 13 delante y la T mayuscula, y cuelga de Master. Dentro van dos cosas que no tienen archivo en disco: el titulo con tu estilo, arrastrado desde la timeline al media pool, y el compound clip de la practica 04. Un bin que no existe devuelve lo mismo que uno vacio, asi que comprueba las dos cosas. Este check no filtra por ruta de archivo a proposito: ni un titulo guardado ni un compuesto tienen ruta."
+    },
+    {
+      "id": "marcadores-de-rotulo",
+      "descripcion": "Hay tres marcadores amarillos o mas, todos con nombre propio",
+      "op": "marker_list",
+      "args": {},
+      "expr": "len([m for m in r['markers'].values() if m['color'] == 'Yellow' and m['name'] and not m['name'].startswith('Marker ')]) >= 3",
+      "pista": "Practica 01, pasos 4 y 5. Amarillo (Yellow) es el color de esta semana para 'aqui hace falta un rotulo'. Se pone con Mark > Add Marker eligiendo el color, o desde el desplegable del boton Add Marker. El nombre de fabrica es Marker 1, Marker 2, y asi: si dejaste alguno sin renombrar, no cuenta. El nombre util es el texto que va a llevar el rotulo, no 'titulo'. Index > Markers los enseña todos y el campo Name se edita sobre la fila."
+    },
+    {
+      "id": "marcadores-de-efecto",
+      "descripcion": "Hay dos marcadores verdes o mas, todos con nombre propio",
+      "op": "marker_list",
+      "args": {},
+      "expr": "len([m for m in r['markers'].values() if m['color'] == 'Green' and m['name'] and not m['name'].startswith('Marker ')]) >= 2",
+      "pista": "Practica 01, pasos 4 y 5, y practica 03. Verde (Green) es el color de esta semana para 'aqui pide una transicion o un efecto'. Ni la transicion ni el ResolveFX se pueden leer por la API: el marcador es la declaracion escrita de que ese punto se ha mirado, y si el efecto esta justificado lo juzga la rubrica. Si al llegar a la practica 03 decidiste que un corte se queda como corte, pasalo a azul con la nota y deja en verde los que si llevan algo."
+    }
+  ]
+}

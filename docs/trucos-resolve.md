@@ -353,7 +353,87 @@ terceros.
 
 ---
 
-_Las semanas 11 a 36 añadirán aquí sus trucos según se publiquen._
+## Semana 11 — Títulos, Text+, efectos y compuestos
+
+| Truco | Cómo |
+| ----- | ---- |
+| Abrir el panel de efectos | El botón `Effects` de la barra de herramientas |
+| Buscar cualquier efecto, título o transición por nombre | `Shift+Espacio`, y escribe |
+| Buscar por categoría | Escribe el nombre de la categoría, por ejemplo `Stylize` |
+| Previsualizar sin colocar | `Hover Scrub Preview` marcado, y pasa el ratón por la miniatura |
+| Previsualizar una plantilla animada | Lo mismo, pero moviendo el ratón **a lo largo** de la miniatura |
+| Añadir una pista de vídeo encima de otra | Clic derecho en su cabecera `>` `Add Track` |
+| Añadir varias y elegir dónde | Clic derecho en la zona de cabeceras `>` `Add Tracks` |
+| Quitar las pistas vacías que sobran | Clic derecho `>` `Delete Empty Tracks` |
+| Colocar un generador con la duración exacta | `I`, `O`, control de destino en la pista, y arrastra al overlay del visor |
+| Cambiar la duración de fábrica de los generadores | `DaVinci Resolve > Preferences > User > Editing` |
+| Fundir un rótulo sin abrir el Inspector | Las asas de fundido de las esquinas superiores del clip |
+| Abrir el Inspector de un generador o una transición | Doble clic sobre él en la timeline |
+| Dar un estilo distinto a una línea | Selecciónala dentro del campo `Text` **antes** de tocar nada |
+| Editar el texto en el visor | Doble clic sobre el texto |
+| Editar un `Text+` en el visor | Desplegable de overlays del visor `>` `Fusion Overlay` |
+| Restringir el arrastre de un texto a un eje | Mantén `Shift` |
+| Soltar los imanes al colocar un texto | Mantén `Alt` (Win) / `Opt` (Mac) mientras arrastras |
+| Cambiar la velocidad de unos créditos | Estira o acorta el clip de `Scroll` |
+| Elegir fuente viendo cómo queda | El icono del `Font Browser` junto al desplegable de fuente |
+| Que el tamaño del texto no dependa de la resolución | Usa `Text+`: su `Size` ya es relativo al ancho de la imagen |
+| Que un contorno no engorde la letra | `Outside Only` marcado |
+| Esquinas de contorno limpias en cuerpo pequeño | `Join Style > Rounded` |
+| Animar la aparición del texto | El **final** del rango `Write On`, de `1` a `0` |
+| Animar cada letra por su cuenta | `Transform > Transform > Characters` |
+| Meter un emoji en un `Text+` | `Tecla Windows + .` (Win) / `Control+Cmd+Espacio` (Mac) |
+| Guardar un rótulo con su estilo y sus keyframes | Arrástralo de la timeline al media pool |
+| Quitar los subrayados del corrector antes de enseñar la pieza | `View > Show Spelling Errors on Viewer` |
+| Encender y apagar todas las guías de encuadre | `View > Safe Area > On/Off` |
+| Ver el borde exacto del cuadro | `View > Safe Area > Extents` |
+| Proteger otra relación de aspecto | `View > Safe Area > Aspect` y `View > Select Aspect Ratio` |
+| Ver qué se perdería en vertical o en cuadrado | El icono de guías de encuadre del visor `>` `Social Media` |
+| Juzgar si un rótulo contrasta | Entorna los ojos mirando el visor |
+| Simular cómo se ve en un móvil | Reduce el visor a un cuarto y léelo |
+| Medir cuánto tiene que durar un rótulo | Léelo en voz alta dos veces |
+| Seleccionar el punto de edición más cercano | `V` |
+| Elegir principio, centro o final de un punto de edición | `U`, que va rotando |
+| Transición estándar de vídeo y audio | `Ctrl+T` (Win) / `Cmd+T` (Mac) |
+| Solo vídeo | `Alt+T` (Win) / `Opt+T` (Mac) |
+| Solo audio | `Shift+T` |
+| Cuatro duraciones sin abrir nada | Clic derecho sobre el punto de edición |
+| La misma transición en diez cortes | Selecciona los puntos, clic derecho en la transición `>` `Add to Selected Edit Points` |
+| Crear a mano el solape que falta | `Alt+Shift` (Win) / `Opt+Shift` (Mac) + arrastrar |
+| Cambiar la duración de una transición con un número | `Ctrl+D` (Win) / `Cmd+D` (Mac) |
+| Alargar solo un lado de la transición | `Ctrl` / `Cmd` mientras arrastras el borde |
+| Copiar una transición a otro corte | `Alt` / `Opt` + arrastrar |
+| Cambiar el tipo de transición sin borrarla | Arrastra otra encima |
+| Seleccionar todas las transiciones | `Timeline > Select Transitions` |
+| Cambiar cuál es la transición estándar | Clic derecho `>` `Set as Standard Transition` |
+| Guardar tu transición ajustada | Clic derecho `>` `Create Transition Preset` |
+| Que una disolución no se apague en el centro | `Style` en `Film` o en `Additive` |
+| Dosificar cualquier ResolveFX | `Blend`, que lo tienen todos |
+| Ver qué clips llevan efectos | Se pintan de un tono más oscuro |
+| Cambiar el orden en el que se aplican dos filtros | Las flechas de la barra de título del filtro |
+| Comparar un clip con y sin sus efectos | El interruptor de la barra de título del filtro |
+| Abrir o cerrar todos los filtros de un clip | `Alt` (Win) / `Opt` (Mac) + clic en una barra de título |
+| Encender los controles en pantalla de un efecto | Desplegable de overlays del visor `>` `OFX` |
+| Copiar efectos de un clip a otros | `Ctrl+C` y `Edit > Paste Attributes` — `Alt+V` / `Opt+V` |
+| Quitar efectos de varios clips | `Edit > Remove Attributes` |
+| Ver los efectos retirados de versiones antiguas | Menú de tres puntos `>` `Show Legacy Resolve FX` |
+| Incrustar los efectos de un clip en un archivo | Clic derecho `>` `Render in Place` |
+| Deshacerlo | Clic derecho `>` `Decompose to Original` |
+| Apagar y encender un clip entero | `D`, o `Clip > Enable/Disable Clip` |
+| Empaquetar clips enteros | Selecciónalos `>` clic derecho `>` `New Compound Clip` |
+| Empaquetar exactamente un rango | `I`, `O` `>` clic derecho `>` `Convert In and Out to Compound Clip` |
+| Decidir en qué bin cae el compuesto | Selecciona el bin **antes** de crearlo |
+| Entrar a editar un compuesto | Clic derecho `>` `Open in Timeline` |
+| Saber si estás dentro de un compuesto | El control de ruta de la esquina inferior izquierda |
+| Salir | Doble clic sobre el nombre de la timeline que lo contiene |
+| Deshacer un compuesto | Clic derecho `>` `Decompose in Place` |
+| Recuperar la reproducción con plantillas y efectos | `Playback > Render Cache > Smart` |
+| Comprobar cualquier atajo en tu instalación | `Alt+Ctrl+K` (Win) / `Opt+Cmd+K` (Mac) |
+
+---
+
+---
+
+_Las semanas 12 a 36 añadirán aquí sus trucos según se publiquen._
 
 
 ---

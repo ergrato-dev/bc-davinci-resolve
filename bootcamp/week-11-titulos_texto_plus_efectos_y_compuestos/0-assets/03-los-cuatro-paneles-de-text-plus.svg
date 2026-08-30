@@ -1,0 +1,92 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 480" width="880" height="480" role="img"
+     aria-label="Los cuatro paneles del Inspector de Text plus: Text con el contenido y la tipografia, Layout con los cuatro tipos de disposicion, Transform con la animacion por caracter, palabra y linea, y Shading con los ocho elementos de sombreado. Debajo, el aviso de que el Transform de Text plus mueve el texto por dentro y el de Settings mueve el clip entero.">
+  <title>Los cuatro paneles de Text+</title>
+  <style>
+    .bg{fill:#101418}
+    .card{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .tab{fill:#232b34;stroke:#4a9eff;stroke-width:1.5}
+    .box{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .col{font-size:13px;font-weight:600;fill:#4a9eff}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .am{font-size:12px;font-weight:600;fill:#f5a524}
+  </style>
+  <rect class="bg" width="880" height="480"/>
+  <text class="t h" x="40" y="34">Qué pone · dónde va · cómo se mueve por dentro · cómo está pintado.</text>
+
+  <rect class="tab" x="40" y="54" width="190" height="30" rx="3"/>
+  <text class="t lbl" x="60" y="74">Text</text>
+  <rect class="tab" x="240" y="54" width="190" height="30" rx="3"/>
+  <text class="t lbl" x="260" y="74">Layout</text>
+  <rect class="tab" x="440" y="54" width="190" height="30" rx="3"/>
+  <text class="t lbl" x="460" y="74">Transform</text>
+  <rect class="tab" x="640" y="54" width="200" height="30" rx="3"/>
+  <text class="t lbl" x="660" y="74">Shading</text>
+
+  <rect class="card" x="40" y="92" width="190" height="196" rx="4"/>
+  <text class="t col" x="56" y="114">QUÉ PONE</text>
+  <text class="t s" x="56" y="136">Styled Text</text>
+  <text class="t s" x="56" y="154">Font · familia y corte</text>
+  <text class="t s" x="56" y="172">Color · relleno</text>
+  <text class="t s" x="56" y="190">Size · relativo al ancho</text>
+  <text class="t s" x="56" y="208">Tracking · interletraje</text>
+  <text class="t s" x="56" y="226">Line Spacing</text>
+  <text class="t s" x="56" y="244">V / H Anchor y Justify</text>
+  <text class="t am" x="56" y="270">Write On</text>
+
+  <rect class="card" x="240" y="92" width="190" height="196" rx="4"/>
+  <text class="t col" x="256" y="114">DÓNDE VA</text>
+  <text class="t lbl" x="256" y="138">Type</text>
+  <rect class="box" x="256" y="148" width="158" height="24" rx="2"/>
+  <text class="t s" x="266" y="165">Point · un punto</text>
+  <rect class="box" x="256" y="176" width="158" height="24" rx="2"/>
+  <text class="t s" x="266" y="193">Frame · un rectángulo</text>
+  <rect class="box" x="256" y="204" width="158" height="24" rx="2"/>
+  <text class="t s" x="266" y="221">Circle · una curva</text>
+  <rect class="box" x="256" y="232" width="158" height="24" rx="2"/>
+  <text class="t s" x="266" y="249">Path · una trayectoria</text>
+  <text class="t s" x="256" y="274">Center · Size · Rotation</text>
+
+  <rect class="card" x="440" y="92" width="190" height="196" rx="4"/>
+  <text class="t col" x="456" y="114">MOVER POR DENTRO</text>
+  <text class="t lbl" x="456" y="138">Transform</text>
+  <text class="t s" x="456" y="160">Characters</text>
+  <text class="t s" x="456" y="178">Words</text>
+  <text class="t s" x="456" y="196">Lines</text>
+  <text class="t s" x="456" y="222">Spacing · Pivot</text>
+  <text class="t s" x="456" y="240">X / Y / Z · Shear</text>
+  <text class="t s" x="456" y="258">Size X / Size Y</text>
+  <text class="t am" x="456" y="280">los tres a la vez</text>
+
+  <rect class="card" x="640" y="92" width="200" height="196" rx="4"/>
+  <text class="t col" x="656" y="114">CÓMO ESTÁ PINTADO</text>
+  <rect class="box" x="656" y="128" width="166" height="22" rx="2"/>
+  <text class="t s" x="666" y="144">1 · relleno · encendido</text>
+  <rect class="box" x="656" y="154" width="166" height="22" rx="2"/>
+  <text class="t s" x="666" y="170">2 · contorno</text>
+  <rect class="box" x="656" y="180" width="166" height="22" rx="2"/>
+  <text class="t s" x="666" y="196">3 · sombra</text>
+  <text class="t s" x="666" y="222">4 … 8 · apagados</text>
+  <text class="t s" x="656" y="248">Enabled · Sort By · Name</text>
+  <text class="t am" x="656" y="274">Outside Only en el contorno</text>
+
+  <line x1="40" y1="312" x2="840" y2="312" stroke="#2f3a45" stroke-width="1"/>
+
+  <rect class="card" x="40" y="332" width="390" height="118" rx="4"/>
+  <text class="t col" x="60" y="356">LOS DOS TRANSFORM, QUE NO SON EL MISMO</text>
+  <text class="t lbl" x="60" y="382">panel Transform de Text+</text>
+  <text class="t s" x="60" y="402">mueve el texto por dentro: cada letra,</text>
+  <text class="t s" x="60" y="420">cada palabra, cada línea</text>
+  <text class="t am" x="60" y="440">es el que anima</text>
+
+  <rect class="card" x="450" y="332" width="390" height="118" rx="4"/>
+  <text class="t col" x="470" y="356">Y EL DEL PANEL Settings</text>
+  <text class="t lbl" x="470" y="382">Settings &gt; Transform</text>
+  <text class="t s" x="470" y="402">mueve el clip entero por el cuadro:</text>
+  <text class="t s" x="470" y="420">los mismos parámetros que cualquier clip</text>
+  <text class="t am" x="470" y="440">ahí están también Composite y Opacity</text>
+
+  <text class="t s" x="40" y="470">Panel Image: espacios de color de la imagen generada. Casi nunca se toca desde la Edit page.</text>
+</svg>
