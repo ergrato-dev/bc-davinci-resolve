@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 520" width="880" height="520" role="img"
+     aria-label="Las cinco operaciones de trimming sobre la misma timeline de tres clips A, B y C. Resize acorta B y deja un hueco, alargando o acortando la pieza. Roll mueve el corte entre A y B: A crece lo que B mengua y la pieza dura igual. Ripple acorta B y trae C hacia la izquierda, acortando la pieza. Slip deja B donde esta y durando lo mismo pero enseñando otro tramo del material. Slide mueve B a la derecha alargando A y acortando C.">
+  <title>Las cinco operaciones de trimming comparadas</title>
+  <style>
+    .bg{fill:#101418}
+    .clip{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .act{fill:#232b34;stroke:#4a9eff;stroke-width:2}
+    .gap{fill:#101418;stroke:#f85149;stroke-width:1;stroke-dasharray:4 3}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .ok{font-size:12px;font-weight:600;fill:#3fb950}
+    .am{font-size:12px;font-weight:600;fill:#f5a524}
+    .mini{font-size:12px;fill:#e8eef4}
+  </style>
+  <rect class="bg" width="880" height="520"/>
+  <text class="t h" x="40" y="32">Cinco formas de mover un borde. Lo que las separa es qué más se mueve.</text>
+
+  <text class="t lbl" x="40" y="76">Antes</text>
+  <rect class="clip" x="150" y="60" width="140" height="26" rx="3"/>
+  <rect class="clip" x="294" y="60" width="140" height="26" rx="3"/>
+  <rect class="clip" x="438" y="60" width="140" height="26" rx="3"/>
+  <text class="t mini" x="212" y="78">A</text>
+  <text class="t mini" x="356" y="78">B</text>
+  <text class="t mini" x="500" y="78">C</text>
+  <text class="t s" x="620" y="78">tres planos seguidos</text>
+
+  <text class="t lbl" x="40" y="136">Resize</text>
+  <text class="t s" x="40" y="154">arrastrar el borde en A</text>
+  <rect class="clip" x="150" y="120" width="140" height="26" rx="3"/>
+  <rect class="act" x="294" y="120" width="90" height="26" rx="3"/>
+  <rect class="gap" x="386" y="120" width="48" height="26" rx="3"/>
+  <rect class="clip" x="438" y="120" width="140" height="26" rx="3"/>
+  <text class="t mini" x="330" y="138">B</text>
+  <text class="t am" x="620" y="138">deja hueco</text>
+
+  <text class="t lbl" x="40" y="196">Roll</text>
+  <text class="t s" x="40" y="214">mover el corte A · B</text>
+  <rect class="clip" x="150" y="180" width="190" height="26" rx="3"/>
+  <rect class="act" x="344" y="180" width="90" height="26" rx="3"/>
+  <rect class="clip" x="438" y="180" width="140" height="26" rx="3"/>
+  <text class="t mini" x="237" y="198">A</text>
+  <text class="t mini" x="380" y="198">B</text>
+  <text class="t mini" x="500" y="198">C</text>
+  <text class="t ok" x="620" y="198">la pieza dura igual</text>
+
+  <text class="t lbl" x="40" y="256">Ripple</text>
+  <text class="t s" x="40" y="274">acortar B en modo trim</text>
+  <rect class="clip" x="150" y="240" width="140" height="26" rx="3"/>
+  <rect class="act" x="294" y="240" width="90" height="26" rx="3"/>
+  <rect class="clip" x="388" y="240" width="140" height="26" rx="3"/>
+  <text class="t mini" x="330" y="258">B</text>
+  <text class="t mini" x="450" y="258">C</text>
+  <text class="t am" x="620" y="258">la pieza se acorta</text>
+
+  <text class="t lbl" x="40" y="316">Slip</text>
+  <text class="t s" x="40" y="334">cambiar lo que enseña B</text>
+  <rect class="clip" x="150" y="300" width="140" height="26" rx="3"/>
+  <rect class="act" x="294" y="300" width="140" height="26" rx="3"/>
+  <rect class="clip" x="438" y="300" width="140" height="26" rx="3"/>
+  <text class="t mini" x="330" y="318">B′</text>
+  <text class="t ok" x="620" y="318">mismo sitio, otro tramo</text>
+
+  <text class="t lbl" x="40" y="376">Slide</text>
+  <text class="t s" x="40" y="394">mover B por la timeline</text>
+  <rect class="clip" x="150" y="360" width="190" height="26" rx="3"/>
+  <rect class="act" x="344" y="360" width="140" height="26" rx="3"/>
+  <rect class="clip" x="488" y="360" width="90" height="26" rx="3"/>
+  <text class="t mini" x="237" y="378">A</text>
+  <text class="t mini" x="408" y="378">B</text>
+  <text class="t mini" x="525" y="378">C</text>
+  <text class="t ok" x="620" y="378">los vecinos se ajustan</text>
+
+  <rect x="40" y="424" width="800" height="66" rx="4" fill="#191f26" stroke="#2f3a45"/>
+  <text class="t lbl" x="60" y="448">La pregunta que elige la operación</text>
+  <text class="t s" x="60" y="470">«¿Qué es lo que NO puede moverse?» · la duración total → Roll, Slip o Slide · el sitio del plano → Slip · su contenido → Slide</text>
+</svg>

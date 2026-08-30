@@ -230,7 +230,63 @@ terceros.
 
 ---
 
-_Las semanas 09 a 36 añadirán aquí sus trucos según se publiquen._
+## Semana 09 — Trimming quirúrgico
+
+| Truco | Cómo |
+| ----- | ---- |
+| Ver la pieza sin la tentación de tocarla | `Workspace > Viewer Mode > Cinema Viewer`, atajo `P` |
+| Anotar un problema sin parar la reproducción | `M` |
+| Anotar y escribir la nota al momento | `Ctrl+M` (Win) / `Cmd+M` (Mac) |
+| Que el marcador vaya a la timeline y no a un clip | Deselecciona antes: `Ctrl+Shift+A` / `Cmd+Shift+A` |
+| Saltar de marcador en marcador | `Shift+Flecha arriba` y `Shift+Flecha abajo` |
+| Borrar el marcador que hay bajo el cabezal | `Alt+M` (Win) / `Opt+M` (Mac) |
+| Marcar un tramo entero | `I`, `O`, clic derecho `> Convert In and Out to Duration Marker` |
+| Trabajar con todos los marcadores a la vez | `Index > Markers`; los campos `Name` y `Notes` se editan en la fila |
+| Que los marcadores acompañen a los ripples | `Timeline > Ripple Timeline Markers` |
+| Volver al modo seguro | `A` |
+| Entrar en modo trim | `T` |
+| Probar el otro modo solo para este gesto | Mantén pulsada `A` o `T` mientras arrastras |
+| Seleccionar el corte más cercano y saltar a él | `V` |
+| Seleccionar el clip que cruza el cabezal | `Shift+V` |
+| Rotar entre saliente, centrado y entrante | `U` |
+| Trimar solo la imagen o solo el sonido | `Alt+U` (Win) / `Opt+U` (Mac) |
+| Alternar entre `Slip` y `Slide` | `S`; el icono del botón `Dynamic Trim Mode` dice en cuál estás |
+| Mover un fotograma, o cinco | `,` y `.`, o `Shift+,` y `Shift+.` |
+| Cambiar cuántos fotogramas son el salto rápido | `Preferences > User > Editing` |
+| Trimar por número en vez de a ojo | Selecciona y escribe `-12` o `+1.`, y `Enter` |
+| Escuchar el corte en su contexto | `/` |
+| Afinar sin parar la reproducción | `Ctrl+/` (Win) / `Cmd+/` (Mac) y luego `/` |
+| Reproducir solo el tramo marcado | `Alt+/` (Win) / `Opt+/` (Mac) |
+| Ver solo el fotograma del cabezal mientras trimas | Mantén `Shift` |
+| Apagar el visor partido del todo | `View > Enable Multiview Edit Preview` |
+| Ver cuánta cola te queda al deslizar | El recuadro punteado que aparece al hacer `Slip` |
+| Abrir el editor de trim de precisión | Doble clic sobre un corte |
+| Abrir el clip original en el fotograma que ves | `Alt` (Win) / `Opt` (Mac) + doble clic |
+| Reproducir hacia atrás, parar, hacia delante | `J`, `K`, `L` |
+| Cámara lenta con sonido ralentizado | Mantén `K`+`L` |
+| Avanzar un fotograma exacto | `K` pulsada y un toque de `L` |
+| Trimar rápido sin cambiar de modo | `Ctrl+J` / `Ctrl+L` (Win) · `Cmd+J` / `Cmd+L` (Mac) |
+| Entrar y salir del modo dinámico | `W`; el cabezal amarillo dice que estás dentro |
+| Recuperar la reproducción sin salir del modo dinámico | `Ctrl+Shift+A` / `Cmd+Shift+A` |
+| Borrar un clip cerrando el hueco | `Forward Delete` — `Supr` (Win), `Fn+Supr` (Mac) |
+| Llevar un corte seleccionado al cabezal | `E` |
+| Que varios clips superpuestos acaben a la vez | Cabezal donde toca y `Shift+]` |
+| Que empiecen todos a la vez | `Shift+[` |
+| Ripplear hasta el cabezal sea cual sea el modo | `Ctrl+Shift+[` / `]` (Win) · `Cmd+Shift+[` / `]` (Mac) |
+| Dejar activo el selector de una sola pista | `Alt` (Win) / `Opt` (Mac) + clic sobre su selector |
+| Acotar una operación a un solo clip | Selecciónalo a mano: gana sobre los selectores de pista |
+| Poner todas las cabeceras en el mismo estado | Clic sobre un control y arrastra por las demás |
+| Suspender el enlace de audio y vídeo solo para este clic | `Alt` (Win) / `Opt` (Mac) + clic |
+| Añadir un segundo corte a la selección | `Ctrl` (Win) / `Cmd` (Mac) + clic |
+| Saltarse el imán solo durante un arrastre | `N` mientras arrastras |
+| Acortar un plano por los dos extremos conservando el centro | Selecciona su entrada y su salida y acércalas |
+| Acortar un bloque de rótulos por una cantidad exacta | Selecciona los cortes y arrastra con `Ctrl` / `Cmd` |
+| Punto seguro antes de un ripple grande | `File > Create Timeline Backup` |
+| Comprobar cualquier atajo en tu instalación | `Alt+Ctrl+K` (Win) / `Opt+Cmd+K` (Mac) |
+
+---
+
+_Las semanas 10 a 36 añadirán aquí sus trucos según se publiquen._
 
 
 ---

@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 470" width="880" height="470" role="img"
+     aria-label="Las dos clases de marcador y el dialogo de un marcador. Un marcador de timeline vive en la regla de tiempo y se pone con todo deseleccionado; si mueves un clip, se queda donde estaba. Un marcador de clip vive en la barra de titulo del clip, se pone con el clip seleccionado y viaja con el si lo mueves. A la derecha, el dialogo del marcador con sus seis campos: Time, Duration, Name, Notes, Color y Keyword. Debajo, el sistema de colores propuesto: rojo para cortes a afinar, amarillo para planos que sobran, verde para split edits y azul para resuelto o nota de fase posterior.">
+  <title>Marcadores de timeline y de clip</title>
+  <style>
+    .bg{fill:#101418}
+    .clip{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .ruler{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .card{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .field{fill:#101418;stroke:#2f3a45;stroke-width:1}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .col{font-size:13px;font-weight:600;fill:#4a9eff}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .mini{font-size:12px;fill:#e8eef4}
+  </style>
+  <rect class="bg" width="880" height="470"/>
+  <text class="t h" x="40" y="32">Si hay algo seleccionado, el marcador va al clip. Si no, va a la timeline.</text>
+
+  <rect class="card" x="40" y="52" width="480" height="200" rx="4"/>
+  <text class="t col" x="60" y="76">DÓNDE VIVE CADA UNO</text>
+
+  <text class="t s" x="60" y="106">regla</text>
+  <rect class="ruler" x="120" y="92" width="380" height="18" rx="2"/>
+  <rect x="230" y="92" width="10" height="18" fill="#f85149"/>
+  <rect x="360" y="92" width="10" height="18" fill="#3fb950"/>
+  <text class="t s" x="120" y="128">marcadores de timeline · con nada seleccionado, M</text>
+
+  <text class="t s" x="60" y="170">vídeo</text>
+  <rect class="clip" x="120" y="146" width="170" height="34" rx="3"/>
+  <rect class="clip" x="294" y="146" width="206" height="34" rx="3"/>
+  <rect x="150" y="148" width="10" height="8" fill="#f5a524"/>
+  <rect x="330" y="148" width="10" height="8" fill="#4a9eff"/>
+  <text class="t mini" x="196" y="170">A</text>
+  <text class="t mini" x="390" y="170">B</text>
+  <text class="t s" x="120" y="200">marcadores de clip · con el clip seleccionado, M</text>
+  <text class="t s" x="60" y="230">Los de clip viajan con el clip si lo mueves. Los de timeline, no.</text>
+
+  <rect class="card" x="540" y="52" width="300" height="200" rx="4"/>
+  <text class="t col" x="560" y="76">EL DIÁLOGO</text>
+  <text class="t s" x="560" y="102">Time</text>
+  <rect class="field" x="650" y="88" width="170" height="18" rx="2"/>
+  <text class="t s" x="560" y="128">Duration</text>
+  <rect class="field" x="650" y="114" width="170" height="18" rx="2"/>
+  <text class="t s" x="560" y="154">Name</text>
+  <rect class="field" x="650" y="140" width="170" height="18" rx="2"/>
+  <text class="t s" x="560" y="180">Notes</text>
+  <rect class="field" x="650" y="166" width="170" height="18" rx="2"/>
+  <text class="t s" x="560" y="206">Color</text>
+  <rect x="650" y="194" width="16" height="14" fill="#f85149"/>
+  <rect x="672" y="194" width="16" height="14" fill="#f5a524"/>
+  <rect x="694" y="194" width="16" height="14" fill="#3fb950"/>
+  <rect x="716" y="194" width="16" height="14" fill="#4a9eff"/>
+  <text class="t s" x="560" y="232">Keyword</text>
+  <rect class="field" x="650" y="218" width="170" height="18" rx="2"/>
+
+  <rect class="card" x="40" y="264" width="800" height="120" rx="4"/>
+  <text class="t lbl" x="60" y="290">Un sistema de colores para esta semana</text>
+  <rect x="60" y="304" width="14" height="14" fill="#f85149"/>
+  <text class="t s" x="84" y="316">rojo · este corte hay que afinarlo</text>
+  <rect x="450" y="304" width="14" height="14" fill="#f5a524"/>
+  <text class="t s" x="474" y="316">amarillo · este plano sobra o dura demasiado</text>
+  <rect x="60" y="334" width="14" height="14" fill="#3fb950"/>
+  <text class="t s" x="84" y="346">verde · aquí va un split edit</text>
+  <rect x="450" y="334" width="14" height="14" fill="#4a9eff"/>
+  <text class="t s" x="474" y="346">azul · resuelto, o nota para una fase posterior</text>
+  <text class="t s" x="60" y="372">No es un estándar de la industria: es un sistema. Lo importante es tener uno y escribirlo en tus notas.</text>
+
+  <rect class="card" x="40" y="396" width="800" height="56" rx="4"/>
+  <text class="t s" x="60" y="422">M anota sin parar · Ctrl+M (Win) / Cmd+M (Mac) anota y abre el diálogo, pausando y reanudando la reproducción</text>
+  <text class="t s" x="60" y="442">⇧+flecha arriba y ⇧+flecha abajo saltan de marcador en marcador · Index &gt; Markers los enseña todos a la vez</text>
+</svg>

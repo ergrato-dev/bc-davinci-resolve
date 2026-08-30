@@ -127,6 +127,49 @@ Y los del acabado, que se explican en la Semana 07:
 *Verificados en el DaVinci Resolve 21 Reference Manual, capítulos 36 y 38, agosto de 2026.
 Gana siempre lo que diga `DaVinci Resolve > Keyboard Customization` en tu instalación.*
 
+### Trimming, en la Edit page
+
+Los de la Semana 09. Son los que más se usan de todo el bootcamp a partir de la Fase 3, porque
+afinar cortes se hace todas las semanas de aquí a la 36.
+
+| Acción | Windows | macOS | Qué hace |
+| ------ | ------- | ----- | -------- |
+| Modo selección | `A` | `A` | Los bordes redimensionan y dejan hueco |
+| Modo trim | `T` | `T` | Los bordes rippean y los clips deslizan |
+| Modo dinámico | `W` | `W` | `J` `K` `L` trimman en vez de reproducir; el cabezal se pone amarillo |
+| Alternar slip y slide | `S` | `S` | Con un clip seleccionado en modo trim |
+| Seleccionar el corte más cercano | `V` | `V` | Y lleva el cabezal ahí |
+| Seleccionar el clip que cruza el cabezal | `Shift+V` | `Shift+V` | O el hueco, si es un hueco |
+| Rotar la parte del corte | `U` | `U` | Saliente → centrado → entrante |
+| Elegir vídeo, audio o los dos | `Alt+U` | `Opt+U` | Es la puerta al trim asimétrico |
+| Mover un fotograma | `,` / `.` | `,` / `.` | Sobre lo que tengas seleccionado |
+| Mover cinco fotogramas | `Shift+,` / `Shift+.` | `Shift+,` / `Shift+.` | La cantidad se ajusta en `Preferences > User > Editing` |
+| Reproducir alrededor de la selección | `/` | `/` | El pre-roll y el post-roll se ajustan en preferencias |
+| Alternar la reproducción en bucle | `Ctrl+/` | `Cmd+/` | Combinado con `/`, permite afinar sin parar |
+| Reproducir del punto de entrada al de salida | `Alt+/` | `Opt+/` | |
+| Quick trim | `Ctrl+J` / `Ctrl+L` | `Cmd+J` / `Cmd+L` | Trima reproduciendo, solo a velocidad real o más |
+| Extend edit | `E` | `E` | Lleva los cortes seleccionados al cabezal |
+| Trim start / trim end | `Shift+[` / `Shift+]` | `Shift+[` / `Shift+]` | Redimensionan en modo `A`, rippean en modo `T` |
+| Ripple start / end al cabezal | `Ctrl+Shift+[` / `]` | `Cmd+Shift+[` / `]` | Rippean siempre, en cualquier modo |
+| Borrar cerrando el hueco | `Supr` | `Fn+Supr` | Es la tecla `Forward Delete`, no la de borrar normal |
+| Cortar con ripple | `Ctrl+Shift+X` | `Cmd+Shift+X` | |
+| Deseleccionar todo | `Ctrl+Shift+A` | `Cmd+Shift+A` | Necesario antes de anotar con marcadores |
+| Selector de pista de vídeo 1 a 9 | `Alt+F1` … `F9` | `Opt+F1` … `F9` | Acota a qué clips afectan los comandos de cabezal |
+| Selector de pista de audio 1 a 9 | `Ctrl+Alt+F1` … `F9` | `Cmd+Opt+F1` … `F9` | |
+
+Y los de marcadores, que también son de la Semana 09:
+
+| Acción | Windows | macOS | Qué hace |
+| ------ | ------- | ----- | -------- |
+| Poner un marcador | `M` | `M` | Va al clip si hay algo seleccionado, y a la timeline si no |
+| Poner uno y abrir su diálogo | `Ctrl+M` | `Cmd+M` | Pausa la reproducción y la reanuda al cerrar |
+| Editar el marcador seleccionado | `Shift+M` | `Shift+M` | |
+| Borrar el marcador bajo el cabezal | `Alt+M` | `Opt+M` | |
+| Saltar al marcador anterior / siguiente | `Shift+↑` / `Shift+↓` | `Shift+↑` / `Shift+↓` | Mezcla los de clip y los de timeline |
+
+*Verificados en el DaVinci Resolve 21 Reference Manual, capítulos 48 y 51, agosto de 2026.
+Gana siempre lo que diga `DaVinci Resolve > Keyboard Customization` en tu instalación.*
+
 ---
 
 ## 5. Color

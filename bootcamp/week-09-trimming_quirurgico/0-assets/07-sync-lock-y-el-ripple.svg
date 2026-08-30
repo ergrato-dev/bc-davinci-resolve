@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 490" width="880" height="490" role="img"
+     aria-label="Efecto del sync lock al ripplear. Situacion de partida: una pista de video con tres planos y una pista de musica con un clip largo que los cruza; una marca de la musica coincide con un plano concreto. Con el sync lock activado, al acortar el plano B Resolve corta la musica en el punto del ripple y desplaza el resto, de modo que la marca sigue cayendo sobre el mismo plano aunque la musica quede con un salto. Con el sync lock desactivado, la musica no se toca y la marca deja de coincidir: todo lo posterior queda desincronizado.">
+  <title>El sync lock y el ripple</title>
+  <style>
+    .bg{fill:#101418}
+    .clip{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .act{fill:#232b34;stroke:#4a9eff;stroke-width:2}
+    .aud{fill:#191f26;stroke:#3fb950;stroke-width:1}
+    .card{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .col{font-size:13px;font-weight:600;fill:#4a9eff}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .mini{font-size:12px;fill:#e8eef4}
+    .ok{font-size:12px;font-weight:600;fill:#3fb950}
+    .err{font-size:12px;font-weight:600;fill:#f85149}
+    .am{font-size:12px;font-weight:600;fill:#f5a524}
+  </style>
+  <rect class="bg" width="880" height="490"/>
+  <text class="t h" x="40" y="32">Cuando rippleas, cada pista decide si te acompaña. Ese interruptor es el Sync Lock.</text>
+
+  <text class="t col" x="40" y="66">ANTES</text>
+  <text class="t s" x="40" y="94">Video 1</text>
+  <rect class="clip" x="140" y="78" width="140" height="24" rx="3"/>
+  <rect class="clip" x="284" y="78" width="140" height="24" rx="3"/>
+  <rect class="clip" x="428" y="78" width="140" height="24" rx="3"/>
+  <text class="t mini" x="203" y="95">A</text>
+  <text class="t mini" x="347" y="95">B</text>
+  <text class="t mini" x="491" y="95">C</text>
+  <text class="t s" x="40" y="126">Audio 2</text>
+  <rect class="aud" x="140" y="110" width="428" height="24" rx="3"/>
+  <text class="t mini" x="152" y="127">música</text>
+  <circle cx="452" cy="122" r="5" fill="#f5a524"/>
+  <text class="t am" x="590" y="127">la marca cae en C</text>
+
+  <text class="t col" x="40" y="180">SYNC LOCK ACTIVADO · se conserva la sincronía</text>
+  <text class="t s" x="40" y="216">Video 1</text>
+  <rect class="clip" x="140" y="200" width="140" height="24" rx="3"/>
+  <rect class="act" x="284" y="200" width="80" height="24" rx="3"/>
+  <rect class="clip" x="368" y="200" width="140" height="24" rx="3"/>
+  <text class="t mini" x="203" y="217">A</text>
+  <text class="t mini" x="317" y="217">B</text>
+  <text class="t mini" x="431" y="217">C</text>
+  <text class="t s" x="40" y="248">Audio 2</text>
+  <rect class="aud" x="140" y="232" width="144" height="24" rx="3"/>
+  <rect class="aud" x="288" y="232" width="220" height="24" rx="3"/>
+  <line x1="286" y1="228" x2="286" y2="260" stroke="#f85149" stroke-width="2"/>
+  <circle cx="392" cy="244" r="5" fill="#f5a524"/>
+  <text class="t err" x="140" y="278">la música queda con un salto aquí</text>
+  <text class="t ok" x="590" y="249">la marca sigue en C</text>
+
+  <text class="t col" x="40" y="322">SYNC LOCK DESACTIVADO · la música no se toca</text>
+  <text class="t s" x="40" y="358">Video 1</text>
+  <rect class="clip" x="140" y="342" width="140" height="24" rx="3"/>
+  <rect class="act" x="284" y="342" width="80" height="24" rx="3"/>
+  <rect class="clip" x="368" y="342" width="140" height="24" rx="3"/>
+  <text class="t mini" x="203" y="359">A</text>
+  <text class="t mini" x="317" y="359">B</text>
+  <text class="t mini" x="431" y="359">C</text>
+  <text class="t s" x="40" y="390">Audio 2</text>
+  <rect class="aud" x="140" y="374" width="428" height="24" rx="3"/>
+  <text class="t mini" x="152" y="391">música, intacta</text>
+  <circle cx="452" cy="386" r="5" fill="#f5a524"/>
+  <text class="t err" x="590" y="391">la marca ya no cae en C</text>
+
+  <rect class="card" x="40" y="414" width="800" height="58" rx="4"/>
+  <text class="t s" x="60" y="440">Algo tiene que ceder. Arreglar un salto en la música es más fácil que volver a sincronizar la pieza entera:</text>
+  <text class="t s" x="60" y="460">por eso el Sync Lock viene activado de fábrica en todas las pistas, y por eso conviene dejarlo así mientras afinas.</text>
+</svg>

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 470" width="880" height="470" role="img"
+     aria-label="Tres formas de cortar. En el corte plano, la imagen y el sonido cambian en el mismo fotograma y suena mecanico. En el corte en L, la imagen ya cambia al plano B mientras el sonido del plano A sigue sonando debajo. En el corte en J, el sonido del plano B empieza antes de que se vea su imagen, de modo que el espectador llega a la escena nueva antes que la camara. Debajo, la mecanica: seleccionar el lado saliente del corte de video y, con Ctrl o Cmd, el lado entrante del corte de audio, para que al trimar se muevan en sentidos contrarios.">
+  <title>Corte plano, corte en L y corte en J</title>
+  <style>
+    .bg{fill:#101418}
+    .v{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .vb{fill:#232b34;stroke:#4a9eff;stroke-width:2}
+    .a{fill:#191f26;stroke:#3fb950;stroke-width:1}
+    .ab{fill:#191f26;stroke:#3fb950;stroke-width:2}
+    .card{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .col{font-size:13px;font-weight:600;fill:#4a9eff}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .mini{font-size:12px;fill:#e8eef4}
+  </style>
+  <rect class="bg" width="880" height="470"/>
+  <text class="t h" x="40" y="32">Un corte suena mejor cuando la imagen y el sonido no cambian a la vez.</text>
+
+  <text class="t col" x="40" y="68">CORTE PLANO</text>
+  <text class="t s" x="40" y="98">vídeo</text>
+  <rect class="v" x="140" y="82" width="220" height="24" rx="3"/>
+  <rect class="v" x="364" y="82" width="220" height="24" rx="3"/>
+  <text class="t mini" x="240" y="99">A</text>
+  <text class="t mini" x="464" y="99">B</text>
+  <text class="t s" x="40" y="130">audio</text>
+  <rect class="a" x="140" y="114" width="220" height="24" rx="3"/>
+  <rect class="a" x="364" y="114" width="220" height="24" rx="3"/>
+  <line x1="362" y1="76" x2="362" y2="146" stroke="#f85149" stroke-width="2"/>
+  <text class="t s" x="606" y="115">los dos cortan en el mismo fotograma</text>
+
+  <text class="t col" x="40" y="184">CORTE EN L · el sonido de A se queda</text>
+  <text class="t s" x="40" y="214">vídeo</text>
+  <rect class="v" x="140" y="198" width="180" height="24" rx="3"/>
+  <rect class="vb" x="324" y="198" width="260" height="24" rx="3"/>
+  <text class="t mini" x="220" y="215">A</text>
+  <text class="t mini" x="444" y="215">B</text>
+  <text class="t s" x="40" y="246">audio</text>
+  <rect class="ab" x="140" y="230" width="260" height="24" rx="3"/>
+  <rect class="a" x="404" y="230" width="180" height="24" rx="3"/>
+  <text class="t s" x="606" y="231">seguimos oyendo A sobre la imagen de B</text>
+
+  <text class="t col" x="40" y="300">CORTE EN J · el sonido de B llega antes</text>
+  <text class="t s" x="40" y="330">vídeo</text>
+  <rect class="v" x="140" y="314" width="260" height="24" rx="3"/>
+  <rect class="vb" x="404" y="314" width="180" height="24" rx="3"/>
+  <text class="t mini" x="260" y="331">A</text>
+  <text class="t mini" x="484" y="331">B</text>
+  <text class="t s" x="40" y="362">audio</text>
+  <rect class="a" x="140" y="346" width="180" height="24" rx="3"/>
+  <rect class="ab" x="324" y="346" width="260" height="24" rx="3"/>
+  <text class="t s" x="606" y="347">ya oímos B mientras vemos A</text>
+
+  <rect class="card" x="40" y="392" width="800" height="60" rx="4"/>
+  <text class="t s" x="60" y="418">Cómo se hace: T · clic en un lado del corte de vídeo · Alt (Win) / Opt (Mac) + clic para suspender el enlace ·</text>
+  <text class="t s" x="60" y="438">Ctrl (Win) / Cmd (Mac) + clic en el lado contrario del corte de audio · arrastrar, o «,» y «.» · escuchar con «/»</text>
+</svg>

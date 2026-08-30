@@ -1,0 +1,86 @@
+{
+  "semana": "09",
+  "titulo": "Trimming quirurgico",
+  "checks": [
+    {
+      "id": "proyecto-abierto",
+      "descripcion": "BC-Bootcamp-Resolve es el proyecto abierto ahora mismo",
+      "op": "ping",
+      "args": {},
+      "expr": "r.get('project') == 'BC-Bootcamp-Resolve'",
+      "pista": "Abrelo desde el Project Manager, en la raiz de tu biblioteca original. Los checks leen el proyecto abierto, no el que exista en disco."
+    },
+    {
+      "id": "frame-rate-bloqueado",
+      "descripcion": "El timeline frame rate de BC-Bootcamp-Resolve sigue siendo 24 fps",
+      "op": "project_settings",
+      "args": {},
+      "expr": "float(r['settings']['timelineFrameRate']) == 24.0",
+      "pista": "File > Project Settings > Master Settings > Timeline frame rate. Con clips en el media pool el campo aparece atenuado y no se puede cambiar, asi que si te sale otro valor el proyecto abierto no es el del bootcamp."
+    },
+    {
+      "id": "montaje-v2-conservada",
+      "descripcion": "BC-Montaje-v2 sigue existiendo",
+      "op": "timeline_list",
+      "args": {},
+      "expr": "'BC-Montaje-v2' in r['timelines']",
+      "pista": "El trabajo de esta semana va sobre una copia, no sobre el montaje de la Semana 07. Si BC-Montaje-v2 ha desaparecido es que la renombraste en vez de duplicarla: recuperala del respaldo BC-Bootcamp-Resolve-semana08.drp, importandolo con otro nombre para no machacar lo que tienes. La comparacion del paso 8 de la practica 04 necesita las dos versiones."
+    },
+    {
+      "id": "montaje-v3-existe",
+      "descripcion": "Existe la timeline BC-Montaje-v3",
+      "op": "timeline_list",
+      "args": {},
+      "expr": "'BC-Montaje-v3' in r['timelines']",
+      "pista": "Practica 01, paso 1. Clic derecho sobre BC-Montaje-v2 > Duplicate Timeline, y renombra la copia. El nombre es exacto: BC-Montaje-v3, con guiones, M mayuscula, uve minuscula y el 3 sin ceros delante."
+    },
+    {
+      "id": "montaje-v3-activa",
+      "descripcion": "BC-Montaje-v3 es la timeline abierta ahora mismo",
+      "op": "timeline_probe",
+      "args": {},
+      "expr": "r['name'] == 'BC-Montaje-v3'",
+      "pista": "timeline_probe, timeline_detect_gaps y marker_list leen la timeline ACTIVA. Si acabas de comparar con BC-Montaje-v2 en el paso 8 de la practica 04, te habras quedado en ella: doble clic en BC-Montaje-v3 y repite. Los cinco checks siguientes tambien dependen de esto."
+    },
+    {
+      "id": "montaje-v3-pistas-con-nombre",
+      "descripcion": "Ninguna pista de BC-Montaje-v3 conserva su nombre por defecto",
+      "op": "timeline_probe",
+      "args": {},
+      "expr": "all(not t['name'].startswith('Video ') and not t['name'].startswith('Audio ') for t in r['tracks'] if t['type'] in ('video', 'audio'))",
+      "pista": "Los nombres vienen heredados de BC-Montaje-v2, que se nombraron en la Semana 08. Si este check falla es que duplicaste otra timeline, o que aniadiste una pista nueva esta semana y se quedo con su nombre de fabrica. Para editar un nombre, la pista tiene que ser lo bastante alta y la vista tiene que estar en tira de imagenes o miniatura."
+    },
+    {
+      "id": "montaje-v3-clips",
+      "descripcion": "La pista de video principal de BC-Montaje-v3 conserva quince clips o mas",
+      "op": "timeline_probe",
+      "args": {},
+      "expr": "[t for t in r['tracks'] if t['type'] == 'video'][0]['item_count'] >= 15",
+      "pista": "El montaje de la Semana 07 tenia dieciocho clips o mas. Afinar quita algunos planos enteros, y eso esta bien, pero por debajo de quince ya no estas afinando: estas remontando. Si has quitado tantos, restaura el respaldo de timeline antes-de-afinar de la practica 01 y vuelve a empezar con mas criterio."
+    },
+    {
+      "id": "montaje-v3-sin-huecos",
+      "descripcion": "La pista de video principal de BC-Montaje-v3 no tiene huecos ni solapes",
+      "op": "timeline_detect_gaps",
+      "args": { "track": 1 },
+      "expr": "r['clean'] and len(r['gaps']) == 0 and len(r['overlaps']) == 0",
+      "pista": "Practica 02, paso 6, y practica 04, paso 6. Un hueco es un parpadeo a negro que a la escala normal de la timeline no se ve. Aparecen sobre todo al borrar un plano con Supr en vez de con Forward Delete, y al pasarse en un slide. Recorre la pista en Detail Zoom, selecciona el hueco y borralo con Forward Delete."
+    },
+    {
+      "id": "montaje-v3-split-edits",
+      "descripcion": "Hay dos split edits o mas: clips de audio que no empiezan donde ningun clip de video",
+      "op": "timeline_probe",
+      "args": {},
+      "expr": "len([i for tracks in [r['tracks']] for i in [t for t in tracks if t['type'] == 'audio'][0]['items'] if i['start'] not in [v['start'] for v in [t for t in tracks if t['type'] == 'video'][0]['items']]]) >= 2",
+      "pista": "Practica 04, pasos 3 y 4. El check mira la PRIMERA pista de audio y la PRIMERA de video: si hiciste los split edits sobre Ambiente o sobre una pista de video de arriba, no los ve. Un split edit de verdad se reconoce a simple vista en la timeline, porque el borde del clip de audio y el del clip de video no estan alineados."
+    },
+    {
+      "id": "marcadores-anotados",
+      "descripcion": "BC-Montaje-v3 tiene ocho marcadores o mas, todos con nombre propio",
+      "op": "marker_list",
+      "args": {},
+      "expr": "len(r['markers']) >= 8 and all(m['name'] and not m['name'].startswith('Marker ') for m in r['markers'].values())",
+      "pista": "Practica 01, pasos 4 y 5, y practica 04, paso 7. El nombre de fabrica de un marcador es Marker 1, Marker 2, y asi: si dejaste alguno sin renombrar, el check falla aunque tengas veinte. Index > Markers los enseña todos en una lista y los campos Name y Notes se editan directamente sobre la fila; ordena por Name y los que conservan el nombre de fabrica quedan juntos."
+    }
+  ]
+}

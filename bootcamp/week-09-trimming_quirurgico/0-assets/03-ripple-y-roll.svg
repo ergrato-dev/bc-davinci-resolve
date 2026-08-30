@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 470" width="880" height="470" role="img"
+     aria-label="Comparacion entre roll y ripple sobre la misma timeline. En el roll, el corte entre A y B se mueve a la derecha: A se alarga exactamente lo que B se acorta, C no se mueve y la duracion total de la pieza no cambia. En el ripple, B se acorta y C se desplaza hacia la izquierda para cerrar el hueco, de modo que la pieza entera termina antes. Debajo, el visor partido en dos que aparece mientras trimas, con el ultimo fotograma del plano que sale y el primero del que entra.">
+  <title>Roll frente a ripple</title>
+  <style>
+    .bg{fill:#101418}
+    .clip{fill:#232b34;stroke:#2f3a45;stroke-width:1}
+    .act{fill:#232b34;stroke:#4a9eff;stroke-width:2}
+    .card{fill:#191f26;stroke:#2f3a45;stroke-width:1}
+    .frame{fill:#101418;stroke:#2f3a45;stroke-width:1}
+    .t{font-family:Inter,Roboto,"Segoe UI",system-ui,sans-serif}
+    .h{font-size:15px;font-weight:600;fill:#e8eef4}
+    .col{font-size:14px;font-weight:600;fill:#4a9eff}
+    .lbl{font-size:13px;font-weight:600;fill:#e8eef4}
+    .s{font-size:12px;fill:#93a1b0}
+    .mini{font-size:12px;fill:#e8eef4}
+    .ok{font-size:12px;font-weight:600;fill:#3fb950}
+    .am{font-size:12px;font-weight:600;fill:#f5a524}
+  </style>
+  <rect class="bg" width="880" height="470"/>
+  <text class="t h" x="40" y="32">Las dos operaciones que se hacen sobre un corte.</text>
+
+  <text class="t col" x="40" y="66">ROLL · mueve el corte</text>
+  <text class="t lbl" x="40" y="98">antes</text>
+  <rect class="clip" x="140" y="82" width="180" height="26" rx="3"/>
+  <rect class="clip" x="324" y="82" width="180" height="26" rx="3"/>
+  <rect class="clip" x="508" y="82" width="180" height="26" rx="3"/>
+  <text class="t mini" x="222" y="100">A</text>
+  <text class="t mini" x="406" y="100">B</text>
+  <text class="t mini" x="590" y="100">C</text>
+  <line x1="688" y1="76" x2="688" y2="150" stroke="#93a1b0" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <text class="t lbl" x="40" y="140">después</text>
+  <rect class="act" x="140" y="124" width="240" height="26" rx="3"/>
+  <rect class="act" x="384" y="124" width="120" height="26" rx="3"/>
+  <rect class="clip" x="508" y="124" width="180" height="26" rx="3"/>
+  <text class="t mini" x="252" y="142">A</text>
+  <text class="t mini" x="436" y="142">B</text>
+  <text class="t mini" x="590" y="142">C</text>
+  <text class="t ok" x="704" y="142">el final no se mueve</text>
+
+  <text class="t col" x="40" y="204">RIPPLE · acorta de verdad</text>
+  <text class="t lbl" x="40" y="236">antes</text>
+  <rect class="clip" x="140" y="220" width="180" height="26" rx="3"/>
+  <rect class="clip" x="324" y="220" width="180" height="26" rx="3"/>
+  <rect class="clip" x="508" y="220" width="180" height="26" rx="3"/>
+  <text class="t mini" x="222" y="238">A</text>
+  <text class="t mini" x="406" y="238">B</text>
+  <text class="t mini" x="590" y="238">C</text>
+  <line x1="688" y1="214" x2="688" y2="288" stroke="#93a1b0" stroke-width="1" stroke-dasharray="3 3"/>
+
+  <text class="t lbl" x="40" y="278">después</text>
+  <rect class="clip" x="140" y="262" width="180" height="26" rx="3"/>
+  <rect class="act" x="324" y="262" width="100" height="26" rx="3"/>
+  <rect class="act" x="428" y="262" width="180" height="26" rx="3"/>
+  <text class="t mini" x="222" y="280">A</text>
+  <text class="t mini" x="366" y="280">B</text>
+  <text class="t mini" x="510" y="280">C</text>
+  <text class="t am" x="624" y="280">la pieza termina antes</text>
+
+  <rect class="card" x="40" y="312" width="800" height="136" rx="4"/>
+  <text class="t lbl" x="60" y="338">El visor partido en dos, mientras trimas</text>
+  <rect class="frame" x="60" y="352" width="150" height="76" rx="3"/>
+  <rect class="frame" x="216" y="352" width="150" height="76" rx="3"/>
+  <text class="t s" x="72" y="378">último fotograma</text>
+  <text class="t s" x="72" y="396">del plano que sale</text>
+  <text class="t s" x="228" y="378">primer fotograma</text>
+  <text class="t s" x="228" y="396">del plano que entra</text>
+  <text class="t s" x="400" y="376">En un roll se actualizan los dos lados.</text>
+  <text class="t s" x="400" y="396">En un ripple, solo el lado que estás rippleando.</text>
+  <text class="t s" x="400" y="416">Shift mientras arrastras lo apaga temporalmente.</text>
+</svg>
